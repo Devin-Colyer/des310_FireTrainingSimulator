@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class PointAndClickPlayerController : MonoBehaviour {
 
+    // Camera set in editor
     public Camera m_camera;
     NavMeshAgent m_Agent;
 
@@ -17,11 +18,14 @@ public class PointAndClickPlayerController : MonoBehaviour {
 	void Update () {
         if (Input.GetMouseButtonDown(0))
         {
+            // Setup Raycast
             RaycastHit l_Hit;
             Ray l_Ray = m_camera.ScreenPointToRay(Input.mousePosition);
 
+            // Cast ray from the mouse
             if (Physics.Raycast(l_Ray, out l_Hit, 100))
             {
+                // Set the pathfinding destination to where the ray hits
                 m_Agent.destination = l_Hit.point;
             }
         }

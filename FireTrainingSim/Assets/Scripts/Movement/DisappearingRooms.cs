@@ -3,44 +3,46 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DisappearingRooms : MonoBehaviour {
-    
-    MeshRenderer[] m_ChildMeshRenderers;
+
     // Use this for initialization
     void Start()
     {
-        MeshRenderer[] l_MeshRenderers = GetComponentsInChildren<MeshRenderer>();
-
-        if (l_MeshRenderers == null)
-            Debug.Log("No Mesh Renderers Found");
-        else
-        {
-            m_ChildMeshRenderers = l_MeshRenderers;
-
-            Debug.Log("Found " + m_ChildMeshRenderers.Length.ToString() + " Renderers");
-        }
     }
 
-    private void OnCollisionEnter(Collision in_CollisionData)
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (in_CollisionData.collider.tag == "RenderRoomCollider")
+        // Debug
+        Debug.Log("Collision Detected");
+
+        // Check Tag
+        if (other.tag == "Player" || other.tag == "RenderRoomCollider")
         {
+            // Debug
             Debug.Log("Render The Room");
-            foreach (MeshRenderer i in m_ChildMeshRenderers)
+            // Active children on trigger
+            for (int a = 0; a < this.transform.childCount; a++)
             {
-                i.enabled = true;
+                this.transform.GetChild(a).gameObject.SetActive(true);
             }
         }
         else
             return;
     }
-    private void OnCollisionExit(Collision in_CollisionData)
+    private void OnTriggerExit(Collider other)
     {
-        if (in_CollisionData.collider.tag == "RenderRoomCollider")
+        // Debug
+        Debug.Log("Stopped Colliding");
+
+        // Check Tag
+        if (other.tag == "Player" || other.tag == "RenderRoomCollider")
         {
+            // Debug
             Debug.Log("Stop Rendering The Room");
-            foreach (MeshRenderer i in m_ChildMeshRenderers)
+            //Deavtivate children on trigger
+            for (int a = 0; a < this.transform.childCount; a++)
             {
-                i.enabled = false;
+                this.transform.GetChild(a).gameObject.SetActive(false);
             }
         }
         else
