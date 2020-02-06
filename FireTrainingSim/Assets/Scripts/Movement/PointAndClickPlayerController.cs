@@ -5,13 +5,12 @@ using UnityEngine.AI;
 
 public class PointAndClickPlayerController : MonoBehaviour {
 
-    // Camera set in editor
-    public Camera m_camera;
+    // NavMeshAgent - pathfinding AI
     NavMeshAgent m_Agent;
 
     // Use this for initialization
     void Start () {
-        m_Agent = GetComponent<NavMeshAgent>();
+        m_Agent = this.GetComponent<NavMeshAgent>();
     }
 	
 	// Update is called once per frame
@@ -20,7 +19,7 @@ public class PointAndClickPlayerController : MonoBehaviour {
         {
             // Setup Raycast
             RaycastHit l_Hit;
-            Ray l_Ray = m_camera.ScreenPointToRay(Input.mousePosition);
+            Ray l_Ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
             // Cast ray from the mouse
             if (Physics.Raycast(l_Ray, out l_Hit, 100))

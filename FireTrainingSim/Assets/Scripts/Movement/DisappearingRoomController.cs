@@ -17,7 +17,7 @@ public class DisappearingRoomController : MonoBehaviour {
         Debug.Log("Collision Detected");
 
         // Check Tag
-        if (other.tag == "Player" || other.tag == "RenderRoomCollider")
+        if (other.tag == "Player")
         {
             // Debug
             Debug.Log("Render The Room");
