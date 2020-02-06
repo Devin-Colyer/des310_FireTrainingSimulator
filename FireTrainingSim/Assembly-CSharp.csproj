@@ -61,8 +61,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Movement\DisappearingRooms.cs" />
+    <Compile Include="Assets\Scripts\Movement\CameraMovementController.cs" />
+    <Compile Include="Assets\Scripts\Movement\DisappearingRoomController.cs" />
     <Compile Include="Assets\Scripts\Movement\PointAndClickPlayerController.cs" />
+    <Compile Include="Assets\Scripts\Movement\TransitionLipController.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>M:/DES310/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
