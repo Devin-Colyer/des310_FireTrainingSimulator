@@ -13,6 +13,19 @@ public class BoxClickPickup : MonoBehaviour
         g_grabbedObject = null;
         g_grabOffset = Vector3.zero;
     }
+
+    // Returns true if input object is currently grabbed.
+    public bool IsGrabbedObject(GameObject gameObject)
+    {
+        if (gameObject == g_grabbedObject)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -30,7 +43,7 @@ public class BoxClickPickup : MonoBehaviour
                 if(l_hit.collider)
                 {
                     // Debug, check if hit.
-                    Debug.Log("Hit Something");
+                    ///Debug.Log("Hit Something");
 
                     // Check if object can be grabbed.
                     if (l_hit.transform.tag == "MoveableObject")
@@ -48,7 +61,7 @@ public class BoxClickPickup : MonoBehaviour
                         g_grabOffset = l_mouseWorldPosition - g_grabbedObject.transform.position;
 
                         // Debug, output object name.
-                        Debug.Log("Object Hit: " + g_grabbedObject.name);
+                        ///Debug.Log("Object Hit: " + g_grabbedObject.name);
                     }
                 }
             }

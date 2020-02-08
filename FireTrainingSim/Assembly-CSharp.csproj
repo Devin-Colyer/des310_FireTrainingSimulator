@@ -53,8 +53,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\OutlineGlow.cs" />
      <Compile Include="Assets\PhysicsSimulation.cs" />
      <Compile Include="Assets\Scripts\Box Minigame\BoxClickPickup.cs" />
+     <Compile Include="Assets\Scripts\Box Minigame\BoxStackScript.cs" />
      <Compile Include="Assets\Scripts\Box Minigame\BoxTriggerScript.cs" />
      <Compile Include="Assets\Scripts\Box Minigame\InvisibleWallScript.cs" />
  <Reference Include="UnityEditor.StandardEvents">

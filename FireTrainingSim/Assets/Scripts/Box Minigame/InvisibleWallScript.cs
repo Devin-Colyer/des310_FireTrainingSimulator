@@ -12,7 +12,7 @@ public class InvisibleWallScript : MonoBehaviour {
         if (l_clutter)
         {
             // Debug output.
-            Debug.Log("Found moveable clutter.");
+            ///Debug.Log("Found moveable clutter.");
 
             // Ignore collision with clutter objects.
             foreach (Transform child in l_clutter.transform)
@@ -20,7 +20,7 @@ public class InvisibleWallScript : MonoBehaviour {
                 Physics.IgnoreCollision(child.GetComponent<Collider>(), this.GetComponent<Collider>(), true);
 
                 // Debug output.
-                Debug.Log("Ignored collision between " + child.name + " and " + this.name);
+               /// Debug.Log("Ignored collision between " + child.name + " and " + this.name);
             }
         }
     }

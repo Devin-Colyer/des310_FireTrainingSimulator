@@ -23,7 +23,7 @@ public class BoxTriggerScript : MonoBehaviour
                 g_colliderCount++;
 
                 // Debug output.
-                Debug.Log("An object is blocking the door.");
+                ///Debug.Log("An object is blocking the door.");
             }
         }
     }
@@ -56,7 +56,7 @@ public class BoxTriggerScript : MonoBehaviour
                 else
                 {
                     // Debug output.
-                    Debug.Log("An object have been moved from the door.");
+                   /// Debug.Log("An object have been moved from the door.");
                 }
             }
         }
