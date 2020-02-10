@@ -3,12 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-<<<<<<< HEAD
-  - RenderRoomCollider
-=======
-  - MoveableObject
->>>>>>> d18109091581913821ad636fb6edd5be17042294
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -18,10 +13,10 @@ TagManager:
   - UI
   - 
   - 
-  - PostProcessing
-  - Interactables
-  - BoxMinigame
-  - SocketMinigame
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
