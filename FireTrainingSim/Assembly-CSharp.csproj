@@ -65,17 +65,18 @@
     <Compile Include="Assets\Scripts\Box Minigame\BoxStackScript.cs" />
     <Compile Include="Assets\Scripts\Box Minigame\BoxTriggerScript.cs" />
     <Compile Include="Assets\Scripts\Box Minigame\InvisibleWallScript.cs" />
+    <Compile Include="Assets\Scripts\Box Minigame\PhysicsSimulation\PhysicsSimulation.cs" />
     <Compile Include="Assets\Scripts\Glow\GlowComponent.cs" />
     <Compile Include="Assets\Scripts\Glow\GlowComposite.cs" />
     <Compile Include="Assets\Scripts\Glow\GlowPrePass.cs" />
     <Compile Include="Assets\Scripts\Michael's Mess Idfk\CameraController.cs" />
-    <Compile Include="Assets\Scripts\Michael's Mess Idfk\PhysicsSimulation.cs" />
-    <Compile Include="Assets\Scripts\Michael's Mess Idfk\ScreenFade.cs" />
+    <Compile Include="Assets\Scripts\Movement\Animation\PlayerAnimationController.cs" />
     <Compile Include="Assets\Scripts\Movement\CameraMovementController.cs" />
     <Compile Include="Assets\Scripts\Movement\DisappearingRoomController.cs" />
     <Compile Include="Assets\Scripts\Movement\PointAndClickPlayerController.cs" />
     <Compile Include="Assets\Scripts\Movement\TransitionLipController.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenuController.cs" />
+    <Compile Include="Assets\Scripts\UI\ScreenFade.cs" />
     <None Include="Assets\Shaders\Glow\SimpleBlur.shader" />
     <None Include="Assets\Shaders\Glow\GlowMaterial.shader" />
     <None Include="Assets\Shaders\Glow\GlowReplacement.shader" />
@@ -317,6 +318,24 @@
     <Reference Include="Boo.Lang">
       <HintPath>E:/Program Files/Unity/2018.1.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="NavMeshComponentsExamplesEditor.csproj">
+      <Project>{12043153-5315-56DA-088D-8ADF78012F54}</Project>
+      <Name>NavMeshComponentsExamplesEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{3CB7D434-7B42-208C-A7FB-BBAC4A881006}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{43B691D4-1480-B1CF-6FA6-B8FE270F053D}</Project>
+      <Name>NavMeshComponents</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsExamples.csproj">
+      <Project>{59271B8F-15C8-A247-1100-4BE2E7D145A1}</Project>
+      <Name>NavMeshComponentsExamples</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

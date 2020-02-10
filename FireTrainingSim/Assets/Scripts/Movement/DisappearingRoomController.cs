@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class DisappearingRoomController : MonoBehaviour {
 
     // Used in another script
     bool m_RoomActive = false;
-    
+    // Used for player navigation
+    public NavMeshSurface m_LevelNavMesh;
+
     public bool IsRoomActive()
     {
         return m_RoomActive;
@@ -27,6 +30,7 @@ public class DisappearingRoomController : MonoBehaviour {
             {
                 this.transform.GetChild(a).gameObject.SetActive(true);
             }
+            m_LevelNavMesh.BuildNavMesh();
         }
         else
             return;
@@ -37,7 +41,7 @@ public class DisappearingRoomController : MonoBehaviour {
         Debug.Log("Stopped Colliding");
 
         // Check Tag
-        if (other.tag == "Player" || other.tag == "RenderRoomCollider")
+        if (other.tag == "Player")
         {
             // Debug
             Debug.Log("Stop Rendering The Room");
