@@ -77,6 +77,7 @@
     <Compile Include="Assets\Scripts\Movement\TransitionLipController.cs" />
     <Compile Include="Assets\Scripts\PauseGame.cs" />
     <Compile Include="Assets\Scripts\SceneSwitcher.cs" />
+    <Compile Include="Assets\Scripts\Wining.cs" />
     <None Include="Assets\Shaders\Glow\SimpleBlur.shader" />
     <None Include="Assets\Shaders\Glow\GlowMaterial.shader" />
     <None Include="Assets\Shaders\Glow\GlowReplacement.shader" />

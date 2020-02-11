@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/TemporaryScenes/MainMenu.unity
+- path: Assets/Scenes/TemporaryScenes/FirstScene.unity
   isLoaded: 1
   isActive: 1
