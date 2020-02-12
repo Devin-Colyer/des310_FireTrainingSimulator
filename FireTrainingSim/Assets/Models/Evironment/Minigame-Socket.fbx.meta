@@ -1,0 +1,140 @@
+fileFormatVersion: 2
+guid: 4263aababc85c5a478bfe67fcfb6f7e7
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: itm_ExtensionCable_DMG
+    100002: itm_ExtensionCable_FIX
+    100004: itm_FrayedCable_DMG
+    100006: itm_FrayedCable_FIX
+    100008: itm_Paperstack
+    100010: itm_WallSocket_DMG
+    100012: itm_WallSocket_FIX
+    100014: //RootNode
+    100016: prp_environment
+    400000: itm_ExtensionCable_DMG
+    400002: itm_ExtensionCable_FIX
+    400004: itm_FrayedCable_DMG
+    400006: itm_FrayedCable_FIX
+    400008: itm_Paperstack
+    400010: itm_WallSocket_DMG
+    400012: itm_WallSocket_FIX
+    400014: //RootNode
+    400016: prp_environment
+    2100000: lambert1
+    2100002: mat_plugtop
+    2100004: mat_plugpins
+    2100006: mat_socketblack
+    2100008: Default_Material
+    2100010: mat_plugred
+    2100012: mat_floor
+    2100014: mat_wall
+    2100016: mat_desk2
+    2100018: mat_desk1
+    2100020: mat_whiteness
+    2100022: mat_cablefray
+    2300000: itm_ExtensionCable_DMG
+    2300002: itm_ExtensionCable_FIX
+    2300004: itm_FrayedCable_DMG
+    2300006: itm_FrayedCable_FIX
+    2300008: itm_Paperstack
+    2300010: itm_WallSocket_DMG
+    2300012: itm_WallSocket_FIX
+    2300014: prp_environment
+    3300000: itm_ExtensionCable_DMG
+    3300002: itm_ExtensionCable_FIX
+    3300004: itm_FrayedCable_DMG
+    3300006: itm_FrayedCable_FIX
+    3300008: itm_Paperstack
+    3300010: itm_WallSocket_DMG
+    3300012: itm_WallSocket_FIX
+    3300014: prp_environment
+    4300000: prp_environment
+    4300002: itm_WallSocket_DMG
+    4300004: itm_WallSocket_FIX
+    4300006: itm_ExtensionCable_DMG
+    4300008: itm_ExtensionCable_FIX
+    4300010: itm_FrayedCable_DMG
+    4300012: itm_FrayedCable_FIX
+    4300014: itm_Paperstack
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 0
+    keepQuads: 0
+    weldVertices: 0
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
