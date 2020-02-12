@@ -7,6 +7,8 @@ TagManager:
   - Finder
   - Trigger
   - Minigame
+  - MoveableObject
+  - MinigameInteractable
   layers:
   - Default
   - TransparentFX
@@ -19,8 +21,8 @@ TagManager:
   - Player
   - Terrain
   - Minigame
-  - 
-  - 
+  - BoxMinigame
+  - SocketMinigame
   - 
   - 
   - 

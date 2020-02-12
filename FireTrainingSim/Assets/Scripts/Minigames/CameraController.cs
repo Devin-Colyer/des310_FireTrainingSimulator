@@ -31,6 +31,10 @@ public class CameraController : MonoBehaviour
         {
             ChangeCamera("Socket Minigame");
         }
+        else if (Input.GetKeyDown("3"))
+        {
+            ChangeCamera("Room Camera");
+        }
 
         // Check if camera has been changed
         if (g_newCamera && (g_newCamera != g_currentCamera))

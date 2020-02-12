@@ -31,26 +31,29 @@ public class HazardClick : MonoBehaviour
             {
                 if (l_hit.collider)
                 {
-                    if (l_hit.transform.name == "Broken")
+                    if (l_hit.collider.transform.parent)
                     {
-                        // Disable game object.
-                        l_hit.collider.gameObject.SetActive(false);
-
-                        // Enable fixed version.
-                        Transform l_fixed = l_hit.collider.transform.parent.Find("Fixed");
-                        l_fixed.gameObject.SetActive(true);
-
-                        // Increment hazards solved.
-                        g_hazardsSolved++;
-
-                        // Debug output.
-                        Debug.Log("Hazards solved: " + g_hazardsSolved + "/" + g_numHazards);
-
-                        // Check if all hazards have been solved.
-                        if (g_hazardsSolved == g_numHazards)
+                        if (l_hit.collider.transform.parent.name == "Broken")
                         {
+                            // Disable game object.
+                            l_hit.collider.transform.parent.gameObject.SetActive(false);
+
+                            // Enable fixed version.
+                            Transform l_fixed = l_hit.collider.transform.parent.parent.Find("Fixed");
+                            l_fixed.gameObject.SetActive(true);
+
+                            // Increment hazards solved.
+                            g_hazardsSolved++;
+
                             // Debug output.
-                            Debug.Log("All hazards have been solved");
+                            Debug.Log("Hazards solved: " + g_hazardsSolved + "/" + g_numHazards);
+
+                            // Check if all hazards have been solved.
+                            if (g_hazardsSolved == g_numHazards)
+                            {
+                                // Debug output.
+                                Debug.Log("All hazards have been solved");
+                            }
                         }
                     }
                 }
