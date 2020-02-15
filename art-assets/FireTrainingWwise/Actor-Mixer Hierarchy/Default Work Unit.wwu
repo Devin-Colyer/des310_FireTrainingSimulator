@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FC3B7F42-FF5D-4D77-9CE2-CC60B8ECD73B}" SchemaVersion="94">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{FC3B7F42-FF5D-4D77-9CE2-CC60B8ECD73B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="ALARM 02" ID="{4A0A374E-A349-4401-9611-0601D2D4472F}" ShortID="476591949">
+					<Comment>Audiokinetic Inc. All rights reserved.
+Content provided by Vincent Gagnon
+© 2014 Vincent Gagnon</Comment>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{05CB8DFF-2A40-4E36-A41C-966CA8FBE50C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{128066C4-C9A6-47FE-A7D5-28C1A74F3B77}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="ALARM 02" ID="{70661E42-3555-4A13-9F97-C4D5C3CD6137}" ShortID="767856838" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+							<Comment>Audiokinetic Inc. All rights reserved.
+Content provided by Vincent Gagnon
+© 2014 Vincent Gagnon</Comment>
+							<PropertyList>
+								<Property Name="BaseFrequency" Type="Real32" Value="440"/>
+								<Property Name="FmAmount" Type="Real32" Value="61.1"/>
+								<Property Name="FrequencyMode" Type="int32" Value="1"/>
+								<Property Name="NoiseLevel" Type="Real32" Value="-15"/>
+								<Property Name="Osc1Level" Type="Real32" Value="-0.5"/>
+								<Property Name="Osc1Pwm" Type="Real32" Value="45.1"/>
+								<Property Name="Osc1Transpose" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{3CEFC52B-8893-401B-8283-7E4F4AA5D35C}" ShortID="996396414">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<Custom>
+														<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{962581F8-D086-4A45-BF77-C4B224556CE0}" ShortID="980321146">
+															<PropertyList>
+																<Property Name="EnvelopeAttackCurve" Type="Real64" Value="51"/>
+																<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.626"/>
+																<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.595"/>
+																<Property Name="EnvelopeReleaseTime" Type="Real64" Value="0.726"/>
+																<Property Name="EnvelopeSustainLevel" Type="Real64" Value="41.1"/>
+															</PropertyList>
+														</ModulatorEnvelope>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{409E6126-8161-4462-9A77-E8F2DB32E304}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-3611</YPos>
+														<Flags>21</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>3539</YPos>
+														<Flags>53</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Osc1Waveform" Type="int32" Value="2"/>
+								<Property Name="Osc2Level" Type="Real32" Value="1"/>
+								<Property Name="Osc2Pwm" Type="Real32" Value="35"/>
+								<Property Name="Osc2Transpose" Type="int32" Value="700"/>
+								<Property Name="OutputLevel" Type="Real32" Value="-16">
+									<RTPCList>
+										<RTPC Name="" ID="{9D57D650-B533-4AE8-8FB6-24543C913291}" ShortID="2029529">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<Custom>
+														<ModulatorLfo Name="Modulator LFO (Custom)" ID="{B6722D8D-86D7-4C69-B6D5-D6328C10C3A6}" ShortID="186549524">
+															<PropertyList>
+																<Property Name="LfoAttack" Type="Real64" Value="3.74"/>
+																<Property Name="LfoFrequency" Type="Real64" Value="3"/>
+																<Property Name="LfoPWM" Type="Real64" Value="51.6"/>
+																<Property Name="LfoWaveform" Type="int32" Value="2"/>
+															</PropertyList>
+														</ModulatorLfo>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{BEED16B8-6789-47CF-9E46-25FFC3D54FC7}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-8.78667</YPos>
+														<Flags>21</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>1.486</YPos>
+														<Flags>53</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+										<RTPC Name="" ID="{5CBB54C4-1C8C-45FB-81FB-DB58D7AC0AE4}" ShortID="81256397">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="MIDI note velocity" ID="{B618CC3D-04FA-4149-A36B-37B8A1F2B642}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{957B8633-4548-4521-AC62-8437F6012543}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-20</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>127</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<Language>SFX</Language>
+						</SourcePlugin>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ALARM 02" ID="{70661E42-3555-4A13-9F97-C4D5C3CD6137}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EBF35077-AE6D-49F0-B712-30972CF1EA6B}" SchemaVersion="94">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{EBF35077-AE6D-49F0-B712-30972CF1EA6B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Testy" ID="{0D11BC79-545E-4B44-8754-52FE838F81BF}">
+					<ChildrenList>
+						<Action Name="" ID="{C2F0075B-3355-4BE8-878E-755E4325ACA9}" ShortID="244824513">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ALARM 02" ID="{4A0A374E-A349-4401-9611-0601D2D4472F}" WorkUnitID="{FC3B7F42-FF5D-4D77-9CE2-CC60B8ECD73B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
