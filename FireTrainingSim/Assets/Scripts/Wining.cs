@@ -12,6 +12,11 @@ public class Wining : MonoBehaviour {
     private GameObject NextBtn;
     [SerializeField]
     private GameObject RetryBtn;
+    [SerializeField]
+    private GameObject PlayBtn;
+    [SerializeField]
+    private GameObject GameUI;
+
 
     public float a = 0.1f;
 
@@ -20,9 +25,10 @@ public class Wining : MonoBehaviour {
     public void Win()
     {
         ChickenDinner.SetActive(true);
+        GameUI.SetActive(false);
+        PlayBtn.SetActive(false);
         Time.timeScale = a;
         anim = GetComponent<Animator>();
-
     }
 
     public void Next(string NextScene)

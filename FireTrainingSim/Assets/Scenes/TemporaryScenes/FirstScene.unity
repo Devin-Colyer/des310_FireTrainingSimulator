@@ -765,7 +765,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &166598451
 RectTransform:
   m_ObjectHideFlags: 0
@@ -863,6 +863,8 @@ MonoBehaviour:
   ChickenDinner: {fileID: 166598450}
   NextBtn: {fileID: 1610128513}
   RetryBtn: {fileID: 47582910}
+  Btn: {fileID: 1500791571}
+  GameUI: {fileID: 1415568500}
   a: 0.1
 --- !u!1 &357325535
 GameObject:
@@ -937,7 +939,6 @@ GameObject:
   - component: {fileID: 533618730}
   - component: {fileID: 533618729}
   - component: {fileID: 533618728}
-  - component: {fileID: 533618727}
   - component: {fileID: 533618731}
   m_Layer: 0
   m_Name: flare
@@ -960,17 +961,6 @@ Transform:
   m_Father: {fileID: 166598451}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &533618727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 533618725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d335cfc1d918a045b4167dd47b6dcff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &533618728
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1118,7 +1108,6 @@ GameObject:
   - component: {fileID: 552102953}
   - component: {fileID: 552102955}
   - component: {fileID: 552102954}
-  - component: {fileID: 552102957}
   m_Layer: 5
   m_Name: flare
   m_TagString: Untagged
@@ -1177,17 +1166,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 552102952}
---- !u!114 &552102957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 552102952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d335cfc1d918a045b4167dd47b6dcff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &565005730
 GameObject:
   m_ObjectHideFlags: 0
