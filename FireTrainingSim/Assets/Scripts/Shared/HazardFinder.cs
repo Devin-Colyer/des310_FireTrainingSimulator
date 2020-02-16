@@ -21,10 +21,9 @@ public class HazardFinder : MonoBehaviour
             return;
         }
 
-        // Initialise min distance, default to item zero.
-        float l_minDistance = Vector3.Distance(l_hazards[0].transform.position, m_player.transform.position);
-
-        GameObject l_closestHazard = null;
+        // Initialise min distance, default to maximum range.
+        float l_minDistance = m_maxDistance;
+        
         int l_numHazards = 0;
 
         foreach (GameObject hazard in l_hazards)
@@ -42,10 +41,11 @@ public class HazardFinder : MonoBehaviour
                 {
                     // Update min distance and closest hazard.
                     l_minDistance = l_distance;
-                    l_closestHazard = hazard;
                 }
             }
         }
+
+        Debug.Log(l_numHazards + "/" + l_hazards.Length);
 
         if (l_numHazards == 0)
         {

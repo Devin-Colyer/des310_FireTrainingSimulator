@@ -15,11 +15,19 @@ public class PickupGlow : MonoBehaviour
     // Called each frame mouse is over object.
     private void OnMouseOver()
     {
-        // Check if objecty is currently grabbed
-        if (g_objectGrabber.IsGrabbedObject(this.gameObject))
+        if (g_objectGrabber)
         {
-            // Object is grabbed, fade out glow.
-            this.GetComponent<GlowComponent>().FadeOut();
+            // Check if objecty is currently grabbed
+            if (g_objectGrabber.IsGrabbedObject(this.gameObject))
+            {
+                // Object is grabbed, fade out glow.
+                this.GetComponent<GlowComponent>().FadeOut();
+            }
+            else
+            {
+                // Object isn't grabbed, fade in glow.
+                this.GetComponent<GlowComponent>().FadeIn();
+            }
         }
         else
         {

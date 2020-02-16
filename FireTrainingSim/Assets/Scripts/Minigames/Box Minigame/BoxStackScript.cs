@@ -68,7 +68,7 @@ public class BoxStackScript : MonoBehaviour
 
                             if (m_cameraController)
                             {
-                                // Disable world hazard.
+                                // Change camera back to level camera.
                                 m_cameraController.GetComponent<CameraController>().ChangeCamera("Room Camera");
                             }
 

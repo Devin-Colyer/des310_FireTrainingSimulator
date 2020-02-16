@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class HazardClick : MonoBehaviour
 {
+    public GameObject m_worldHazard;
+    public GameObject m_cameraController;
+
     private int g_numHazards;
     private int g_hazardsSolved;
     
@@ -51,6 +54,21 @@ public class HazardClick : MonoBehaviour
                             // Check if all hazards have been solved.
                             if (g_hazardsSolved == g_numHazards)
                             {
+                                if (m_worldHazard)
+                                {
+                                    // Disable world hazard.
+                                    m_worldHazard.transform.Find("Broken").gameObject.SetActive(false);
+
+                                    // Enable fixed hazard.
+                                    m_worldHazard.transform.Find("Fixed").gameObject.SetActive(true);
+                                }
+
+                                if (m_cameraController)
+                                {
+                                    // Change camera back to level camera.
+                                    m_cameraController.GetComponent<CameraController>().ChangeCamera("Room Camera");
+                                }
+
                                 // Debug output.
                                 Debug.Log("All hazards have been solved");
                             }
