@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BoxStackScript : MonoBehaviour
 {
+    public GameObject m_worldHazard;
+    public GameObject m_cameraController;
     private ArrayList g_colliderObjects;
     private int g_numBlockers;
 
@@ -46,13 +48,28 @@ public class BoxStackScript : MonoBehaviour
                         if (g_colliderObjects.Count == g_numBlockers)
                         {
                             // Find overlay.
-                            GameObject l_overlay = GameObject.Find("Overlay");
+                            /*GameObject l_overlay = GameObject.Find("Overlay");
 
                             if (l_overlay)
                             {
                                 // Render text to display.
                                 GameObject text = l_overlay.transform.Find("Game Complete Text").gameObject;
                                 text.SetActive(true);
+                            }*/
+                            
+                            if (m_worldHazard)
+                            {
+                                // Disable world hazard.
+                                m_worldHazard.transform.Find("Broken").gameObject.SetActive(false);
+
+                                // Enable fixed hazard.
+                                m_worldHazard.transform.Find("Fixed").gameObject.SetActive(true);
+                            }
+
+                            if (m_cameraController)
+                            {
+                                // Disable world hazard.
+                                m_cameraController.GetComponent<CameraController>().ChangeCamera("Room Camera");
                             }
 
                             // Debug output.
