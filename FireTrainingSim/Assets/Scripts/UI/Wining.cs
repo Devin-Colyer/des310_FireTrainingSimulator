@@ -15,10 +15,15 @@ public class Wining : MonoBehaviour {
     [SerializeField]
     private GameObject PlayBtn;
     [SerializeField]
+    private GameObject PauseBtn;
+    [SerializeField]
     private GameObject GameUI;
+    [SerializeField]
+    private GameObject Menu;
+  
 
 
-    public float a = 0.1f;
+    public float GameSpeed = 0.1f;
 
     Animator anim;
 
@@ -27,7 +32,9 @@ public class Wining : MonoBehaviour {
         ChickenDinner.SetActive(true);
         GameUI.SetActive(false);
         PlayBtn.SetActive(false);
-        Time.timeScale = a;
+        PauseBtn.SetActive(false);
+        Menu.SetActive(false);
+        Time.timeScale = GameSpeed;
         anim = GetComponent<Animator>();
     }
 
