@@ -58,6 +58,11 @@ public partial class AkBuildPreprocessor
 
 			case UnityEditor.BuildTarget.Switch:
 				return "Switch";
+
+#if UNITY_2019_3_OR_NEWER
+			case UnityEditor.BuildTarget.Stadia:
+				return "Stadia";
+#endif
 		}
 
 		return target.ToString();

@@ -1,143 +1,711 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{FC3B7F42-FF5D-4D77-9CE2-CC60B8ECD73B}" SchemaVersion="94">
+<WwiseDocument Type="WorkUnit" ID="{DFD753B0-9F0D-4948-97A1-D2EF82F2C616}" SchemaVersion="94">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{FC3B7F42-FF5D-4D77-9CE2-CC60B8ECD73B}" PersistMode="Standalone">
+		<WorkUnit Name="Default Work Unit" ID="{DFD753B0-9F0D-4948-97A1-D2EF82F2C616}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="ALARM 02" ID="{4A0A374E-A349-4401-9611-0601D2D4472F}" ShortID="476591949">
-					<Comment>Audiokinetic Inc. All rights reserved.
-Content provided by Vincent Gagnon
-© 2014 Vincent Gagnon</Comment>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{05CB8DFF-2A40-4E36-A41C-966CA8FBE50C}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{128066C4-C9A6-47FE-A7D5-28C1A74F3B77}"/>
-						</Reference>
-					</ReferenceList>
+				<Folder Name="CharacterMovement" ID="{26B33678-7C39-45D2-B77F-DD243EDF860F}" ShortID="365875290">
 					<ChildrenList>
-						<SourcePlugin Name="ALARM 02" ID="{70661E42-3555-4A13-9F97-C4D5C3CD6137}" ShortID="767856838" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+						<RandomSequenceContainer Name="DONOTTOUCHPreparedRandomContainer" ID="{F42F9A32-FD6A-4519-A604-C867DCCE75E7}" ShortID="468284771">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B794560B-F9F7-4B77-9FB8-951D29B38F17}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="21"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{234EA305-2988-44F5-9E10-A0E4726D9173}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="27"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{400589F3-10E8-4048-9ED4-012AEE4A7351}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="51"/>
+													<Property Name="Min" Type="Real64" Value="-51"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{73495009-9909-4244-9C29-8662E5457ED1}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="4"/>
+													<Property Name="Min" Type="Real64" Value="-2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{649C6319-0D1D-449D-A0C0-B167F1CE8443}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9FBAC3AC-1236-4C3D-936D-DC45A477814E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="Sfx_footstep_walk" ID="{90F8720D-329D-4E39-BDD2-09C3AC92F98F}" ShortID="446678216">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{649C6319-0D1D-449D-A0C0-B167F1CE8443}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="concrete" ID="{5BE07CE1-E37E-424F-AE5E-12A22EAFBF43}" WorkUnitID="{23C75BFF-234C-42AE-BE37-D4A59E382E57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9FBAC3AC-1236-4C3D-936D-DC45A477814E}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="switch_footstep" ID="{B6BC30B5-F25C-427E-ACAC-F15955E0C94E}" WorkUnitID="{23C75BFF-234C-42AE-BE37-D4A59E382E57}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Sfx_footstep_walk_concrete" ID="{CDAFD97E-5D49-4D75-8AC2-D16B59CBFF58}" ShortID="880757819">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{F6B67D73-6AC8-445B-8253-DC526CFCC82B}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="21"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{4767ABC1-4561-473B-B9ED-49EDA8B486ED}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="27"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{9520BAC3-D1AA-4AF2-A2B5-E0EDD4970187}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="51"/>
+																	<Property Name="Min" Type="Real64" Value="-51"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{B712FD03-12B2-4889-9B31-0973F48BBA02}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="4"/>
+																	<Property Name="Min" Type="Real64" Value="-2"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{649C6319-0D1D-449D-A0C0-B167F1CE8443}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9FBAC3AC-1236-4C3D-936D-DC45A477814E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Sfx_ footstep_concrete_walk-001" ID="{9EEA3A52-56B6-4D88-9736-17CF13BD495E}" ShortID="366549366">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{649C6319-0D1D-449D-A0C0-B167F1CE8443}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9FBAC3AC-1236-4C3D-936D-DC45A477814E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sfx_ footstep_concrete_walk-001" ID="{2109E141-1348-4123-9B17-713F5F06EA67}" ShortID="492325463">
+															<Language>SFX</Language>
+															<AudioFile>Sfx_ footstep_concrete_walk-001.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sfx_ footstep_concrete_walk-001" ID="{2109E141-1348-4123-9B17-713F5F06EA67}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sfx_ footstep_concrete_walk-002" ID="{E8EAD760-A92E-4D60-BAFD-6572ED6DA7C7}" ShortID="439550125">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{649C6319-0D1D-449D-A0C0-B167F1CE8443}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9FBAC3AC-1236-4C3D-936D-DC45A477814E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sfx_ footstep_concrete_walk-002" ID="{3E37556D-486E-44A4-82DA-F26264230667}" ShortID="682471024">
+															<Language>SFX</Language>
+															<AudioFile>Sfx_ footstep_concrete_walk-002.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sfx_ footstep_concrete_walk-002" ID="{3E37556D-486E-44A4-82DA-F26264230667}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sfx_ footstep_concrete_walk-003" ID="{02E95ECA-13C3-4863-B523-3B4D600FEE63}" ShortID="275927377">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{649C6319-0D1D-449D-A0C0-B167F1CE8443}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9FBAC3AC-1236-4C3D-936D-DC45A477814E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sfx_ footstep_concrete_walk-003" ID="{4140BA22-25FE-4892-A460-D07C033FCF77}" ShortID="7172009">
+															<Language>SFX</Language>
+															<AudioFile>Sfx_ footstep_concrete_walk-003.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sfx_ footstep_concrete_walk-003" ID="{4140BA22-25FE-4892-A460-D07C033FCF77}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Sfx_footstep_walk_metal" ID="{60EA5AB2-8C9C-455E-A947-3A631EAA9D89}" ShortID="199453912">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{474360CB-3F8D-42DF-943B-702C44E3B6D6}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="21"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{9EC3773C-7C46-4B28-873C-235D76DD9EAA}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="27"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{57EBBF30-5FBF-4350-AC3A-CD98B1E13946}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="51"/>
+																	<Property Name="Min" Type="Real64" Value="-51"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{10F43EA1-D660-4F55-92FC-B708C18023AD}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="4"/>
+																	<Property Name="Min" Type="Real64" Value="-2"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{649C6319-0D1D-449D-A0C0-B167F1CE8443}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9FBAC3AC-1236-4C3D-936D-DC45A477814E}"/>
+												</Reference>
+											</ReferenceList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Sfx_footstep_walk_carpet" ID="{90E84C8F-00FF-46B0-98D2-62E4DC8C4070}" ShortID="757418154">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{682EC851-BAA1-49D0-83F6-2D039DDED888}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="21"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{B6E29BEE-40E1-40A0-8F81-55392A78A831}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="27"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{98447206-08A4-46D8-BB5D-68D1635D3933}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="51"/>
+																	<Property Name="Min" Type="Real64" Value="-51"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{1847ED06-BC20-487B-B0D0-84CB6427706F}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="4"/>
+																	<Property Name="Min" Type="Real64" Value="-2"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{649C6319-0D1D-449D-A0C0-B167F1CE8443}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9FBAC3AC-1236-4C3D-936D-DC45A477814E}"/>
+												</Reference>
+											</ReferenceList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Sfx_footstep_walk_vinyl" ID="{0554208C-EF75-458A-857D-59DCCD6607FE}" ShortID="281068336">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{C286BE8F-1535-4C4B-B56A-B46532716F4D}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="21"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{715C449C-4C3B-422B-8E97-EEEC706C7E92}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="27"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{899BA538-AA0B-47A6-B105-37BA90EB8907}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="51"/>
+																	<Property Name="Min" Type="Real64" Value="-51"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{C1F494ED-69C5-4FF9-9995-35388789C522}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="4"/>
+																	<Property Name="Min" Type="Real64" Value="-2"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{649C6319-0D1D-449D-A0C0-B167F1CE8443}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9FBAC3AC-1236-4C3D-936D-DC45A477814E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Sfx_ footstep_house_walk-003" ID="{DB168A9E-021E-4534-BC01-658B615FFD25}" ShortID="563812514">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{649C6319-0D1D-449D-A0C0-B167F1CE8443}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9FBAC3AC-1236-4C3D-936D-DC45A477814E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sfx_ footstep_house_walk-003" ID="{C83F88A9-AB89-4323-9BD7-2EB8F7709A93}" ShortID="71845325">
+															<Language>SFX</Language>
+															<AudioFile>Sfx_ footstep_house_walk-003.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sfx_ footstep_house_walk-003" ID="{C83F88A9-AB89-4323-9BD7-2EB8F7709A93}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sfx_ footstep_house_walk-001" ID="{D5D823A8-582B-4563-888B-884CCE60351B}" ShortID="123213633">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{649C6319-0D1D-449D-A0C0-B167F1CE8443}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9FBAC3AC-1236-4C3D-936D-DC45A477814E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sfx_ footstep_house_walk-001" ID="{3CBBBC28-CD3C-4F22-ABF2-CE7E7EE91104}" ShortID="215860586">
+															<Language>SFX</Language>
+															<AudioFile>Sfx_ footstep_house_walk-001.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sfx_ footstep_house_walk-001" ID="{3CBBBC28-CD3C-4F22-ABF2-CE7E7EE91104}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sfx_ footstep_house_walk-002" ID="{82942B43-44DE-4EAF-B9DF-4E7E8E227F29}" ShortID="348501411">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{649C6319-0D1D-449D-A0C0-B167F1CE8443}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9FBAC3AC-1236-4C3D-936D-DC45A477814E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sfx_ footstep_house_walk-002" ID="{332537B4-5760-4772-9124-EFEDCC789F02}" ShortID="237265832">
+															<Language>SFX</Language>
+															<AudioFile>Sfx_ footstep_house_walk-002.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sfx_ footstep_house_walk-002" ID="{332537B4-5760-4772-9124-EFEDCC789F02}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Sfx_footstep_walk_concrete" ID="{CDAFD97E-5D49-4D75-8AC2-D16B59CBFF58}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Sfx_footstep_walk_vinyl" ID="{0554208C-EF75-458A-857D-59DCCD6607FE}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Sfx_footstep_walk_carpet" ID="{90E84C8F-00FF-46B0-98D2-62E4DC8C4070}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Sfx_footstep_walk_metal" ID="{60EA5AB2-8C9C-455E-A947-3A631EAA9D89}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="metal" ID="{567EDD20-BF5A-4F4B-8483-FFC730E1DD18}"/>
+												<ItemList>
+													<ItemRef Name="Sfx_footstep_walk_metal" ID="{60EA5AB2-8C9C-455E-A947-3A631EAA9D89}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="carpet" ID="{AFA4EF48-234A-4CDD-A9E7-DAB78235646A}"/>
+												<ItemList>
+													<ItemRef Name="Sfx_footstep_walk_carpet" ID="{90E84C8F-00FF-46B0-98D2-62E4DC8C4070}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="vinyl" ID="{DFDF055A-C508-471F-85E6-D34B6F81386B}"/>
+												<ItemList>
+													<ItemRef Name="Sfx_footstep_walk_vinyl" ID="{0554208C-EF75-458A-857D-59DCCD6607FE}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="concrete" ID="{5BE07CE1-E37E-424F-AE5E-12A22EAFBF43}"/>
+												<ItemList>
+													<ItemRef Name="Sfx_footstep_walk_concrete" ID="{CDAFD97E-5D49-4D75-8AC2-D16B59CBFF58}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Dialogue" ID="{1104AFAE-00CB-4033-B0E9-538F7EE6DA25}" ShortID="719550144"/>
+				<Folder Name="DirectInteraction" ID="{97A62CD6-BAB1-4E39-89F0-7D69D48D0305}" ShortID="43488705"/>
+				<Folder Name="Environment" ID="{4CB2E9E2-C025-4EF1-9D44-705177FD8760}" ShortID="905155702">
+					<ChildrenList>
+						<Sound Name="ALARM 02" ID="{4A0A374E-A349-4401-9611-0601D2D4472F}" ShortID="476591949">
 							<Comment>Audiokinetic Inc. All rights reserved.
 Content provided by Vincent Gagnon
 © 2014 Vincent Gagnon</Comment>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{649C6319-0D1D-449D-A0C0-B167F1CE8443}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9FBAC3AC-1236-4C3D-936D-DC45A477814E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="ALARM 02" ID="{70661E42-3555-4A13-9F97-C4D5C3CD6137}" ShortID="767856838" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+									<Comment>Audiokinetic Inc. All rights reserved.
+Content provided by Vincent Gagnon
+© 2014 Vincent Gagnon</Comment>
+									<PropertyList>
+										<Property Name="BaseFrequency" Type="Real32" Value="440"/>
+										<Property Name="FmAmount" Type="Real32" Value="61.1"/>
+										<Property Name="FrequencyMode" Type="int32" Value="1"/>
+										<Property Name="NoiseLevel" Type="Real32" Value="-15"/>
+										<Property Name="Osc1Level" Type="Real32" Value="-0.5"/>
+										<Property Name="Osc1Pwm" Type="Real32" Value="45.1"/>
+										<Property Name="Osc1Transpose" Type="int32">
+											<RTPCList>
+												<RTPC Name="" ID="{3CEFC52B-8893-401B-8283-7E4F4AA5D35C}" ShortID="996396414">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{962581F8-D086-4A45-BF77-C4B224556CE0}" ShortID="980321146">
+																	<PropertyList>
+																		<Property Name="EnvelopeAttackCurve" Type="Real64" Value="51"/>
+																		<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.626"/>
+																		<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.595"/>
+																		<Property Name="EnvelopeReleaseTime" Type="Real64" Value="0.726"/>
+																		<Property Name="EnvelopeSustainLevel" Type="Real64" Value="41.1"/>
+																	</PropertyList>
+																</ModulatorEnvelope>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{409E6126-8161-4462-9A77-E8F2DB32E304}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-3611</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>3539</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Osc1Waveform" Type="int32" Value="2"/>
+										<Property Name="Osc2Level" Type="Real32" Value="1"/>
+										<Property Name="Osc2Pwm" Type="Real32" Value="35"/>
+										<Property Name="Osc2Transpose" Type="int32" Value="700"/>
+										<Property Name="OutputLevel" Type="Real32" Value="-16">
+											<RTPCList>
+												<RTPC Name="" ID="{9D57D650-B533-4AE8-8FB6-24543C913291}" ShortID="2029529">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorLfo Name="Modulator LFO (Custom)" ID="{B6722D8D-86D7-4C69-B6D5-D6328C10C3A6}" ShortID="186549524">
+																	<PropertyList>
+																		<Property Name="LfoAttack" Type="Real64" Value="3.74"/>
+																		<Property Name="LfoFrequency" Type="Real64" Value="3"/>
+																		<Property Name="LfoPWM" Type="Real64" Value="51.6"/>
+																		<Property Name="LfoWaveform" Type="int32" Value="2"/>
+																	</PropertyList>
+																</ModulatorLfo>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{BEED16B8-6789-47CF-9E46-25FFC3D54FC7}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-8.78667</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>1.486</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+												<RTPC Name="" ID="{5CBB54C4-1C8C-45FB-81FB-DB58D7AC0AE4}" ShortID="81256397">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="MIDI note velocity" ID="{B618CC3D-04FA-4149-A36B-37B8A1F2B642}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{957B8633-4548-4521-AC62-8437F6012543}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-20</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>127</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ALARM 02" ID="{70661E42-3555-4A13-9F97-C4D5C3CD6137}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="UI" ID="{4757CF03-636C-49CA-9963-2AEB6F0EC1B2}" ShortID="366726938">
+					<ChildrenList>
+						<Sound Name="Loose" ID="{6EBB88E5-B663-4DF4-A240-DB9B3CC1BC5B}" ShortID="734103955">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{649C6319-0D1D-449D-A0C0-B167F1CE8443}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9FBAC3AC-1236-4C3D-936D-DC45A477814E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Loose" ID="{BF152BE6-08FD-4C83-BBBB-1E2E70EB4641}" ShortID="998836800">
+									<Language>SFX</Language>
+									<AudioFile>Loose.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Loose" ID="{BF152BE6-08FD-4C83-BBBB-1E2E70EB4641}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Win2" ID="{665F88FE-F6F4-44BC-AD0F-7064393497FE}" ShortID="312583997">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{649C6319-0D1D-449D-A0C0-B167F1CE8443}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9FBAC3AC-1236-4C3D-936D-DC45A477814E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Win2" ID="{88DAC901-44CD-4A52-BF50-E78836E0E288}" ShortID="763926917">
+									<Language>SFX</Language>
+									<AudioFile>Win2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Win2" ID="{88DAC901-44CD-4A52-BF50-E78836E0E288}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Win" ID="{ABB94940-CD98-4A98-A72E-D0A797ED72B6}" ShortID="177134315">
 							<PropertyList>
-								<Property Name="BaseFrequency" Type="Real32" Value="440"/>
-								<Property Name="FmAmount" Type="Real32" Value="61.1"/>
-								<Property Name="FrequencyMode" Type="int32" Value="1"/>
-								<Property Name="NoiseLevel" Type="Real32" Value="-15"/>
-								<Property Name="Osc1Level" Type="Real32" Value="-0.5"/>
-								<Property Name="Osc1Pwm" Type="Real32" Value="45.1"/>
-								<Property Name="Osc1Transpose" Type="int32">
-									<RTPCList>
-										<RTPC Name="" ID="{3CEFC52B-8893-401B-8283-7E4F4AA5D35C}" ShortID="996396414">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<Custom>
-														<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{962581F8-D086-4A45-BF77-C4B224556CE0}" ShortID="980321146">
-															<PropertyList>
-																<Property Name="EnvelopeAttackCurve" Type="Real64" Value="51"/>
-																<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.626"/>
-																<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.595"/>
-																<Property Name="EnvelopeReleaseTime" Type="Real64" Value="0.726"/>
-																<Property Name="EnvelopeSustainLevel" Type="Real64" Value="41.1"/>
-															</PropertyList>
-														</ModulatorEnvelope>
-													</Custom>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{409E6126-8161-4462-9A77-E8F2DB32E304}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="65537"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>-3611</YPos>
-														<Flags>21</Flags>
-													</Point>
-													<Point>
-														<XPos>1</XPos>
-														<YPos>3539</YPos>
-														<Flags>53</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
-								</Property>
-								<Property Name="Osc1Waveform" Type="int32" Value="2"/>
-								<Property Name="Osc2Level" Type="Real32" Value="1"/>
-								<Property Name="Osc2Pwm" Type="Real32" Value="35"/>
-								<Property Name="Osc2Transpose" Type="int32" Value="700"/>
-								<Property Name="OutputLevel" Type="Real32" Value="-16">
-									<RTPCList>
-										<RTPC Name="" ID="{9D57D650-B533-4AE8-8FB6-24543C913291}" ShortID="2029529">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<Custom>
-														<ModulatorLfo Name="Modulator LFO (Custom)" ID="{B6722D8D-86D7-4C69-B6D5-D6328C10C3A6}" ShortID="186549524">
-															<PropertyList>
-																<Property Name="LfoAttack" Type="Real64" Value="3.74"/>
-																<Property Name="LfoFrequency" Type="Real64" Value="3"/>
-																<Property Name="LfoPWM" Type="Real64" Value="51.6"/>
-																<Property Name="LfoWaveform" Type="int32" Value="2"/>
-															</PropertyList>
-														</ModulatorLfo>
-													</Custom>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{BEED16B8-6789-47CF-9E46-25FFC3D54FC7}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="3"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>-8.78667</YPos>
-														<Flags>21</Flags>
-													</Point>
-													<Point>
-														<XPos>1</XPos>
-														<YPos>1.486</YPos>
-														<Flags>53</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-										<RTPC Name="" ID="{5CBB54C4-1C8C-45FB-81FB-DB58D7AC0AE4}" ShortID="81256397">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="MIDI note velocity" ID="{B618CC3D-04FA-4149-A36B-37B8A1F2B642}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{957B8633-4548-4521-AC62-8437F6012543}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="3"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>-20</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>127</XPos>
-														<YPos>0</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
 								</Property>
 							</PropertyList>
-							<Language>SFX</Language>
-						</SourcePlugin>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{649C6319-0D1D-449D-A0C0-B167F1CE8443}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9FBAC3AC-1236-4C3D-936D-DC45A477814E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Win" ID="{4C2CE648-C15A-423A-BC2A-D4659FD6603D}" ShortID="868797152">
+									<Language>SFX</Language>
+									<AudioFile>Win.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Win" ID="{4C2CE648-C15A-423A-BC2A-D4659FD6603D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="ALARM 02" ID="{70661E42-3555-4A13-9F97-C4D5C3CD6137}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

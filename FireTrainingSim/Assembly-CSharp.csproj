@@ -75,6 +75,8 @@
      <Compile Include="Assets\Scripts\Movement\PointAndClickPlayerController.cs" />
      <Compile Include="Assets\Scripts\Movement\TransitionLipController.cs" />
      <Compile Include="Assets\Scripts\Socket Minigame\HazardClick.cs" />
+     <Compile Include="Assets\Scripts\Sound\PostWwiseEvent.cs" />
+     <Compile Include="Assets\Scripts\Sound\ThirdPersonSounds.cs" />
      <Compile Include="Assets\Scripts\UI\MainMenuController.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\_ArrayPoolDefault.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\_ArrayPoolLEngineDefault.cs" />

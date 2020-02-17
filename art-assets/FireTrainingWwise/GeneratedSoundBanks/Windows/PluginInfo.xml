@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PluginInfo Project="FireTrainingWwise" Platform="Windows" BasePlatform="Windows">
+<PluginInfo Project="FireTrainingGame" Platform="Windows" BasePlatform="Windows">
 	<Plugins>
 		<Plugin Name="Wwise Synth One" ID="9699330" DLL="AkSynthOne"/>
 		<Plugin Name="System" ID="11403271" DLL="DefaultSink"/>

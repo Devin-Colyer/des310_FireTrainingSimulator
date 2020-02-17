@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{F13554A7-A673-4FDC-9C14-D05BFE901CC5}" SchemaVersion="94">
+<WwiseDocument Type="WorkUnit" ID="{AC4EE3DD-E513-4A51-BC3E-F4EBC021BB4D}" SchemaVersion="94">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{F13554A7-A673-4FDC-9C14-D05BFE901CC5}" PersistMode="Standalone">
+		<WorkUnit Name="Default Work Unit" ID="{AC4EE3DD-E513-4A51-BC3E-F4EBC021BB4D}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="Main" ID="{E332CB5D-3681-4B9D-A8B4-56BB59FC99D8}">
+				<SoundBank Name="Main" ID="{11825378-2519-4B21-B515-249436CFC0B3}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Default Work Unit" ID="{128066C4-C9A6-47FE-A7D5-28C1A74F3B77}" WorkUnitID="{128066C4-C9A6-47FE-A7D5-28C1A74F3B77}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Default Work Unit" ID="{EBF35077-AE6D-49F0-B712-30972CF1EA6B}" WorkUnitID="{EBF35077-AE6D-49F0-B712-30972CF1EA6B}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Default Work Unit" ID="{E7B97B59-46C9-4D46-9EDD-8D7149C7EDA3}" WorkUnitID="{E7B97B59-46C9-4D46-9EDD-8D7149C7EDA3}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Default Work Unit" ID="{FC3B7F42-FF5D-4D77-9CE2-CC60B8ECD73B}" WorkUnitID="{FC3B7F42-FF5D-4D77-9CE2-CC60B8ECD73B}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Default Work Unit" ID="{DFD753B0-9F0D-4948-97A1-D2EF82F2C616}" WorkUnitID="{DFD753B0-9F0D-4948-97A1-D2EF82F2C616}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Default Work Unit" ID="{9FBAC3AC-1236-4C3D-936D-DC45A477814E}" WorkUnitID="{9FBAC3AC-1236-4C3D-936D-DC45A477814E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Default Work Unit" ID="{A8A581D0-3BDE-4D67-B745-E134D54E03AA}" WorkUnitID="{A8A581D0-3BDE-4D67-B745-E134D54E03AA}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Default Work Unit" ID="{F7B5515E-FEC4-4E7B-ACF6-D4398E807AAA}" WorkUnitID="{F7B5515E-FEC4-4E7B-ACF6-D4398E807AAA}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

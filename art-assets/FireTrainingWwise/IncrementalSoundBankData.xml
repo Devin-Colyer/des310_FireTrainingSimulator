@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<IncrementalBankBuild Version="6" Flags="601859981">
-	<Platform GUID="{06CB6DAA-A394-421E-8353-60FCBCFF3E43}">
+<IncrementalBankBuild Version="6" Flags="861300542">
+	<Platform GUID="{53C37E79-FE37-4327-B3CB-7DA85BA0F9D1}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="3954003446" Timestamp="1581729328"/>
-				<File Name="Main" Hash="524616740" Timestamp="1581729328"/>
+				<File Name="Init" Hash="708094414" Timestamp="1581879283"/>
+				<File Name="Main" Hash="2876737526" Timestamp="1581914534"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2790462201" Timestamp="1581729328"/>
+				<File Name="" Hash="146292110" Timestamp="1581914534"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
