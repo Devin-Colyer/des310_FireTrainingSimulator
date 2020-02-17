@@ -9,7 +9,11 @@ public class PickupGlow : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        g_objectGrabber = GameObject.Find("Object Grabber").GetComponent<BoxClickPickup>();
+        // Check if object grabber exists.
+        if (GameObject.Find("Object Grabber"))
+        {
+            g_objectGrabber = GameObject.Find("Object Grabber").GetComponent<BoxClickPickup>();
+        }
     }
 
     // Called each frame mouse is over object.
