@@ -30,8 +30,12 @@ public class ActivateMinigame : MonoBehaviour
             gameObject.SetActive(false);*/
             //m_CameraController.GetComponent<CameraController>().ChangeCamera(m_Minigame);
 
-            // Fade in glow when near hazard.
-            this.transform.parent.GetComponentInChildren<GlowComponent>().FadeIn();
+            // Check if the glow component exists
+            if (this.transform.parent.GetComponentInChildren<GlowComponent>())
+            {
+                // Fade in glow when near hazard.
+                this.transform.parent.GetComponentInChildren<GlowComponent>().FadeIn();
+            }
 
             if(Input.GetKeyDown("e"))
             {
