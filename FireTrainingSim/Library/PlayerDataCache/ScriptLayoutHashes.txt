@@ -1,6 +1,6 @@
-WebGL
+WindowsStandalone
 PlayerPath?
-M:/DES310 Professional Project/Build
+M:/DES310/FireTrainingSimulator_Build_1.7/FireTrainingSimulator_Build_1.7.exe
 SceneListBegin?
 Assets/Scenes/MainMenuTestScene.unity
 Assets/Scenes/TransitionTestScene2.unity
