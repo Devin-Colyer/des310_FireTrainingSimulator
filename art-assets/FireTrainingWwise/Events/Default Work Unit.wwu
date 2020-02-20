@@ -3,17 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{A8A581D0-3BDE-4D67-B745-E134D54E03AA}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="test" ID="{AFEB2B4A-DD9B-44C4-B5BD-B9259E5462E3}">
-					<ChildrenList>
-						<Action Name="" ID="{87D8FA6C-2E02-422C-A699-C0FAB175F697}" ShortID="654542684">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="ALARM 02" ID="{4A0A374E-A349-4401-9611-0601D2D4472F}" WorkUnitID="{DFD753B0-9F0D-4948-97A1-D2EF82F2C616}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Sfx_footstep_walk" ID="{5F8280CD-7B8D-4562-9943-3FEC0C4E4D23}">
 					<ChildrenList>
 						<Action Name="" ID="{748871B4-8FAE-4F6B-890F-6971C4A01C9C}" ShortID="1052345727">
@@ -47,12 +36,23 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Musics" ID="{8DFB2FC6-C5A7-40C7-A16F-0E6B68735416}">
+				<Event Name="Alarm" ID="{B4C10A8A-F103-45B4-AA60-101831A44433}">
 					<ChildrenList>
-						<Action Name="" ID="{98A1BB5E-280E-4AE8-B196-6FC1CB02CC51}" ShortID="889577210">
+						<Action Name="" ID="{E954E7AB-390B-4CF6-933E-7DE53592F738}" ShortID="778974271">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Musics" ID="{7A0EDA17-24E9-4E6D-B6F4-A1725E9CA6E2}" WorkUnitID="{F7B5515E-FEC4-4E7B-ACF6-D4398E807AAA}"/>
+									<ObjectRef Name="ALARM 02" ID="{4A0A374E-A349-4401-9611-0601D2D4472F}" WorkUnitID="{DFD753B0-9F0D-4948-97A1-D2EF82F2C616}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music" ID="{42F3176A-A427-4769-AAC4-3D2194680B90}">
+					<ChildrenList>
+						<Action Name="" ID="{B4975C2A-B59C-45A4-9D99-537AC4811E16}" ShortID="927511004">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{1EC02571-0C43-49FA-80BD-9B2CEC39A48F}" WorkUnitID="{F7B5515E-FEC4-4E7B-ACF6-D4398E807AAA}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

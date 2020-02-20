@@ -13,14 +13,14 @@
 								<Switch Name="carpet" ID="{AFA4EF48-234A-4CDD-A9E7-DAB78235646A}"/>
 							</ChildrenList>
 						</SwitchGroup>
+						<SwitchGroup Name="Music" ID="{7AD3E55B-78B9-49AD-BBE1-0331571819D1}">
+							<ChildrenList>
+								<Switch Name="Box" ID="{93063900-6B72-4C0A-A34F-C84291E2C0BD}"/>
+								<Switch Name="BoxOut" ID="{12B646F3-DF62-491D-9CB7-769D9DB2991A}"/>
+							</ChildrenList>
+						</SwitchGroup>
 					</ChildrenList>
 				</Folder>
-				<SwitchGroup Name="Musics" ID="{BB0EA62D-85A8-4713-A91B-69486FA0F907}">
-					<ChildrenList>
-						<Switch Name="Box" ID="{CECDC06C-A05B-407E-B021-36232AC93FC7}"/>
-						<Switch Name="Box_Outro" ID="{010B0963-4DE8-403F-8BF7-91A698D7EDF3}"/>
-					</ChildrenList>
-				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

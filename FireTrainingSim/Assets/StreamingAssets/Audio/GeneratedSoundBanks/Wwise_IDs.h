@@ -13,25 +13,25 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ALARM = 855317084U;
         static const AkUniqueID LOOSE = 174960569U;
-        static const AkUniqueID MUSICS = 1730564753U;
+        static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID SFX_FOOTSTEP_WALK = 1789744637U;
-        static const AkUniqueID TEST = 3157003241U;
         static const AkUniqueID WIN = 979765101U;
     } // namespace EVENTS
 
     namespace SWITCHES
     {
-        namespace MUSICS
+        namespace MUSIC
         {
-            static const AkUniqueID GROUP = 1730564753U;
+            static const AkUniqueID GROUP = 3991942870U;
 
             namespace SWITCH
             {
                 static const AkUniqueID BOX = 546945280U;
-                static const AkUniqueID BOX_OUTRO = 1166812352U;
+                static const AkUniqueID BOXOUT = 3312932780U;
             } // namespace SWITCH
-        } // namespace MUSICS
+        } // namespace MUSIC
 
         namespace SWITCH_FOOTSTEP
         {
