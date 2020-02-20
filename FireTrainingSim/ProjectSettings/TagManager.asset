@@ -10,6 +10,8 @@ TagManager:
   - MoveableObject
   - MinigameInteractable
   - Hazard
+  - EvacAI
+  - Room
   layers:
   - Default
   - TransparentFX
