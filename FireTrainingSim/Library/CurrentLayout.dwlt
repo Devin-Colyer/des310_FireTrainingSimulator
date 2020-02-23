@@ -25,12 +25,16 @@ MonoBehaviour:
   m_MinSize: {x: 950, y: 542}
 =======
   m_RootView: {fileID: 2}
+<<<<<<< HEAD
   m_MinSize: {x: 950, y: 300}
 >>>>>>> ea81fd636d9a5df0e95acd45b4025d9b50d1a36b
 =======
   m_RootView: {fileID: 2}
   m_MinSize: {x: 950, y: 542}
 >>>>>>> 8e30b2048d0f2dfd3a95552330bca68f9b848afa
+=======
+  m_MinSize: {x: 950, y: 542}
+>>>>>>> 14c00225bd7b4196223d0f163ae8ed8fec6d7491
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -122,6 +126,7 @@ MonoBehaviour:
     height: 947
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_MinSize: {x: 887, y: 492}
   m_MaxSize: {x: 16012, y: 14042}
   vertical: 0
@@ -130,8 +135,12 @@ MonoBehaviour:
 =======
   m_MinSize: {x: 885, y: 342}
   m_MaxSize: {x: 16010, y: 8042}
+=======
+  m_MinSize: {x: 887, y: 492}
+  m_MaxSize: {x: 16012, y: 14042}
+>>>>>>> 14c00225bd7b4196223d0f163ae8ed8fec6d7491
   vertical: 0
-  controlID: 119
+  controlID: 131
 --- !u!114 &6
 >>>>>>> ea81fd636d9a5df0e95acd45b4025d9b50d1a36b
 =======
@@ -166,6 +175,7 @@ MonoBehaviour:
     height: 947
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_MinSize: {x: 610, y: 492}
   m_MaxSize: {x: 12010, y: 14042}
   vertical: 1
@@ -174,8 +184,12 @@ MonoBehaviour:
 =======
   m_MinSize: {x: 608, y: 342}
   m_MaxSize: {x: 12008, y: 8042}
+=======
+  m_MinSize: {x: 610, y: 492}
+  m_MaxSize: {x: 12010, y: 14042}
+>>>>>>> 14c00225bd7b4196223d0f163ae8ed8fec6d7491
   vertical: 1
-  controlID: 120
+  controlID: 132
 --- !u!114 &7
 >>>>>>> ea81fd636d9a5df0e95acd45b4025d9b50d1a36b
 =======
@@ -209,6 +223,7 @@ MonoBehaviour:
     width: 1552
     height: 572
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_MinSize: {x: 608, y: 221}
   m_MaxSize: {x: 12008, y: 4021}
   vertical: 0
@@ -217,6 +232,12 @@ MonoBehaviour:
 --- !u!114 &9
 =======
   controlID: 121
+=======
+  m_MinSize: {x: 610, y: 221}
+  m_MaxSize: {x: 12010, y: 4021}
+  vertical: 0
+  controlID: 133
+>>>>>>> 14c00225bd7b4196223d0f163ae8ed8fec6d7491
 --- !u!114 &8
 >>>>>>> ea81fd636d9a5df0e95acd45b4025d9b50d1a36b
 =======
@@ -333,6 +354,7 @@ MonoBehaviour:
     height: 375
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 19}
@@ -341,6 +363,11 @@ MonoBehaviour:
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 20}
 >>>>>>> ea81fd636d9a5df0e95acd45b4025d9b50d1a36b
+=======
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
+  m_ActualView: {fileID: 19}
+>>>>>>> 14c00225bd7b4196223d0f163ae8ed8fec6d7491
   m_Panes:
   - {fileID: 19}
   - {fileID: 20}
@@ -550,6 +577,7 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: a8e6ffff00000000
 =======
     m_ExpandedIDs: 68faffff00000000
@@ -559,6 +587,9 @@ MonoBehaviour:
     m_LastClickedID: 0
     m_ExpandedIDs: 04f5ffff000000001a3e0000
 >>>>>>> 8e30b2048d0f2dfd3a95552330bca68f9b848afa
+=======
+    m_ExpandedIDs: dcfbffff00000000
+>>>>>>> 14c00225bd7b4196223d0f163ae8ed8fec6d7491
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -845,6 +876,7 @@ MonoBehaviour:
     m_Folders:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets
   m_ViewMode: 1
   m_StartGridSize: 67
@@ -864,6 +896,13 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scripts/Minigames/Box Minigame/PhysicsSimulation
 >>>>>>> 8e30b2048d0f2dfd3a95552330bca68f9b848afa
+=======
+    - Assets/Scenes
+  m_ViewMode: 1
+  m_StartGridSize: 67
+  m_LastFolders:
+  - Assets/Scenes
+>>>>>>> 14c00225bd7b4196223d0f163ae8ed8fec6d7491
   m_LastFoldersGridSize: 67
   m_LastProjectPath: E:\Users\devco\Documents\GitHub\des310_FireTrainingSimulator\FireTrainingSim
   m_LockTracker:
@@ -877,6 +916,7 @@ MonoBehaviour:
     m_ExpandedIDs: 00000000f22c0000f82c0000362d0000d82e00007a2f0000ba2f0000903000004c310000b8320000ba320000bc320000be320000c032000000ca9a3bffffff7f
 =======
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: a02f0000
     m_LastClickedID: 12192
     m_ExpandedIDs: 00000000122b0000182b00001e2b0000582b0000c22b0000be2d0000fe2d0000a02f0000ce360000d0360000d2360000d4360000d636000000ca9a3bffffff7f
@@ -887,6 +927,11 @@ MonoBehaviour:
     m_LastClickedID: 15576
     m_ExpandedIDs: 000000003e370000463700008a370000e237000086380000de3800009c390000623a0000b03a0000ae3b00008a3c00000c3f00000e3f0000103f0000123f0000143f000000ca9a3bffffff7f
 >>>>>>> 8e30b2048d0f2dfd3a95552330bca68f9b848afa
+=======
+    m_SelectedIDs: c22b0000
+    m_LastClickedID: 11202
+    m_ExpandedIDs: 00000000602a0000662a00006c2a0000a62a0000122b0000122d0000522d0000fe2e000046360000483600004a3600004c3600004e36000000ca9a3bffffff7f
+>>>>>>> 14c00225bd7b4196223d0f163ae8ed8fec6d7491
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -916,6 +961,7 @@ MonoBehaviour:
     m_LastClickedID: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000f22c0000f82c0000362d0000d82e00007a2f0000ba2f0000903000004c310000b8320000ba320000bc320000be320000c0320000
 =======
     m_ExpandedIDs: 00000000122b0000182b00001e2b0000582b0000c22b0000be2d0000fe2d0000a02f0000ce360000d0360000d2360000d4360000d6360000
@@ -923,6 +969,9 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 000000003e370000463700008a370000e237000086380000de3800009c390000623a0000b03a0000ae3b00008a3c00000c3f00000e3f0000103f0000123f0000143f0000
 >>>>>>> 8e30b2048d0f2dfd3a95552330bca68f9b848afa
+=======
+    m_ExpandedIDs: 00000000602a0000662a00006c2a0000a62a0000122b0000122d0000522d0000fe2e000046360000483600004a3600004c3600004e360000
+>>>>>>> 14c00225bd7b4196223d0f163ae8ed8fec6d7491
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -950,10 +999,14 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 0
 <<<<<<< HEAD
     m_ExpandedInstanceIDs: c62300003e2d0000000000008a4f0000522a00002a320000
 =======
+=======
+    m_HadKeyboardFocusLastEvent: 1
+>>>>>>> 14c00225bd7b4196223d0f163ae8ed8fec6d7491
     m_ExpandedInstanceIDs: c62300003e2d0000000000008a4f0000522a00002a320000682c0000322c0000
 >>>>>>> ea81fd636d9a5df0e95acd45b4025d9b50d1a36b
 =======
