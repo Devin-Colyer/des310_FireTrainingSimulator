@@ -2,18 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActivateMinigame : MonoBehaviour {
+public class ActivateMinigame : MonoBehaviour
+{
+    public GameObject m_cameraController;
+    public string m_minigame;
 
-    public GameObject m_MinigameToActivate;
-    public Camera m_RoomCamera;
-
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player")
         {
-            m_MinigameToActivate.SetActive(true);
-            m_RoomCamera.enabled = false;
-            gameObject.SetActive(false);
+            // Make sure object has a glow component.
+            if (this.transform.parent.GetComponentInChildren<GlowComponent>())
+            {
+                // Fade in glow when near hazard.
+                this.transform.parent.GetComponentInChildren<GlowComponent>().FadeIn();
+            }
+            if(Input.GetKeyDown("e"))
+            {
+                m_cameraController.GetComponent<CameraController>().ChangeCamera(m_minigame);
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        // Make sure object has a glow component.
+        if (this.transform.parent.GetComponentInChildren<GlowComponent>())
+        {
+            // Fade out glow when away from hazard.
+            this.transform.parent.GetComponentInChildren<GlowComponent>().FadeOut();
         }
     }
 }

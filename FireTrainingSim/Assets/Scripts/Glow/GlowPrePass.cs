@@ -16,7 +16,7 @@ public class GlowPrePass : MonoBehaviour
 
         // Initialise render textures.
         g_prePassTexture = new RenderTexture(Screen.width, Screen.height, 24);
-        g_prePassTexture.antiAliasing = QualitySettings.antiAliasing;
+        //g_prePassTexture.antiAliasing = QualitySettings.antiAliasing;
         g_blurTexture = new RenderTexture(Screen.width >> 1, Screen.height >> 1, 0);
 
         // Set new render target, apply replacement shader.

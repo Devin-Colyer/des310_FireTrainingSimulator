@@ -397,3 +397,4 @@ M:\DES310\des310_FireTrainingSimulator\FireTrainingSim\obj\Debug\NavMeshComponen
 M:\DES310\des310_FireTrainingSimulator\FireTrainingSim\obj\Debug\NavMeshComponents.csproj.CopyComplete
 M:\DES310\des310_FireTrainingSimulator\FireTrainingSim\obj\Debug\NavMeshComponents.dll
 M:\DES310\des310_FireTrainingSimulator\FireTrainingSim\obj\Debug\NavMeshComponents.pdb
+E:\Users\devco\Documents\GitHub\des310_FireTrainingSimulator\FireTrainingSim\obj\Debug\NavMeshComponents.csprojAssemblyReference.cache

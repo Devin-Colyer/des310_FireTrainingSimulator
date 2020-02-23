@@ -9,17 +9,29 @@ public class PickupGlow : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        g_objectGrabber = GameObject.Find("Object Grabber").GetComponent<BoxClickPickup>();
+        // Check if object grabber exists.
+        if (GameObject.Find("Object Grabber"))
+        {
+            g_objectGrabber = GameObject.Find("Object Grabber").GetComponent<BoxClickPickup>();
+        }
     }
 
     // Called each frame mouse is over object.
     private void OnMouseOver()
     {
-        // Check if objecty is currently grabbed
-        if (g_objectGrabber.IsGrabbedObject(this.gameObject))
+        if (g_objectGrabber)
         {
-            // Object is grabbed, fade out glow.
-            this.GetComponent<GlowComponent>().FadeOut();
+            // Check if objecty is currently grabbed
+            if (g_objectGrabber.IsGrabbedObject(this.gameObject))
+            {
+                // Object is grabbed, fade out glow.
+                this.GetComponent<GlowComponent>().FadeOut();
+            }
+            else
+            {
+                // Object isn't grabbed, fade in glow.
+                this.GetComponent<GlowComponent>().FadeIn();
+            }
         }
         else
         {

@@ -1,0 +1,432 @@
+newmtl ENV_SocketMinigame:blinn1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+newmtl ENV_SocketMinigame:blinn2SG
+illum 4
+Kd 1.00 0.68 0.16
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+newmtl ENV_SocketMinigame:lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl ENV_SocketMinigame:lambert5SG
+illum 4
+Kd 0.38 0.15 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl ENV_SocketMinigame:lambert6SG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl ENV_SocketMinigame:pasted__lambert3SG
+illum 4
+Kd 0.00 0.06 0.16
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl ENV_SocketMinigame:pasted__lambert3SG1
+illum 4
+Kd 1.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl ENV_SocketMinigame:pasted__lambert4SG
+illum 4
+Kd 0.17 0.24 0.35
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl initialShadingGroup
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl lambert2SG
+illum 4
+Kd 0.39 1.00 0.44
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl lambert3SG
+illum 4
+Kd 0.01 0.14 0.28
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var1:MeshSG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd txt-Fork.png
+Ni 1.00
+newmtl prp_WorkingDesk_var1:lambert3SG
+illum 4
+Kd 0.00 0.06 0.16
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var1:lambert4SG
+illum 4
+Kd 0.17 0.24 0.35
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var1:lambert5SG
+illum 4
+Kd 1.00 0.10 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var1:lambert6SG
+illum 4
+Kd 0.10 0.10 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var1:lambert7SG
+illum 4
+Kd 0.27 0.27 0.27
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var1:lambert8SG
+illum 4
+Kd 0.00 0.04 1.00
+Ka 0.00 0.04 1.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var1:lambert9SG
+illum 4
+Kd 1.00 0.96 0.72
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var1:lambert11SG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var1:lambert12SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var2:MeshSG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd txt-Fork.png
+Ni 1.00
+newmtl prp_WorkingDesk_var2:lambert3SG
+illum 4
+Kd 0.00 0.06 0.16
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var2:lambert4SG
+illum 4
+Kd 0.17 0.24 0.35
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var2:lambert5SG
+illum 4
+Kd 1.00 0.10 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var2:lambert6SG
+illum 4
+Kd 0.10 0.10 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var2:lambert7SG
+illum 4
+Kd 0.27 0.27 0.27
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var2:lambert8SG
+illum 4
+Kd 0.00 0.04 1.00
+Ka 0.00 0.04 1.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var2:lambert9SG
+illum 4
+Kd 1.00 0.96 0.72
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var2:lambert11SG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var2:lambert12SG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var2:lambert13SG
+illum 4
+Kd 0.00 1.00 0.12
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var2:lambert14SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var3:MeshSG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd txt-Fork.png
+Ni 1.00
+newmtl prp_WorkingDesk_var3:lambert3SG
+illum 4
+Kd 0.00 0.06 0.16
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var3:lambert4SG
+illum 4
+Kd 0.17 0.24 0.35
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var3:lambert5SG
+illum 4
+Kd 1.00 0.10 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var3:lambert6SG
+illum 4
+Kd 0.10 0.10 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var3:lambert7SG
+illum 4
+Kd 0.27 0.27 0.27
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var3:lambert8SG
+illum 4
+Kd 0.00 0.04 1.00
+Ka 0.00 0.04 1.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var3:lambert9SG
+illum 4
+Kd 1.00 0.96 0.72
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var3:lambert15SG
+illum 4
+Kd 1.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var3:lambert16SG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var3:lambert17SG
+illum 4
+Kd 0.96 0.47 0.29
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var3:lambert18SG
+illum 4
+Kd 1.00 0.00 0.78
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var3:lambert19SG
+illum 4
+Kd 0.00 0.35 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var3:lambert20SG
+illum 4
+Kd 0.15 1.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var3:lambert21SG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var3:lambert22SG
+illum 4
+Kd 0.30 0.09 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var5:MeshSG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd txt-Fork.png
+Ni 1.00
+newmtl prp_WorkingDesk_var5:lambert3SG
+illum 4
+Kd 0.00 0.06 0.16
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var5:lambert4SG
+illum 4
+Kd 0.17 0.24 0.35
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var5:lambert5SG
+illum 4
+Kd 1.00 0.10 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var5:lambert6SG
+illum 4
+Kd 0.10 0.10 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var5:lambert7SG
+illum 4
+Kd 0.27 0.27 0.27
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var5:lambert8SG
+illum 4
+Kd 0.00 0.04 1.00
+Ka 0.00 0.04 1.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var5:lambert9SG
+illum 4
+Kd 1.00 0.96 0.72
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var6:lambert3SG
+illum 4
+Kd 0.00 0.06 0.16
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var6:lambert4SG
+illum 4
+Kd 0.17 0.24 0.35
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var6:lambert5SG
+illum 4
+Kd 1.00 0.10 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var6:lambert6SG
+illum 4
+Kd 0.10 0.10 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var6:lambert7SG
+illum 4
+Kd 0.27 0.27 0.27
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var6:lambert8SG
+illum 4
+Kd 0.00 0.04 1.00
+Ka 0.00 0.04 1.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var6:lambert9SG
+illum 4
+Kd 1.00 0.96 0.72
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var7:lambert3SG
+illum 4
+Kd 0.00 0.06 0.16
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var7:lambert4SG
+illum 4
+Kd 0.17 0.24 0.35
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var7:lambert5SG
+illum 4
+Kd 1.00 0.10 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var7:lambert6SG
+illum 4
+Kd 0.10 0.10 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var7:lambert7SG
+illum 4
+Kd 0.27 0.27 0.27
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var7:lambert8SG
+illum 4
+Kd 0.00 0.04 1.00
+Ka 0.00 0.04 1.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl prp_WorkingDesk_var7:lambert9SG
+illum 4
+Kd 1.00 0.96 0.72
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
