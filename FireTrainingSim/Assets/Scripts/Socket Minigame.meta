@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 4fa50bf502e5b0146b4a8468f8ccc0d0
+=======
+<<<<<<< HEAD:AIMockUpStuff/AIEvacMockupScene.meta
+guid: c03ca22ad54bb2d408308a1f6b1bcca6
+=======
+guid: 54af75c9e59a06d4cba4c80579f52cda
+>>>>>>> 8e30b2048d0f2dfd3a95552330bca68f9b848afa:FireTrainingSim/Assets/Scripts/Socket Minigame.meta
+>>>>>>> 8e30b2048d0f2dfd3a95552330bca68f9b848afa
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
