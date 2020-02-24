@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/TransitionTestScene2.unity
-=======
-- path: Assets/Scenes/AudioTestScene.unity
->>>>>>> 8e30b2048d0f2dfd3a95552330bca68f9b848afa
+- path: Assets/Scenes/Level2.unity
   isLoaded: 1
   isActive: 1
