@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TransitionTestScene2.unity
     guid: 249cfa8b12e22f74b8bb24f19fcc25bd
+  - enabled: 1
+    path: Assets/Scenes/AudioTestScene.unity
+    guid: c1549c2df61bae64b88af8ab8b4f5c46
+  - enabled: 1
+    path: Assets/Scenes/TransitionTestScene24.unity
+    guid: 94133f9d578130249bc3e87d730b9b82
   m_configObjects: {}
