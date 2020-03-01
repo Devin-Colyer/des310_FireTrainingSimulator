@@ -45,7 +45,8 @@ public class HazardFinder : MonoBehaviour
             }
         }
 
-        Debug.Log(l_numHazards + "/" + l_hazards.Length);
+        // Debug output.
+        ///Debug.Log(l_numHazards + "/" + l_hazards.Length);
 
         if (l_numHazards == 0)
         {
