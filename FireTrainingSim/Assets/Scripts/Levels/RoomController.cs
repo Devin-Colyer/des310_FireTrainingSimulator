@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class RoomController : MonoBehaviour
 {
     public GameObject m_roomCamera;
     public GameObject m_currentRoom;
     [Range(0, 1024)] public float m_transitionSpeed = 24.0f;
-    
+
+    private NavMeshSurface g_navMesh;
     private Vector3 g_cameraStart;
     private Vector3 g_cameraEnd;
     private float g_lerpTime;
@@ -21,7 +23,10 @@ public class RoomController : MonoBehaviour
 
         g_cameraStart = m_roomCamera.transform.position;
         g_cameraEnd = g_cameraStart;
-	}
+
+        g_navMesh = this.GetComponentInChildren<NavMeshSurface>();
+        g_navMesh.BuildNavMesh();
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -68,6 +73,9 @@ public class RoomController : MonoBehaviour
             {
                 child.gameObject.SetActive(true);
             }
+
+            // Rebuild navmesh for new room.
+            g_navMesh.BuildNavMesh();
 
             // Find camera destination for new room.
             Transform l_cameraDestination = room.transform.Find("Camera Location");

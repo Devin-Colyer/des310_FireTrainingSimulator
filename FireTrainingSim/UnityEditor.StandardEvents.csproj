@@ -359,6 +359,9 @@
     <None Include="Assets\Shaders\Glow\GlowMaterial.shader" />
     <None Include="Assets\Shaders\Glow\GlowReplacement.shader" />
     <None Include="Assets\Shaders\Glow\SimpleBlur.shader" />
+    <None Include="Assets\StreamingAssets\desc.txt" />
+    <None Include="Assets\Wwise\Version.txt" />
+    <None Include="Assets\WwiseSettings.xml" />
     <None Include="C:\Users\1701826\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Dark.uss" />
     <None Include="C:\Users\1701826\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Light.uss" />
     <None Include="C:\Users\1701826\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\Alert.uxml" />

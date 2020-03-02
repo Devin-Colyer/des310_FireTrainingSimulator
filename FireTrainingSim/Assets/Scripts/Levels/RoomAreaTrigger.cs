@@ -22,28 +22,4 @@ public class RoomAreaTrigger : MonoBehaviour
             }
         }
     }
-
-    /*void OnTriggerEnter(Collider collider)
-    {
-        if (collider.tag == "Player")
-        {
-            // Enable children of room on enter.
-            foreach (Transform child in transform)
-            {
-                child.gameObject.SetActive(true);
-            }
-        }
-    }
-
-    void OnTriggerExit(Collider collider)
-    {
-        if (collider.tag == "Player")
-        {
-            // Disable children of room on enter.
-            foreach (Transform child in transform)
-            {
-                child.gameObject.SetActive(false);
-            }
-        }
-    }*/
 }
