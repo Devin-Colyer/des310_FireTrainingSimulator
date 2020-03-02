@@ -3,10 +3,12 @@ Event	ID	Name			Wwise Object Path	Notes
 	855317084	Alarm			\Default Work Unit\Alarm	
 	979765101	Win			\Default Work Unit\Win	
 	1789744637	Sfx_footstep_walk			\Default Work Unit\Sfx_footstep_walk	
+	2970581085	Type			\Default Work Unit\Type	
 	3991942870	Music			\Default Work Unit\Music	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	108923538	switch_footstep			\Default Work Unit\CharacterMovements\switch_footstep	
+	2970581085	Type			\Default Work Unit\Environment\Type	
 	3991942870	Music			\Default Work Unit\CharacterMovements\Music	
 
 Switch	ID	Name	Switch Group			Notes
@@ -14,6 +16,9 @@ Switch	ID	Name	Switch Group			Notes
 	2412606308	carpet	switch_footstep			
 	2473969246	metal	switch_footstep			
 	3252371007	vinyl	switch_footstep			
+	787604482	Slow	Type			
+	1160234136	Normal	Type			
+	2965380179	Fast	Type			
 	546945280	Box	Music			
 	3312932780	BoxOut	Music			
 
@@ -33,16 +38,19 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	767856838	ALARM 02	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Environment\ALARM 02\ALARM 02	Audiokinetic Inc. All rights reserved. Content provided by Vincent Gagnon © 2014 Vincent Gagnon
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	7172009	Sfx_ footstep_concrete_walk-003	D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_ footstep_concrete_walk-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CharacterMovement\Sfx_footstep_walk\Sfx_footstep_walk_concrete\Sfx_ footstep_concrete_walk-003		245944
-	71845325	Sfx_ footstep_house_walk-003	D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_ footstep_house_walk-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CharacterMovement\Sfx_footstep_walk\Sfx_footstep_walk_vinyl\Sfx_ footstep_house_walk-003		83856
-	152465572	Loop	D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Box\Loop\Loop		2028664
-	215860586	Sfx_ footstep_house_walk-001	D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_ footstep_house_walk-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CharacterMovement\Sfx_footstep_walk\Sfx_footstep_walk_vinyl\Sfx_ footstep_house_walk-001		114996
-	237265832	Sfx_ footstep_house_walk-002	D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_ footstep_house_walk-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CharacterMovement\Sfx_footstep_walk\Sfx_footstep_walk_vinyl\Sfx_ footstep_house_walk-002		70568
-	492325463	Sfx_ footstep_concrete_walk-001	D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_ footstep_concrete_walk-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CharacterMovement\Sfx_footstep_walk\Sfx_footstep_walk_concrete\Sfx_ footstep_concrete_walk-001		210888
-	682471024	Sfx_ footstep_concrete_walk-002	D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_ footstep_concrete_walk-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CharacterMovement\Sfx_footstep_walk\Sfx_footstep_walk_concrete\Sfx_ footstep_concrete_walk-002		219056
-	763926917	Win2	D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Win2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Win2		882064
-	868797152	Win	D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Win_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Win		793864
-	998836800	Loose	D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Loose_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Loose		970264
-	1006787500	Intro	D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Intro_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Box\Intro\Intro		2028664
-	1036816591	Outro	D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Outro_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Box Out\Outro\Outro		2116864
+	7172009	Sfx_ footstep_concrete_walk-003	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_ footstep_concrete_walk-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CharacterMovement\Sfx_footstep_walk\Sfx_footstep_walk_concrete\Sfx_ footstep_concrete_walk-003		245944
+	71845325	Sfx_ footstep_house_walk-003	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_ footstep_house_walk-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CharacterMovement\Sfx_footstep_walk\Sfx_footstep_walk_vinyl\Sfx_ footstep_house_walk-003		83856
+	152465572	Loop	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Box\Loop\Loop		2028664
+	210376557	Sfx_type_fast-003	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_type_fast-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Office\Sfx_type\Sfx_type_fast\Sfx_type_fast-003		80804
+	215860586	Sfx_ footstep_house_walk-001	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_ footstep_house_walk-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CharacterMovement\Sfx_footstep_walk\Sfx_footstep_walk_vinyl\Sfx_ footstep_house_walk-001		114996
+	233685282	Sfx_type_fast-002	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_type_fast-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Office\Sfx_type\Sfx_type_fast\Sfx_type_fast-002		94068
+	237265832	Sfx_ footstep_house_walk-002	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_ footstep_house_walk-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CharacterMovement\Sfx_footstep_walk\Sfx_footstep_walk_vinyl\Sfx_ footstep_house_walk-002		70568
+	492325463	Sfx_ footstep_concrete_walk-001	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_ footstep_concrete_walk-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CharacterMovement\Sfx_footstep_walk\Sfx_footstep_walk_concrete\Sfx_ footstep_concrete_walk-001		210888
+	682471024	Sfx_ footstep_concrete_walk-002	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_ footstep_concrete_walk-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CharacterMovement\Sfx_footstep_walk\Sfx_footstep_walk_concrete\Sfx_ footstep_concrete_walk-002		219056
+	763926917	Win2	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Win2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Win2		882064
+	824031217	Sfx_type_fast-001	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_type_fast-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Office\Sfx_type\Sfx_type_fast\Sfx_type_fast-001		199740
+	868797152	Win	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Win_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Win		793864
+	998836800	Loose	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Loose_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Loose		970264
+	1006787500	Intro	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Intro_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Box\Intro\Intro		2028664
+	1036816591	Outro	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Outro_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Box Out\Outro\Outro		2116864
 

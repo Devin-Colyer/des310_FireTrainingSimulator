@@ -58,6 +58,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Type" ID="{0652C947-545A-466E-9D72-5439071EF1FD}">
+					<ChildrenList>
+						<Action Name="" ID="{65599A8E-FE39-4818-AA57-5D5581A30270}" ShortID="796130865">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sfx_type" ID="{B0A9A8B8-D0D8-4EFB-9FE6-7C48EE94B8C6}" WorkUnitID="{DFD753B0-9F0D-4948-97A1-D2EF82F2C616}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

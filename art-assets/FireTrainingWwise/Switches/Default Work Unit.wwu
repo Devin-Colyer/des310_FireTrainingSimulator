@@ -21,6 +21,17 @@
 						</SwitchGroup>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Environment" ID="{1FD17A73-6A21-49DC-BD44-6094612BDF14}" ShortID="162784362">
+					<ChildrenList>
+						<SwitchGroup Name="Type" ID="{0979DB99-4927-4940-9BD3-B1B518322204}">
+							<ChildrenList>
+								<Switch Name="Slow" ID="{3E8D2BA6-384E-4E99-B5D3-9C11CD5D4DFC}"/>
+								<Switch Name="Normal" ID="{D8A45BB4-F32C-4C2E-9DA8-E976187024AC}"/>
+								<Switch Name="Fast" ID="{CAC426CD-BCDC-4C3A-B458-50533B9DEAAA}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID LOOSE = 174960569U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID SFX_FOOTSTEP_WALK = 1789744637U;
+        static const AkUniqueID TYPE = 2970581085U;
         static const AkUniqueID WIN = 979765101U;
     } // namespace EVENTS
 
@@ -45,6 +46,18 @@ namespace AK
                 static const AkUniqueID VINYL = 3252371007U;
             } // namespace SWITCH
         } // namespace SWITCH_FOOTSTEP
+
+        namespace TYPE
+        {
+            static const AkUniqueID GROUP = 2970581085U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID FAST = 2965380179U;
+                static const AkUniqueID NORMAL = 1160234136U;
+                static const AkUniqueID SLOW = 787604482U;
+            } // namespace SWITCH
+        } // namespace TYPE
 
     } // namespace SWITCHES
 
