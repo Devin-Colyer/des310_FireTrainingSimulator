@@ -2165,7 +2165,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &421753884
 Transform:
@@ -4370,7 +4370,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_roomCamera: {fileID: 676899969}
   m_currentRoom: {fileID: 1256044393}
-  m_LevelNavMesh: {fileID: 1476525136}
   m_transitionSpeed: 24
 --- !u!1 &837628153
 GameObject:
