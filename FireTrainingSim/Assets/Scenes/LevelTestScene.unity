@@ -1494,6 +1494,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_player: {fileID: 609720845}
   m_hazardPopup: {fileID: 424529870}
+  m_hazards:
+  - {fileID: 1579132850}
+  - {fileID: 1419587918}
   m_maxDistance: 10
 --- !u!1 &270523638
 GameObject:

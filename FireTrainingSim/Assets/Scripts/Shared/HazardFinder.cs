@@ -6,15 +6,18 @@ public class HazardFinder : MonoBehaviour
 {
     public GameObject m_player;
     public GameObject m_hazardPopup;
+    public GameObject[] m_hazards;
     [Range(0, 100)] public float m_maxDistance = 10;
 	
 	// Update is called once per frame
 	void Update ()
     {
         // Get hazards from scene.
-        GameObject[] l_hazards = GameObject.FindGameObjectsWithTag("Hazard");
+        //GameObject[] l_hazards = GameObject.FindGameObjectsWithTag("Hazard");
 
-        if (l_hazards.Length <= 0)
+       // m_level.transform.find
+
+        if (m_hazards.Length <= 0)
         {
             // Safety check, makes sure there are hazards in the scene.
             m_hazardPopup.GetComponent<TextMesh>().text = "";
@@ -26,7 +29,7 @@ public class HazardFinder : MonoBehaviour
         
         int l_numHazards = 0;
 
-        foreach (GameObject hazard in l_hazards)
+        foreach (GameObject hazard in m_hazards)
         {
             if (hazard.transform.Find("Broken").gameObject.activeSelf)
             {
@@ -46,7 +49,7 @@ public class HazardFinder : MonoBehaviour
         }
 
         // Debug output.
-        ///Debug.Log(l_numHazards + "/" + l_hazards.Length);
+        Debug.Log(l_numHazards + "/" + m_hazards.Length);
 
         if (l_numHazards == 0)
         {
