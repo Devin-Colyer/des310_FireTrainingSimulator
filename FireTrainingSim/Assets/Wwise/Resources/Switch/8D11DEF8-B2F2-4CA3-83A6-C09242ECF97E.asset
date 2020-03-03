@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e452b28dbaae440987e1d64e864766, type: 3}
+  m_Name: 8D11DEF8-B2F2-4CA3-83A6-C09242ECF97E
+  m_EditorClassIdentifier: 
+  objectName: BoxMinigame
+  id: 653431367
+  guid: 8D11DEF8-B2F2-4CA3-83A6-C09242ECF97E
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: dfb751c819d74094ea8e12be2b006047,
+    type: 2}

@@ -17,6 +17,7 @@
 							<ChildrenList>
 								<Switch Name="Box" ID="{93063900-6B72-4C0A-A34F-C84291E2C0BD}"/>
 								<Switch Name="BoxOut" ID="{12B646F3-DF62-491D-9CB7-769D9DB2991A}"/>
+								<Switch Name="BoxMinigame" ID="{8D11DEF8-B2F2-4CA3-83A6-C09242ECF97E}"/>
 							</ChildrenList>
 						</SwitchGroup>
 					</ChildrenList>

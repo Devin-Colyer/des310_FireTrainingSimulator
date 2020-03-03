@@ -20,6 +20,7 @@ Switch	ID	Name	Switch Group			Notes
 	1160234136	Normal	Type			
 	2965380179	Fast	Type			
 	546945280	Box	Music			
+	653431367	BoxMinigame	Music			
 	3312932780	BoxOut	Music			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
@@ -40,7 +41,7 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	7172009	Sfx_ footstep_concrete_walk-003	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_ footstep_concrete_walk-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CharacterMovement\Sfx_footstep_walk\Sfx_footstep_walk_concrete\Sfx_ footstep_concrete_walk-003		245944
 	71845325	Sfx_ footstep_house_walk-003	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_ footstep_house_walk-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CharacterMovement\Sfx_footstep_walk\Sfx_footstep_walk_vinyl\Sfx_ footstep_house_walk-003		83856
-	152465572	Loop	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Box\Loop\Loop		2028664
+	152465572	Loop	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Box_Minigame\Loop\Loop		2028664
 	210376557	Sfx_type_fast-003	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_type_fast-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Office\Sfx_type\Sfx_type_fast\Sfx_type_fast-003		80804
 	215860586	Sfx_ footstep_house_walk-001	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_ footstep_house_walk-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CharacterMovement\Sfx_footstep_walk\Sfx_footstep_walk_vinyl\Sfx_ footstep_house_walk-001		114996
 	233685282	Sfx_type_fast-002	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_type_fast-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Office\Sfx_type\Sfx_type_fast\Sfx_type_fast-002		94068
@@ -52,5 +53,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	868797152	Win	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Win_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Win		793864
 	998836800	Loose	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Loose_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Loose		970264
 	1006787500	Intro	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Intro_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Box\Intro\Intro		2028664
-	1036816591	Outro	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Outro_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Box Out\Outro\Outro		2116864
+	1036816591	Outro	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Outro_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Box_Out\Outro\Outro		2116864
 

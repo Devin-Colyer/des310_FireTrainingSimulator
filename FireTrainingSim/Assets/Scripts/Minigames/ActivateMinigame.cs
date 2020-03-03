@@ -7,6 +7,9 @@ public class ActivateMinigame : MonoBehaviour
     public GameObject m_cameraController;
     public string m_minigame;
 
+    public AK.Wwise.Switch MusicScitch = new AK.Wwise.Switch();
+    public AK.Wwise.Event Music = new AK.Wwise.Event();
+
     private void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player")
@@ -19,9 +22,19 @@ public class ActivateMinigame : MonoBehaviour
             }
             if(Input.GetKeyDown("e"))
             {
-                m_cameraController.GetComponent<CameraController>().ChangeCamera(m_minigame);
+                Invoke("test", 2);
+                //Music.Post(gameObject);
+                //MusicScitch.SetValue(gameObject);
+
+               
             }
+           
         }
+    }
+
+    public void test()
+    {
+        m_cameraController.GetComponent<CameraController>().ChangeCamera(m_minigame);
     }
 
     private void OnTriggerExit(Collider other)

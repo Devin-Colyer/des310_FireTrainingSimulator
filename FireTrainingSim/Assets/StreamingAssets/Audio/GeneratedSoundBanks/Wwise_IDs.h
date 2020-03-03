@@ -30,6 +30,7 @@ namespace AK
             namespace SWITCH
             {
                 static const AkUniqueID BOX = 546945280U;
+                static const AkUniqueID BOXMINIGAME = 653431367U;
                 static const AkUniqueID BOXOUT = 3312932780U;
             } // namespace SWITCH
         } // namespace MUSIC

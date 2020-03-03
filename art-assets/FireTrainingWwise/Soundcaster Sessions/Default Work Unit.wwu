@@ -6,6 +6,10 @@
 				<SoundcasterSession Name="Music Session" ID="{561907F0-EEDD-40EE-AEBB-ED56BBE00BBF}">
 					<ModuleList>
 						<Module>
+							<ObjectRef Name="Music" ID="{1EC02571-0C43-49FA-80BD-9B2CEC39A48F}" WorkUnitID="{F7B5515E-FEC4-4E7B-ACF6-D4398E807AAA}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Sfx_footstep_walk" ID="{90F8720D-329D-4E39-BDD2-09C3AC92F98F}" WorkUnitID="{DFD753B0-9F0D-4948-97A1-D2EF82F2C616}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -13,7 +17,8 @@
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="carpet" ID="{AFA4EF48-234A-4CDD-A9E7-DAB78235646A}"/>
+						<CurrentSwitchRef Name="concrete" ID="{5BE07CE1-E37E-424F-AE5E-12A22EAFBF43}"/>
+						<CurrentSwitchRef Name="Fast" ID="{CAC426CD-BCDC-4C3A-B458-50533B9DEAAA}"/>
 						<CurrentSwitchRef Name="BoxOut" ID="{12B646F3-DF62-491D-9CB7-769D9DB2991A}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
