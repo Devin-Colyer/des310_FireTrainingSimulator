@@ -12,6 +12,7 @@ TagManager:
   - Hazard
   - EvacAI
   - Room
+  - Fire
   layers:
   - Default
   - TransparentFX
