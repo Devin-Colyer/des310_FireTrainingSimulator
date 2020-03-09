@@ -6,6 +6,7 @@ public class HazardFinder : MonoBehaviour
 {
     public GameObject m_player;
     public GameObject m_hazardPopup;
+    public GameObject m_levelExit;
     public GameObject[] m_hazards;
     [Range(0, 100)] public float m_maxDistance = 10;
 	
@@ -55,6 +56,13 @@ public class HazardFinder : MonoBehaviour
         {
             // All hazards have been dealt with.
             m_hazardPopup.GetComponent<TextMesh>().text = "";
+            
+            if (m_levelExit)
+            {
+                // Open level exit.
+                m_levelExit.transform.Find("Open").gameObject.SetActive(true);
+                m_levelExit.transform.Find("Closed").gameObject.SetActive(false);
+            }
         }
         else
         {
