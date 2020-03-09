@@ -4,8 +4,16 @@ using UnityEngine;
 
 public class BoxClickPickup : MonoBehaviour
 {
+    public AK.Wwise.Event BoxPickup = new AK.Wwise.Event();
+    public AK.Wwise.Event BoxDrop = new AK.Wwise.Event();
+    public AK.Wwise.Event BoxHit = new AK.Wwise.Event();
+
     GameObject g_grabbedObject;
     Vector3 g_grabOffset;
+
+    private bool isReleased = false;
+
+
 
 	// Use this for initialization
 	void Start ()
@@ -62,6 +70,9 @@ public class BoxClickPickup : MonoBehaviour
 
                         // Debug, output object name.
                         Debug.Log("Object Hit: " + g_grabbedObject.name);
+
+                        // Play Pickup sound
+                        BoxPickup.Post(gameObject);
                     }
                 }
             }
@@ -81,6 +92,8 @@ public class BoxClickPickup : MonoBehaviour
                 float l_distance;
                 float l_maxDistance = 2.0f;
 
+                isReleased = true;
+
                 // Calculate distance and direction.
                 l_direction = l_mouseWorldPosition - g_grabbedObject.transform.position - g_grabOffset;
                 l_distance = l_direction.magnitude;
@@ -91,6 +104,8 @@ public class BoxClickPickup : MonoBehaviour
                 {
                     // Release grabbed object.
                     DropGrabbedObject();
+                    DropSound();
+                    isReleased = false;
                 }
                 else
                 {
@@ -112,6 +127,8 @@ public class BoxClickPickup : MonoBehaviour
         {
             // Release grabbed object.
             DropGrabbedObject();
+            DropSound();
+            isReleased = false;
         }
     }
 
@@ -128,4 +145,32 @@ public class BoxClickPickup : MonoBehaviour
             g_grabbedObject = null;
         }
     }
+
+    // Collider detector
+    private void OnCollisionEnter(Collision col)
+    {
+        Debug.Log("shot");
+        if (col.gameObject.tag == "TestCollision")
+        {
+            Debug.Log("success");
+        }
+    }
+
+
+    // Play Drop sound
+    void DropSound()
+    {
+        if (isReleased)
+        {
+            BoxDrop.Post(gameObject);
+            Debug.Log("YA");
+        }
+        else
+        {
+            Debug.Log("NEIN");
+        }
+    }
+    
+
+
 }

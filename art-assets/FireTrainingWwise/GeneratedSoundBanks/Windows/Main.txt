@@ -4,6 +4,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	979765101	Win			\Default Work Unit\Win	
 	1789744637	Sfx_footstep_walk			\Default Work Unit\Sfx_footstep_walk	
 	2970581085	Type			\Default Work Unit\Type	
+	3049972461	Sfx_box_hit_pickup			\Default Work Unit\Sfx_box_hit_pickup	
+	3205421132	Sfx_box_drop			\Default Work Unit\Sfx_box_drop	
+	3773983190	Sfx_box_hit			\Default Work Unit\Sfx_box_hit	
 	3991942870	Music			\Default Work Unit\Music	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -46,11 +49,19 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	215860586	Sfx_ footstep_house_walk-001	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_ footstep_house_walk-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CharacterMovement\Sfx_footstep_walk\Sfx_footstep_walk_vinyl\Sfx_ footstep_house_walk-001		114996
 	233685282	Sfx_type_fast-002	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_type_fast-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Office\Sfx_type\Sfx_type_fast\Sfx_type_fast-002		94068
 	237265832	Sfx_ footstep_house_walk-002	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_ footstep_house_walk-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CharacterMovement\Sfx_footstep_walk\Sfx_footstep_walk_vinyl\Sfx_ footstep_house_walk-002		70568
+	247727201	Sfx_box_hit_stuffs-003	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_box_hit_stuffs-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\DirectInteraction\Sfx_box_hit_stuffs\Sfx_box_hit_stuffs-003		34720
+	280878683	Sfx_box_hit_impact-003	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_box_hit_impact-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\DirectInteraction\Sfx_box_hit_impact\Sfx_box_hit_impact-003		61840
+	284221479	Sfx_box_pickup	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_box_pickup_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\DirectInteraction\Sfx_box_pickup		100868
+	300167183	Sfx_box_hit_impact-002	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_box_hit_impact-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\DirectInteraction\Sfx_box_hit_impact\Sfx_box_hit_impact-002		30516
+	385179220	Sfx_box_hit_stuffs-001	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_box_hit_stuffs-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\DirectInteraction\Sfx_box_hit_stuffs\Sfx_box_hit_stuffs-001		35680
 	492325463	Sfx_ footstep_concrete_walk-001	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_ footstep_concrete_walk-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CharacterMovement\Sfx_footstep_walk\Sfx_footstep_walk_concrete\Sfx_ footstep_concrete_walk-001		210888
+	624767394	Sfx_box_drop	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_box_drop_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\DirectInteraction\Sfx_box_drop		64668
 	682471024	Sfx_ footstep_concrete_walk-002	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_ footstep_concrete_walk-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CharacterMovement\Sfx_footstep_walk\Sfx_footstep_walk_concrete\Sfx_ footstep_concrete_walk-002		219056
 	763926917	Win2	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Win2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Win2		882064
+	788459504	Sfx_box_hit_stuffs-002	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_box_hit_stuffs-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\DirectInteraction\Sfx_box_hit_stuffs\Sfx_box_hit_stuffs-002		37060
 	824031217	Sfx_type_fast-001	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_type_fast-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Office\Sfx_type\Sfx_type_fast\Sfx_type_fast-001		199740
 	868797152	Win	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Win_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Win		793864
+	975083472	Sfx_box_hit_impact-001	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Sfx_box_hit_impact-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\DirectInteraction\Sfx_box_hit_impact\Sfx_box_hit_impact-001		61840
 	998836800	Loose	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Loose_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Loose		970264
 	1006787500	Intro	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Intro_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Box\Intro\Intro		2028664
 	1036816591	Outro	M:\GitHub\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\SFX\Outro_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Box_Out\Outro\Outro		2116864

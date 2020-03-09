@@ -17,7 +17,7 @@
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="concrete" ID="{5BE07CE1-E37E-424F-AE5E-12A22EAFBF43}"/>
+						<CurrentSwitchRef Name="carpet" ID="{AFA4EF48-234A-4CDD-A9E7-DAB78235646A}"/>
 						<CurrentSwitchRef Name="Fast" ID="{CAC426CD-BCDC-4C3A-B458-50533B9DEAAA}"/>
 						<CurrentSwitchRef Name="BoxOut" ID="{12B646F3-DF62-491D-9CB7-769D9DB2991A}"/>
 					</CurrentSwitchList>

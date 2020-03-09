@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\Minigames\Box Minigame\BoxStackScript.cs" />
     <Compile Include="Assets\Scripts\Minigames\Box Minigame\BoxTriggerScript.cs" />
     <Compile Include="Assets\Scripts\Minigames\Box Minigame\PhysicsSimulation\PhysicsSimulation.cs" />
+    <Compile Include="Assets\Scripts\Minigames\Box Minigame\test sound.cs" />
     <Compile Include="Assets\Scripts\Minigames\CameraController.cs" />
     <Compile Include="Assets\Scripts\Minigames\InvisibleWallScript.cs" />
     <Compile Include="Assets\Scripts\Minigames\ScreenFade.cs" />
@@ -300,11 +301,11 @@
     <None Include="Assets\Shaders\Glow\GlowMaterial.shader" />
     <None Include="Assets\Shaders\Glow\GlowReplacement.shader" />
     <None Include="Assets\Shaders\Glow\GlowComposite.shader" />
-    <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>M:/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>M:/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>M:/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity2018.1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

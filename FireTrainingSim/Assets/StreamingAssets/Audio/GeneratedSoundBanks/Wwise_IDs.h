@@ -16,6 +16,9 @@ namespace AK
         static const AkUniqueID ALARM = 855317084U;
         static const AkUniqueID LOOSE = 174960569U;
         static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID SFX_BOX_DROP = 3205421132U;
+        static const AkUniqueID SFX_BOX_HIT = 3773983190U;
+        static const AkUniqueID SFX_BOX_HIT_PICKUP = 3049972461U;
         static const AkUniqueID SFX_FOOTSTEP_WALK = 1789744637U;
         static const AkUniqueID TYPE = 2970581085U;
         static const AkUniqueID WIN = 979765101U;

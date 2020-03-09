@@ -72,6 +72,49 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Sfx_box_hit" ID="{CA96787C-14FE-4E58-82F1-A9AC4BCC5A58}">
+					<ChildrenList>
+						<Action Name="" ID="{F5DFB4E7-7741-4C3F-8286-E7B706C5137D}" ShortID="901384770">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sfx_box_hit_impact" ID="{3680F2A5-7E18-4038-A634-B17C10E03387}" WorkUnitID="{DFD753B0-9F0D-4948-97A1-D2EF82F2C616}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{1DDBA2E2-8BB3-47A0-9AFA-E40772FF7CF3}" ShortID="527773154">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.07"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sfx_box_hit_stuffs" ID="{1DCFD111-C051-4E03-B237-5455356FDB1F}" WorkUnitID="{DFD753B0-9F0D-4948-97A1-D2EF82F2C616}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Sfx_box_drop" ID="{97A39C37-781F-418D-873F-6BAFF21819D9}">
+					<ChildrenList>
+						<Action Name="" ID="{A3F1904E-997D-4D72-A568-E1E896AE0CF3}" ShortID="619075541">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sfx_box_drop" ID="{E7DE22EA-4600-434A-99D2-5B5695FF858B}" WorkUnitID="{DFD753B0-9F0D-4948-97A1-D2EF82F2C616}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Sfx_box_hit_pickup" ID="{A6EE5856-C4DF-4AEB-AAD8-44713AA0310D}">
+					<ChildrenList>
+						<Action Name="" ID="{031C9D2C-9333-40A4-870D-2F1CD0B60A5D}" ShortID="34583877">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sfx_box_pickup" ID="{AAC52D95-CD05-465E-A51C-45553810DC34}" WorkUnitID="{DFD753B0-9F0D-4948-97A1-D2EF82F2C616}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

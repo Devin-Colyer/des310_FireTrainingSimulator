@@ -24,6 +24,9 @@
 				<Event Id="855317084" Name="Alarm" ObjectPath="\Events\Default Work Unit\Alarm" DurationType="Unknown"/>
 				<Event Id="174960569" Name="Loose" ObjectPath="\Events\Default Work Unit\Loose" DurationType="OneShot" DurationMin="5.500000" DurationMax="5.500000"/>
 				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Default Work Unit\Music" DurationType="Infinite"/>
+				<Event Id="3205421132" Name="Sfx_box_drop" ObjectPath="\Events\Default Work Unit\Sfx_box_drop" DurationType="OneShot" DurationMin="0.345481" DurationMax="0.377185"/>
+				<Event Id="3773983190" Name="Sfx_box_hit" ObjectPath="\Events\Default Work Unit\Sfx_box_hit" DurationType="OneShot" DurationMin="0.260759" DurationMax="0.360674"/>
+				<Event Id="3049972461" Name="Sfx_box_hit_pickup" ObjectPath="\Events\Default Work Unit\Sfx_box_hit_pickup" DurationType="OneShot" DurationMin="0.546908" DurationMax="0.632967"/>
 				<Event Id="1789744637" Name="Sfx_footstep_walk" ObjectPath="\Events\Default Work Unit\Sfx_footstep_walk" DurationType="OneShot" DurationMin="0.000000" DurationMax="1.435550"/>
 				<Event Id="2970581085" Name="Type" ObjectPath="\Events\Default Work Unit\Type" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="979765101" Name="Win" ObjectPath="\Events\Default Work Unit\Win" DurationType="OneShot" DurationMin="4.500000" DurationMax="4.500000"/>
@@ -57,9 +60,33 @@
 					<ShortName>Sfx_ footstep_house_walk-002.wav</ShortName>
 					<Path>SFX\Sfx_ footstep_house_walk-002_10C4C929.wem</Path>
 				</File>
+				<File Id="247727201" Language="SFX">
+					<ShortName>Sfx_box_hit_stuffs-003.wav</ShortName>
+					<Path>SFX\Sfx_box_hit_stuffs-003_10C4C929.wem</Path>
+				</File>
+				<File Id="280878683" Language="SFX">
+					<ShortName>Sfx_box_hit_impact-003.wav</ShortName>
+					<Path>SFX\Sfx_box_hit_impact-003_10C4C929.wem</Path>
+				</File>
+				<File Id="284221479" Language="SFX">
+					<ShortName>Sfx_box_pickup.wav</ShortName>
+					<Path>SFX\Sfx_box_pickup_10C4C929.wem</Path>
+				</File>
+				<File Id="300167183" Language="SFX">
+					<ShortName>Sfx_box_hit_impact-002.wav</ShortName>
+					<Path>SFX\Sfx_box_hit_impact-002_10C4C929.wem</Path>
+				</File>
+				<File Id="385179220" Language="SFX">
+					<ShortName>Sfx_box_hit_stuffs-001.wav</ShortName>
+					<Path>SFX\Sfx_box_hit_stuffs-001_10C4C929.wem</Path>
+				</File>
 				<File Id="492325463" Language="SFX">
 					<ShortName>Sfx_ footstep_concrete_walk-001.wav</ShortName>
 					<Path>SFX\Sfx_ footstep_concrete_walk-001_10C4C929.wem</Path>
+				</File>
+				<File Id="624767394" Language="SFX">
+					<ShortName>Sfx_box_drop.wav</ShortName>
+					<Path>SFX\Sfx_box_drop_10C4C929.wem</Path>
 				</File>
 				<File Id="682471024" Language="SFX">
 					<ShortName>Sfx_ footstep_concrete_walk-002.wav</ShortName>
@@ -69,6 +96,10 @@
 					<ShortName>Win2.wav</ShortName>
 					<Path>SFX\Win2_10C4C929.wem</Path>
 				</File>
+				<File Id="788459504" Language="SFX">
+					<ShortName>Sfx_box_hit_stuffs-002.wav</ShortName>
+					<Path>SFX\Sfx_box_hit_stuffs-002_10C4C929.wem</Path>
+				</File>
 				<File Id="824031217" Language="SFX">
 					<ShortName>Sfx_type_fast-001.wav</ShortName>
 					<Path>SFX\Sfx_type_fast-001_10C4C929.wem</Path>
@@ -76,6 +107,10 @@
 				<File Id="868797152" Language="SFX">
 					<ShortName>Win.wav</ShortName>
 					<Path>SFX\Win_10C4C929.wem</Path>
+				</File>
+				<File Id="975083472" Language="SFX">
+					<ShortName>Sfx_box_hit_impact-001.wav</ShortName>
+					<Path>SFX\Sfx_box_hit_impact-001_10C4C929.wem</Path>
 				</File>
 				<File Id="998836800" Language="SFX">
 					<ShortName>Loose.wav</ShortName>
