@@ -9,6 +9,7 @@ public class ActivateMinigame : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+        // Check if collider is the player.
         if (other.tag == "Player")
         {
             // Make sure object has a glow component.
@@ -17,20 +18,49 @@ public class ActivateMinigame : MonoBehaviour
                 // Fade in glow when near hazard.
                 this.transform.parent.GetComponentInChildren<GlowComponent>().FadeIn();
             }
-            if(Input.GetKeyDown("e"))
+
+            if(Input.GetMouseButtonDown(0))
+            {
+                // Create new ray in the direct of the mouse.
+                Ray l_ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit l_hit;
+
+                // Cast ray towards mouse position.
+                if (Physics.Raycast(l_ray, out l_hit))
+                {
+                    if (l_hit.collider)
+                    {
+                        // Debug output.
+                        ///Debug.Log(l_hit.collider.transform.parent.name);
+
+                        // Check if object is hazard.
+                        if (l_hit.collider.transform.parent == this.gameObject.transform)
+                        {
+                            // Change to minigame camera.
+                            m_cameraController.GetComponent<CameraController>().ChangeCamera(m_minigame);
+                        }
+                    }
+                }
+            }
+
+            /*if(Input.GetKeyDown("e"))
             {
                 m_cameraController.GetComponent<CameraController>().ChangeCamera(m_minigame);
-            }
+            }*/
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        // Make sure object has a glow component.
-        if (this.transform.parent.GetComponentInChildren<GlowComponent>())
+        // Check if collider is the player.
+        if (other.tag == "Player")
         {
-            // Fade out glow when away from hazard.
-            this.transform.parent.GetComponentInChildren<GlowComponent>().FadeOut();
+            // Make sure object has a glow component.
+            if (this.transform.parent.GetComponentInChildren<GlowComponent>())
+            {
+                // Fade out glow when away from hazard.
+                this.transform.parent.GetComponentInChildren<GlowComponent>().FadeOut();
+            }
         }
     }
 }

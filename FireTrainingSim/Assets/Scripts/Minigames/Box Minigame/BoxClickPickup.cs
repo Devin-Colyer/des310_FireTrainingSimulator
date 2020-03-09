@@ -65,9 +65,11 @@ public class BoxClickPickup : MonoBehaviour
                     }
                 }
             }
-
         }
+    }
 
+    private void FixedUpdate()
+    {
         // Check if mouse button is held down.
         if (Input.GetMouseButton(0))
         {
@@ -79,7 +81,7 @@ public class BoxClickPickup : MonoBehaviour
 
                 Vector3 l_direction;
                 float l_distance;
-                float l_maxDistance = 2.0f;
+                float l_maxDistance = 6.0f;
 
                 // Calculate distance and direction.
                 l_direction = l_mouseWorldPosition - g_grabbedObject.transform.position - g_grabOffset;
@@ -95,7 +97,7 @@ public class BoxClickPickup : MonoBehaviour
                 else
                 {
                     float l_speed = l_distance / Time.deltaTime;
-                    float l_maxSpeed = 50.0f;
+                    float l_maxSpeed = 32.0f;
 
                     // Clamp maximum movement speed.
                     if (l_speed >= l_maxSpeed)

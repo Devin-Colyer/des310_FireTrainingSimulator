@@ -610,7 +610,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 2
+  m_CollisionDetection: 1
 --- !u!65 &109302379
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1597,7 +1597,7 @@ GameObject:
   - component: {fileID: 282463518}
   - component: {fileID: 282463516}
   - component: {fileID: 282463517}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Broken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3101,7 +3101,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 2
+  m_CollisionDetection: 1
 --- !u!136 &580402467
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3409,7 +3409,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 2
+  m_CollisionDetection: 1
 --- !u!65 &620995413
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4411,6 +4411,7 @@ GameObject:
   - component: {fileID: 837628156}
   - component: {fileID: 837628155}
   - component: {fileID: 837628157}
+  - component: {fileID: 837628158}
   m_Layer: 0
   m_Name: LevelChallenge_1b
   m_TagString: Untagged
@@ -4491,6 +4492,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!65 &837628158
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 837628153}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.64000016, y: 0.6399999, z: 0.64000016}
+  m_Center: {x: -0.00000011920929, y: 0.00000001490116, z: 2.9582284e-31}
 --- !u!1 &853246669
 GameObject:
   m_ObjectHideFlags: 0
@@ -5356,7 +5369,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 2
+  m_CollisionDetection: 1
 --- !u!65 &950705943
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6110,6 +6123,7 @@ GameObject:
   - component: {fileID: 1054753846}
   - component: {fileID: 1054753845}
   - component: {fileID: 1054753847}
+  - component: {fileID: 1054753848}
   m_Layer: 0
   m_Name: LevelChallenge_1c
   m_TagString: Untagged
@@ -6190,6 +6204,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!65 &1054753848
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1054753843}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.64000016, y: 0.6399999, z: 0.64000016}
+  m_Center: {x: -0.00000011920929, y: 0.00000001490116, z: 2.9582284e-31}
 --- !u!1 &1063063460
 GameObject:
   m_ObjectHideFlags: 0
@@ -6358,7 +6384,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 2
+  m_CollisionDetection: 1
 --- !u!65 &1077315101
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6559,7 +6585,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 2
+  m_CollisionDetection: 1
 --- !u!135 &1123504746
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6885,6 +6911,7 @@ GameObject:
   - component: {fileID: 1173813539}
   - component: {fileID: 1173813541}
   - component: {fileID: 1173813540}
+  - component: {fileID: 1173813542}
   m_Layer: 0
   m_Name: Exit Door
   m_TagString: Untagged
@@ -6951,6 +6978,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1173813538}
   m_Mesh: {fileID: 4300010, guid: f10eace6e50c8dc40906d0fe9b0c36d9, type: 3}
+--- !u!208 &1173813542
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1173813538}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.32000002, y: 0.32000002, z: 1.1550001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.319, y: 0.074, z: 0.83500004}
+  m_TimeToStationary: 0.5
 --- !u!1 &1175460387
 GameObject:
   m_ObjectHideFlags: 0
@@ -7023,7 +7065,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 2
+  m_CollisionDetection: 1
 --- !u!65 &1175460392
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8096,7 +8138,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 2
+  m_CollisionDetection: 1
 --- !u!65 &1366419749
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8456,7 +8498,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 2
+  m_CollisionDetection: 1
 --- !u!65 &1517754228
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8583,7 +8625,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 2
+  m_CollisionDetection: 1
 --- !u!65 &1528334864
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10030,6 +10072,7 @@ GameObject:
   - component: {fileID: 1721383250}
   - component: {fileID: 1721383249}
   - component: {fileID: 1721383251}
+  - component: {fileID: 1721383252}
   m_Layer: 0
   m_Name: LevelChallenge_1a
   m_TagString: Untagged
@@ -10110,6 +10153,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!65 &1721383252
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1721383247}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6399999, y: 0.6399999, z: 0.6399999}
+  m_Center: {x: 0.00000023841858, y: 0.00000001490116, z: 0.00000023841858}
 --- !u!1 &1728430833
 GameObject:
   m_ObjectHideFlags: 0
@@ -10952,6 +11007,7 @@ GameObject:
   - component: {fileID: 1940499703}
   - component: {fileID: 1940499705}
   - component: {fileID: 1940499704}
+  - component: {fileID: 1940499706}
   m_Layer: 0
   m_Name: LevelChallenge_2
   m_TagString: Untagged
@@ -11023,6 +11079,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1940499702}
   m_Mesh: {fileID: 4300000, guid: f10eace6e50c8dc40906d0fe9b0c36d9, type: 3}
+--- !u!65 &1940499706
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1940499702}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.017556, y: 1.9430616, z: 1.9834716}
+  m_Center: {x: 0.00000047683716, y: 0, z: -0.0000010728836}
 --- !u!1 &1960371057
 GameObject:
   m_ObjectHideFlags: 0
