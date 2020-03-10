@@ -26,7 +26,7 @@ public class ActivateMinigame : MonoBehaviour
                 RaycastHit l_hit;
 
                 // Cast ray towards mouse position.
-                if (Physics.Raycast(l_ray, out l_hit))
+                if (Physics.Raycast(l_ray, out l_hit, 64))
                 {
                     if (l_hit.collider)
                     {

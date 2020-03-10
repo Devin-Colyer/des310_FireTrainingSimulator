@@ -96,17 +96,25 @@ public class BoxClickPickup : MonoBehaviour
                 }
                 else
                 {
-                    float l_speed = l_distance / Time.deltaTime;
-                    float l_maxSpeed = 32.0f;
-
-                    // Clamp maximum movement speed.
-                    if (l_speed >= l_maxSpeed)
+                    // Avoid division by zero.
+                    if (Time.deltaTime <= 0.0f)
                     {
-                        l_speed = l_maxSpeed;
+                        Debug.Log("Frame time is zero.");
                     }
+                    else
+                    {
+                        float l_speed = l_distance / Time.deltaTime;
+                        float l_maxSpeed = 32.0f;
 
-                    // Move object towards mouse.
-                    g_grabbedObject.GetComponent<Rigidbody>().velocity = l_direction * l_speed;
+                        // Clamp maximum movement speed.
+                        if (l_speed >= l_maxSpeed)
+                        {
+                            l_speed = l_maxSpeed;
+                        }
+
+                        // Move object towards mouse.
+                        g_grabbedObject.GetComponent<Rigidbody>().velocity = l_direction * l_speed;
+                    }
                 }
             }
         }
