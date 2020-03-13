@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "5.979/x64" 1583768592
+<REAPER_PROJECT 0.1 "5.979/x64" 1584118772
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
   AUTOXFADE 1
@@ -14,8 +14,8 @@
   TIMEMODE 1 5 -1 30 0
   VIDEO_CONFIG 0 0 256
   PANMODE 3
-  CURSOR 5.99859719092868
-  ZOOM 565.22561811247397 2641 0
+  CURSOR 7.33245038928688
+  ZOOM 36.68623525813743 0 0
   VZOOMEX 7
   USE_REC_CFG 0
   RECMODE 1
@@ -27,7 +27,7 @@
   >
   <APPLYFX_CFG
   >
-  RENDER_FILE "M:\GitHub\des310_FireTrainingSimulator\art-assets\SoundRessources\SFX\Sfx_box_hit_impact.wav"
+  RENDER_FILE "M:\GitHub\des310_FireTrainingSimulator\art-assets\SoundRessources\SFX\Sfx_footsteps_concrete.wav"
   RENDER_FMT 0 2 44100
   RENDER_1X 0
   RENDER_RANGE 4 0 0 2 1000
@@ -632,7 +632,7 @@
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
-    MUTESOLO 1 0 0
+    MUTESOLO 0 0 0
     IPHASE 0
     ISBUS 1 1
     BUSCOMP 1 0
@@ -679,13 +679,13 @@
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
-    MUTESOLO 0 0 0
+    MUTESOLO 0 2 0
     IPHASE 0
     ISBUS 0 0
     BUSCOMP 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
     FREEMODE 0
-    SEL 0
+    SEL 1
     REC 0 0 0 0 0 0 0
     VU 2
     TRACKHEIGHT 0 0 0
@@ -728,7 +728,7 @@
       FADEIN 1 0.01 0 1 0 0
       FADEOUT 1 0.01 0 1 0 0
       MUTE 0
-      SEL 0
+      SEL 1
       IGUID {AB10F675-F987-4862-BE5D-5C88373311F8}
       IID 834
       NAME 02-Footsteps-200224_1131.wav
@@ -751,7 +751,7 @@
       FADEIN 1 0.01 0 1 0 0
       FADEOUT 1 0.01 0 1 0 0
       MUTE 0
-      SEL 0
+      SEL 1
       IGUID {9FF196E7-7491-4328-B0E9-D03B5B124CB9}
       IID 835
       NAME 02-Footsteps-200224_1131.wav
@@ -774,7 +774,7 @@
       FADEIN 1 0.01 0 1 0 0
       FADEOUT 1 0.01 0 1 0 0
       MUTE 0
-      SEL 0
+      SEL 1
       IGUID {D29479E9-7557-4DAE-8C00-0FE98B1D13D3}
       IID 836
       NAME 02-Footsteps-200224_1131.wav
@@ -797,7 +797,7 @@
       FADEIN 1 0.01 0 1 0 0
       FADEOUT 1 0.01 0 1 0 0
       MUTE 0
-      SEL 0
+      SEL 1
       IGUID {674D89A2-C7FC-495B-82C8-B0C48D58E2D4}
       IID 837
       NAME 02-Footsteps-200224_1131.wav
@@ -820,7 +820,7 @@
       FADEIN 1 0.01 0 1 0 0
       FADEOUT 1 0.01 0 1 0 0
       MUTE 0
-      SEL 0
+      SEL 1
       IGUID {0C0A975E-6C88-4D0E-8E24-93DBB6F15148}
       IID 838
       NAME 02-Footsteps-200224_1131.wav
@@ -843,7 +843,7 @@
       FADEIN 1 0.01 0 1 0 0
       FADEOUT 1 0.01 0 1 0 0
       MUTE 0
-      SEL 0
+      SEL 1
       IGUID {20B81E08-7BAE-4DDC-8794-2596C3B2906F}
       IID 839
       NAME 02-Footsteps-200224_1131.wav
@@ -1434,7 +1434,7 @@
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
-    MUTESOLO 0 2 0
+    MUTESOLO 0 0 0
     IPHASE 0
     ISBUS 0 0
     BUSCOMP 0 0
@@ -1527,13 +1527,13 @@
     BEAT -1
     AUTOMODE 0
     VOLPAN 0.7917101393281 0 -1 -1 1
-    MUTESOLO 0 2 0
+    MUTESOLO 0 0 0
     IPHASE 0
     ISBUS 2 -2
     BUSCOMP 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
     FREEMODE 0
-    SEL 1
+    SEL 0
     REC 0 0 0 0 0 0 0
     VU 2
     TRACKHEIGHT 0 1 0
@@ -1553,7 +1553,7 @@
       FADEIN 1 0.01 0 1 0 0
       FADEOUT 1 0.01 0 1 0 0
       MUTE 0
-      SEL 1
+      SEL 0
       IGUID {9621E583-617E-4B8A-81FC-0276FCF1A74B}
       IID 882
       NAME "04-Boxe sounds-200224_1140-01.wav"
@@ -1576,7 +1576,7 @@
       FADEIN 1 0.01 0 1 0 0
       FADEOUT 1 0.01 0 1 0 0
       MUTE 0
-      SEL 1
+      SEL 0
       IGUID {A99E4194-7686-4234-9980-1F552970A053}
       IID 885
       NAME "04-Boxe sounds-200224_1140-01.wav"
@@ -1599,7 +1599,7 @@
       FADEIN 1 0.01 0 1 0 0
       FADEOUT 1 0.01 0 1 0 0
       MUTE 0
-      SEL 1
+      SEL 0
       IGUID {525FB58D-E1D1-40DD-BEF3-5004E44BC134}
       IID 884
       NAME "04-Boxe sounds-200224_1140-01.wav"
