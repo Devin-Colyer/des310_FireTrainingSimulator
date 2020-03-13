@@ -7,7 +7,7 @@ public class ThirdPersonSounds : MonoBehaviour {
     private NavMeshAgent m_NavMeshAgent;
 
     // Wwise event to trigger a footstep sound.
-    public AK.Wwise.Event footstepSound = new AK.Wwise.Event();
+    //public AK.Wwise.Event footstepSound = new AK.Wwise.Event();
  
 	
 	// Check if Player move to play footstep sound
@@ -29,7 +29,7 @@ public class ThirdPersonSounds : MonoBehaviour {
     // Called each time player animation timeline pass through "Footstep" event
     private void Footstep()
     {
-        footstepSound.Post(gameObject);
+        //footstepSound.Post(gameObject);
         Debug.Log("step");
     }
 

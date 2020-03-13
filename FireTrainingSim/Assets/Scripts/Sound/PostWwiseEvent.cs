@@ -3,23 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PostWwiseEvent : MonoBehaviour {
-    AK.Wwise.Event MyEvent;
 
-    public AK.Wwise.Event test = new AK.Wwise.Event();
 
-private void OnTriggerEnter(Collider other)
-    {
-        test.Stop(gameObject);
-        test.Post(gameObject);
-        Debug.Log("test");
-        StartCoroutine(waiter());
-    }
 
-    IEnumerator waiter()
-    {
-        yield return new WaitForSeconds(4);
-        test.Stop(gameObject);
-    }
+//    public AK.Wwise.Event test = new AK.Wwise.Event();
+
+//private void OnTriggerEnter(Collider other)
+//    {
+//        test.Stop(gameObject);
+//        test.Post(gameObject);
+//        Debug.Log("test");
+//        StartCoroutine(waiter());
+//    }
+
+//    IEnumerator waiter()
+//    {
+//        yield return new WaitForSeconds(4);
+//        test.Stop(gameObject);
+//    }
 
 
 }
