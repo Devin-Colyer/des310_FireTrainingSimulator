@@ -91,6 +91,7 @@
     <Compile Include="Assets\Scripts\Shared\Billboard.cs" />
     <Compile Include="Assets\Scripts\Shared\CameraSwitch.cs" />
     <Compile Include="Assets\Scripts\Shared\HazardFinder.cs" />
+    <Compile Include="Assets\Scripts\Sound\MusicControl.cs" />
     <Compile Include="Assets\Scripts\Sound\PostWwiseEvent.cs" />
     <Compile Include="Assets\Scripts\Sound\ThirdPersonSounds.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenuController.cs" />
