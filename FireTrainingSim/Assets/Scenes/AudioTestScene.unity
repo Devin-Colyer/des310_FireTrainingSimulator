@@ -860,12 +860,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6a5cb424171ba240a790a2d23aeb0bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputsound: event:/Footsteps
+  FootStepsSound: event:/Footsteps
 --- !u!4 &861747898 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4664607920493618, guid: e633839106e0a6242bde21aae5015643,
     type: 2}
   m_PrefabInternal: {fileID: 1565461875}
+--- !u!114 &861747900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 861747891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba226ecbbf44c964e8d9729580b76431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: event:/MusicOld
 --- !u!114 &861747903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -889,7 +901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: event:/Music
+  Event: 
   PlayEvent: 1
   StopEvent: 0
   CollisionTag: 
@@ -900,8 +912,8 @@ MonoBehaviour:
   - Name: Intro
     Value: 1
   OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &923383156
 GameObject:
   m_ObjectHideFlags: 0
