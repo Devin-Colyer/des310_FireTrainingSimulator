@@ -6,30 +6,21 @@ using UnityEngine.AI;
 public class ThirdPersonSounds : MonoBehaviour {
     private NavMeshAgent m_NavMeshAgent;
 
-    // Wwise event to trigger a footstep sound.
-    public AK.Wwise.Event footstepSound = new AK.Wwise.Event();
- 
-	
-	// Check if Player move to play footstep sound
-	//void Update () {
- //       m_NavMeshAgent = GetComponent<NavMeshAgent>();
+    // FMOD event to trigger a footstep sound.
 
- //      if (m_NavMeshAgent.velocity.magnitude != 0)
- //       {
- //           //footstepSound.Post(gameObject);
- //           Debug.Log("bite");
- //       }
+    [FMODUnity.EventRef]
+    public string FootStepsSound;
 
-
-
-
- //   }
+    private void Start()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(FootStepsSound);
+    }
 
 
     // Called each time player animation timeline pass through "Footstep" event
     private void Footstep()
     {
-        footstepSound.Post(gameObject);
+        FMODUnity.RuntimeManager.PlayOneShot(FootStepsSound);
         Debug.Log("step");
     }
 
