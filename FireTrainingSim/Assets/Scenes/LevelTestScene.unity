@@ -2005,6 +2005,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 401521044}
+  - component: {fileID: 401521045}
   m_Layer: 12
   m_Name: Socket Minigame
   m_TagString: Untagged
@@ -2033,6 +2034,18 @@ Transform:
   m_Father: {fileID: 110193725}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &401521045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 401521043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 222784d76032427439ad8a0638b22407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_cameraController: {fileID: 1555993908}
 --- !u!1 &407952497
 GameObject:
   m_ObjectHideFlags: 0
@@ -3980,8 +3993,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b2bf3eae105ebe4b90f81993f4de0b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDefaultListener: 1
-  listenerId: 0
 --- !u!114 &676899972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3993,16 +4004,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a55069eda14bc64fb4047d0ba3b1c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!124 &676899973
 Behaviour:
   m_ObjectHideFlags: 0
@@ -4127,21 +4128,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e23723f93f3a5bf4e96b4e72116da7be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: d0faa8aa4eb69404bb620bc37e278731,
-    type: 2}
-  basePath: 
-  language: 
-  defaultPoolSize: 0
-  lowerPoolSize: 0
-  streamingPoolSize: 0
-  memoryCutoffThreshold: 0
-  monitorPoolSize: 0
-  monitorQueuePoolSize: 0
-  callbackManagerBufferSize: 0
-  spatialAudioPoolSize: 0
-  maxSoundPropagationDepth: 0
-  diffractionFlags: 11
-  engineLogging: 0
 --- !u!4 &689226326
 Transform:
   m_ObjectHideFlags: 0
@@ -4360,6 +4346,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 814022133}
+  - component: {fileID: 814022135}
   - component: {fileID: 814022134}
   m_Layer: 0
   m_Name: Level
@@ -4400,6 +4387,17 @@ MonoBehaviour:
   m_roomCamera: {fileID: 676899969}
   m_currentRoom: {fileID: 1256044393}
   m_transitionSpeed: 24
+--- !u!114 &814022135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 814022132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaaa692849709fa4080dd4d4504b3f7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &837628153
 GameObject:
   m_ObjectHideFlags: 0
@@ -10378,6 +10376,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1749085342}
+  - component: {fileID: 1749085343}
   m_Layer: 11
   m_Name: Box Minigame
   m_TagString: Untagged
@@ -10411,6 +10410,18 @@ Transform:
   m_Father: {fileID: 110193725}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1749085343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1749085341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 222784d76032427439ad8a0638b22407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_cameraController: {fileID: 1555993908}
 --- !u!1 &1792113825
 GameObject:
   m_ObjectHideFlags: 0
