@@ -26,12 +26,12 @@ public class ActivateMinigame : MonoBehaviour
                 RaycastHit l_hit;
 
                 // Cast ray towards mouse position.
-                if (Physics.Raycast(l_ray, out l_hit, 64))
+                if (Physics.Raycast(l_ray, out l_hit, 128))
                 {
                     if (l_hit.collider)
                     {
                         // Debug output.
-                        ///Debug.Log(l_hit.collider.transform.parent.name);
+                        Debug.Log(l_hit.collider.transform.parent.name);
 
                         // Check if object is hazard.
                         if (l_hit.collider.transform.parent == this.gameObject.transform)
@@ -42,11 +42,6 @@ public class ActivateMinigame : MonoBehaviour
                     }
                 }
             }
-
-            /*if(Input.GetKeyDown("e"))
-            {
-                m_cameraController.GetComponent<CameraController>().ChangeCamera(m_minigame);
-            }*/
         }
     }
 

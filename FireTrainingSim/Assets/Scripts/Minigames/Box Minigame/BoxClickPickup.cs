@@ -97,13 +97,13 @@ public class BoxClickPickup : MonoBehaviour
                 else
                 {
                     // Avoid division by zero.
-                    if (Time.deltaTime <= 0.0f)
+                    if (Time.fixedDeltaTime <= 0.0f)
                     {
                         Debug.Log("Frame time is zero.");
                     }
                     else
                     {
-                        float l_speed = l_distance / Time.deltaTime;
+                        float l_speed = l_distance / Time.fixedDeltaTime;
                         float l_maxSpeed = 32.0f;
 
                         // Clamp maximum movement speed.
