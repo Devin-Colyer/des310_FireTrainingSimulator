@@ -6,6 +6,7 @@ public class ExtinguisherMinigameController : MonoBehaviour {
 
     public GameObject[] m_ListOfFires;
     public GameObject m_FireExtinguisherWorldMatrixTransform;
+    public GameObject m_cameraController;
 
     public float sprayRadius = 5; //temp
 
@@ -18,12 +19,13 @@ public class ExtinguisherMinigameController : MonoBehaviour {
     void Start()
     {
         m_MinigameCamera = Camera.main;
-
         m_ParticleSystem = m_FireExtinguisherWorldMatrixTransform.GetComponentInChildren<ParticleSystem>();
     }
+
     void OnEnable ()
     {
         m_MinigameCamera = Camera.main;
+        m_ParticleSystem = m_FireExtinguisherWorldMatrixTransform.GetComponentInChildren<ParticleSystem>();
     }
 	
 	// Update is called once per frame
@@ -39,6 +41,26 @@ public class ExtinguisherMinigameController : MonoBehaviour {
         MoveExtiguisher(l_Hit);
 
         ShootExtinguisher(l_Hit);
+
+        bool beatMinigame = false;        
+        foreach(GameObject l_fire in m_ListOfFires)
+        {
+            if (l_fire.GetComponent<FireObjective>().m_Buring)
+            {
+                beatMinigame = true;
+            }
+            else
+            {
+                beatMinigame = false;
+                break;
+            }
+        }
+
+        if (beatMinigame && m_cameraController)
+        {
+            // Change camera back to level camera.
+            m_cameraController.GetComponent<CameraController>().ChangeCamera("Room Camera");
+        }
     }
 
     void MoveExtiguisher(RaycastHit in_hit)
