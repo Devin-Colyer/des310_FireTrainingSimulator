@@ -61,23 +61,27 @@ public class CameraController : MonoBehaviour
         // Check if camera group was found.
         if(g_cameras)
         {
-            // Make sure new camera isn't the same as current camera.
-            if (name != g_currentCamera.name)
+            // Check if camera is already changing (new camera already exists).
+            if (!g_newCamera)
             {
-                // Find new camera from camera group.
-                Transform l_newCamera = g_cameras.transform.Find(name);
-
-                // Check if new camera was found.
-                if (l_newCamera)
+                // Make sure new camera isn't the same as current camera.
+                if (name != g_currentCamera.name)
                 {
-                    // Get camera component from camera object.
-                    g_newCamera = l_newCamera.GetComponent<Camera>();
+                    // Find new camera from camera group.
+                    Transform l_newCamera = g_cameras.transform.Find(name);
 
-                    // Check if camera object was found.
-                    if (g_newCamera)
+                    // Check if new camera was found.
+                    if (l_newCamera)
                     {
-                        // Camera was changed, begin fading out.
-                        g_screenFade.GetComponent<ScreenFade>().FadeOut(0.1f);
+                        // Get camera component from camera object.
+                        g_newCamera = l_newCamera.GetComponent<Camera>();
+
+                        // Check if camera object was found.
+                        if (g_newCamera)
+                        {
+                            // Camera was changed, begin fading out.
+                            g_screenFade.GetComponent<ScreenFade>().FadeOut(0.1f);
+                        }
                     }
                 }
             }

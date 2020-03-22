@@ -7,12 +7,13 @@ public class FireObjective : MonoBehaviour
     private const float m_MaxFlameIntesity = 100f;
     private float m_FlameIntensitiy = 100f;
 
-    public bool m_Buring{ get; private set; }
+    public bool m_Burning{ get; private set; }
     ParticleSystem m_FireParticleEmitter;
 
     // Use this for initialization
     void Start()
     {
+        m_Burning = true;
         m_FireParticleEmitter = GetComponent<ParticleSystem>();
     }
 
@@ -22,6 +23,7 @@ public class FireObjective : MonoBehaviour
         if (m_FlameIntensitiy <= 0)
         {
             m_FireParticleEmitter.Stop();
+            m_Burning = false;
         }
         else
         {

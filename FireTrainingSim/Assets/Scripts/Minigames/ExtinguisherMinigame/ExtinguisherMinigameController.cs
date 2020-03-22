@@ -7,6 +7,7 @@ public class ExtinguisherMinigameController : MonoBehaviour {
     public GameObject[] m_ListOfFires;
     public GameObject m_FireExtinguisherWorldMatrixTransform;
     public GameObject m_cameraController;
+    public GameObject m_worldHazard;
 
     public float sprayRadius = 5; //temp
 
@@ -45,21 +46,33 @@ public class ExtinguisherMinigameController : MonoBehaviour {
         bool beatMinigame = false;        
         foreach(GameObject l_fire in m_ListOfFires)
         {
-            if (l_fire.GetComponent<FireObjective>().m_Buring)
-            {
-                beatMinigame = true;
-            }
-            else
+            if (l_fire.GetComponent<FireObjective>().m_Burning)
             {
                 beatMinigame = false;
                 break;
+            }
+            else
+            {
+                beatMinigame = true;
             }
         }
 
         if (beatMinigame && m_cameraController)
         {
-            // Change camera back to level camera.
-            m_cameraController.GetComponent<CameraController>().ChangeCamera("Room Camera");
+            if (m_worldHazard)
+            {
+                // Disable world hazard.
+                m_worldHazard.transform.Find("Broken").gameObject.SetActive(false);
+
+                // Enable fixed hazard.
+                m_worldHazard.transform.Find("Fixed").gameObject.SetActive(true);
+            }
+
+            if (m_cameraController)
+            {
+                // Change camera back to level camera.
+                m_cameraController.GetComponent<CameraController>().ChangeCamera("Room Camera");
+            }
         }
     }
 
