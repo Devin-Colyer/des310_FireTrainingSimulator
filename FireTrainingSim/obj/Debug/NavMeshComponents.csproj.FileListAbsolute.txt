@@ -589,3 +589,4 @@ D:\Program Files (x86)\Github\des310_FireTrainingSimulator\FireTrainingSim\Temp\
 D:\Program Files (x86)\Github\des310_FireTrainingSimulator\FireTrainingSim\obj\Debug\NavMeshComponents.csprojResolveAssemblyReference.cache
 D:\Program Files (x86)\Github\des310_FireTrainingSimulator\FireTrainingSim\obj\Debug\NavMeshComponents.dll
 D:\Program Files (x86)\Github\des310_FireTrainingSimulator\FireTrainingSim\obj\Debug\NavMeshComponents.pdb
+E:\Users\devco\Documents\GitHub\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\UnityEngine.WebGLModule.dll

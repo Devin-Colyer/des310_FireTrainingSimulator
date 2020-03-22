@@ -512,3 +512,5 @@ D:\Program Files (x86)\Github\des310_FireTrainingSimulator\FireTrainingSim\Temp\
 D:\Program Files (x86)\Github\des310_FireTrainingSimulator\FireTrainingSim\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 D:\Program Files (x86)\Github\des310_FireTrainingSimulator\FireTrainingSim\obj\Debug\Assembly-CSharp.dll
 D:\Program Files (x86)\Github\des310_FireTrainingSimulator\FireTrainingSim\obj\Debug\Assembly-CSharp.pdb
+E:\Users\devco\Documents\GitHub\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\UnityEngine.WebGLModule.dll
+E:\Users\devco\Documents\GitHub\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
