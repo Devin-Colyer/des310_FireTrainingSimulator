@@ -27,8 +27,23 @@ public class PointAndClickPlayerController : MonoBehaviour {
             // Cast ray from the mouse
             if (Physics.Raycast(l_Ray, out l_Hit, 100))
             {
-                // Set the pathfinding destination to where the ray hits
-                m_Agent.destination = l_Hit.point;
+                // Check if collider exists.
+                if (l_Hit.collider)
+                {
+                    PointAndClickTrigger l_clickTrigger;
+
+                    // Check if collider is a click trigger.
+                    if (l_clickTrigger = l_Hit.collider.GetComponent<PointAndClickTrigger>())
+                    {
+                        // Move to trigger destination.
+                        m_Agent.destination = l_clickTrigger.GetDestination();
+                    }
+                    else
+                    {
+                        // Set the pathfinding destination to where the ray hits
+                        m_Agent.destination = l_Hit.point;
+                    }
+                }
 
                 // Play walking sound
                 //m_Wwise.WalkPlay();

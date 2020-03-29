@@ -81,6 +81,7 @@
      <Compile Include="Assets\Scripts\Movement\HazardPopupController.cs" />
      <Compile Include="Assets\Scripts\Movement\IsPlayerInRange_Finder.cs" />
      <Compile Include="Assets\Scripts\Movement\PointAndClickPlayerController.cs" />
+     <Compile Include="Assets\Scripts\Movement\PointAndClickTrigger.cs" />
      <Compile Include="Assets\Scripts\Movement\TransitionLipController.cs" />
      <Compile Include="Assets\Scripts\PhysicsSimulation\PhysicsSimulation.cs" />
      <Compile Include="Assets\Scripts\Shared\Billboard.cs" />
