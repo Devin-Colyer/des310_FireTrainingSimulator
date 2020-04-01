@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class PointAndClickPlayerController : MonoBehaviour {
 
-    ThirdPersonSounds m_Wwise;
+    //ThirdPersonSounds m_Wwise;
 
     // NavMeshAgent - pathfinding AI
     NavMeshAgent m_Agent;
@@ -13,7 +13,7 @@ public class PointAndClickPlayerController : MonoBehaviour {
     // Use this for initialization
     void Start () {
         m_Agent = this.GetComponent<NavMeshAgent>();
-        m_Wwise = GetComponent<ThirdPersonSounds>();
+        //m_Wwise = GetComponent<ThirdPersonSounds>();
     }
 	
 	// Update is called once per frame

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{11f37ed9-a7f3-4b41-a05c-d03ee30f85fd}">
+		<property name="assetPath">
+			<value>Sfx_footsteps_Carpet-003.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.3184580498866213</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{4c4061f7-9951-41b8-a620-678f53106e55}</destination>
+		</relationship>
+	</object>
+</objects>

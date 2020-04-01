@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{e6ba8539-f640-4cb8-847a-6b1b8632adfa}">
+		<property name="assetPath">
+			<value>Sfx_footsteps_Vinyle-002.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.43009070294784579</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{4c4061f7-9951-41b8-a620-678f53106e55}</destination>
+		</relationship>
+	</object>
+</objects>
