@@ -17,13 +17,13 @@ public class DisappearingRoomController : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         // Debug
-        Debug.Log("Collision Detected");
+        //Debug.Log("Collision Detected");
 
         // Check Tag
         if (other.tag == "Player")
         {
             // Debug
-            Debug.Log("Render The Room");
+            //Debug.Log("Render The Room");
             // Active children on trigger
             m_RoomActive = true;
             for (int a = 0; a < this.transform.childCount; a++)

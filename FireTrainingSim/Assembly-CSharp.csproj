@@ -90,8 +90,6 @@
      <Compile Include="Assets\Scripts\Sound\MaterialSetter.cs" />
      <Compile Include="Assets\Scripts\Sound\MusicController.cs" />
      <Compile Include="Assets\Scripts\Sound\MusicEmitter.cs" />
-     <Compile Include="Assets\Scripts\Sound\REF1.cs" />
-     <Compile Include="Assets\Scripts\Sound\REF2.cs" />
      <Compile Include="Assets\Scripts\Sound\testAsupprimer.cs" />
      <Compile Include="Assets\Scripts\Sound\ThirdPersonSounds.cs" />
      <Compile Include="Assets\Scripts\UI\MainMenuController.cs" />
