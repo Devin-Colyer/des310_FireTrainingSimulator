@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireTrainingSim", "Assembly
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireTrainingSim", "NavMeshComponentsEditor.csproj", "{3CB7D434-7B42-208C-A7FB-BBAC4A881006}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireTrainingSim", "Assembly-CSharp-Editor.csproj", "{E63ADBCE-6D18-8088-551C-AB85CBDF1A38}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireTrainingSim", "NavMeshComponentsExamplesEditor.csproj", "{12043153-5315-56DA-088D-8ADF78012F54}"
 EndProject
 Global
@@ -51,6 +53,10 @@ Global
 		{3CB7D434-7B42-208C-A7FB-BBAC4A881006}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CB7D434-7B42-208C-A7FB-BBAC4A881006}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CB7D434-7B42-208C-A7FB-BBAC4A881006}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E63ADBCE-6D18-8088-551C-AB85CBDF1A38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E63ADBCE-6D18-8088-551C-AB85CBDF1A38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E63ADBCE-6D18-8088-551C-AB85CBDF1A38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E63ADBCE-6D18-8088-551C-AB85CBDF1A38}.Release|Any CPU.Build.0 = Release|Any CPU
 		{12043153-5315-56DA-088D-8ADF78012F54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{12043153-5315-56DA-088D-8ADF78012F54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12043153-5315-56DA-088D-8ADF78012F54}.Release|Any CPU.ActiveCfg = Release|Any CPU
