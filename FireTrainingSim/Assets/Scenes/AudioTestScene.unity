@@ -518,6 +518,7 @@ Transform:
   - {fileID: 1671748021}
   - {fileID: 1572418463}
   - {fileID: 2083758322}
+  - {fileID: 249032136}
   m_Father: {fileID: 2104113724}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -557,6 +558,105 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CamSpeed: 25
+--- !u!1 &249032135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 249032136}
+  - component: {fileID: 249032139}
+  - component: {fileID: 249032138}
+  - component: {fileID: 249032137}
+  - component: {fileID: 249032140}
+  m_Layer: 0
+  m_Name: D2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &249032136
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 249032135}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10.18, y: 0.76, z: -9.88}
+  m_LocalScale: {x: 2.05703, y: 2.05703, z: 2.05703}
+  m_Children: []
+  m_Father: {fileID: 230544025}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &249032137
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 249032135}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
+  m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!23 &249032138
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 249032135}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 841dd44ea8274354face37fb09e80382, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &249032139
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 249032135}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &249032140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 249032135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915493cb11f81064382ca04ed4e23a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueEventPath: event:/Dialogue/Dialogue
+  F_DialogueValue: 1
 --- !u!1 &277805710
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,7 +929,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 497de82cebd35424cbdb54773fc1b871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaterialValue: 0
   DefinerF_MaterialValue: 0
 --- !u!65 &357884205
 BoxCollider:
@@ -1003,6 +1102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6a5cb424171ba240a790a2d23aeb0bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DialogueEventPath: event:/Dialogue/Dialogue
+  F_DialogueValue: 0
   FootstepsEventPath: event:/Footsteps
   Material: 
   MaterialTypes: []
@@ -1014,6 +1115,19 @@ Transform:
   m_PrefabParentObject: {fileID: 4664607920493618, guid: e633839106e0a6242bde21aae5015643,
     type: 2}
   m_PrefabInternal: {fileID: 1565461875}
+--- !u!114 &861747900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 861747891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915493cb11f81064382ca04ed4e23a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueEventPath: event:/Dialogue/Dialogue
+  F_DialogueValue: 0
 --- !u!114 &861747903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1337,7 +1451,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 497de82cebd35424cbdb54773fc1b871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaterialValue: 1
   DefinerF_MaterialValue: 1
 --- !u!65 &1090190012
 BoxCollider:
@@ -1962,7 +2075,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 497de82cebd35424cbdb54773fc1b871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaterialValue: 2
   DefinerF_MaterialValue: 2
 --- !u!65 &1572418459
 BoxCollider:
@@ -2226,6 +2338,8 @@ GameObject:
   - component: {fileID: 1671748020}
   - component: {fileID: 1671748019}
   - component: {fileID: 1671748018}
+  - component: {fileID: 1671748023}
+  - component: {fileID: 1671748022}
   m_Layer: 0
   m_Name: stairs
   m_TagString: Untagged
@@ -2300,6 +2414,30 @@ Transform:
   m_Father: {fileID: 230544025}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: -17.112001, y: 0, z: 0}
+--- !u!114 &1671748022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1671748017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 497de82cebd35424cbdb54773fc1b871, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefinerF_MaterialValue: 1
+--- !u!65 &1671748023
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1671748017}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.89635074, y: 1.763992, z: 0.8421111}
+  m_Center: {x: 0.004661858, y: 0.38200095, z: 0.078944676}
 --- !u!1 &1695009278
 GameObject:
   m_ObjectHideFlags: 0
@@ -3040,7 +3178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 497de82cebd35424cbdb54773fc1b871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaterialValue: 3
   DefinerF_MaterialValue: 3
 --- !u!65 &2083758318
 BoxCollider:

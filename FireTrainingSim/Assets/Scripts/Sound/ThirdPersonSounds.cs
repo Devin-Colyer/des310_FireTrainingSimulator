@@ -6,6 +6,11 @@ using UnityEngine.AI;
 public class ThirdPersonSounds : MonoBehaviour {
 
     [Header("FMOD Settings")]
+
+    [SerializeField] [FMODUnity.EventRef] private string DialogueEventPath;
+    public int F_DialogueValue;
+
+    [Header("FMOD Settings")]
     [SerializeField] [FMODUnity.EventRef] private string FootstepsEventPath;
     [SerializeField] private string Material;
     public string[] MaterialTypes;
@@ -39,6 +44,26 @@ public class ThirdPersonSounds : MonoBehaviour {
     //        Debug.Log("5");
     //    F_MaterialValue = DefaultMaterialValue;                                                                  // Then again, we set 'F_MaterialValue' to match the value of 'DefulatMaterialValue'.
     //}
+
+
+        //Use to play the initial dialogue
+    void Start()
+    {
+        FMOD.Studio.EventInstance ThirdPersonSounds = FMODUnity.RuntimeManager.CreateInstance(DialogueEventPath);
+        ThirdPersonSounds.setParameterByName("Dialogue", F_DialogueValue);
+        ThirdPersonSounds.start();
+
+        
+        if (F_DialogueValue == 0)
+        {
+            Debug.Log("BiteDe0");
+        }
+        else if (F_DialogueValue == 1)
+        {
+            Debug.Log("BiteDe1");
+        }
+    }
+
 
     private void Footstep()
     {

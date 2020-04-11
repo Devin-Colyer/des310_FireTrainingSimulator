@@ -1,10 +1,8 @@
 WindowsStandalone
 PlayerPath?
-D:/Program Files (x86)/Github/des310_FireTrainingSimulator/test build/test build.exe
+C:/Users/arthu/Desktop/Build/Build.exe
 SceneListBegin?
-Assets/Scenes/MainMenuTestScene.unity
-Assets/Scenes/LevelTestScene.unity
-Assets/Scenes/Section2TestScene.unity
+Assets/Scenes/AudioTestScene.unity
 SceneListEnd?
 942b399e8cf3dfb1531d7e0126a1e9cb NavMeshComponentsExamples.dll:.MeshTool
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
@@ -22,11 +20,11 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 62f4e803247774277263cc3434718a62 NavMeshComponents.dll:UnityEngine.AI.NavMeshModifier
 b96505d1139d19db37fa34ee066f2af4 Assembly-CSharp.dll:.GlowComposite
 a71e89494a00540356e3247bc0ed0342 NavMeshComponents.dll:UnityEngine.AI.NavMeshLink
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.PostWwiseEvent
 cfb4f77b1e41e3ca5dfa420cc2a5161a Assembly-CSharp.dll:.HazardClick
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.FireObjective
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BoxClickPickup
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GlowPrePass
-4e52fd796cce88da5adba15470c63d7f Assembly-CSharp.dll:.ExtinguisherMinigameController
+f13140ffda77166b7f7d1fa45d190b8e Assembly-CSharp.dll:.ExtinguisherMinigameController
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -59,7 +57,7 @@ c63db43c730fa2cbb8ca07de15898cb6 UnityEngine.UI.dll:UnityEngine.UI.Toggle
 f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
-853b5b5f1286800853af83bb06d87cd0 Assembly-CSharp.dll:.ThirdPersonSounds
+e068eb4b501fb56d72f3c2b0cb021622 Assembly-CSharp.dll:.ThirdPersonSounds
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -153,6 +151,7 @@ d78da10fc6fe2ebb0bfa7bfae15012c5 NavMeshComponents.dll:UnityEngine.AI.NavMeshMod
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TriggerGlow
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.PointAndClickPlayerController
 f5c3031670d4512c1a65d1cb73d2911b Assembly-CSharp-firstpass.dll:FMODUnity.StudioListener
+710937910c35ffa19760ed1afbb0374b Assembly-CSharp.dll:.MinigameExit
 05524b8f659e7bfe5756d1335fec24ba NavMeshComponentsExamples.dll:.NavMeshSourceTag
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.LevelExitMenu
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
@@ -190,15 +189,18 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 cfb4f77b1e41e3ca5dfa420cc2a5161a Assembly-CSharp.dll:.BoxStackScript
-144ec03b48f4b7f500513627806b4cd1 Assembly-CSharp.dll:.MusicControl
+e504dc8160a46f7904fea201834b2c05 Assembly-CSharp.dll:.MusicEmitter
 1ff40abe3975b1cecb84fd5accd96cc6 Assembly-CSharp.dll:.ActivateMinigame
 1be52fb541d1fe19688de133e6306e00 NavMeshComponents.dll:UnityEngine.AI.NavMeshSurface
 84d72a902040b6c04d0ecf153d3b3c6e Assembly-CSharp.dll:.DisappearingRoomController
+bb6b38bd08cca3701adf24cf3e1b1949 Assembly-CSharp.dll:.MaterialSetter
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.LevelExitTrigger
 8cc632c1d9d880ccebcfd32cc9d963fd Assembly-CSharp-firstpass.dll:FMODUnity.StudioParameterTrigger
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BoxTriggerScript
+af361b6b016869bf909d4b0e929dcf11 Assembly-CSharp.dll:.MusicController
 6533ccfabcfcaba4e475c97c38bb7c9e NavMeshComponentsExamples.dll:.NavMeshPrefabInstance
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.FootStepsMaterialSoundSwitch
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Billboard
 3d157c132626b5b602b836567cb78e7f Assembly-CSharp.dll:.PhysicsSimulation
 fb472f170ae243cdb4473865df89b468 Assembly-CSharp.dll:.ScreenFade
