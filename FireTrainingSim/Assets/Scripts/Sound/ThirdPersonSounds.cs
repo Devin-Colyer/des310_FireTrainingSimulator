@@ -14,7 +14,7 @@ public class ThirdPersonSounds : MonoBehaviour {
     [SerializeField] [FMODUnity.EventRef] private string FootstepsEventPath;
     [SerializeField] private string Material;
     public string[] MaterialTypes;
-    [SerializeField] private float RayDistance = 1.2f;
+    //[SerializeField] private float RayDistance = 1.2f;
     public int DefaultMaterialValue;                           // This will be told by the 'FMODStudioFootstepsEditor' script which Material has been set as the defualt. It will then store the value of that Material for outhis script to use. This cannot be changed in the Editor, but a drop down menu created by the 'FMODStudioFootstepsEditor' script can.
 
 

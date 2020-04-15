@@ -655,7 +655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915493cb11f81064382ca04ed4e23a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueEventPath: event:/Dialogue/Dialogue
+  DialogueEventPath: event:/Dialogue
   F_DialogueValue: 1
 --- !u!1 &277805710
 GameObject:
@@ -1102,12 +1102,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6a5cb424171ba240a790a2d23aeb0bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueEventPath: event:/Dialogue/Dialogue
+  DialogueEventPath: event:/Dialogue
   F_DialogueValue: 0
   FootstepsEventPath: event:/Footsteps
   Material: 
   MaterialTypes: []
-  RayDistance: 1.2
   DefaultMaterialValue: 0
   Yo: 1
 --- !u!4 &861747898 stripped
@@ -1126,7 +1125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915493cb11f81064382ca04ed4e23a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueEventPath: event:/Dialogue/Dialogue
+  DialogueEventPath: event:/Dialogue
   F_DialogueValue: 0
 --- !u!114 &861747903
 MonoBehaviour:
