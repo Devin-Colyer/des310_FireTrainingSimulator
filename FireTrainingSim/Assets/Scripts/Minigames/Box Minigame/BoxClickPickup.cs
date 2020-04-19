@@ -43,7 +43,7 @@ public class BoxClickPickup : MonoBehaviour
                 if(l_hit.collider)
                 {
                     // Debug, check if hit.
-                    Debug.Log("Hit Something " + l_hit.transform.name);
+                    ///Debug.Log("Hit Something " + l_hit.transform.name);
 
                     // Check if object can be grabbed.
                     if (l_hit.transform.tag == "MoveableObject")

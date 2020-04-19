@@ -31,10 +31,10 @@ public class ActivateMinigame : MonoBehaviour
                     if (l_hit.collider)
                     {
                         // Debug output.
-                        Debug.Log(l_hit.collider.transform.parent.name);
-
+                        ///Debug.Log(l_hit.collider.transform.parent.name);
+                        
                         // Check if object is hazard.
-                        if (l_hit.collider.transform.parent == this.gameObject.transform)
+                        if (l_hit.collider.transform.IsChildOf(this.transform))
                         {
                             // Change to minigame camera.
                             m_cameraController.GetComponent<CameraController>().ChangeCamera(m_minigame);
