@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{56309604-eabe-4f4c-9833-4b80686f23f8}">
 		<property name="assetPath">
-			<value>Dialogue/Scene 2_ on scene wake.wav</value>
+			<value>Dialogue/Section 2/Scene 2_ on scene wake.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

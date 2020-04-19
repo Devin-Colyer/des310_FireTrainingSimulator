@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{2e1c1b74-e2e0-4ee3-8b7f-12b7c063fc73}">
 		<property name="assetPath">
-			<value>Dialogue/Player clicks on hazard and enters minigame.wav</value>
+			<value>Dialogue/Section 2/Player clicks on hazard and enters minigame.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

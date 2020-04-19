@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{bc8249bf-3af9-4a6f-8450-9fecae320767}">
 		<property name="assetPath">
-			<value>Dialogue/If player takes too long clearing the boxes.wav</value>
+			<value>Dialogue/Section 1/If player takes too long clearing the boxes.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

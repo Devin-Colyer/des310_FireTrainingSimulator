@@ -8,7 +8,7 @@
 			<value>0</value>
 		</property>
 		<relationship name="folder">
-			<destination>{91276dd1-471d-4aa3-bf77-51e128b775cb}</destination>
+			<destination>{be077937-16f4-4fe1-a634-5b4d71265093}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{bcd4ab70-e3d5-4e48-ad54-728fc3353daf}</destination>
@@ -76,6 +76,8 @@
 			<destination>{d6f53f64-4af6-415a-a27d-3a47d3f52a02}</destination>
 			<destination>{472beff3-9ca9-4829-801f-b1984f4eed49}</destination>
 			<destination>{085a4965-63d4-4e5b-80c7-39447d45015c}</destination>
+			<destination>{f6ec75c8-c780-4c03-a8e4-42f956932e42}</destination>
+			<destination>{295d279a-b172-4a72-a517-1cbbc51aa666}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{0ee8b8ac-b407-4cf9-967f-789104a08cbd}</destination>
@@ -97,6 +99,8 @@
 			<destination>{d6f53f64-4af6-415a-a27d-3a47d3f52a02}</destination>
 			<destination>{472beff3-9ca9-4829-801f-b1984f4eed49}</destination>
 			<destination>{085a4965-63d4-4e5b-80c7-39447d45015c}</destination>
+			<destination>{f6ec75c8-c780-4c03-a8e4-42f956932e42}</destination>
+			<destination>{295d279a-b172-4a72-a517-1cbbc51aa666}</destination>
 		</relationship>
 		<relationship name="preset">
 			<destination>{c45177e7-2eaf-4cef-b06e-a8450faebe11}</destination>
@@ -235,9 +239,25 @@
 			<destination>{a0d96dc7-c5cf-487b-b8a9-79b2f39e8172}</destination>
 		</relationship>
 	</object>
+	<object class="SingleSound" id="{f6ec75c8-c780-4c03-a8e4-42f956932e42}">
+		<property name="start">
+			<value>35</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{c6e6cf45-ff17-4634-9c11-5153ea352016}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{295d279a-b172-4a72-a517-1cbbc51aa666}">
+		<property name="start">
+			<value>36</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{77c58a87-7709-4285-b9a1-799dd5b0561d}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{0ee8b8ac-b407-4cf9-967f-789104a08cbd}">
 		<property name="volume">
-			<value>-13</value>
+			<value>-11</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>

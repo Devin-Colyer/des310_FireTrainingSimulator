@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{bb235e09-2514-4a09-9106-f875bded96e9}">
 		<property name="assetPath">
-			<value>Dialogue/Player plays minigame. Once they’ve finished, start talking again.wav</value>
+			<value>Dialogue/Section 1/Player plays minigame. Once they’ve finished, start talking again.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
