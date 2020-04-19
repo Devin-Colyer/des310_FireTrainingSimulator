@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{23C75BFF-234C-42AE-BE37-D4A59E382E57}" SchemaVersion="94">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{23C75BFF-234C-42AE-BE37-D4A59E382E57}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="CharacterMovements" ID="{964C692B-DEB0-4291-AAC6-1488E58D0AFC}" ShortID="256431505">
+					<ChildrenList>
+						<SwitchGroup Name="switch_footstep" ID="{B6BC30B5-F25C-427E-ACAC-F15955E0C94E}">
+							<ChildrenList>
+								<Switch Name="concrete" ID="{5BE07CE1-E37E-424F-AE5E-12A22EAFBF43}"/>
+								<Switch Name="metal" ID="{567EDD20-BF5A-4F4B-8483-FFC730E1DD18}"/>
+								<Switch Name="vinyl" ID="{DFDF055A-C508-471F-85E6-D34B6F81386B}"/>
+								<Switch Name="carpet" ID="{AFA4EF48-234A-4CDD-A9E7-DAB78235646A}"/>
+							</ChildrenList>
+						</SwitchGroup>
+						<SwitchGroup Name="Music" ID="{7AD3E55B-78B9-49AD-BBE1-0331571819D1}">
+							<ChildrenList>
+								<Switch Name="Box" ID="{93063900-6B72-4C0A-A34F-C84291E2C0BD}"/>
+								<Switch Name="BoxOut" ID="{12B646F3-DF62-491D-9CB7-769D9DB2991A}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

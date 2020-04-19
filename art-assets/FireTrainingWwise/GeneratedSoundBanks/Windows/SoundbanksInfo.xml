@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\</ProjectRoot>
+		<SourceFilesRoot>D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\FireTrainingWwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="855317084" Name="Alarm" ObjectPath="\Events\Default Work Unit\Alarm" DurationType="Unknown"/>
+				<Event Id="174960569" Name="Loose" ObjectPath="\Events\Default Work Unit\Loose" DurationType="OneShot" DurationMin="5.500000" DurationMax="5.500000"/>
+				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Default Work Unit\Music" DurationType="Infinite"/>
+				<Event Id="1789744637" Name="Sfx_footstep_walk" ObjectPath="\Events\Default Work Unit\Sfx_footstep_walk" DurationType="OneShot" DurationMin="0.000000" DurationMax="1.435550"/>
+				<Event Id="979765101" Name="Win" ObjectPath="\Events\Default Work Unit\Win" DurationType="OneShot" DurationMin="4.500000" DurationMax="4.500000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="7172009" Language="SFX">
+					<ShortName>Sfx_ footstep_concrete_walk-003.wav</ShortName>
+					<Path>SFX\Sfx_ footstep_concrete_walk-003_10C4C929.wem</Path>
+				</File>
+				<File Id="71845325" Language="SFX">
+					<ShortName>Sfx_ footstep_house_walk-003.wav</ShortName>
+					<Path>SFX\Sfx_ footstep_house_walk-003_10C4C929.wem</Path>
+				</File>
+				<File Id="152465572" Language="SFX">
+					<ShortName>Loop.wav</ShortName>
+					<Path>SFX\Loop_D79FB2B7.wem</Path>
+				</File>
+				<File Id="215860586" Language="SFX">
+					<ShortName>Sfx_ footstep_house_walk-001.wav</ShortName>
+					<Path>SFX\Sfx_ footstep_house_walk-001_10C4C929.wem</Path>
+				</File>
+				<File Id="237265832" Language="SFX">
+					<ShortName>Sfx_ footstep_house_walk-002.wav</ShortName>
+					<Path>SFX\Sfx_ footstep_house_walk-002_10C4C929.wem</Path>
+				</File>
+				<File Id="492325463" Language="SFX">
+					<ShortName>Sfx_ footstep_concrete_walk-001.wav</ShortName>
+					<Path>SFX\Sfx_ footstep_concrete_walk-001_10C4C929.wem</Path>
+				</File>
+				<File Id="682471024" Language="SFX">
+					<ShortName>Sfx_ footstep_concrete_walk-002.wav</ShortName>
+					<Path>SFX\Sfx_ footstep_concrete_walk-002_10C4C929.wem</Path>
+				</File>
+				<File Id="763926917" Language="SFX">
+					<ShortName>Win2.wav</ShortName>
+					<Path>SFX\Win2_10C4C929.wem</Path>
+				</File>
+				<File Id="868797152" Language="SFX">
+					<ShortName>Win.wav</ShortName>
+					<Path>SFX\Win_10C4C929.wem</Path>
+				</File>
+				<File Id="998836800" Language="SFX">
+					<ShortName>Loose.wav</ShortName>
+					<Path>SFX\Loose_10C4C929.wem</Path>
+				</File>
+				<File Id="1006787500" Language="SFX">
+					<ShortName>Intro.wav</ShortName>
+					<Path>SFX\Intro_D79FB2B7.wem</Path>
+				</File>
+				<File Id="1036816591" Language="SFX">
+					<ShortName>Outro.wav</ShortName>
+					<Path>SFX\Outro_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

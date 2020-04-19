@@ -1,0 +1,322 @@
+fileFormatVersion: 2
+guid: a8aef53c1e8cff840a336cd0f717f86c
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: CO2Extinguisher
+    100002: Curtain1
+    100004: Curtain2
+    100006: CurtainRod
+    100008: Curtains
+    100010: DeskAndChairs
+    100012: DryPowderExtinguisher
+    100014: FileCambinets
+    100016: FoamExtinguisher
+    100018: GolfClubs
+    100020: GolfGreen
+    100022: Level3_Office
+    100024: Mesh
+    100026: //RootNode
+    100028: OfficeDoorFrame
+    100030: OfficeFloorWall
+    100032: pickup_extinguisherDryPowder:Mesh
+    100034: pickup_extinguisherFoam:Mesh
+    100036: pickup_extinguisherWater:Mesh
+    100038: polySurface66
+    100040: polySurface67
+    100042: polySurface68
+    100044: PottedPlant
+    100046: prp_Filecab:prpFilecab
+    100048: prpFilecab
+    100050: WaterExtinguisher
+    400000: CO2Extinguisher
+    400002: Curtain1
+    400004: Curtain2
+    400006: CurtainRod
+    400008: Curtains
+    400010: DeskAndChairs
+    400012: DryPowderExtinguisher
+    400014: FileCambinets
+    400016: FoamExtinguisher
+    400018: GolfClubs
+    400020: GolfGreen
+    400022: Level3_Office
+    400024: Mesh
+    400026: //RootNode
+    400028: OfficeDoorFrame
+    400030: OfficeFloorWall
+    400032: pickup_extinguisherDryPowder:Mesh
+    400034: pickup_extinguisherFoam:Mesh
+    400036: pickup_extinguisherWater:Mesh
+    400038: polySurface66
+    400040: polySurface67
+    400042: polySurface68
+    400044: PottedPlant
+    400046: prp_Filecab:prpFilecab
+    400048: prpFilecab
+    400050: WaterExtinguisher
+    2100000: LambertDarkRed
+    2100002: LambertLightGrey
+    2100004: LambertSkyBlue
+    2100006: LambertWhite
+    2100008: Default_Material
+    2100010: BlinnGrey
+    2100012: LambertBrown
+    2100014: LambertTan
+    2100016: LambertGrey
+    2100018: LambertGreen
+    2100020: lambert1
+    2100022: LambertRed
+    2100024: LambertTransWhite
+    2100026: LambertDarkGrey
+    2100028: BlinnRed
+    2100030: LambertBlack
+    2100032: WaterExtinguisher1
+    2100034: BlinnGold
+    2100036: CO2Extinguisher1
+    2100038: LambertDarkRedV2
+    2100040: DryPowderExtinguisher1
+    2100042: FoamExtinguisher1
+    2300000: Curtain1
+    2300002: Curtain2
+    2300004: CurtainRod
+    2300006: GolfClubs
+    2300008: GolfGreen
+    2300010: Mesh
+    2300012: OfficeDoorFrame
+    2300014: OfficeFloorWall
+    2300016: pickup_extinguisherDryPowder:Mesh
+    2300018: pickup_extinguisherFoam:Mesh
+    2300020: pickup_extinguisherWater:Mesh
+    2300022: polySurface66
+    2300024: polySurface67
+    2300026: polySurface68
+    2300028: PottedPlant
+    2300030: prp_Filecab:prpFilecab
+    2300032: prpFilecab
+    3300000: Curtain1
+    3300002: Curtain2
+    3300004: CurtainRod
+    3300006: GolfClubs
+    3300008: GolfGreen
+    3300010: Mesh
+    3300012: OfficeDoorFrame
+    3300014: OfficeFloorWall
+    3300016: pickup_extinguisherDryPowder:Mesh
+    3300018: pickup_extinguisherFoam:Mesh
+    3300020: pickup_extinguisherWater:Mesh
+    3300022: polySurface66
+    3300024: polySurface67
+    3300026: polySurface68
+    3300028: PottedPlant
+    3300030: prp_Filecab:prpFilecab
+    3300032: prpFilecab
+    4300000: OfficeFloorWall
+    4300002: GolfClubs
+    4300004: GolfGreen
+    4300006: OfficeDoorFrame
+    4300008: polySurface66
+    4300010: polySurface67
+    4300012: polySurface68
+    4300014: prp_Filecab:prpFilecab
+    4300016: prpFilecab
+    4300018: pickup_extinguisherWater:Mesh
+    4300020: Mesh
+    4300022: CurtainRod
+    4300024: Curtain2
+    4300026: Curtain1
+    4300028: pickup_extinguisherDryPowder:Mesh
+    4300030: pickup_extinguisherFoam:Mesh
+    4300032: PottedPlant
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlinnGold
+    second: {fileID: 2100000, guid: ceca16fa47cf9ab4ca6e97554a7c31c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlinnGrey
+    second: {fileID: 2100000, guid: 66916a3f7b153c149a3c96307ac235c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlinnRed
+    second: {fileID: 2100000, guid: 973fa9536c6cb5d47a2d356240be3f74, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CO2Extinguisher1
+    second: {fileID: 2100000, guid: 341912fd287f00c4cb21505a328dda26, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Default_Material
+    second: {fileID: 2100000, guid: c0f757679d6136d40a8e5aa60d430de9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DryPowderExtinguisher1
+    second: {fileID: 2100000, guid: bf3c26a2a1d45e0408e8e6b828fdf6a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FoamExtinguisher1
+    second: {fileID: 2100000, guid: bf3c26a2a1d45e0408e8e6b828fdf6a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LambertBlack
+    second: {fileID: 2100000, guid: 2bed9ed8ab0e4a54eb77059ee963b0e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LambertBrown
+    second: {fileID: 2100000, guid: 1ae686159b0588f42a216f34d39a32f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LambertDarkGrey
+    second: {fileID: 2100000, guid: e0a203ee197eff7449aceb832e51f26a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LambertDarkRed
+    second: {fileID: 2100000, guid: 03060c9fc03132b4aa028b141db6a441, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LambertDarkRedV2
+    second: {fileID: 2100000, guid: 03060c9fc03132b4aa028b141db6a441, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LambertGreen
+    second: {fileID: 2100000, guid: a917f176bdca92b468872294aef8e429, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LambertGrey
+    second: {fileID: 2100000, guid: 66916a3f7b153c149a3c96307ac235c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LambertLightGrey
+    second: {fileID: 2100000, guid: c0f757679d6136d40a8e5aa60d430de9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LambertRed
+    second: {fileID: 2100000, guid: f41a1937da376b74895bb1f8d8c84562, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LambertSkyBlue
+    second: {fileID: 2100000, guid: d9f4d814ad95c1e45af8fa0255d89a90, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LambertTan
+    second: {fileID: 2100000, guid: 1746517267bc9214a85a5a493f53d6f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LambertTransWhite
+    second: {fileID: 2100000, guid: 63faf11ad9cd7004e82079ec0976c55b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LambertWhite
+    second: {fileID: 2100000, guid: bf3c26a2a1d45e0408e8e6b828fdf6a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WaterExtinguisher1
+    second: {fileID: 2100000, guid: bf3c26a2a1d45e0408e8e6b828fdf6a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: bf3c26a2a1d45e0408e8e6b828fdf6a6, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 64
+    meshCompression: 3
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

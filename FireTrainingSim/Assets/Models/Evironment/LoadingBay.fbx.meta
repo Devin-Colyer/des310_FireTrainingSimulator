@@ -1,0 +1,359 @@
+fileFormatVersion: 2
+guid: 39a47a35666f75648bc622c9192ceb01
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Barrel
+    100002: Barrel1
+    100004: Barrel2
+    100006: Barrel3
+    100008: Barrel4
+    100010: Barrel5
+    100012: Barrel6
+    100014: Box1
+    100016: Box2
+    100018: Box3
+    100020: Box4
+    100022: Box5
+    100024: Box6
+    100026: CO2Extinguisher
+    100028: DryPowderExtinguisher
+    100030: FoamExtinguisher
+    100032: ForkLift
+    100034: Level3_LoadingBay
+    100036: //RootNode
+    100038: LoadingBayPole1
+    100040: LoadingBayPole2
+    100042: LoadingBayPole3
+    100044: LoadingBayPole4
+    100046: LoadingBayShelf1
+    100048: LoadingBayShelf2
+    100050: LoadingDockDoorFrame
+    100052: LoadingDockFloorAndWall
+    100054: LoadingDockShelf
+    100056: LoadingDockTopOfDoor
+    100058: Mesh
+    100060: Mesh 1
+    100062: pickup_extinguisherDryPowder1:ctrl_itm_extinguisher
+    100064: pickup_extinguisherDryPowder1:Mesh
+    100066: pickup_extinguisherFoam3:ctrl_itm_extinguisher
+    100068: pickup_extinguisherFoam3:Mesh
+    100070: WaterExtinguisher
+    400000: Barrel
+    400002: Barrel1
+    400004: Barrel2
+    400006: Barrel3
+    400008: Barrel4
+    400010: Barrel5
+    400012: Barrel6
+    400014: Box1
+    400016: Box2
+    400018: Box3
+    400020: Box4
+    400022: Box5
+    400024: Box6
+    400026: CO2Extinguisher
+    400028: DryPowderExtinguisher
+    400030: FoamExtinguisher
+    400032: ForkLift
+    400034: Level3_LoadingBay
+    400036: //RootNode
+    400038: LoadingBayPole1
+    400040: LoadingBayPole2
+    400042: LoadingBayPole3
+    400044: LoadingBayPole4
+    400046: LoadingBayShelf1
+    400048: LoadingBayShelf2
+    400050: LoadingDockDoorFrame
+    400052: LoadingDockFloorAndWall
+    400054: LoadingDockShelf
+    400056: LoadingDockTopOfDoor
+    400058: Mesh
+    400060: Mesh 1
+    400062: pickup_extinguisherDryPowder1:ctrl_itm_extinguisher
+    400064: pickup_extinguisherDryPowder1:Mesh
+    400066: pickup_extinguisherFoam3:ctrl_itm_extinguisher
+    400068: pickup_extinguisherFoam3:Mesh
+    400070: WaterExtinguisher
+    2100000: BlinnRed
+    2100002: LambertBlack
+    2100004: CO2Extinguisher1
+    2100006: BlinnGold
+    2100008: WaterExtinguisher1
+    2100010: FoamExtinguisher1
+    2100012: LambertLightGrey
+    2100014: LambertTan
+    2100016: LambertGreen
+    2100018: LambertYellow
+    2100020: DryPowderExtinguisher1
+    2100022: BarrelBlue
+    2100024: LambertDarkGrey
+    2100026: LambertRed
+    2100028: LambertSkyBlue
+    2100030: LambertBoxTan
+    2100032: LambertWhite
+    2100034: BlinnGrey
+    2100036: LambertGrey
+    2100038: LambertTransWhite
+    2300000: Barrel
+    2300002: Barrel1
+    2300004: Barrel2
+    2300006: Barrel3
+    2300008: Barrel4
+    2300010: Barrel5
+    2300012: Barrel6
+    2300014: Box1
+    2300016: Box2
+    2300018: Box3
+    2300020: Box4
+    2300022: Box5
+    2300024: Box6
+    2300026: ForkLift
+    2300028: LoadingBayPole1
+    2300030: LoadingBayPole2
+    2300032: LoadingBayPole3
+    2300034: LoadingBayPole4
+    2300036: LoadingBayShelf1
+    2300038: LoadingBayShelf2
+    2300040: LoadingDockDoorFrame
+    2300042: LoadingDockFloorAndWall
+    2300044: LoadingDockTopOfDoor
+    2300046: Mesh
+    2300048: Mesh 1
+    2300050: pickup_extinguisherDryPowder1:Mesh
+    2300052: pickup_extinguisherFoam3:Mesh
+    3300000: Barrel
+    3300002: Barrel1
+    3300004: Barrel2
+    3300006: Barrel3
+    3300008: Barrel4
+    3300010: Barrel5
+    3300012: Barrel6
+    3300014: Box1
+    3300016: Box2
+    3300018: Box3
+    3300020: Box4
+    3300022: Box5
+    3300024: Box6
+    3300026: ForkLift
+    3300028: LoadingBayPole1
+    3300030: LoadingBayPole2
+    3300032: LoadingBayPole3
+    3300034: LoadingBayPole4
+    3300036: LoadingBayShelf1
+    3300038: LoadingBayShelf2
+    3300040: LoadingDockDoorFrame
+    3300042: LoadingDockFloorAndWall
+    3300044: LoadingDockTopOfDoor
+    3300046: Mesh
+    3300048: Mesh 1
+    3300050: pickup_extinguisherDryPowder1:Mesh
+    3300052: pickup_extinguisherFoam3:Mesh
+    4300000: Mesh
+    4300002: Mesh
+    4300004: pickup_extinguisherFoam3:Mesh
+    4300006: LoadingDockFloorAndWall
+    4300008: pickup_extinguisherDryPowder1:Mesh
+    4300010: Barrel6
+    4300012: Barrel5
+    4300014: Barrel4
+    4300016: Barrel3
+    4300018: ForkLift
+    4300020: Box6
+    4300022: Box5
+    4300024: Box4
+    4300026: Box3
+    4300028: Box2
+    4300030: Box1
+    4300032: Barrel
+    4300034: Barrel1
+    4300036: Barrel2
+    4300038: LoadingBayPole1
+    4300040: LoadingBayPole2
+    4300042: LoadingBayPole3
+    4300044: LoadingBayPole4
+    4300046: LoadingBayShelf1
+    4300048: LoadingBayShelf2
+    4300050: LoadingDockDoorFrame
+    4300052: LoadingDockTopOfDoor
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BarrelBlue
+    second: {fileID: 2100000, guid: e270b04116f50e44693f3885f69954bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlinnGold
+    second: {fileID: 2100000, guid: ceca16fa47cf9ab4ca6e97554a7c31c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlinnGrey
+    second: {fileID: 2100000, guid: 66916a3f7b153c149a3c96307ac235c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlinnRed
+    second: {fileID: 2100000, guid: 973fa9536c6cb5d47a2d356240be3f74, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CO2Extinguisher1
+    second: {fileID: 2100000, guid: 341912fd287f00c4cb21505a328dda26, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DryPowderExtinguisher1
+    second: {fileID: 2100000, guid: bf3c26a2a1d45e0408e8e6b828fdf6a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FoamExtinguisher1
+    second: {fileID: 2100000, guid: bf3c26a2a1d45e0408e8e6b828fdf6a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LambertBlack
+    second: {fileID: 2100000, guid: 2bed9ed8ab0e4a54eb77059ee963b0e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LambertBoxTan
+    second: {fileID: 2100000, guid: 247d21ae50e308341b3ea0b780d71e06, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LambertDarkGrey
+    second: {fileID: 2100000, guid: e0a203ee197eff7449aceb832e51f26a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LambertGreen
+    second: {fileID: 2100000, guid: a917f176bdca92b468872294aef8e429, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LambertGrey
+    second: {fileID: 2100000, guid: 66916a3f7b153c149a3c96307ac235c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LambertLightGrey
+    second: {fileID: 2100000, guid: c0f757679d6136d40a8e5aa60d430de9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LambertRed
+    second: {fileID: 2100000, guid: f41a1937da376b74895bb1f8d8c84562, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LambertSkyBlue
+    second: {fileID: 2100000, guid: d9f4d814ad95c1e45af8fa0255d89a90, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LambertTan
+    second: {fileID: 2100000, guid: 1746517267bc9214a85a5a493f53d6f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LambertTransWhite
+    second: {fileID: 2100000, guid: 63faf11ad9cd7004e82079ec0976c55b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LambertWhite
+    second: {fileID: 2100000, guid: bf3c26a2a1d45e0408e8e6b828fdf6a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LambertYellow
+    second: {fileID: 2100000, guid: 31b17b3d689514f419d93e55d5e785c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WaterExtinguisher1
+    second: {fileID: 2100000, guid: bf3c26a2a1d45e0408e8e6b828fdf6a6, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 64
+    meshCompression: 3
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
