@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "5.984/x64" 1586609675
+<REAPER_PROJECT 0.1 "5.984/x64" 1587571525
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
   AUTOXFADE 1
@@ -14,21 +14,21 @@
   TIMEMODE 1 5 -1 30 0 0 -1
   VIDEO_CONFIG 0 0 256
   PANMODE 3
-  CURSOR 2.63500421130683
-  ZOOM 50.47430263272285 0 0
-  VZOOMEX 10
+  CURSOR 467.68381442009644
+  ZOOM 8.95768042515003 3535 0
+  VZOOMEX 8
   USE_REC_CFG 0
   RECMODE 1
   SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
-  LOOP 0
+  LOOP 1
   LOOPGRAN 0 4
   RECORD_PATH "" ""
   <RECORD_CFG
   >
   <APPLYFX_CFG
   >
-  RENDER_FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\SFX"
-  RENDER_PATTERN $track
+  RENDER_FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\Dialogue"
+  RENDER_PATTERN $item
   RENDER_FMT 0 2 44100
   RENDER_1X 0
   RENDER_RANGE 4 0 0 2 1000
@@ -56,8 +56,8 @@
   GLOBAL_AUTO -1
   TEMPO 120 4 4
   PLAYRATE 1 0 0.25 4
-  SELECTION 0 728.98656489088035
-  SELECTION2 0 728.98656489088035
+  SELECTION 452.78487401524438 467.68344172239171
+  SELECTION2 452.78487401524438 467.68344172239171
   MASTERAUTOMODE 0
   MASTERTRACKHEIGHT 0 0
   MASTERPEAKCOL 16576
@@ -132,7 +132,7 @@
     <ITEM
       POSITION 0
       SNAPOFFS 0
-      LENGTH 48.60697916666667
+      LENGTH 2.42616985850149
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
@@ -147,6 +147,29 @@
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {FD2435F3-8EF6-A646-BD6A-F88E67F45A18}
+      RECPASS 2
+      <SOURCE WAVE
+        FILE "01-test-200224_1124.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.42616985850149
+      SNAPOFFS 0
+      LENGTH 46.18080930816517
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {90972324-EDDB-4B14-8ED0-3878AB1DD4BE}
+      IID 1093
+      NAME 01-test-200224_1124.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.42616985850149
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {05B56296-936F-4D0A-B1D5-33DE6C1B0AC8}
       RECPASS 2
       <SOURCE WAVE
         FILE "01-test-200224_1124.wav"
@@ -685,7 +708,7 @@
     <ITEM
       POSITION 0
       SNAPOFFS 0
-      LENGTH 131.69497916666666
+      LENGTH 2.42616985850149
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
@@ -700,6 +723,29 @@
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {18C2A0CF-5606-F24A-8E95-B17ABAFD568B}
+      RECPASS 4
+      <SOURCE WAVE
+        FILE "02-Footsteps-200224_1131.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.42616985850149
+      SNAPOFFS 0
+      LENGTH 129.26880930816517
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {DA6A999E-823E-4CC6-9C97-80BE7F4E2202}
+      IID 1094
+      NAME 02-Footsteps-200224_1131.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.42616985850149
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5BEB4C11-91FC-4FD2-8564-1E7B8DE2CA47}
       RECPASS 4
       <SOURCE WAVE
         FILE "02-Footsteps-200224_1131.wav"
@@ -1478,7 +1524,7 @@
     <ITEM
       POSITION 0
       SNAPOFFS 0
-      LENGTH 50.3723125
+      LENGTH 2.42616985850149
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
@@ -1493,6 +1539,29 @@
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {CB6DF3C8-C776-2C42-8BD7-50BC1AEB4B4E}
+      RECPASS 7
+      <SOURCE WAVE
+        FILE "04-Boxe sounds-200224_1140-01.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.42616985850149
+      SNAPOFFS 0
+      LENGTH 47.9461426414985
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {C5E41E57-BDB8-4894-82E0-85BDF40D06A1}
+      IID 1095
+      NAME "04-Boxe sounds-200224_1140-01.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.42616985850149
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7D748687-08EB-4D69-813F-979364EF92BD}
       RECPASS 7
       <SOURCE WAVE
         FILE "04-Boxe sounds-200224_1140-01.wav"
@@ -2016,7 +2085,7 @@
     <ITEM
       POSITION 0
       SNAPOFFS 0
-      LENGTH 21.46564583333333
+      LENGTH 2.42616985850149
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
@@ -2031,6 +2100,29 @@
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {24C96795-90C8-214E-9844-7169BCB832D7}
+      RECPASS 8
+      <SOURCE WAVE
+        FILE "05-door-200224_1143.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.42616985850149
+      SNAPOFFS 0
+      LENGTH 19.03947597483184
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {2F353E0C-A51F-4129-9C42-7EB6EB79A9B3}
+      IID 1096
+      NAME 05-door-200224_1143.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.42616985850149
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {8330B92F-9A10-4FF1-9ED1-80C8C15E3C1D}
       RECPASS 8
       <SOURCE WAVE
         FILE "05-door-200224_1143.wav"
@@ -2067,19 +2159,19 @@
     BEAT -1
     AUTOMODE 0
     VOLPAN 0.74917433089972 0 -1 -1 1
-    MUTESOLO 0 0 0
+    MUTESOLO 0 2 0
     IPHASE 0
     ISBUS 1 1
     BUSCOMP 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
     FREEMODE 0
-    SEL 0
+    SEL 1
     REC 0 0 0 0 0 0 0
     VU 2
     TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
-    FX 0
+    FX 1
     TRACKID {9FCCF91E-CEF1-4B15-BB1A-5D5D9E24C76E}
     PERF 0
     MIDIOUT -1
@@ -2117,8 +2209,8 @@
       BYPASS 0 0 0
       <VST "VST: ReaEQ (Cockos)" reaeq.dll 0 "" 1919247729 ""
         cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAyQAAAAEAAAAAABAA
-        IQAAAAUAAAAEAAAAAQAAACVxp1FL91RAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAIFwg263lVpAKSb8+I4k9D8AAAAAAAAAQAEIAAAAAQAAAIE5w6qTkXhAf8TNCyNr
-        6T+B///////vPwEBAAAAAQAAAICOIqouNL1AKSb8+I4k9D9WMzMzMzPjPwEIAAAAAQAAAP8q+3melqhAAsjbCO/e6z8ANTMzMzPjPwEBAAAAAQAAAAAAAAAAAPA/AAAA
+        IQAAAAUAAAAEAAAAAQAAACNxp1FL91RA4f//////7z/h////////PwEIAAAAAQAAAI9wg263lVpANyb8+I4k9D/h////////PwEIAAAAAQAAAHk5w6qTkXhAYcTNCyNr
+        6T+X///////vPwEBAAAAAQAAAHGOIqouNL1ANyb8+I4k9D9nMzMzMzPjPwEIAAAAAQAAABcr+3melqhAAcjbCO/e6z8ANTMzMzPjPwEBAAAAAQAAAAAAAAAAAPA/AAAA
         AK4CAABhAQAA
         AAAQAAAA
       >
@@ -2144,7 +2236,7 @@
     <ITEM
       POSITION 0
       SNAPOFFS 0
-      LENGTH 468.46154195011337
+      LENGTH 2.42616985850149
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
@@ -2163,6 +2255,28 @@
         FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
       >
     >
+    <ITEM
+      POSITION 2.42616985850149
+      SNAPOFFS 0
+      LENGTH 466.03537209161186
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {CA4EAA5C-64D5-4986-8F88-60CA7205B185}
+      IID 1097
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.42616985850149
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9053ED9F-8AC8-48B2-9364-0C41F24297F4}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
   >
   <TRACK {C00C2103-62AC-405B-A8E4-A3BD83AE2107}
     NAME "Section 1: Risk Assessment"
@@ -2170,16 +2284,16 @@
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
-    MUTESOLO 1 2 0
+    MUTESOLO 0 0 0
     IPHASE 0
     ISBUS 1 1
-    BUSCOMP 0 0
+    BUSCOMP 2 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
     FREEMODE 0
-    SEL 1
+    SEL 0
     REC 0 0 0 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 0 0
+    TRACKHEIGHT 39 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -2190,13 +2304,13 @@
     <ITEM
       POSITION 1.49505051054485
       SNAPOFFS 0
-      LENGTH 2.48330423785415
+      LENGTH 0.93111934795664
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.011176 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
       MUTE 0
-      SEL 1
+      SEL 0
       IGUID {981D08AF-ED9B-4295-8E9C-B3B8BF735155}
       IID 1028
       NAME VoiceOver.wav
@@ -2209,6 +2323,28 @@
         FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
       >
     >
+    <ITEM
+      POSITION 2.42616985850149
+      SNAPOFFS 0
+      LENGTH 1.55218488989751
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.011176 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {73FBDBD7-1248-473D-93FF-896129769AE4}
+      IID 1098
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.42616985850149
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {74A2DAB2-3F45-40FF-8A5D-433D62022266}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
   >
   <TRACK {0620B82D-BDBF-4F7D-8386-F0B0CC0EBAAF}
     NAME "Scene 1: On scene wake"
@@ -2216,7 +2352,1939 @@
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
-    MUTESOLO 1 2 0
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 1 1
+    BUSCOMP 2 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {0620B82D-BDBF-4F7D-8386-F0B0CC0EBAAF}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 5.02422771655501
+      SNAPOFFS 0
+      LENGTH 9.33671027924287
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {55728D82-F85D-42BB-B939-42A0A2830FF5}
+      IID 1067
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 5.02485372511077
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0EE88DDA-EAD1-49A5-AC98-D5425BE91E4F}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {38FAA51D-84CD-467A-B6D5-2F4441F248FF}
+    NAME "Scene 1: On scene wake #2"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {38FAA51D-84CD-467A-B6D5-2F4441F248FF}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 16.50344742871114
+      SNAPOFFS 0
+      LENGTH 5.72568584261407
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {E075EAFF-6879-4079-84B3-2F5A11E1BCEE}
+      IID 1042
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 16.46382330523285
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {EF27480B-36A8-47FA-8F4E-38A1349CD962}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {E02B18A6-A7D5-4849-9AB5-0B3E462EC5EB}
+    NAME "Player moves to door"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {E02B18A6-A7D5-4849-9AB5-0B3E462EC5EB}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 24.65177982709687
+      SNAPOFFS 0
+      LENGTH 13.41651418329999
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {64D2F1D2-04C6-47CC-BA36-FD4DB6F11F6E}
+      IID 1043
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 24.59108024266085
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {FD1E251D-2DED-4E43-A3C5-6F775579962D}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {1C998E32-787A-4885-8FC8-2F58D87EEB46}
+    NAME "Player clicks on door and enters minigame"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {1C998E32-787A-4885-8FC8-2F58D87EEB46}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 39.84329418120087
+      SNAPOFFS 0
+      LENGTH 11.33349630716001
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {5150BAA5-F0EE-4F02-BEA4-4DFFD2083A9C}
+      IID 1044
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 40.08442420509385
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B25B14AB-E3BD-4A5B-B799-CBB1A2826017}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {79801E7D-AC6A-45FE-9E78-1D50D71C9A5B}
+    NAME "If player takes too long clearing the boxes"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {79801E7D-AC6A-45FE-9E78-1D50D71C9A5B}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 53.42167126743341
+      SNAPOFFS 0
+      LENGTH 4.75141531267209
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {31233BA0-E2CC-4699-8E84-DDF836FC9FA6}
+      IID 1045
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 53.42109738832281
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E6EEBE87-273A-4F4B-BDFF-B7032BA8EC12}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {67FDDE20-DB14-499E-9148-4268B9AF0E89}
+    NAME "Upon completion of minigame"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 2 -1
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {67FDDE20-DB14-499E-9148-4268B9AF0E89}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 59.72065321599225
+      SNAPOFFS 0
+      LENGTH 5.93638377179163
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {2A83A2AD-AD41-4A1C-AA4B-C9CB6206FECE}
+      IID 1046
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 59.73428839070415
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {59113F72-EB86-4C54-94C4-24DEF5C741CA}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {B9DB1935-8022-4C15-ADD4-91745A3A8F22}
+    NAME "Scene 2: on scene wake"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 1 1
+    BUSCOMP 2 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {B9DB1935-8022-4C15-ADD4-91745A3A8F22}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 70.61395048501986
+      SNAPOFFS 0
+      LENGTH 10.14838595854739
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {E2BB852A-2D79-4690-9D48-098A969110D0}
+      IID 1059
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 70.6414016051377
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {1110117C-CE25-4A25-9773-6FB3DE7566A0}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {B646352E-0962-476E-A50F-9A420774A19A}
+    NAME "Player moves around environment, encounters hazard. Hazard is highlighted"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {B646352E-0962-476E-A50F-9A420774A19A}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 82.84999999999614
+      SNAPOFFS 0
+      LENGTH 4.63549951775414
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {D653D11E-6043-4DC4-B619-3D504ACB5909}
+      IID 1060
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 82.8707582506474
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A8A5ECE9-2991-457E-B094-A855BA323C67}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {1F677632-DCF5-48CF-A6CA-9BE8AA29744C}
+    NAME "Player clicks on hazard and enters minigame"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {1F677632-DCF5-48CF-A6CA-9BE8AA29744C}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 90.08525030529674
+      SNAPOFFS 0
+      LENGTH 22.60236098080668
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {7A219412-17F0-46CF-B84C-60C5257135D4}
+      IID 1061
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 90.39580059363132
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BE7B1770-89B5-4DEC-A4A6-6F23EACB36E8}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {3D19238A-9F92-4FFB-8D35-E74D92620E30}
+    NAME "Player plays minigame. Once they’ve finished, start talking again"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {3D19238A-9F92-4FFB-8D35-E74D92620E30}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 115.60486189990679
+      SNAPOFFS 0
+      LENGTH 10.73632163852835
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {14C9CF33-EAAD-4987-969C-9F79745536FB}
+      IID 1062
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 115.61768947810404
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {619CC18B-7A31-4FCB-B9DE-FA44A446B340}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {D150D604-F00E-4F17-B471-7DD25EA5EBB9}
+    NAME "Player moves onto the next room"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {D150D604-F00E-4F17-B471-7DD25EA5EBB9}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 130.80422128168831
+      SNAPOFFS 0
+      LENGTH 6.91129355805705
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {43C7758A-6B69-4908-94E2-6C21E80B5F86}
+      IID 1064
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 130.91652852024868
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F11B4BD1-A79E-4590-8862-B197FAAD5065}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {88B458FA-2A45-4902-B8C2-A9160C609E8A}
+    NAME "Player identifies group of smokers"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {88B458FA-2A45-4902-B8C2-A9160C609E8A}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 139.88936803179689
+      SNAPOFFS 0
+      LENGTH 10.55810169428003
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {00C5901F-8162-4AAB-A701-8188415A13B7}
+      IID 1065
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 140.14259599411653
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9306B9FE-6CC5-4EA7-802C-ECDCE821843D}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {84B362FF-8C73-4626-A53F-B1474D135C1D}
+    NAME "If player takes too long"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {84B362FF-8C73-4626-A53F-B1474D135C1D}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 154.46350100992979
+      SNAPOFFS 0
+      LENGTH 5.82072244139241
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {54585763-9AF1-448E-8080-ED2034099946}
+      IID 1424
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 154.49895029846797
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {44F4CDCA-2150-45CA-B79C-D36CD31CEDA3}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {ADE692B5-E058-404A-9D4C-D406ECFAC8DD}
+    NAME "If player finds No Smoking sign, NPCs will leave"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 2 -2
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {ADE692B5-E058-404A-9D4C-D406ECFAC8DD}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 162.50236520732415
+      SNAPOFFS 0
+      LENGTH 9.05459829107247
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {791D2CF2-C70C-4DFF-BE41-690D7BAF882F}
+      IID 1425
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 162.47727177595578
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {CD269006-22A7-4CB0-BFD0-03D545BE0725}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {159518AA-DF9F-4B1A-9195-1E4A16C07CBE}
+    NAME "Section 2: Dealing with Fire"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 1 1
+    BUSCOMP 2 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 37 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {159518AA-DF9F-4B1A-9195-1E4A16C07CBE}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 176.07846567273319
+      SNAPOFFS 0
+      LENGTH 15.48491043903596
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {12B95AC5-0A5A-4D06-AF48-10FFFE760847}
+      IID 1426
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 176.06979371589961
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6EE65689-FCDE-46F1-9BC0-76FBE491DD78}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {9F439D22-DB56-421D-B4F1-F8C48C1FF49B}
+    NAME "Section 2: Dealing with Fire - Next"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {9F439D22-DB56-421D-B4F1-F8C48C1FF49B}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 192.648894942064
+      SNAPOFFS 0
+      LENGTH 7.4938941995764
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {7ADEF5AE-7C66-4675-875E-4DC9A18A3C58}
+      IID 1427
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 192.74143260028299
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {FBD9155E-39CB-41BC-ACED-C3FAC5E4FA4C}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {0556DF04-952D-48A6-BA74-4AB9BC2C629E}
+    NAME "Electrical fire room"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 1 1
+    BUSCOMP 2 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {0556DF04-952D-48A6-BA74-4AB9BC2C629E}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 202.30366914940683
+      SNAPOFFS 0
+      LENGTH 11.14972562534686
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {DCC1847D-CA24-4016-87A2-EFA759FF8DB7}
+      IID 1428
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 202.34070054920181
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {87545A0F-C7B8-4E07-94D6-F830A5DCC219}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {354A249A-7F52-4ADA-81C1-307D42C6D479}
+    NAME "Player goes to select extinguisher. Player then exits extinguisher menu"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {354A249A-7F52-4ADA-81C1-307D42C6D479}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 216.53892134719175
+      SNAPOFFS 0
+      LENGTH 5.9098938336777
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {B9A35BCE-A88E-40BF-9428-2695E024DC66}
+      IID 1429
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 216.57203398115857
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B04ECC06-9835-4CDB-9AC2-4E880F2D5498}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {AEB66F5C-3247-46A8-9303-F28F591EBB18}
+    NAME "If player chooses the wrong extinguisher and uses it on the fire"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {AEB66F5C-3247-46A8-9303-F28F591EBB18}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 224.85663295462007
+      SNAPOFFS 0
+      LENGTH 4.63584850746355
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {D2766899-BE56-498A-8BF7-A5380AB2FE80}
+      IID 1430
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 224.83145772171497
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D1DAB21B-6865-4D01-9ABD-CD5C1B5B3A06}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {0C2A4FEE-B0E9-4733-BFA0-80409BB42453}
+    NAME "If player chooses the correct extinguisher and uses it"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 2 -1
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {0C2A4FEE-B0E9-4733-BFA0-80409BB42453}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 233.43032992462545
+      SNAPOFFS 0
+      LENGTH 9.99022790072459
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {3E3D27CB-4425-4C9B-AAF2-EAE65A866E84}
+      IID 1431
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 233.4280072100685
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7B31EC73-6FB9-4E61-A033-64FF31F6A3FC}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {B427A96E-CE9D-4AED-8882-9FBE091E28B0}
+    NAME "Solid Fire Room"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 1 1
+    BUSCOMP 2 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {B427A96E-CE9D-4AED-8882-9FBE091E28B0}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 248.62076841139651
+      SNAPOFFS 0
+      LENGTH 11.22716967677741
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {1CDB933E-BD6D-44DA-9D42-1B43820ACF5B}
+      IID 1564
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 248.68206885097314
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {8CDEF396-AE04-4C0C-AD44-422BCDC83EA2}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {6AA8650E-D44C-4115-83AE-BEE456448546}
+    NAME "Player goes to select extinguisher. Player then exits extinguisher menu"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {6AA8650E-D44C-4115-83AE-BEE456448546}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 262.69309859914813
+      SNAPOFFS 0
+      LENGTH 3.46425688104938
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {D518BB86-33BC-4931-8B4D-3ED9E3336A0F}
+      IID 1565
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 262.82866582238773
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {1091B615-ADB6-4FE7-AE51-06B540D72975}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {C0A93CD3-8FB9-4E87-B9F9-5AD6F9757E2F}
+    NAME "If player chooses the wrong extinguisher and uses it on the fire"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {C0A93CD3-8FB9-4E87-B9F9-5AD6F9757E2F}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 268.68107035525605
+      SNAPOFFS 0
+      LENGTH 4.9609114832121
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {E522AE4B-36D7-45C5-97BF-2D7C1A320830}
+      IID 1566
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 268.9099976432542
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5D56A9C4-AD71-4634-AD65-BC04E13FB561}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {869BAE60-7BC9-4F0F-BCFE-FE2C92DAED43}
+    NAME "If player chooses the correct extinguisher and uses it"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 2 -1
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {869BAE60-7BC9-4F0F-BCFE-FE2C92DAED43}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 277.84706742019614
+      SNAPOFFS 0
+      LENGTH 9.39579902858816
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {A6A78682-6BA8-4B50-B2B5-F0CC01103FCB}
+      IID 1567
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 277.86283681962374
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F5E3771B-35F7-4BDE-8897-47E37BA1BCF7}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {B3B5C5A5-D8E3-4822-9E48-8AB16EDE01B5}
+    NAME "Liquid Fire Room"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 1 1
+    BUSCOMP 2 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {B3B5C5A5-D8E3-4822-9E48-8AB16EDE01B5}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 290.97343799079124
+      SNAPOFFS 0
+      LENGTH 9.67480958460254
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {DA43D69C-B608-4CC5-BBFC-BEDD6D27134F}
+      IID 1568
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 290.76223320080021
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A4C66BF7-7D3B-41B8-9929-84C70053A765}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {E12ADACB-D2C4-4641-A837-8D7F32895F0B}
+    NAME "Player goes to select extinguisher. Player then exits extinguisher menu"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {E12ADACB-D2C4-4641-A837-8D7F32895F0B}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 302.78822348050215
+      SNAPOFFS 0
+      LENGTH 3.73131193608191
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {7A096497-420A-47D2-B527-DF7578DD95F9}
+      IID 1569
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 302.9428376689433
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E4CFCA0D-A5DA-4AC7-B2C3-D96545C41D4C}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {2891C22E-3C8F-4485-9C62-B891ED61C6EC}
+    NAME "If player chooses the wrong extinguisher and uses it on the fire"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {2891C22E-3C8F-4485-9C62-B891ED61C6EC}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 308.23823190729865
+      SNAPOFFS 0
+      LENGTH 4.57530331043313
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {D40CD8CC-9320-4C32-A4A2-CFD2D802A36F}
+      IID 1570
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 308.40519765600374
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {2E3DA3E5-66F0-45AB-B143-ABE118CB0E18}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {69A7D61D-5C4A-4C97-BFB9-B9627B6B0D14}
+    NAME "If player chooses the correct extinguisher and uses it"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 2 -1
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {69A7D61D-5C4A-4C97-BFB9-B9627B6B0D14}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 316.91886393331202
+      SNAPOFFS 0
+      LENGTH 8.19907795991276
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {1B7F0A68-B2D1-4B39-82DB-A4C890DC8ED9}
+      IID 1571
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 316.96819767666943
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {50CAF584-55E6-4A3F-AD8A-1D387B6892DB}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {72328337-3044-4315-AFE8-86E7B2C3A239}
+    NAME "Gas Fire Room"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {72328337-3044-4315-AFE8-86E7B2C3A239}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 328.88078487153422
+      SNAPOFFS 0
+      LENGTH 7.95102199026871
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {5ED3CA5D-D3D9-4958-BACF-DB1465B31981}
+      IID 1572
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 328.97678837098556
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {99BCFFC7-95DA-433E-B95F-865C0B61196E}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {489D35E3-CADD-4C1D-B876-ECCC756EF9CA}
+    NAME "Player goes to select extinguisher. Player then exits extinguisher menu"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {489D35E3-CADD-4C1D-B876-ECCC756EF9CA}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 339.68299184162413
+      SNAPOFFS 0
+      LENGTH 3.17277532585376
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {8D005C0F-1261-49D8-A98F-7F9F3469245C}
+      IID 1573
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 339.70805457926838
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7C5E051D-FD89-419D-A255-95E5FE64842B}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {0A09FDB5-3317-42B0-B2A8-2CA0B2297094}
+    NAME "If player chooses the wrong extinguisher and uses it on the fire"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {0A09FDB5-3317-42B0-B2A8-2CA0B2297094}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 346.03871031095485
+      SNAPOFFS 0
+      LENGTH 6.41120266244724
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {FEC27592-5A4E-4FF9-9BB7-E00905F3A8AF}
+      IID 1574
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 346.07334608838494
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3B1F92D4-0F05-42BB-BC37-2E63666BA7CF}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {E3D0A68D-2F96-4520-9223-9DCD88AC99D0}
+    NAME "If player chooses the correct extinguisher and uses it"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {E3D0A68D-2F96-4520-9223-9DCD88AC99D0}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 354.76573933082818
+      SNAPOFFS 0
+      LENGTH 5.224170702896
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {5409585F-DF2B-4B19-994E-CFC36EC52A71}
+      IID 1575
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 354.90588921813014
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {36EB0813-F214-4909-9767-819CD0021C6D}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {33162A5E-FBA8-4122-AC62-7ECA04629A95}
+    NAME "Player returns to the hub room after completing all four fires"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 2 -1
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {33162A5E-FBA8-4122-AC62-7ECA04629A95}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 363.82186518397185
+      SNAPOFFS 0
+      LENGTH 20.48155394323146
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {747AB607-3251-4D59-AFB9-243901C46D63}
+      IID 1576
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 364.03388400277544
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {37DB5924-F86F-49A1-AB58-670D75B1A372}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {B843AE2B-1693-4A40-899A-BEFB6904D6F9}
+    NAME "Section 3:"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 1 1
+    BUSCOMP 1 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 30 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {B843AE2B-1693-4A40-899A-BEFB6904D6F9}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 390.4997161515181
+      SNAPOFFS 0
+      LENGTH 30.48820445987423
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {D1B63E72-AE7C-40D3-9AAB-102FEB960CB3}
+      IID 1126
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 390.58357039305019
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9266C587-9ABC-4940-8DC0-96FF55441D23}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {DAD51FCB-43EF-4635-A150-8C06BB5B1E63}
+    NAME "Section 3: - End"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {DAD51FCB-43EF-4635-A150-8C06BB5B1E63}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 422.07994379752768
+      SNAPOFFS 0
+      LENGTH 1.8457836229274
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {8B567B1E-55F1-4070-AABF-5F791276E70F}
+      IID 1128
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 422.09271963093124
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7768EDF7-E37A-4976-BBB5-A6369DF33B6B}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {21452DB1-B6E2-4007-A95A-AFD737E837E8}
+    NAME "A fire breaks out during the level"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {21452DB1-B6E2-4007-A95A-AFD737E837E8}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 427.28320134005895
+      SNAPOFFS 0
+      LENGTH 2.94858147671511
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 2 0.082365 0 2 0 -1
+      MUTE 0
+      SEL 0
+      IGUID {089C300D-1A77-4983-BA16-7A2243715F94}
+      IID 1577
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 427.36886126297924
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B60B5176-AB8C-4812-A39B-F53F4562273B}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {8437A82B-AA74-4FC0-BD97-85621879B29A}
+    NAME "Fire Solid"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {8437A82B-AA74-4FC0-BD97-85621879B29A}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 430.24776620725669
+      SNAPOFFS 0
+      LENGTH 1.23822597287659
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.024918 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {1AE2B776-416B-435E-B622-E8D04A187D9D}
+      IID 1578
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 430.25939005934134
+      PLAYRATE 1.2999999999995 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D1629E99-894D-429A-8A08-BC8D9C0272CB}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {C8B58BCB-7FE5-44CE-8419-833FA6CD1517}
+    NAME "Fire Liquid"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {C8B58BCB-7FE5-44CE-8419-833FA6CD1517}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 432.90068810695408
+      SNAPOFFS 0
+      LENGTH 1.21216103132269
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {54B20953-37EF-46EA-9E33-63DD2E533C41}
+      IID 1582
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 432.93575272154027
+      PLAYRATE 1.3 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {38E272C8-A1FD-4BE3-8C89-BE80A6B00FC7}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {EF69F48D-2701-4DD6-A28C-6B9E6B2F1CBD}
+    NAME "Fire Gas"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {EF69F48D-2701-4DD6-A28C-6B9E6B2F1CBD}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 435.48553401052936
+      SNAPOFFS 0
+      LENGTH 1.07205890367413
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {520DB271-0921-4449-BF79-2B08303E366C}
+      IID 1580
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 435.48033499297384
+      PLAYRATE 1.39999999999984 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {CE71E825-68AE-4CE2-955F-D4B0EC060193}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {AA9B5A8C-F62F-4D35-9842-AB474B914B42}
+    NAME "Fire Electrical "
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {AA9B5A8C-F62F-4D35-9842-AB474B914B42}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 438.0264405084144
+      SNAPOFFS 0
+      LENGTH 1.09749770018209
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {DD1F82AB-DE41-45F9-9FE0-4E89514B2BA5}
+      IID 1581
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 438.05450428949081
+      PLAYRATE 1.19999999999963 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B1A811D5-4613-4EE9-B271-3B750BCD523C}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {593CCF4A-CAD4-4DB2-AF4A-F965AFD176E3}
+    NAME "The player deals with a hazard, including a fire"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {593CCF4A-CAD4-4DB2-AF4A-F965AFD176E3}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 442.08579815083374
+      SNAPOFFS 0
+      LENGTH 6.00082338736178
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {E2D8D603-7CD7-4CBF-81C6-6265BEA66F56}
+      IID 1585
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 442.26555118568245
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BDDC3664-1F14-4F17-A942-D12B1C05E246}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {64376B49-8D7C-405E-98B8-F69531FFB41D}
+    NAME "The player deals with a hazard, including a fire - Next"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {64376B49-8D7C-405E-98B8-F69531FFB41D}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 449.38156543472888
+      SNAPOFFS 0
+      LENGTH 0.89408512593951
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {125C356B-98DD-4D57-A38A-BD327B08DAE1}
+      IID 1586
+      NAME VoiceOver.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 449.38319594737129
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {FC159B7B-2652-46FD-A3B8-BC4FB59E84EC}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
+      >
+    >
+  >
+  <TRACK {468E0A4C-D747-45E3-BF5D-39D0FDC4292E}
+    NAME "The player deals with all of the hazards"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
     IPHASE 0
     ISBUS 2 -2
     BUSCOMP 0 0
@@ -2229,28 +4297,28 @@
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
-    TRACKID {0620B82D-BDBF-4F7D-8386-F0B0CC0EBAAF}
+    TRACKID {468E0A4C-D747-45E3-BF5D-39D0FDC4292E}
     PERF 0
     MIDIOUT -1
     MAINSEND 1 0
     <ITEM
-      POSITION 5.00158694552209
+      POSITION 452.79579171100715
       SNAPOFFS 0
-      LENGTH 9.38508004976518
+      LENGTH 14.89856770714738
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
       FADEOUT 1 0.01 0 1 0 0
       MUTE 0
       SEL 1
-      IGUID {3DB269CE-7AFF-47A2-BB46-81790E19F214}
-      IID 1029
+      IGUID {CF42635C-46F9-4175-A9DC-D0A338EFBE42}
+      IID 1587
       NAME VoiceOver.wav
       VOLPAN 1 0 1 -1
-      SOFFS 5.00869147243335
+      SOFFS 452.78487401524438
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
-      GUID {84AFC40C-1722-42D9-B662-2D4B23BC8A94}
+      GUID {E4F8DA09-6C43-4267-BB28-52807764BC92}
       <SOURCE WAVE
         FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\VoiceOver.wav"
       >
@@ -2312,8 +4380,8 @@
       BYPASS 0 0 0
       <VST "VST: ReaEQ (Cockos)" reaeq.dll 0 "" 1919247729 ""
         cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAyQAAAAEAAAAAABAA
-        IQAAAAUAAAAEAAAAAQAAAChxp1FL91RAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAIFwg263lVpALyb8+I4k9D8AAAAAAAAAQAEIAAAAAQAAAIs5w6qTkXhAfsTNCyNr
-        6T+B///////vPwEBAAAAAQAAAICOIqouNL1AKSb8+I4k9D9WMzMzMzPjPwEIAAAAAQAAAP8q+3melqhAHMjbCO/e6z8ANTMzMzPjPwEBAAAAAQAAAAAAAAAAAPA/AAAA
+        IQAAAAUAAAAEAAAAAQAAADFxp1FL91RA8f//////7z/x////////PwEIAAAAAQAAAItwg263lVpANib8+I4k9D/x////////PwEIAAAAAQAAAIo5w6qTkXhAdcTNCyNr
+        6T+K///////vPwEBAAAAAQAAAHWOIqouNL1AMSb8+I4k9D9gMzMzMzPjPwEIAAAAAQAAAAUr+3melqhAE8jbCO/e6z8ANTMzMzPjPwEBAAAAAQAAAAAAAAAAAPA/AAAA
         AK4CAABhAQAA
         AAAQAAAA
       >
@@ -2339,7 +4407,7 @@
     <ITEM
       POSITION 1.01368351796371
       SNAPOFFS 0
-      LENGTH 670.26294649831618
+      LENGTH 1.41248634053778
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0 0 1 0 0
@@ -2354,6 +4422,28 @@
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {717548DB-FB96-43DC-98D9-111E55F9F23B}
+      <SOURCE MP3
+        FILE "E:\Users\arthurcompindubus\Downloads\J Honey Fire Draft 3.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 2.42616985850149
+      SNAPOFFS 0
+      LENGTH 668.85046015777834
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {F4DC6BA6-98E0-4086-A4F9-772CC4FA2C8B}
+      IID 1099
+      NAME "J Honey Fire Draft 3.mp3"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.9144378014054
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5059DDA6-FA1E-4E87-BBB7-089A7A3B042C}
       <SOURCE MP3
         FILE "E:\Users\arthurcompindubus\Downloads\J Honey Fire Draft 3.mp3" 1
       >
@@ -2429,7 +4519,7 @@
     <ITEM
       POSITION 0
       SNAPOFFS 0
-      LENGTH 496.00206349206223
+      LENGTH 2.42616985850149
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
@@ -2448,9 +4538,31 @@
         FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\J_Honey_Fire_Project.mp3" 1
       >
     >
+    <ITEM
+      POSITION 2.42616985850149
+      SNAPOFFS 0
+      LENGTH 493.57589363356072
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {E58A5B67-D8DB-4224-9151-472050951063}
+      IID 1100
+      NAME J_Honey_Fire_Project.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 2.42616985850149
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5E51938F-8076-4AAB-81B7-B7C7AAA94224}
+      <SOURCE MP3
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\J_Honey_Fire_Project.mp3" 1
+      >
+    >
   >
   <TRACK {7C27286C-D880-4353-ADEA-36973719FF93}
-    NAME ""
+    NAME "Google Trad Numbers"
     PEAKCOL 16576
     BEAT -1
     AUTOMODE 0
@@ -2462,7 +4574,7 @@
     SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
     FREEMODE 0
     SEL 0
-    REC 0 0 0 0 0 0 0
+    REC 0 1024 0 0 0 0 0
     VU 2
     TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
@@ -2472,6 +4584,2547 @@
     PERF 0
     MIDIOUT -1
     MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 1073 165 721 436
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaComp (Cockos)" reacomp.dll 0 "" 1919247213 ""
+        bWNlcu9e7f4EAAAAAQAAAAAAAAACAAAAAAAAAAQAAAAAAAAACAAAAAAAAAACAAAAAQAAAAAAAAACAAAAAAAAAFQAAAAAAAAAAAAQAA==
+        776t3g3wrd7G4eY8tX6lPVg5ND0K16M8AAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAnNEHM7/CIEAAAAAABzFLPQAAAAAAAAAAAAAAAAAAgD4AAAAA
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {9F40E7E4-BB8B-4A87-8615-F8E7E8D71640}
+      WAK 0
+      <COMMENT 
+        Q29tcHJlc3MgYW5kIGJyaW5nIGRvd24gcGVha3MgdGhlbiBpbmNyZWFzZSBnZW5lcmFsIG91dHB1dCBtaXggZm9yIG1vcmUgcHJlc2VuY2UgKCBsZXNzIG5hdHVyYWwg
+        c291bmQsIGJ1dCBpdCdzIG9rICk=
+      >
+      BYPASS 0 0 0
+      <VST "VST: ReaGate (Cockos)" reagate.dll 0 "" 1919248244 ""
+        dGdlcu9e7f4EAAAAAQAAAAAAAAACAAAAAAAAAAQAAAAAAAAACAAAAAAAAAACAAAAAQAAAAAAAAACAAAAAAAAAFQAAAAAAAAAAAAQAA==
+        776t3g3wrd6rHYI9qzcePQrXozwAAAAATxN5PQAAgD+PD4w7AAAAAAAAAACc0QczAACAP5zRBzMrrBs/AAAAAAAAAAAAAAAALBYLPwAAAAAAAAAA
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {49F1F4FC-2439-463E-B8A8-CD677C1106A2}
+      WAK 0
+      <COMMENT 
+        Tm9pc2UgR2F0ZSwgbWFrZSByZWFsIHNpbGVuY2UgYnR3biB3b3Jkcw==
+      >
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.dll 0 "" 1919247729 ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAyQAAAAEAAAAAABAA
+        IQAAAAUAAAAEAAAAAQAAADdxp1FL91RA4f//////7z/h////////PwEIAAAAAQAAAI9wg263lVpANyb8+I4k9D/h////////PwEIAAAAAQAAAHk5w6qTkXhAYcTNCyNr
+        6T+X///////vPwEBAAAAAQAAAHGOIqouNL1ANyb8+I4k9D9nMzMzMzPjPwEIAAAAAQAAABcr+3melqhAAcjbCO/e6z8ANTMzMzPjPwEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AK4CAABhAQAA
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {F2E8F4FC-1D2D-457A-9548-3B6923F456FF}
+      WAK 0
+      <COMMENT 
+        Rm9uZGFtZW50YWwgSGFybW9uaWMgTWFnbmlmaWVy
+      >
+      BYPASS 0 0 0
+      <VST "VST: ReaComp (Cockos)" reacomp.dll 0 "" 1919247213 ""
+        bWNlcu9e7f4EAAAAAQAAAAAAAAACAAAAAAAAAAQAAAAAAAAACAAAAAAAAAACAAAAAQAAAAAAAAACAAAAAAAAAFQAAAAAAAAAAAAQAA==
+        776t3g3wrd4JzAc9jC66PQAAAACAsEM7AAAAAAAAAAAAAIA/kOqHPgAAAAAAAAAAnNEHMwAAgD8AAAAAzcxMPQAAAAAAAAAAAAAAAAAAgD4AAAAA
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {E2BBBC2E-057B-4A03-A7D3-0135677C07D9}
+      WAK 0
+      <COMMENT 
+        RGUtRXNzZXIgIlMiIGFuZCAiVCIgZXJhc2Vy
+      >
+    >
+    <ITEM
+      POSITION 2.42616985850149
+      SNAPOFFS 0
+      LENGTH 0.57395768141449
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {89522690-5E67-4FA5-BB3C-6773C7A847EA}
+      IID 1101
+      NAME 1
+      VOLPAN 1 0 1 -1
+      SOFFS 2.42616985850149
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B1DF5829-ECA7-4D61-AA0E-EF235514C52E}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 5.94308744514409
+      SNAPOFFS 0
+      LENGTH 0.55345468043572
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.008268 0 1 0 0
+      FADEOUT 1 0.005874 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {EC99167E-BD12-466A-8368-0586BFCBA3A1}
+      IID 1110
+      NAME 2
+      VOLPAN 1 0 1 -1
+      SOFFS 5.94308744514409
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B160FF48-2B77-4072-904F-E8C7623A6675}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 8.1582066520429
+      SNAPOFFS 0
+      LENGTH 0.5436392364186
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.008268 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {4387D1A0-17DC-49DF-9589-E0B343F44E5F}
+      IID 1112
+      NAME 3
+      VOLPAN 1 0 1 -1
+      SOFFS 8.1582066520429
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {8178300A-BA01-4A85-8D6F-1BC56E5DF565}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 9.74401672532262
+      SNAPOFFS 0
+      LENGTH 0.62340503543772
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.004173 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {336A289E-8F12-42E7-BA38-0C81A006C3F8}
+      IID 1114
+      NAME 4
+      VOLPAN 1 0 1 -1
+      SOFFS 9.74401672532262
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C197C542-EDF8-41C2-8FD4-1AE27D893B9D}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 13.21699761990021
+      SNAPOFFS 0
+      LENGTH 0.97483921069537
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005874 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {EA6D0631-C0F4-44CD-AF34-FB49DC3EC5C4}
+      IID 1116
+      NAME 5
+      VOLPAN 1 0 1 -1
+      SOFFS 13.21699761990021
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {1DE785B4-A2B3-4838-B4CF-26183000EFE4}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 15.79279932997166
+      SNAPOFFS 0
+      LENGTH 0.73248735198032
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {7685DB81-3B20-46EB-A913-B3CFB76620BB}
+      IID 1118
+      NAME 6
+      VOLPAN 1 0 1 -1
+      SOFFS 15.79279932997166
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7B3E5C09-82D7-4C1C-B82D-6D596CFE2CC3}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 18.37769358857274
+      SNAPOFFS 0
+      LENGTH 0.73187738817442
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.005874 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {9CC323FD-A751-405C-A0EA-DC809C415A49}
+      IID 1120
+      NAME 7
+      VOLPAN 1 0 1 -1
+      SOFFS 18.37769358857274
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {98611374-2D48-4EB4-944E-D3CE4DD1CEBE}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 20.71633330034347
+      SNAPOFFS 0
+      LENGTH 0.55317650444754
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005874 0 1 0 0
+      FADEOUT 1 0.008268 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {075028FB-2593-4C10-BAC1-ECBECE55B59C}
+      IID 1122
+      NAME 8
+      VOLPAN 1 0 1 -1
+      SOFFS 20.71633330034347
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BF727AD2-FDF4-4697-AF6B-2D382BBD716E}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 22.79809048885016
+      SNAPOFFS 0
+      LENGTH 0.72300333487344
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {25530B62-5A86-4050-A857-6E8B54819DE3}
+      IID 1124
+      NAME 9
+      VOLPAN 1 0 1 -1
+      SOFFS 22.79809048885016
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {38FCBAB5-2530-41FB-B2C9-223E92E49236}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 23.5210938237236
+      SNAPOFFS 0
+      LENGTH 0.57395768141449
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {CF6CAF8C-9B0B-45EC-89A5-35686D42F3EA}
+      IID 1217
+      NAME 1
+      VOLPAN 1 0 1 -1
+      SOFFS 2.42616985850149
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F84C8FB9-9AAD-4EDA-98EA-CF5551E61A69}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 27.0380114103662
+      SNAPOFFS 0
+      LENGTH 0.55345468043572
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.008268 0 1 0 0
+      FADEOUT 1 0.005874 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {10DCE20A-F84D-4624-8590-3EF67B2A4EF6}
+      IID 1218
+      NAME 2
+      VOLPAN 1 0 1 -1
+      SOFFS 5.94308744514409
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {602BB6F2-D842-48F3-A797-F506088B2410}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 29.25313061726501
+      SNAPOFFS 0
+      LENGTH 0.5436392364186
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.008268 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {7E0AD1AF-8C6D-42DA-8F49-47538059D962}
+      IID 1219
+      NAME 3
+      VOLPAN 1 0 1 -1
+      SOFFS 8.1582066520429
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6608B311-4226-496D-ACED-C254AD40ECA9}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 30.83894069054473
+      SNAPOFFS 0
+      LENGTH 0.62340503543772
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.004173 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {7AE3EA93-5802-4070-AEA2-922635013C98}
+      IID 1220
+      NAME 4
+      VOLPAN 1 0 1 -1
+      SOFFS 9.74401672532262
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {221CCCD9-4403-4F3C-9683-D83E7AAC7C23}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 34.31192158512233
+      SNAPOFFS 0
+      LENGTH 0.97483921069537
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005874 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {FEC33F72-9CF4-494C-B5FE-9B07CD884AB3}
+      IID 1221
+      NAME 5
+      VOLPAN 1 0 1 -1
+      SOFFS 13.21699761990021
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B0FA7B47-C602-47A1-B52D-25E3E9A47A1B}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 36.88772329519377
+      SNAPOFFS 0
+      LENGTH 0.73248735198032
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {F1DC6990-63EE-4614-BE2E-6B7D2B3F4247}
+      IID 1222
+      NAME 6
+      VOLPAN 1 0 1 -1
+      SOFFS 15.79279932997166
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9DC7332E-543F-478B-B1FD-379C891D70AB}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 39.47261755379485
+      SNAPOFFS 0
+      LENGTH 0.73187738817442
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.005874 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {14A07C83-8FB7-4B5E-9284-2A38E33E5234}
+      IID 1223
+      NAME 7
+      VOLPAN 1 0 1 -1
+      SOFFS 18.37769358857274
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {58AEABCE-E465-4053-89B2-99C7E53381C0}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 41.81125726556558
+      SNAPOFFS 0
+      LENGTH 0.55317650444754
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005874 0 1 0 0
+      FADEOUT 1 0.008268 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {0AED1EC0-0AF2-4B74-B26A-9D6A6976B4FA}
+      IID 1224
+      NAME 8
+      VOLPAN 1 0 1 -1
+      SOFFS 20.71633330034347
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {663C9B24-590F-46BB-93A0-D8EE50195E72}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 43.89301445407227
+      SNAPOFFS 0
+      LENGTH 0.72300333487344
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {953CA65F-258B-45EF-BC40-D784B1F1BA22}
+      IID 1225
+      NAME 9
+      VOLPAN 1 0 1 -1
+      SOFFS 22.79809048885016
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {779686F8-A846-4C03-B731-C45D104628E7}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 44.61601778894571
+      SNAPOFFS 0
+      LENGTH 0.57395768141449
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {A65A7D15-4AFA-4396-AD39-F18DFF2EE60A}
+      IID 1226
+      NAME 1
+      VOLPAN 1 0 1 -1
+      SOFFS 2.42616985850149
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {83699A1F-5500-4454-92E1-FA8ED314AA01}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 48.13293537558832
+      SNAPOFFS 0
+      LENGTH 0.55345468043572
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.008268 0 1 0 0
+      FADEOUT 1 0.005874 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {988EEC8A-CA5B-4506-9EE6-58CBC691B2BB}
+      IID 1227
+      NAME 2
+      VOLPAN 1 0 1 -1
+      SOFFS 5.94308744514409
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {8B9A7AB4-BCFC-4CFC-A24C-BD2D697E72FD}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 50.34805458248713
+      SNAPOFFS 0
+      LENGTH 0.5436392364186
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.008268 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {1F0A4170-BD38-49FF-8316-A797240B70E5}
+      IID 1228
+      NAME 3
+      VOLPAN 1 0 1 -1
+      SOFFS 8.1582066520429
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D3408FA3-E660-458F-A2C3-1CC00CCBAA8A}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 51.93386465576684
+      SNAPOFFS 0
+      LENGTH 0.62340503543772
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.004173 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {A5E58253-A684-4858-B456-0296F011A948}
+      IID 1229
+      NAME 4
+      VOLPAN 1 0 1 -1
+      SOFFS 9.74401672532262
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {CA27AAD4-38D1-43A8-8534-0501C955AAA4}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 55.40684555034444
+      SNAPOFFS 0
+      LENGTH 0.97483921069537
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005874 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {FB7C0FBB-2A71-4A1F-AB6A-D319A8279CEA}
+      IID 1230
+      NAME 5
+      VOLPAN 1 0 1 -1
+      SOFFS 13.21699761990021
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5CF5B406-EFFF-4655-9C32-69E22D738F81}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 57.98264726041588
+      SNAPOFFS 0
+      LENGTH 0.73248735198032
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {7F2B2CFE-9744-48BD-89F3-414EE69A2CEF}
+      IID 1231
+      NAME 6
+      VOLPAN 1 0 1 -1
+      SOFFS 15.79279932997166
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {69177214-6CE8-497A-B502-37A002A3CF0B}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 60.56754151901696
+      SNAPOFFS 0
+      LENGTH 0.73187738817442
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.005874 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {6F58AF8B-E68B-4550-9E7A-090821FEED1B}
+      IID 1232
+      NAME 7
+      VOLPAN 1 0 1 -1
+      SOFFS 18.37769358857274
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A545D2B1-E9AD-4ED3-BA04-81FD2C514283}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 62.90618123078769
+      SNAPOFFS 0
+      LENGTH 0.55317650444754
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005874 0 1 0 0
+      FADEOUT 1 0.008268 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {57939AA3-DC7D-4163-A5FB-EE0DB553A3DE}
+      IID 1233
+      NAME 8
+      VOLPAN 1 0 1 -1
+      SOFFS 20.71633330034347
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {670A26AE-F55C-4715-B75C-8B12E0CCF138}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 64.98793841929438
+      SNAPOFFS 0
+      LENGTH 0.72300333487344
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {3634D819-DD73-466A-A29E-FEE2CA6C5C1A}
+      IID 1234
+      NAME 9
+      VOLPAN 1 0 1 -1
+      SOFFS 22.79809048885016
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {2E1A954E-227B-46E4-8E02-CCDFA165CE83}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 65.71094175416782
+      SNAPOFFS 0
+      LENGTH 0.57395768141448
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {13246D0B-C631-42FC-AB0E-7AABB2218C1F}
+      IID 1235
+      NAME 1
+      VOLPAN 1 0 1 -1
+      SOFFS 2.42616985850149
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A12C35C6-2DBD-48A3-9992-D50DEB6F2541}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 69.22785934081043
+      SNAPOFFS 0
+      LENGTH 0.55345468043572
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.008268 0 1 0 0
+      FADEOUT 1 0.005874 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {BA7A757D-4000-49D1-A17B-A5E853E70C63}
+      IID 1236
+      NAME 2
+      VOLPAN 1 0 1 -1
+      SOFFS 5.94308744514409
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {45B46C81-0A0F-4E48-893B-3ECA7D9C7095}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 71.44297854770925
+      SNAPOFFS 0
+      LENGTH 0.5436392364186
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.008268 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {DA5F2725-AB70-46E5-8258-35B3275DFF38}
+      IID 1237
+      NAME 3
+      VOLPAN 1 0 1 -1
+      SOFFS 8.1582066520429
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {AAC3C723-154D-48B3-90B3-7BC610AA7D51}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 73.02878862098895
+      SNAPOFFS 0
+      LENGTH 0.62340503543771
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.004173 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {F1DCBC92-68A5-4D6E-BCD1-B9754D545156}
+      IID 1238
+      NAME 4
+      VOLPAN 1 0 1 -1
+      SOFFS 9.74401672532262
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6E836196-FCFF-4F45-AF4E-A10810D6B30D}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 76.50176951556655
+      SNAPOFFS 0
+      LENGTH 0.97483921069538
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005874 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {897083C9-1210-4019-BC1D-7FD6DD379E54}
+      IID 1239
+      NAME 5
+      VOLPAN 1 0 1 -1
+      SOFFS 13.21699761990021
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D1C2DD80-FF2F-4870-BF5A-1497A785152D}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 79.077571225638
+      SNAPOFFS 0
+      LENGTH 0.73248735198032
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {DAE5DD22-C41C-47E3-9D32-AE7D6DA4847F}
+      IID 1240
+      NAME 6
+      VOLPAN 1 0 1 -1
+      SOFFS 15.79279932997166
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {03598A24-E112-423C-97FE-974784C66B19}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 81.66246548423909
+      SNAPOFFS 0
+      LENGTH 0.73187738817442
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.005874 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {F68C3790-0F73-4ECF-9E7B-534C833175C8}
+      IID 1241
+      NAME 7
+      VOLPAN 1 0 1 -1
+      SOFFS 18.37769358857274
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4EB40283-55B3-470A-81C0-1E07C206058A}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 84.0011051960098
+      SNAPOFFS 0
+      LENGTH 0.55317650444755
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005874 0 1 0 0
+      FADEOUT 1 0.008268 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {5817BDF7-DBF4-408D-8658-5AD20944CFD4}
+      IID 1242
+      NAME 8
+      VOLPAN 1 0 1 -1
+      SOFFS 20.71633330034347
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {69100DF4-FF2B-45A6-9801-18D73307630B}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 86.0828623845165
+      SNAPOFFS 0
+      LENGTH 0.72300333487344
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {5D020830-51C9-4406-99DE-689A41D3133D}
+      IID 1243
+      NAME 9
+      VOLPAN 1 0 1 -1
+      SOFFS 22.79809048885016
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {36F85970-F0F2-4409-9DFF-51A0644B7DAB}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 86.80586571938994
+      SNAPOFFS 0
+      LENGTH 0.57395768141448
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {114633A4-F187-4E00-BBB3-AE93DDC73375}
+      IID 1244
+      NAME 1
+      VOLPAN 1 0 1 -1
+      SOFFS 2.42616985850149
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {53D56E43-0BF9-4204-AD41-72CCC1BD9CF1}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 90.32278330603255
+      SNAPOFFS 0
+      LENGTH 0.55345468043572
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.008268 0 1 0 0
+      FADEOUT 1 0.005874 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {4B144593-AF2F-4A9D-A01E-0C4AB6945AC4}
+      IID 1245
+      NAME 2
+      VOLPAN 1 0 1 -1
+      SOFFS 5.94308744514409
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A33DF3F7-A016-4D1E-AC27-637052B83EFD}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 92.53790251293137
+      SNAPOFFS 0
+      LENGTH 0.5436392364186
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.008268 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {4FB9D87B-C574-4E6D-8E3D-3B6B700A0250}
+      IID 1246
+      NAME 3
+      VOLPAN 1 0 1 -1
+      SOFFS 8.1582066520429
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {336458BD-10C3-46AC-9B60-E3440BD0331A}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 94.12371258621107
+      SNAPOFFS 0
+      LENGTH 0.62340503543771
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.004173 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {CEBA81CA-4E80-44B2-88D5-7D20059C1E46}
+      IID 1247
+      NAME 4
+      VOLPAN 1 0 1 -1
+      SOFFS 9.74401672532262
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {74B49AC9-26FE-4EE5-845C-6985AF6E9D14}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 97.59669348078867
+      SNAPOFFS 0
+      LENGTH 0.97483921069538
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005874 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {8ED27F5C-BC3A-45B0-96AE-46E8071FFBBE}
+      IID 1248
+      NAME 5
+      VOLPAN 1 0 1 -1
+      SOFFS 13.21699761990021
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3BFA88B2-0ECB-43C8-A555-8B0A2406085D}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 100.17249519086012
+      SNAPOFFS 0
+      LENGTH 0.73248735198032
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {79A63B25-E96B-42B3-8A1F-31762574FFA1}
+      IID 1249
+      NAME 6
+      VOLPAN 1 0 1 -1
+      SOFFS 15.79279932997166
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {51CEBDDA-BF50-4774-8D23-AFEC17140015}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 102.75738944946121
+      SNAPOFFS 0
+      LENGTH 0.73187738817442
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.005874 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {A889A3EE-3C92-4289-9864-EC61154DB1FB}
+      IID 1250
+      NAME 7
+      VOLPAN 1 0 1 -1
+      SOFFS 18.37769358857274
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {2DD106D2-A0ED-485E-AADC-75FD5CBD77EC}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 105.09602916123193
+      SNAPOFFS 0
+      LENGTH 0.55317650444755
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005874 0 1 0 0
+      FADEOUT 1 0.008268 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {45F5157B-A10E-4BC6-B0A4-0DFE73D8A9A4}
+      IID 1251
+      NAME 8
+      VOLPAN 1 0 1 -1
+      SOFFS 20.71633330034347
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {06A67EAB-CFBF-470F-B0AE-371BDA71896D}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 107.17778634973862
+      SNAPOFFS 0
+      LENGTH 0.72300333487344
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {2D69C02D-E501-4B08-A652-910B7EB39B68}
+      IID 1252
+      NAME 9
+      VOLPAN 1 0 1 -1
+      SOFFS 22.79809048885016
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F5819C5C-837F-49A3-92BC-B09469FB478B}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 107.90078968461206
+      SNAPOFFS 0
+      LENGTH 0.57395768141448
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {637428E9-1D9C-4DB7-8B5D-FC85061F7E03}
+      IID 1253
+      NAME 1
+      VOLPAN 1 0 1 -1
+      SOFFS 2.42616985850149
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5CC0DE08-005B-4789-9BA2-5962446F030C}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 111.41770727125467
+      SNAPOFFS 0
+      LENGTH 0.55345468043572
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.008268 0 1 0 0
+      FADEOUT 1 0.005874 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {19065746-1ABD-42F9-A064-1DC76A51104B}
+      IID 1254
+      NAME 2
+      VOLPAN 1 0 1 -1
+      SOFFS 5.94308744514409
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7B974419-DC65-4DC5-94AF-B1A83EA43A92}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 113.63282647815349
+      SNAPOFFS 0
+      LENGTH 0.5436392364186
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.008268 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {786D8E9D-E4BE-4E77-B1B0-94332F38D581}
+      IID 1255
+      NAME 3
+      VOLPAN 1 0 1 -1
+      SOFFS 8.1582066520429
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5AF60E9E-D7A3-4E50-B5D0-170C6405A225}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 115.21863655143319
+      SNAPOFFS 0
+      LENGTH 0.62340503543771
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.004173 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {C3DBF4F3-F507-469C-AD07-6929CE05DD3D}
+      IID 1256
+      NAME 4
+      VOLPAN 1 0 1 -1
+      SOFFS 9.74401672532262
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4166ED38-BCDB-4686-AEFE-B7E636EF626D}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 118.6916174460108
+      SNAPOFFS 0
+      LENGTH 0.97483921069538
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005874 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {C9733259-C82C-41B1-A1A1-E963860972C0}
+      IID 1257
+      NAME 5
+      VOLPAN 1 0 1 -1
+      SOFFS 13.21699761990021
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C768B374-FFF6-41CB-AE5C-93E4D2FE1E17}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 121.26741915608224
+      SNAPOFFS 0
+      LENGTH 0.73248735198032
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {E1B9A5D0-FB96-4CAB-8EF6-A368D4BCF86C}
+      IID 1258
+      NAME 6
+      VOLPAN 1 0 1 -1
+      SOFFS 15.79279932997166
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4E273287-8032-4559-8AAC-9B5FFA6FE845}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 123.85231341468334
+      SNAPOFFS 0
+      LENGTH 0.73187738817442
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.005874 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {D029C7F1-4258-4122-B86B-F72A114C460C}
+      IID 1259
+      NAME 7
+      VOLPAN 1 0 1 -1
+      SOFFS 18.37769358857274
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {8E14B68C-1F38-44C8-8278-D34E9E60AC94}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 126.19095312645405
+      SNAPOFFS 0
+      LENGTH 0.55317650444755
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005874 0 1 0 0
+      FADEOUT 1 0.008268 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {109B9B34-87FA-4C7C-8DA1-8534AC98B99E}
+      IID 1260
+      NAME 8
+      VOLPAN 1 0 1 -1
+      SOFFS 20.71633330034347
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {015E9596-1C62-4B2C-BE4F-68C54F224264}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 128.27271031496076
+      SNAPOFFS 0
+      LENGTH 0.72300333487345
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {A5A5768D-7452-4BAD-A34F-919F5684ADB9}
+      IID 1261
+      NAME 9
+      VOLPAN 1 0 1 -1
+      SOFFS 22.79809048885016
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {EE468526-1F63-423E-94FC-E368BD8C9E8E}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 128.99571364983422
+      SNAPOFFS 0
+      LENGTH 0.57395768141447
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {B67DE83E-FF69-44DD-B86C-6EE922249560}
+      IID 1262
+      NAME 1
+      VOLPAN 1 0 1 -1
+      SOFFS 2.42616985850149
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4E342B60-A5B0-44E7-9825-2BEA30C84F39}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 132.51263123647681
+      SNAPOFFS 0
+      LENGTH 0.55345468043572
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.008268 0 1 0 0
+      FADEOUT 1 0.005874 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {C27E1FD4-A418-48D1-A959-F4AE4D34CB48}
+      IID 1263
+      NAME 2
+      VOLPAN 1 0 1 -1
+      SOFFS 5.94308744514409
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {2C28C9BC-B5F5-4328-96C7-443FB34F80D2}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 134.72775044337564
+      SNAPOFFS 0
+      LENGTH 0.54363923641861
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.008268 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {0EE5DEBA-CBFA-429F-B1AA-01FC4C33F4C7}
+      IID 1264
+      NAME 3
+      VOLPAN 1 0 1 -1
+      SOFFS 8.1582066520429
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D9E7981A-46FE-46C2-B04D-C8C01CD6F069}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 136.31356051665534
+      SNAPOFFS 0
+      LENGTH 0.62340503543771
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.004173 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {382230C8-A6E2-446C-9E91-1E45C11A196F}
+      IID 1265
+      NAME 4
+      VOLPAN 1 0 1 -1
+      SOFFS 9.74401672532262
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {AE78E996-510B-46D2-BD38-8D72CF7BB6D8}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 139.78654141123295
+      SNAPOFFS 0
+      LENGTH 0.97483921069536
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005874 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {48F855CF-2DA4-45E9-9DB5-E51403B9DAFF}
+      IID 1266
+      NAME 5
+      VOLPAN 1 0 1 -1
+      SOFFS 13.21699761990021
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {46892545-E4D4-486F-9269-0C59D6D56E1C}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 142.36234312130438
+      SNAPOFFS 0
+      LENGTH 0.73248735198032
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {F39E1D15-CAEE-45AD-B9DB-EEDA3FD93298}
+      IID 1267
+      NAME 6
+      VOLPAN 1 0 1 -1
+      SOFFS 15.79279932997166
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {39423F8E-D6A7-4CEE-B561-B181D2F85154}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 144.94723737990549
+      SNAPOFFS 0
+      LENGTH 0.73187738817444
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.005874 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {D9D375B9-75DF-4262-B190-A92C0E9E9BEB}
+      IID 1268
+      NAME 7
+      VOLPAN 1 0 1 -1
+      SOFFS 18.37769358857274
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DD9D3348-0887-41E1-AFF7-D399D9D2B7B0}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 147.28587709167616
+      SNAPOFFS 0
+      LENGTH 0.55317650444755
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005874 0 1 0 0
+      FADEOUT 1 0.008268 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {2A733309-6AD0-43AE-B8FF-9B6D5F475FD5}
+      IID 1269
+      NAME 8
+      VOLPAN 1 0 1 -1
+      SOFFS 20.71633330034347
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BCF72447-929B-4DEC-84AE-D6F7AFDA8324}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 149.36763428018293
+      SNAPOFFS 0
+      LENGTH 0.72300333487345
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {F95B4C5C-5C52-42D3-951A-2F0B7E2D84D7}
+      IID 1270
+      NAME 9
+      VOLPAN 1 0 1 -1
+      SOFFS 22.79809048885016
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {471A397B-7DEE-472C-AD40-A6E74A8CBF78}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 150.09063761505638
+      SNAPOFFS 0
+      LENGTH 0.57395768141447
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {BE5DD8C0-97C3-4EEF-AC11-74549C3AC443}
+      IID 1271
+      NAME 1
+      VOLPAN 1 0 1 -1
+      SOFFS 2.42616985850149
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7E102BBE-73E3-42A8-B82E-1BD7AE92D017}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 153.60755520169897
+      SNAPOFFS 0
+      LENGTH 0.55345468043572
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.008268 0 1 0 0
+      FADEOUT 1 0.005874 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {42BCECD4-0754-4404-98C8-E59AC01EDEFB}
+      IID 1272
+      NAME 2
+      VOLPAN 1 0 1 -1
+      SOFFS 5.94308744514409
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {327B2C1E-43BA-41A1-AE1B-B0B238691168}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 155.82267440859781
+      SNAPOFFS 0
+      LENGTH 0.54363923641861
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.008268 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {25144018-0F24-470B-94E4-49327C524C2C}
+      IID 1273
+      NAME 3
+      VOLPAN 1 0 1 -1
+      SOFFS 8.1582066520429
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {40889C7E-E2B8-4600-8261-4B8C35AD9E23}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 157.40848448187751
+      SNAPOFFS 0
+      LENGTH 0.62340503543774
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.004173 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {6DB914C0-9732-432E-8FBA-36FBA4724CB3}
+      IID 1274
+      NAME 4
+      VOLPAN 1 0 1 -1
+      SOFFS 9.74401672532262
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {273D21CA-73D7-4F18-B42B-56249403F40C}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 160.88146537645511
+      SNAPOFFS 0
+      LENGTH 0.97483921069536
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005874 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {6FF02767-49C8-4732-AA0E-7E4243E2FD31}
+      IID 1275
+      NAME 5
+      VOLPAN 1 0 1 -1
+      SOFFS 13.21699761990021
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0D1080AD-4AD2-49F3-B3FF-DCF0391A44E1}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 163.45726708652654
+      SNAPOFFS 0
+      LENGTH 0.73248735198032
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {A1579240-D10D-41F2-9A4F-48E117848F77}
+      IID 1276
+      NAME 6
+      VOLPAN 1 0 1 -1
+      SOFFS 15.79279932997166
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {85FF05D9-7C15-4747-989D-A26ABC07EDFB}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 166.04216134512765
+      SNAPOFFS 0
+      LENGTH 0.73187738817444
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.005874 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {6CEF8137-1919-4F37-B5D6-1A098BCEBB34}
+      IID 1277
+      NAME 7
+      VOLPAN 1 0 1 -1
+      SOFFS 18.37769358857274
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DBF3F752-15C3-4EBA-9FD8-0DAD03ECF581}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 168.38080105689832
+      SNAPOFFS 0
+      LENGTH 0.55317650444755
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005874 0 1 0 0
+      FADEOUT 1 0.008268 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {45E49AB9-AC8F-4D2E-A1EC-46C6429E73C4}
+      IID 1278
+      NAME 8
+      VOLPAN 1 0 1 -1
+      SOFFS 20.71633330034347
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A0B29018-DBE6-47D3-8809-A2923D2C7675}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 170.46255824540509
+      SNAPOFFS 0
+      LENGTH 0.72300333487343
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {81AACFC0-1130-4A88-8BCE-6BE385B472AD}
+      IID 1279
+      NAME 9
+      VOLPAN 1 0 1 -1
+      SOFFS 22.79809048885016
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {41468ED4-9938-40B8-A10C-0541EF0F3127}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 171.18556158027852
+      SNAPOFFS 0
+      LENGTH 0.57395768141447
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {F06FF7C1-22D0-4B08-AA24-4CD89B05ADEA}
+      IID 1280
+      NAME 1
+      VOLPAN 1 0 1 -1
+      SOFFS 2.42616985850149
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F0F429B4-E417-4A37-B9C0-9F6F2FE1F924}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 174.70247916692111
+      SNAPOFFS 0
+      LENGTH 0.55345468043572
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.008268 0 1 0 0
+      FADEOUT 1 0.005874 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {39725125-6688-409A-B6AD-9A3A194BFE0E}
+      IID 1281
+      NAME 2
+      VOLPAN 1 0 1 -1
+      SOFFS 5.94308744514409
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {549104E8-2EA2-45FE-AA91-CC7B68ABFFB2}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 176.91759837381994
+      SNAPOFFS 0
+      LENGTH 0.54363923641861
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.008268 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {CFFE44EE-98C5-4A7C-AF58-396CCF5C6B70}
+      IID 1282
+      NAME 3
+      VOLPAN 1 0 1 -1
+      SOFFS 8.1582066520429
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7B8437D9-2028-43B8-99F3-3CA244F31C7D}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 178.50340844709964
+      SNAPOFFS 0
+      LENGTH 0.62340503543774
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.004173 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {E2FB477C-6304-4AE7-866B-C62D768E666B}
+      IID 1283
+      NAME 4
+      VOLPAN 1 0 1 -1
+      SOFFS 9.74401672532262
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C3702945-6445-4064-96D9-AB6753F1C047}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 181.97638934167725
+      SNAPOFFS 0
+      LENGTH 0.97483921069536
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005874 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {9919A437-0AFC-4922-98DC-6A6A9B49A65B}
+      IID 1284
+      NAME 5
+      VOLPAN 1 0 1 -1
+      SOFFS 13.21699761990021
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DD375634-B9D1-4780-88F3-FC438CE41B91}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 184.55219105174868
+      SNAPOFFS 0
+      LENGTH 0.7324873519803
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {178741F4-2975-4C0D-AF3F-7AD6222CDBAC}
+      IID 1285
+      NAME 6
+      VOLPAN 1 0 1 -1
+      SOFFS 15.79279932997166
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {06178E97-4556-4876-94D3-1F0E87035367}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 187.13708531034979
+      SNAPOFFS 0
+      LENGTH 0.73187738817444
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.005874 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {C94B8F7A-C4AC-47B8-B979-73B3C032555C}
+      IID 1286
+      NAME 7
+      VOLPAN 1 0 1 -1
+      SOFFS 18.37769358857274
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {064E7554-1EC0-4914-A11C-123B9A43D0EA}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 189.47572502212046
+      SNAPOFFS 0
+      LENGTH 0.55317650444755
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005874 0 1 0 0
+      FADEOUT 1 0.008268 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {F281A78B-F195-476E-8A9C-421111290CF4}
+      IID 1287
+      NAME 8
+      VOLPAN 1 0 1 -1
+      SOFFS 20.71633330034347
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D035E097-D093-4812-9475-1516B0A0952E}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 191.55748221062723
+      SNAPOFFS 0
+      LENGTH 0.72300333487343
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {70DE692D-5AD3-4D82-94D6-B90EF51560C8}
+      IID 1288
+      NAME 9
+      VOLPAN 1 0 1 -1
+      SOFFS 22.79809048885016
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F5EE57C0-2B8E-4BCD-A971-7F9EC1EDEEBA}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 192.28048554550065
+      SNAPOFFS 0
+      LENGTH 0.57395768141447
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {66799C38-20F1-498E-A998-2FDF15E74787}
+      IID 1289
+      NAME 1
+      VOLPAN 1 0 1 -1
+      SOFFS 2.42616985850149
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {ECD553CE-43B2-4432-8466-257351089CD5}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 195.79740313214324
+      SNAPOFFS 0
+      LENGTH 0.55345468043572
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.008268 0 1 0 0
+      FADEOUT 1 0.005874 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {0E2AE7F9-5AB3-4F76-9BC2-A1F69C164102}
+      IID 1290
+      NAME 2
+      VOLPAN 1 0 1 -1
+      SOFFS 5.94308744514409
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F03C1D65-987C-4059-9264-CFA3592B3994}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 198.01252233904208
+      SNAPOFFS 0
+      LENGTH 0.54363923641864
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.008268 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {648ABC1C-ED6C-4804-9E0C-1CAAB1A4B648}
+      IID 1291
+      NAME 3
+      VOLPAN 1 0 1 -1
+      SOFFS 8.1582066520429
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3142B466-6917-4C06-A4CD-B4B74DEBEB43}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 199.59833241232178
+      SNAPOFFS 0
+      LENGTH 0.62340503543774
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.004173 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {1384D164-2DF7-4009-8379-DCD765425BF1}
+      IID 1292
+      NAME 4
+      VOLPAN 1 0 1 -1
+      SOFFS 9.74401672532262
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {08ACFDAF-E30B-4A6E-8760-B4B7E37BB4AA}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 203.07131330689938
+      SNAPOFFS 0
+      LENGTH 0.97483921069536
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005874 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {E465390D-F70D-46C0-AEEE-CA8427A8D614}
+      IID 1293
+      NAME 5
+      VOLPAN 1 0 1 -1
+      SOFFS 13.21699761990021
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {51228EA7-CAF7-4F6D-9C8F-D700C376E2E5}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 205.64711501697082
+      SNAPOFFS 0
+      LENGTH 0.7324873519803
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {82DD6482-FD02-415E-A0D8-4E1C5AD3D4C6}
+      IID 1294
+      NAME 6
+      VOLPAN 1 0 1 -1
+      SOFFS 15.79279932997166
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {EA9F241D-6333-463A-8D90-1E9608F16F62}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 208.23200927557193
+      SNAPOFFS 0
+      LENGTH 0.73187738817444
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.005874 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {5E198D5D-F92E-4592-8B3A-27BA3B33EFD4}
+      IID 1295
+      NAME 7
+      VOLPAN 1 0 1 -1
+      SOFFS 18.37769358857274
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B8F0FFED-567E-4A00-AC97-60714FF1AC90}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 210.57064898734259
+      SNAPOFFS 0
+      LENGTH 0.55317650444755
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005874 0 1 0 0
+      FADEOUT 1 0.008268 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {BCCDF757-AC1F-4A93-8D30-0647BA415840}
+      IID 1296
+      NAME 8
+      VOLPAN 1 0 1 -1
+      SOFFS 20.71633330034347
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {62BF5197-5B5C-44C6-9E02-B8DDBB93E62D}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 212.65240617584939
+      SNAPOFFS 0
+      LENGTH 0.72300333487343
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {59EDF15F-F6C2-4D17-A4BB-6977BF5DB684}
+      IID 1297
+      NAME 9
+      VOLPAN 1 0 1 -1
+      SOFFS 22.79809048885016
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DDCA3F13-5E37-433B-9289-C87051831256}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 213.37540951072282
+      SNAPOFFS 0
+      LENGTH 0.57395768141447
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {69558077-2F32-475B-95F2-C91E0C4E4DA7}
+      IID 1298
+      NAME 1
+      VOLPAN 1 0 1 -1
+      SOFFS 2.42616985850149
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {134BFC14-DAEC-4295-AC88-D58AF31182A3}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 216.89232709736541
+      SNAPOFFS 0
+      LENGTH 0.55345468043572
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.008268 0 1 0 0
+      FADEOUT 1 0.005874 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {EBA1BB05-421A-437B-9673-7050C5B8D4FB}
+      IID 1299
+      NAME 2
+      VOLPAN 1 0 1 -1
+      SOFFS 5.94308744514409
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {1F44E229-BB8E-4E8A-82CA-6B93422D1387}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 219.10744630426424
+      SNAPOFFS 0
+      LENGTH 0.54363923641864
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.008268 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {276DD2C0-421F-4042-8041-AD83C1EE2586}
+      IID 1300
+      NAME 3
+      VOLPAN 1 0 1 -1
+      SOFFS 8.1582066520429
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7B4AC8B8-4768-4860-B345-AF91DDF66A28}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 220.69325637754395
+      SNAPOFFS 0
+      LENGTH 0.62340503543774
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.004173 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {EE7F6949-8099-4E02-BF8E-FBFB91289F8D}
+      IID 1301
+      NAME 4
+      VOLPAN 1 0 1 -1
+      SOFFS 9.74401672532262
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6396A41A-C7B9-426B-BAB8-F03DD5D4C765}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 224.16623727212155
+      SNAPOFFS 0
+      LENGTH 0.97483921069536
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005874 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {E1B154FA-D6E6-4D0E-AD3D-6DB96810660D}
+      IID 1302
+      NAME 5
+      VOLPAN 1 0 1 -1
+      SOFFS 13.21699761990021
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {8E2B9A09-FA34-4CF2-A92A-3E202BB39003}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 226.74203898219301
+      SNAPOFFS 0
+      LENGTH 0.7324873519803
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {44FB9943-4CC6-4216-A916-1CADD3A62207}
+      IID 1303
+      NAME 6
+      VOLPAN 1 0 1 -1
+      SOFFS 15.79279932997166
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4E6343D4-B6E8-45CE-92A4-518F0F275380}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 229.32693324079409
+      SNAPOFFS 0
+      LENGTH 0.73187738817444
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.005874 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {EFAA4876-9667-4002-A18A-B8CDC131BC02}
+      IID 1304
+      NAME 7
+      VOLPAN 1 0 1 -1
+      SOFFS 18.37769358857274
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BF62FFAA-9242-46F3-9C56-4957A69DDCF0}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 231.66557295256476
+      SNAPOFFS 0
+      LENGTH 0.55317650444755
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005874 0 1 0 0
+      FADEOUT 1 0.008268 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {C13C0FF9-8814-413A-A007-92FF5D40BCE5}
+      IID 1305
+      NAME 8
+      VOLPAN 1 0 1 -1
+      SOFFS 20.71633330034347
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C6998B17-983C-4100-B8BF-E05A434E3154}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 233.74733014107156
+      SNAPOFFS 0
+      LENGTH 0.72300333487343
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {08303D55-F3E4-4DE7-B8B3-8976AC6E2439}
+      IID 1306
+      NAME 9
+      VOLPAN 1 0 1 -1
+      SOFFS 22.79809048885016
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0993F7BB-C054-4AB9-81B1-FA94685AE6A8}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 234.47033347594498
+      SNAPOFFS 0
+      LENGTH 0.57395768141447
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {66E36FC0-28CE-488E-8129-5C97FFBAA6F9}
+      IID 1307
+      NAME 1
+      VOLPAN 1 0 1 -1
+      SOFFS 2.42616985850149
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C08422E2-3D6E-4C66-8DD0-4275BCF3FE8A}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 237.9872510625876
+      SNAPOFFS 0
+      LENGTH 0.55345468043572
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.008268 0 1 0 0
+      FADEOUT 1 0.005874 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {57976EBC-D819-4183-B406-83A1E08BB350}
+      IID 1308
+      NAME 2
+      VOLPAN 1 0 1 -1
+      SOFFS 5.94308744514409
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C22F8FE1-1948-48E4-A7E2-8C1A72196F0B}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 240.20237026948641
+      SNAPOFFS 0
+      LENGTH 0.54363923641864
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.008268 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {C734E5CA-8718-4BE0-AA5D-178F347285F7}
+      IID 1309
+      NAME 3
+      VOLPAN 1 0 1 -1
+      SOFFS 8.1582066520429
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D2980261-E291-4411-B8E0-C068D34CD6B3}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 241.78818034276611
+      SNAPOFFS 0
+      LENGTH 0.62340503543774
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.004173 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {487D629D-7E65-4AB2-87DE-86045D8C65F9}
+      IID 1310
+      NAME 4
+      VOLPAN 1 0 1 -1
+      SOFFS 9.74401672532262
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A1BA0B9B-6159-4568-AD6A-8FFDB67928AD}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 245.26116123734371
+      SNAPOFFS 0
+      LENGTH 0.97483921069536
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005874 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {53873822-06AB-4CF1-8D74-FB22F3E57758}
+      IID 1311
+      NAME 5
+      VOLPAN 1 0 1 -1
+      SOFFS 13.21699761990021
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {721F7B68-6B2C-4ED2-A439-7E1202C377C5}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 247.83696294741517
+      SNAPOFFS 0
+      LENGTH 0.7324873519803
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {788953B1-14EC-4EEA-A753-81F546F19E4B}
+      IID 1312
+      NAME 6
+      VOLPAN 1 0 1 -1
+      SOFFS 15.79279932997166
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6F7EAC90-55A9-4996-87D6-911A0A799E5E}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 250.42185720601626
+      SNAPOFFS 0
+      LENGTH 0.73187738817444
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.005874 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {4CBB465D-5F4E-48E9-B3F8-72D4798D1457}
+      IID 1313
+      NAME 7
+      VOLPAN 1 0 1 -1
+      SOFFS 18.37769358857274
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4B9781A4-8DC5-48A5-A1AB-92DB9ECB938D}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 252.76049691778692
+      SNAPOFFS 0
+      LENGTH 0.55317650444755
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005874 0 1 0 0
+      FADEOUT 1 0.008268 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {73AFFC4C-A089-4822-B376-62C7ACEDBE04}
+      IID 1314
+      NAME 8
+      VOLPAN 1 0 1 -1
+      SOFFS 20.71633330034347
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F72CAEFA-87D6-4467-892B-F25BBBB688FA}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
+    <ITEM
+      POSITION 254.84225410629372
+      SNAPOFFS 0
+      LENGTH 0.72300333487343
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {DCD3207D-BB47-4734-B8E0-BE23102F4770}
+      IID 1315
+      NAME 9
+      VOLPAN 1 0 1 -1
+      SOFFS 22.79809048885016
+      PLAYRATE 1.1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0B4F2DF3-9BF7-4A94-99D9-520FF82BEB93}
+      RECPASS 24
+      <SOURCE WAVE
+        FILE "39-Google Trad Numbers-200419_1302.wav"
+      >
+    >
   >
   <TRACK {893049D2-F556-4463-B386-9D362A973AAC}
     NAME ""
@@ -2547,7 +7200,7 @@
     <ITEM
       POSITION 0
       SNAPOFFS 0
-      LENGTH 18.56964583333333
+      LENGTH 2.42616985850149
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
@@ -2562,6 +7215,29 @@
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {84048D95-9B19-0846-9A2B-BF7D04BF7E5E}
+      RECPASS 10
+      <SOURCE WAVE
+        FILE "06-Placing Object-200224_1154.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.42616985850149
+      SNAPOFFS 0
+      LENGTH 16.14347597483184
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {DA707054-224C-483D-87C6-CCE2DD71DA84}
+      IID 1102
+      NAME "06-Placing Object-200224_1154.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.42616985850149
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {EA516246-A31C-461B-A674-2C67157EDF89}
       RECPASS 10
       <SOURCE WAVE
         FILE "06-Placing Object-200224_1154.wav"
@@ -2594,7 +7270,7 @@
     <ITEM
       POSITION 0
       SNAPOFFS 0
-      LENGTH 20.33497916666667
+      LENGTH 2.42616985850149
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
@@ -2609,6 +7285,29 @@
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {6A0557EB-223B-E64A-A3ED-87948B3C1BDB}
+      RECPASS 13
+      <SOURCE WAVE
+        FILE "07-turning object-200224_1157.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.42616985850149
+      SNAPOFFS 0
+      LENGTH 17.90880930816518
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {F3B3F5F8-A1A1-4DC0-A986-1617C7CE8242}
+      IID 1103
+      NAME "07-turning object-200224_1157.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.42616985850149
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {26E7539F-55DB-4B2C-9F78-0F0DC8C5A89D}
       RECPASS 13
       <SOURCE WAVE
         FILE "07-turning object-200224_1157.wav"
@@ -2641,7 +7340,7 @@
     <ITEM
       POSITION 0
       SNAPOFFS 0
-      LENGTH 23.0443125
+      LENGTH 2.42616985850149
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
@@ -2656,6 +7355,29 @@
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {1A22BE8B-F310-2E47-9C08-3E641D8F1234}
+      RECPASS 9
+      <SOURCE WAVE
+        FILE "08-tick size slider-200224_1151.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.42616985850149
+      SNAPOFFS 0
+      LENGTH 20.61814264149851
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {9BC305E2-2E8C-4615-BDD4-F6AE30922029}
+      IID 1104
+      NAME "08-tick size slider-200224_1151.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.42616985850149
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {8BEDD5E7-4D96-41F7-9341-7B69995ACB38}
       RECPASS 9
       <SOURCE WAVE
         FILE "08-tick size slider-200224_1151.wav"
@@ -2688,7 +7410,7 @@
     <ITEM
       POSITION 0
       SNAPOFFS 0
-      LENGTH 22.7723125
+      LENGTH 2.42616985850149
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
@@ -2703,6 +7425,29 @@
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {FDE0A2A8-795D-E94A-A997-53174CC229E0}
+      RECPASS 12
+      <SOURCE WAVE
+        FILE "09-deleting-200224_1156.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.42616985850149
+      SNAPOFFS 0
+      LENGTH 20.34614264149851
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {EB0FAD91-0F04-45C9-9673-07DF862EE1EC}
+      IID 1105
+      NAME 09-deleting-200224_1156.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.42616985850149
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {375F18AA-A9BB-4A83-8572-5DE7A0F4CA9C}
       RECPASS 12
       <SOURCE WAVE
         FILE "09-deleting-200224_1156.wav"
@@ -2735,7 +7480,7 @@
     <ITEM
       POSITION 0
       SNAPOFFS 0
-      LENGTH 20.38297916666667
+      LENGTH 2.42616985850149
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
@@ -2750,6 +7495,29 @@
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {2C789BC1-E205-1B4C-9D58-691C0D7B4377}
+      RECPASS 22
+      <SOURCE WAVE
+        FILE "10-Clicking object-200224_1207.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.42616985850149
+      SNAPOFFS 0
+      LENGTH 17.95680930816518
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {E3FD8A95-028D-4C83-BEC3-7308077790C6}
+      IID 1106
+      NAME "10-Clicking object-200224_1207.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.42616985850149
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A995B99B-85B9-4242-9D5B-07AF3FB44B9B}
       RECPASS 22
       <SOURCE WAVE
         FILE "10-Clicking object-200224_1207.wav"
@@ -2806,7 +7574,7 @@
     <ITEM
       POSITION 2
       SNAPOFFS 0
-      LENGTH 31.0123125
+      LENGTH 0.42616985850149
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
@@ -2821,6 +7589,29 @@
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {B52BBE5E-05F1-1C47-A4AF-FACDA0D71C0A}
+      RECPASS 15
+      <SOURCE WAVE
+        FILE "12-camera buttons-200224_1200.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.42616985850149
+      SNAPOFFS 0
+      LENGTH 30.58614264149851
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {71F86BB5-DC53-44F6-9C54-39591404BB3C}
+      IID 1107
+      NAME "12-camera buttons-200224_1200.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.42616985850149
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7B29EF05-831C-4021-B263-E8B8B4244D52}
       RECPASS 15
       <SOURCE WAVE
         FILE "12-camera buttons-200224_1200.wav"
@@ -2877,7 +7668,7 @@
     <ITEM
       POSITION 2
       SNAPOFFS 0
-      LENGTH 40.86297916666667
+      LENGTH 0.42616985850149
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
@@ -2892,6 +7683,29 @@
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {AC7D57CE-71DD-5D41-845C-DC6467E6FB29}
+      RECPASS 16
+      <SOURCE WAVE
+        FILE "14-Footsteps soft-200224_1201.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.42616985850149
+      SNAPOFFS 0
+      LENGTH 40.43680930816517
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {F62DF561-35EB-444B-A946-3F5E39DFF432}
+      IID 1108
+      NAME "14-Footsteps soft-200224_1201.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.42616985850149
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9A396904-658C-4703-B957-4E5B2A09DA7E}
       RECPASS 16
       <SOURCE WAVE
         FILE "14-Footsteps soft-200224_1201.wav"
@@ -2921,6 +7735,76 @@
       RECPASS 19
       <SOURCE WAVE
         FILE "14-Footsteps soft-200224_1203-01.wav"
+      >
+    >
+  >
+  <TRACK {28BAFEAB-7C84-4E0D-8494-F42E409B1AC8}
+    NAME ""
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {28BAFEAB-7C84-4E0D-8494-F42E409B1AC8}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {77AE00F0-F1CC-437E-9827-1DD24018DCEC}
+    NAME ""
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {77AE00F0-F1CC-437E-9827-1DD24018DCEC}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 390.4997161515181
+      SNAPOFFS 0
+      LENGTH 30.48820445987423
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {804E1099-CCA6-4B2C-8679-C4FFE3724656}
+      IID 1127
+      NAME J_Honey_Fire_Project.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 390.58357039305019
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C451E38A-878C-49AE-8A71-E4147A93E24C}
+      <SOURCE MP3
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\SoundRessources\FL\VoiceOver\J_Honey_Fire_Project.mp3" 1
       >
     >
   >
