@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{ef8365a7-020a-451f-8b24-d558efffd1c0}">
 		<property name="assetPath">
-			<value>Dialogue/Section 1/Scene 1_ On scene wake #2.wav</value>
+			<value>Dialogue/Section 1/Scene 1/Scene 1_ On scene wake #2.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

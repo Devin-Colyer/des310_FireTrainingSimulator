@@ -5,7 +5,7 @@
 			<value>Numbers</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{be077937-16f4-4fe1-a634-5b4d71265093}</destination>
@@ -83,6 +83,12 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{f9506cec-eb91-4824-9f20-d90b96898542}">
+		<property name="overridingInputFormat">
+			<value>1</value>
+		</property>
+		<property name="inputFormatOverridden">
+			<value>true</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{cfd5f998-530a-4aa6-9bac-204ddb34d2d7}</destination>
 		</relationship>
@@ -145,7 +151,11 @@
 			<destination>{c0365565-65a6-4482-98f0-c42941f187e1}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{8ee4e288-deac-47e3-88a6-54a9a3608c51}" />
+	<object class="MixerBusPanner" id="{8ee4e288-deac-47e3-88a6-54a9a3608c51}">
+		<property name="outputFormatOverridden">
+			<value>true</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{f1372de8-8fc0-4c87-b1f9-babba65febc5}" />
 	<object class="MixerBusEffectChain" id="{ce9d2c46-24eb-429f-b00b-2d3a1b1a43f8}">
 		<relationship name="effects">

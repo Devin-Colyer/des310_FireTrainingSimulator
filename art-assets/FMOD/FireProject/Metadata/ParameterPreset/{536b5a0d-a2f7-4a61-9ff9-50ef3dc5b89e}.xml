@@ -16,7 +16,7 @@
 			<value>2</value>
 		</property>
 		<property name="maximum">
-			<value>40</value>
+			<value>41</value>
 		</property>
 		<property name="enumerationLabels">
 			<value>Null</value>
@@ -59,6 +59,7 @@
 			<value>D37</value>
 			<value>D38</value>
 			<value>D39</value>
+			<value>D40</value>
 		</property>
 		<property name="initialValue">
 			<value>0</value>
