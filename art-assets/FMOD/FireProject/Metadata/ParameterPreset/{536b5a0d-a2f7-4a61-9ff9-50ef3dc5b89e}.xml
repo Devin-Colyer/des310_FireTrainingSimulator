@@ -16,12 +16,49 @@
 			<value>2</value>
 		</property>
 		<property name="maximum">
-			<value>3</value>
+			<value>40</value>
 		</property>
 		<property name="enumerationLabels">
+			<value>Null</value>
 			<value>D1</value>
 			<value>D2</value>
-			<value>Value C</value>
+			<value>D3</value>
+			<value>D4</value>
+			<value>D5</value>
+			<value>D6</value>
+			<value>D7</value>
+			<value>D8</value>
+			<value>D9</value>
+			<value>D10</value>
+			<value>D11</value>
+			<value>D12</value>
+			<value>D13</value>
+			<value>D14</value>
+			<value>D15</value>
+			<value>D16</value>
+			<value>D17</value>
+			<value>D18</value>
+			<value>D19</value>
+			<value>D20</value>
+			<value>D21</value>
+			<value>D22</value>
+			<value>D23</value>
+			<value>D24</value>
+			<value>D25</value>
+			<value>D26</value>
+			<value>D27</value>
+			<value>D28</value>
+			<value>D29</value>
+			<value>D30</value>
+			<value>D31</value>
+			<value>D32</value>
+			<value>D33</value>
+			<value>D34</value>
+			<value>D35</value>
+			<value>D36</value>
+			<value>D37</value>
+			<value>D38</value>
+			<value>D39</value>
 		</property>
 		<property name="initialValue">
 			<value>0</value>
