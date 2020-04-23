@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{eacb9ff7-1ab3-4695-a5ad-ba8096fce250}">
 		<property name="assetPath">
-			<value>Sfx_type_slow-004.wav</value>
+			<value>Keyboard/Sfx_type_slow-004.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

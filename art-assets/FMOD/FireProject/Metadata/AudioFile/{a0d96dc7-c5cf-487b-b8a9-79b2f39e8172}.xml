@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{a0d96dc7-c5cf-487b-b8a9-79b2f39e8172}">
 		<property name="assetPath">
-			<value>Dialogue/Section 2/Player identifies group of smokers.wav</value>
+			<value>Dialogue/Section 1/Scene 2/Player identifies group of smokers.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
