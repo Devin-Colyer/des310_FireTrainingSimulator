@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\Minigames\Socket Minigame\HazardClick.cs" />
     <Compile Include="Assets\Scripts\Minigames\SpaceToWin.cs" />
     <Compile Include="Assets\Scripts\Movement\Animation\PlayerAnimationController.cs" />
+    <Compile Include="Assets\Scripts\Movement\AudioTestScenePointAndClickPlayerController.cs" />
     <Compile Include="Assets\Scripts\Movement\CameraMovementController.cs" />
     <Compile Include="Assets\Scripts\Movement\DisappearingRoomController.cs" />
     <Compile Include="Assets\Scripts\Movement\HazardPopupController.cs" />
