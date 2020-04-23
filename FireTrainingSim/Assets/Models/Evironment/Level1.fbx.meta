@@ -1,0 +1,586 @@
+fileFormatVersion: 2
+guid: f10eace6e50c8dc40906d0fe9b0c36d9
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: ctrl_itm_extinguisher
+    100002: ctrl_itm_extinguisher1
+    100004: grp_itm_FireDoor
+    100006: //RootNode
+    100008: Level1
+    100010: Level2
+    100012: LevelBase_1
+    100014: LevelChallenge_1a
+    100016: LevelChallenge_1b
+    100018: LevelChallenge_1c
+    100020: LevelChallenge_2
+    100022: Levels
+    100024: Mesh
+    100026: Mesh 1
+    100028: Mesh_Door
+    100030: Mesh_Door 1
+    100032: Mesh_Frame
+    100034: Mesh_Frame1
+    100036: Mesh_Frame2
+    100038: pickup_extinguisherCO2:ctrl_itm_extinguisher
+    100040: pickup_extinguisherCO2:grp_itm_extinguisher
+    100042: pickup_extinguisherCO2:Mesh
+    100044: player_model:left
+    100046: polySurface63
+    400000: ctrl_itm_extinguisher
+    400002: ctrl_itm_extinguisher1
+    400004: grp_itm_FireDoor
+    400006: //RootNode
+    400008: Level1
+    400010: Level2
+    400012: LevelBase_1
+    400014: LevelChallenge_1a
+    400016: LevelChallenge_1b
+    400018: LevelChallenge_1c
+    400020: LevelChallenge_2
+    400022: Levels
+    400024: Mesh
+    400026: Mesh 1
+    400028: Mesh_Door
+    400030: Mesh_Door 1
+    400032: Mesh_Frame
+    400034: Mesh_Frame1
+    400036: Mesh_Frame2
+    400038: pickup_extinguisherCO2:ctrl_itm_extinguisher
+    400040: pickup_extinguisherCO2:grp_itm_extinguisher
+    400042: pickup_extinguisherCO2:Mesh
+    400044: player_model:left
+    400046: polySurface63
+    2000000: player_model:left
+    2100000: lambert1
+    2100002: level_2_lambert10
+    2100004: level_2_lambert9
+    2100006: level_2_itm_wallsocket_clean_mat_plug2
+    2100008: level_2_itm_wallsocket_clean_mat_plug1
+    2100010: level_2_itm_wallsocket_clean_mat_plug3
+    2100012: level_2_prp_WorkingDesk_var6_mat_desk1
+    2100014: level_2_prp_WorkingDesk_var5_mat_desk2
+    2100016: pickup_extinguisherCO2_Extinguisher
+    2100018: pickup_extinguisherCO2_ExtingusherNozzle
+    2100020: pickup_extinguisherCO2_ExinguisherTypeCO2
+    2100022: pickup_extinguisherCO2_ExtinguisherButton
+    2100024: itm_FireDoor_lambert2
+    2100026: itm_FireDoor_lambert4
+    2100028: itm_FireDoor_lambert3
+    2100030: itm_FireDoor_lambert5
+    2100032: prp_WorkingDesk_var3_mat_card2
+    2100034: prp_WorkingDesk_var3_mat_card1
+    2100036: level_2_prp_Filecab_lambert3
+    2100038: Default_Material
+    2100040: prp_Table1_mat_table1
+    2100042: prp_WorkingDesk_var1_mat_desk1
+    2100044: prp_Server_mat_server
+    2100046: level_2_itm_box_mat_box1
+    2100048: itm_box_mat_box2
+    2100050: prp_WorkingDesk_var8_mat_computer1
+    2100052: level_2_prp_WorkingDesk_var7_mat_chair1
+    2100054: level_2_prp_WorkingDesk_var4_mat_chair3
+    2100056: prp_WorkingDesk_var3_mat_donut0
+    2100058: prp_WorkingDesk_var3_mat_donut1
+    2100060: prp_WorkingDesk_var3_mat_donut2
+    2100062: prp_WorkingDesk_var3_mat_donut3
+    2100064: prp_WorkingDesk_var3_mat_mug
+    2100066: prp_WorkingDesk_var3_mat_coffeecoffee
+    2100068: prp_WorkingDesk_var1_mat_stationary
+    2100070: prp_WorkingDesk_var5_mat_computer2
+    2100072: prp_WorkingDesk_var3_mat_desk1
+    2100074: prp_WorkingDesk_var3_mat_picture
+    2100076: prp_WorkingDesk_var8_mat_desk1
+    2100078: prp_WorkingDesk_var3_mat_desk2
+    2100080: level_2_prp_WorkingDesk_var4_mat_desk1
+    2100082: level_2_prp_WorkingDesk_var4_mat_picture
+    2100084: prp_WorkingDesk_var2_mat_coffee1
+    2100086: prp_WorkingDesk_var2_mat_coffee2
+    2100088: level_2_prp_WorkingDesk_var7_mat_chair3
+    2100090: prp_WorkingDesk_var2_mat_stationary
+    2100092: prp_WorkingDesk_var1_mat_computer2
+    2100094: level_2_lambert6
+    2100096: level_2_lambert8
+    2100098: level_2_lambert7
+    2100100: level_2_prp_Clock_prp_Clock1
+    2100102: level_2_prp_Clock_prp_Clock2
+    2100104: level_2_prp_WorkingDesk_var5_mat_desk1
+    2100106: prp_WorkingDesk_var1_mat_chair
+    2100108: lambert3
+    2100110: lambert2
+    2100112: level_2_lambert5
+    2100114: prp_Table_mat_table1
+    2100116: prp_Table_mat_table2
+    2100118: lambert5
+    2100120: lambert4
+    2100122: itm_box_mat_box1
+    2300000: LevelBase_1
+    2300002: LevelChallenge_1a
+    2300004: LevelChallenge_1b
+    2300006: LevelChallenge_1c
+    2300008: LevelChallenge_2
+    2300010: Mesh
+    2300012: Mesh 1
+    2300014: Mesh_Door
+    2300016: Mesh_Door 1
+    2300018: Mesh_Frame
+    2300020: Mesh_Frame1
+    2300022: Mesh_Frame2
+    2300024: pickup_extinguisherCO2:Mesh
+    2300026: polySurface63
+    3300000: LevelBase_1
+    3300002: LevelChallenge_1a
+    3300004: LevelChallenge_1b
+    3300006: LevelChallenge_1c
+    3300008: LevelChallenge_2
+    3300010: Mesh
+    3300012: Mesh 1
+    3300014: Mesh_Door
+    3300016: Mesh_Door 1
+    3300018: Mesh_Frame
+    3300020: Mesh_Frame1
+    3300022: Mesh_Frame2
+    3300024: pickup_extinguisherCO2:Mesh
+    3300026: polySurface63
+    4300000: LevelChallenge_2
+    4300002: pickup_extinguisherCO2:Mesh
+    4300004: Mesh
+    4300006: Mesh
+    4300008: Mesh_Frame1
+    4300010: Mesh_Door
+    4300012: polySurface63
+    4300014: LevelBase_1
+    4300016: LevelChallenge_1c
+    4300018: LevelChallenge_1b
+    4300020: LevelChallenge_1a
+    4300022: Mesh_Door
+    4300024: Mesh_Frame
+    4300026: Mesh_Frame2
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Default_Material
+    second: {fileID: 2100000, guid: c0f757679d6136d40a8e5aa60d430de9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: itm_FireDoor_lambert2
+    second: {fileID: 2100000, guid: bf3c26a2a1d45e0408e8e6b828fdf6a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: itm_FireDoor_lambert3
+    second: {fileID: 2100000, guid: 4c1f12b745e447044a7bd9acc4b0d5ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: itm_FireDoor_lambert4
+    second: {fileID: 2100000, guid: 66916a3f7b153c149a3c96307ac235c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: itm_FireDoor_lambert5
+    second: {fileID: 2100000, guid: c0f757679d6136d40a8e5aa60d430de9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: itm_box_mat_box1
+    second: {fileID: 2100000, guid: 247d21ae50e308341b3ea0b780d71e06, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: itm_box_mat_box2
+    second: {fileID: 2100000, guid: 21b5c9903fd14f24bb17f3c775bd1c8d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: bf3c26a2a1d45e0408e8e6b828fdf6a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2
+    second: {fileID: 2100000, guid: e0c635ef935946843960e5cb45e28bca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert3
+    second: {fileID: 2100000, guid: ea7bfd46c6685ce4ab9ddfb83c2fb71f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert4
+    second: {fileID: 2100000, guid: bf3c26a2a1d45e0408e8e6b828fdf6a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert5
+    second: {fileID: 2100000, guid: 377e196aa14a9d44ea5fc0df19a75d64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: level_2_itm_box_mat_box1
+    second: {fileID: 2100000, guid: 247d21ae50e308341b3ea0b780d71e06, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: level_2_itm_wallsocket_clean_mat_plug1
+    second: {fileID: 2100000, guid: bf3c26a2a1d45e0408e8e6b828fdf6a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: level_2_itm_wallsocket_clean_mat_plug2
+    second: {fileID: 2100000, guid: 2bed9ed8ab0e4a54eb77059ee963b0e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: level_2_itm_wallsocket_clean_mat_plug3
+    second: {fileID: 2100000, guid: 973fa9536c6cb5d47a2d356240be3f74, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: level_2_lambert10
+    second: {fileID: 2100000, guid: 4b6cd4f867e3002459201aa61c75128d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: level_2_lambert5
+    second: {fileID: 2100000, guid: bf3c26a2a1d45e0408e8e6b828fdf6a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: level_2_lambert6
+    second: {fileID: 2100000, guid: 72e33aacdd774b746a14527369b17d4e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: level_2_lambert7
+    second: {fileID: 2100000, guid: 9a62caa08b4a65d469251ad20b9a37a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: level_2_lambert8
+    second: {fileID: 2100000, guid: 049c35857ab957e4bb0dd27642db0c3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: level_2_lambert9
+    second: {fileID: 2100000, guid: bf3c26a2a1d45e0408e8e6b828fdf6a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: level_2_prp_Clock_prp_Clock1
+    second: {fileID: 2100000, guid: bf3c26a2a1d45e0408e8e6b828fdf6a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: level_2_prp_Clock_prp_Clock2
+    second: {fileID: 2100000, guid: 2bed9ed8ab0e4a54eb77059ee963b0e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: level_2_prp_Filecab_lambert3
+    second: {fileID: 2100000, guid: c0f757679d6136d40a8e5aa60d430de9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: level_2_prp_WorkingDesk_var4_mat_chair3
+    second: {fileID: 2100000, guid: f41a1937da376b74895bb1f8d8c84562, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: level_2_prp_WorkingDesk_var4_mat_desk1
+    second: {fileID: 2100000, guid: bef4f0cf2d9f01e42910595f9ad53111, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: level_2_prp_WorkingDesk_var4_mat_picture
+    second: {fileID: 2100000, guid: 412de5d9a6f4d594caa494c74723279c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: level_2_prp_WorkingDesk_var5_mat_desk1
+    second: {fileID: 2100000, guid: bef4f0cf2d9f01e42910595f9ad53111, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: level_2_prp_WorkingDesk_var5_mat_desk2
+    second: {fileID: 2100000, guid: e270b04116f50e44693f3885f69954bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: level_2_prp_WorkingDesk_var6_mat_desk1
+    second: {fileID: 2100000, guid: bef4f0cf2d9f01e42910595f9ad53111, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: level_2_prp_WorkingDesk_var7_mat_chair1
+    second: {fileID: 2100000, guid: e0a203ee197eff7449aceb832e51f26a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: level_2_prp_WorkingDesk_var7_mat_chair3
+    second: {fileID: 2100000, guid: f41a1937da376b74895bb1f8d8c84562, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pickup_extinguisherCO2_ExinguisherTypeCO2
+    second: {fileID: 2100000, guid: 341912fd287f00c4cb21505a328dda26, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pickup_extinguisherCO2_Extinguisher
+    second: {fileID: 2100000, guid: 973fa9536c6cb5d47a2d356240be3f74, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pickup_extinguisherCO2_ExtinguisherButton
+    second: {fileID: 2100000, guid: ceca16fa47cf9ab4ca6e97554a7c31c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pickup_extinguisherCO2_ExtingusherNozzle
+    second: {fileID: 2100000, guid: 2bed9ed8ab0e4a54eb77059ee963b0e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prp_Server_mat_server
+    second: {fileID: 2100000, guid: a6e7fc2c0a5750a45b2f94701ab2d82b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prp_Table1_mat_table1
+    second: {fileID: 2100000, guid: 67b63a990809b4e4d8676b2d028aab08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prp_Table_mat_table1
+    second: {fileID: 2100000, guid: 67b63a990809b4e4d8676b2d028aab08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prp_Table_mat_table2
+    second: {fileID: 2100000, guid: e7c45049bb438744a89dd8a8eb902507, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prp_WorkingDesk_var1_mat_chair
+    second: {fileID: 2100000, guid: e0a203ee197eff7449aceb832e51f26a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prp_WorkingDesk_var1_mat_computer2
+    second: {fileID: 2100000, guid: cbf2894ea41615c41906b8dcd1d5db28, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prp_WorkingDesk_var1_mat_desk1
+    second: {fileID: 2100000, guid: bef4f0cf2d9f01e42910595f9ad53111, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prp_WorkingDesk_var1_mat_stationary
+    second: {fileID: 2100000, guid: 2bed9ed8ab0e4a54eb77059ee963b0e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prp_WorkingDesk_var2_mat_coffee1
+    second: {fileID: 2100000, guid: bf3c26a2a1d45e0408e8e6b828fdf6a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prp_WorkingDesk_var2_mat_coffee2
+    second: {fileID: 2100000, guid: 2ff532a64bf608744894f76e7fe8d47f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prp_WorkingDesk_var2_mat_stationary
+    second: {fileID: 2100000, guid: 2bed9ed8ab0e4a54eb77059ee963b0e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prp_WorkingDesk_var3_mat_card1
+    second: {fileID: 2100000, guid: 973fa9536c6cb5d47a2d356240be3f74, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prp_WorkingDesk_var3_mat_card2
+    second: {fileID: 2100000, guid: bf3c26a2a1d45e0408e8e6b828fdf6a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prp_WorkingDesk_var3_mat_coffeecoffee
+    second: {fileID: 2100000, guid: 260739d0ce951ed4e8d5251c42357390, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prp_WorkingDesk_var3_mat_desk1
+    second: {fileID: 2100000, guid: bef4f0cf2d9f01e42910595f9ad53111, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prp_WorkingDesk_var3_mat_desk2
+    second: {fileID: 2100000, guid: e270b04116f50e44693f3885f69954bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prp_WorkingDesk_var3_mat_donut0
+    second: {fileID: 2100000, guid: 72307ced7de761d45a59456c3cff7ba0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prp_WorkingDesk_var3_mat_donut1
+    second: {fileID: 2100000, guid: 669fc68680858ac408699db8166d78d9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prp_WorkingDesk_var3_mat_donut2
+    second: {fileID: 2100000, guid: 29d4b7bc75966da42aaaf55e78716f19, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prp_WorkingDesk_var3_mat_donut3
+    second: {fileID: 2100000, guid: c4c8483eb807ee24098e3c611952aa58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prp_WorkingDesk_var3_mat_mug
+    second: {fileID: 2100000, guid: bf3c26a2a1d45e0408e8e6b828fdf6a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prp_WorkingDesk_var3_mat_picture
+    second: {fileID: 2100000, guid: 412de5d9a6f4d594caa494c74723279c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prp_WorkingDesk_var5_mat_computer2
+    second: {fileID: 2100000, guid: cbf2894ea41615c41906b8dcd1d5db28, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prp_WorkingDesk_var8_mat_computer1
+    second: {fileID: 2100000, guid: ee7ac0379ddfce140b0703131bbcb36b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prp_WorkingDesk_var8_mat_desk1
+    second: {fileID: 2100000, guid: bef4f0cf2d9f01e42910595f9ad53111, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: UVMap-Extinguisher-CO2
+    second: {fileID: 2800000, guid: e0682d4774f0c204c8fe6a1d3fe231dc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: UVMap-FiredoorLocked
+    second: {fileID: 2800000, guid: 0a65af0a8ccf28d45be7314cf793cd54, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: UVMap-FiredoorV2
+    second: {fileID: 2800000, guid: 84bdbefa0032bcb47a98831fa07e821b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: UVMap_Server
+    second: {fileID: 2800000, guid: 3b44861d65a20fd459b5fb81ebd2c930, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: UV_Box-Forks
+    second: {fileID: 2800000, guid: 2e9cccf260dbd0241b488ca259598bde, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: player_model-Texture-Default-FINAL
+    second: {fileID: 2800000, guid: dcd2811e3d922664e83c0e52aa6f342e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: txt-Fork
+    second: {fileID: 2800000, guid: 1be7c7399530347478d198c3fe5ea0bb, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 64
+    meshCompression: 3
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

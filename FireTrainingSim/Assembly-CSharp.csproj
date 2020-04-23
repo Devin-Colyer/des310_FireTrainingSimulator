@@ -103,6 +103,7 @@
     <Compile Include="Assets\Scripts\Sound\testAsupprimer.cs" />
     <Compile Include="Assets\Scripts\Sound\ThirdPersonSounds.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenuController.cs" />
+    <None Include="Assets\Fonts\press-start\license.txt" />
     <None Include="Assets\StreamingAssets\desc.txt" />
     <None Include="Assets\Shaders\Glow\SimpleBlur.shader" />
     <None Include="Assets\Shaders\Glow\GlowMaterial.shader" />

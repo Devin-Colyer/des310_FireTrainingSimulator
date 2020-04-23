@@ -4,12 +4,12 @@ using UnityEngine;
 
 public enum ExtinguisherType
 {
-    FUEL, ELECTRIC, GAS
+    WATER, FOAM, DRY_POWDER, CO2, WET_CHEMICAL
 }
 
 public class ExtinguisherComponent : MonoBehaviour
 {
-    public ExtinguisherType m_extinguisherType = ExtinguisherType.FUEL;
+    public ExtinguisherType m_extinguisherType;
 
     private void OnTriggerStay(Collider other)
     {
@@ -52,15 +52,19 @@ public class ExtinguisherComponent : MonoBehaviour
                             }
 
                             // Update player, use fire extinguisher.
-
+                            
                             // Update minigame, change extinguisher.
-                            switch(m_extinguisherType)
+                            switch (m_extinguisherType)
                             {
-                                case ExtinguisherType.FUEL:
+                                case ExtinguisherType.WATER:
                                     break;
-                                case ExtinguisherType.ELECTRIC:
+                                case ExtinguisherType.FOAM:
                                     break;
-                                case ExtinguisherType.GAS:
+                                case ExtinguisherType.DRY_POWDER:
+                                    break;
+                                case ExtinguisherType.CO2:
+                                    break;
+                                case ExtinguisherType.WET_CHEMICAL:
                                     break;
                             }
                         }
