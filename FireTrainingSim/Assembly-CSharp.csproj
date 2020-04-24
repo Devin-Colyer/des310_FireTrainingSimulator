@@ -89,8 +89,6 @@
      <Compile Include="Assets\Scripts\Shared\CameraSwitch.cs" />
      <Compile Include="Assets\Scripts\Shared\HazardFinder.cs" />
      <Compile Include="Assets\Scripts\Sound\Box Minigame\BoxClickPickupSound.cs" />
-     <Compile Include="Assets\Scripts\Sound\Box Minigame\BoxSounds.cs" />
-     <Compile Include="Assets\Scripts\Sound\Box Minigame\LastGrabbedObjectHit.cs" />
      <Compile Include="Assets\Scripts\Sound\Character\FootStepsMaterialSoundSwitch.cs" />
      <Compile Include="Assets\Scripts\Sound\Character\MaterialSetter.cs" />
      <Compile Include="Assets\Scripts\Sound\Character\ThirdPersonSounds.cs" />
