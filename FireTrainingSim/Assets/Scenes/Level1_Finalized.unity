@@ -366,6 +366,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114464677457091972, guid: e633839106e0a6242bde21aae5015643,
+        type: 2}
+      propertyPath: DialogueEventPath
+      value: event:/Dialogue/Dialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 114464677457091972, guid: e633839106e0a6242bde21aae5015643,
+        type: 2}
+      propertyPath: FootstepsEventPath
+      value: event:/Footsteps
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e633839106e0a6242bde21aae5015643, type: 2}
   m_IsPrefabParent: 0
@@ -2378,7 +2388,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &576154712
 Transform:
   m_ObjectHideFlags: 0
@@ -6489,6 +6499,18 @@ GameObject:
   m_PrefabParentObject: {fileID: 1842986100666810, guid: e633839106e0a6242bde21aae5015643,
     type: 2}
   m_PrefabInternal: {fileID: 53403990}
+--- !u!114 &1635824825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1635824817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListenerNumber: 0
 --- !u!1 &1636032817
 GameObject:
   m_ObjectHideFlags: 0

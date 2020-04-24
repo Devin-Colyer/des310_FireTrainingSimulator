@@ -59,14 +59,14 @@ public class ThirdPersonSounds : MonoBehaviour {
         ThirdPersonSound.start();
 
         
-        if (F_DialogueValue == 0)
-        {
-            Debug.Log("BiteDe0");
-        }
-        else if (F_DialogueValue == 1)
-        {
-            Debug.Log("BiteDe1");
-        }
+        //if (F_DialogueValue == 0)
+        //{
+        //    Debug.Log("BiteDe0");
+        //}
+        //else if (F_DialogueValue == 1)
+        //{
+        //    Debug.Log("BiteDe1");
+        //}
 
         //Used to optimise the code, so the Update doesnt have to always run unuseful code
         if (F_DialogueValue == 350 || F_DialogueValue == 360)
@@ -131,23 +131,23 @@ public class ThirdPersonSounds : MonoBehaviour {
         Footsteps.setParameterByName("Material", F_MaterialValue);                                                 // Before the event is played, we set the Material Parameter to match the value of the 'F_MaterialValue' variable.
         Footsteps.start();                                                                                        // We then play a footstep!.
         /*Footsteps.release();    */                                                                                  // We also set our event instance to release straight after we tell it to play, so that the instance is released once the event had finished playing.
-    Debug.Log("step"+"yo"+Yo+F_MaterialValue);
-        if (ThirdPersonSounds.F_MaterialValue == 1)
-        {
-            Debug.Log("BiteDeMetal");
-        }
-        else if (ThirdPersonSounds.F_MaterialValue == 3)
-        {
-            Debug.Log("BiteDeTapis");
-        }
-        else if (ThirdPersonSounds.F_MaterialValue == 0)
-        {
-            Debug.Log("BiteDeBitume");
-        }
-        else if (ThirdPersonSounds.F_MaterialValue == 2)
-        {
-            Debug.Log("BiteDeVinyl");
-        }
+    //Debug.Log("step"+"yo"+Yo+F_MaterialValue);
+    //    if (ThirdPersonSounds.F_MaterialValue == 1)
+    //    {
+    //        Debug.Log("BiteDeMetal");
+    //    }
+    //    else if (ThirdPersonSounds.F_MaterialValue == 3)
+    //    {
+    //        Debug.Log("BiteDeTapis");
+    //    }
+    //    else if (ThirdPersonSounds.F_MaterialValue == 0)
+    //    {
+    //        Debug.Log("BiteDeBitume");
+    //    }
+    //    else if (ThirdPersonSounds.F_MaterialValue == 2)
+    //    {
+    //        Debug.Log("BiteDeVinyl");
+    //    }
     }
 
 
