@@ -26,15 +26,22 @@ public class BoxClickPickupSound : MonoBehaviour
     Vector3 g_grabOffset;
 
     private bool isReleased = false;
+    public static bool BoxClickPickupSound_Update = false;
 
-
+  
 
     // Use this for initialization
     void Start()
     {
         g_grabbedObject = null;
         g_grabOffset = Vector3.zero;
+        GetComponent<BoxClickPickupSound>().Update();
     }
+
+
+
+
+
 
     // Returns true if input object is currently grabbed.
     public bool IsGrabbedObject(GameObject gameObject)
@@ -49,9 +56,17 @@ public class BoxClickPickupSound : MonoBehaviour
         }
     }
 
+
+
     // Update is called once per frame
     void Update()
     {
+        // Optimisation: avoid activated all time
+        if (BoxClickPickupSound_Update == true)
+        {
+
+        }
+        
         // Check if mouse has been pressed.
         if (Input.GetMouseButtonDown(0))
         {
@@ -163,14 +178,14 @@ public class BoxClickPickupSound : MonoBehaviour
     }
 
     // Collider detector
-    private void OnCollisionEnter(Collision col)
-    {
-        Debug.Log("shot");
-        if (col.gameObject.tag == "TestCollision")
-        {
-            Debug.Log("success");
-        }
-    }
+    //private void OnCollisionEnter(Collision col)
+    //{
+    //    Debug.Log("shot");
+    //    if (col.gameObject.tag == "TestCollision")
+    //    {
+    //        Debug.Log("success");
+    //    }
+    //}
 
 
     // Play Drop sound
