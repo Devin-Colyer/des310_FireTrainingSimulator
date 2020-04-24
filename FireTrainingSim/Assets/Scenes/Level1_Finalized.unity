@@ -376,6 +376,16 @@ Prefab:
       propertyPath: FootstepsEventPath
       value: event:/Footsteps
       objectReference: {fileID: 0}
+    - target: {fileID: 114464677457091972, guid: e633839106e0a6242bde21aae5015643,
+        type: 2}
+      propertyPath: NumbersEventPath
+      value: event:/Dialogue/Numbers
+      objectReference: {fileID: 0}
+    - target: {fileID: 114464677457091972, guid: e633839106e0a6242bde21aae5015643,
+        type: 2}
+      propertyPath: DefaultMaterialValue
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e633839106e0a6242bde21aae5015643, type: 2}
   m_IsPrefabParent: 0
@@ -651,12 +661,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 135164110}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fd4cd94eb04f0b4d98e2790cedf701b, type: 3}
+  m_Script: {fileID: 11500000, guid: 73219931d382f1146a8bc7c7e59a57f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BoxPickupEventPath: event:/Box/BoxPickup
-  BoxDropEventPath: event:/Box/BoxDrop
-  BoxHitEventPath: event:/Box/BoxHit
+  Box_Sounds_Obj: {fileID: 870490934}
 --- !u!1 &164827536
 GameObject:
   m_ObjectHideFlags: 0
@@ -1839,12 +1847,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 419148278}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fd4cd94eb04f0b4d98e2790cedf701b, type: 3}
+  m_Script: {fileID: 11500000, guid: 73219931d382f1146a8bc7c7e59a57f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BoxPickupEventPath: event:/Box/BoxPickup
-  BoxDropEventPath: event:/Box/BoxDrop
-  BoxHitEventPath: event:/Box/BoxHit
+  Box_Sounds_Obj: {fileID: 870490934}
 --- !u!1 &421753883
 GameObject:
   m_ObjectHideFlags: 0
@@ -2312,12 +2318,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 508844957}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fd4cd94eb04f0b4d98e2790cedf701b, type: 3}
+  m_Script: {fileID: 11500000, guid: 73219931d382f1146a8bc7c7e59a57f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BoxPickupEventPath: event:/Box/BoxPickup
-  BoxDropEventPath: event:/Box/BoxDrop
-  BoxHitEventPath: event:/Box/BoxHit
+  Box_Sounds_Obj: {fileID: 870490934}
 --- !u!1 &564191199
 GameObject:
   m_ObjectHideFlags: 0
@@ -2469,7 +2473,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &576154712
 Transform:
   m_ObjectHideFlags: 0
@@ -2492,6 +2496,7 @@ Transform:
   - {fileID: 564191200}
   - {fileID: 1506945567}
   - {fileID: 215349920}
+  - {fileID: 870490935}
   m_Father: {fileID: 110193725}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2506,7 +2511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 222784d76032427439ad8a0638b22407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_cameraController: {fileID: 0}
+  m_cameraController: {fileID: 1555993908}
 --- !u!1001 &589855982
 Prefab:
   m_ObjectHideFlags: 0
@@ -3086,12 +3091,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 691372488}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fd4cd94eb04f0b4d98e2790cedf701b, type: 3}
+  m_Script: {fileID: 11500000, guid: 73219931d382f1146a8bc7c7e59a57f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BoxPickupEventPath: event:/Box/BoxPickup
-  BoxDropEventPath: event:/Box/BoxDrop
-  BoxHitEventPath: event:/Box/BoxHit
+  Box_Sounds_Obj: {fileID: 870490934}
 --- !u!1 &708893612
 GameObject:
   m_ObjectHideFlags: 0
@@ -3625,12 +3628,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 870490934}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.2073402, y: 3.244896, z: 0.5889974}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2059734469}
-  m_RootOrder: 4
+  m_Father: {fileID: 576154712}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &870490936
 MonoBehaviour:
@@ -3660,6 +3663,7 @@ MonoBehaviour:
   lastGrabbedObjectVelocity: 0
   objectMass: 0
   velocity: 0
+  test: 0
 --- !u!1 &871736275
 GameObject:
   m_ObjectHideFlags: 0
@@ -7155,6 +7159,7 @@ GameObject:
   - component: {fileID: 1728430837}
   - component: {fileID: 1728430836}
   - component: {fileID: 1728430835}
+  - component: {fileID: 1728430838}
   m_Layer: 0
   m_Name: Socket Minigame
   m_TagString: MainCamera
@@ -7236,6 +7241,18 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1728430838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1728430833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListenerNumber: 0
 --- !u!1 &1739250587
 GameObject:
   m_ObjectHideFlags: 0
@@ -8361,7 +8378,6 @@ Transform:
   - {fileID: 691372489}
   - {fileID: 508844958}
   - {fileID: 135164111}
-  - {fileID: 870490935}
   m_Father: {fileID: 576154712}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

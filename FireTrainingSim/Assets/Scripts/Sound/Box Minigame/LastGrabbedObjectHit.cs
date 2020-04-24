@@ -13,9 +13,11 @@ public class LastGrabbedObjectHit : MonoBehaviour {
     public float velocity;
 
 
+    //To delete, it's just to have something to put on If object hit something
+    public bool test;
 
-    //To delete, just to have something to put on If object hit something
-    bool test;
+
+
 
     void Start()
     {

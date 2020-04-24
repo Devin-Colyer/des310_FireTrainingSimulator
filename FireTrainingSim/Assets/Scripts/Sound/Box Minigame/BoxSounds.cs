@@ -19,7 +19,7 @@ public class BoxSounds : MonoBehaviour
     {
         BoxPickup = FMODUnity.RuntimeManager.CreateInstance(BoxPickupEventPath);
         BoxPickup.start();
-        Debug.Log("CAPART1");
+        Debug.Log("BoxSound1");
     }
 
 
@@ -27,14 +27,14 @@ public class BoxSounds : MonoBehaviour
     {
         BoxPickup = FMODUnity.RuntimeManager.CreateInstance(BoxDropEventPath);
         BoxPickup.start();
-        Debug.Log("CAPART2");
+        Debug.Log("BoxSound2");
     }
 
     public void F_BoxHit()
     {
         BoxPickup = FMODUnity.RuntimeManager.CreateInstance(BoxHitEventPath);
         BoxPickup.start();
-        Debug.Log("CAPART3");
+        Debug.Log("BoxSound3");
     }
 
 
