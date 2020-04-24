@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireTrainingSim", "Assembly-CSharp.csproj", "{3EA00F02-903A-1563-A0DD-0A29814FF1DB}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireTrainingSim", "Assembly-CSharp-firstpass.csproj", "{1247C282-23C8-8803-958D-0D27D9A3007F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireTrainingSim", "NavMeshComponents.csproj", "{43B691D4-1480-B1CF-6FA6-B8FE270F053D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireTrainingSim", "Assembly-CSharp.csproj", "{3EA00F02-903A-1563-A0DD-0A29814FF1DB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireTrainingSim", "Assembly-CSharp-Editor-firstpass.csproj", "{232AED47-508C-2B2D-4032-04EB5CD6A117}"
 EndProject
@@ -17,6 +17,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EA00F02-903A-1563-A0DD-0A29814FF1DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EA00F02-903A-1563-A0DD-0A29814FF1DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EA00F02-903A-1563-A0DD-0A29814FF1DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EA00F02-903A-1563-A0DD-0A29814FF1DB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1247C282-23C8-8803-958D-0D27D9A3007F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1247C282-23C8-8803-958D-0D27D9A3007F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1247C282-23C8-8803-958D-0D27D9A3007F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -25,10 +29,6 @@ Global
 		{43B691D4-1480-B1CF-6FA6-B8FE270F053D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43B691D4-1480-B1CF-6FA6-B8FE270F053D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43B691D4-1480-B1CF-6FA6-B8FE270F053D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3EA00F02-903A-1563-A0DD-0A29814FF1DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3EA00F02-903A-1563-A0DD-0A29814FF1DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3EA00F02-903A-1563-A0DD-0A29814FF1DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3EA00F02-903A-1563-A0DD-0A29814FF1DB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{232AED47-508C-2B2D-4032-04EB5CD6A117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{232AED47-508C-2B2D-4032-04EB5CD6A117}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{232AED47-508C-2B2D-4032-04EB5CD6A117}.Release|Any CPU.ActiveCfg = Release|Any CPU

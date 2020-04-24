@@ -7,9 +7,6 @@ public class BoxClickPickup : MonoBehaviour
     GameObject g_grabbedObject;
     Vector3 g_grabOffset;
 
-    public GameObject Box_Sounds_Obj;
-    bool IsGrabbed=false;
-
 	// Use this for initialization
 	void Start ()
     {
@@ -65,10 +62,6 @@ public class BoxClickPickup : MonoBehaviour
 
                         // Debug, output object name.
                         Debug.Log("Object Hit: " + g_grabbedObject.name);
-
-                        // Play Pickup Sound
-                        Box_Sounds_Obj.GetComponent<BoxSounds>().F_BoxPickup();
-                        IsGrabbed = true;
                     }
                 }
             }
@@ -129,13 +122,6 @@ public class BoxClickPickup : MonoBehaviour
         {
             // Release grabbed object.
             DropGrabbedObject();
-            if (IsGrabbed)
-            {
-                // Play Drop Sound
-                Box_Sounds_Obj.GetComponent<BoxSounds>().F_BoxDrop();
-                IsGrabbed = false;
-                Debug.Log("Balance");
-            }
         }
     }
 
