@@ -5,33 +5,41 @@ using UnityEngine;
 public class HazardFinder : MonoBehaviour
 {
     public GameObject m_player;
-    public GameObject m_hazardPopup;
+    //public GameObject m_hazardPopup;
+    private Transform g_hazardPopup;
     public GameObject m_levelExit;
     public GameObject[] m_hazards;
     [Range(0, 100)] public float m_maxDistance = 10;
 	
+    void Start()
+    {
+        // Check if player exists.
+        if (m_player)
+        {
+            // Find hazard popup in player.
+            g_hazardPopup = m_player.transform.Find("Hazard Popup");
+        }
+    }
+
 	// Update is called once per frame
 	void Update ()
     {
-        // Get hazards from scene.
-        //GameObject[] l_hazards = GameObject.FindGameObjectsWithTag("Hazard");
-
-       // m_level.transform.find
-
         if (m_hazards.Length <= 0)
         {
             // Safety check, makes sure there are hazards in the scene.
-            m_hazardPopup.GetComponent<TextMesh>().text = "";
+            g_hazardPopup.GetComponent<TextMesh>().text = "";
             return;
         }
 
         // Initialise min distance, default to maximum range.
         float l_minDistance = m_maxDistance;
-        
+
+        // Initialise hazard counter, default to zero.
         int l_numHazards = 0;
 
         foreach (GameObject hazard in m_hazards)
         {
+            // Check if hazard is broken (check if active in hirearchy, count hazards in inactive rooms).
             if (hazard.transform.Find("Broken").gameObject.activeSelf)
             {
                 // Increment number of hazards.
@@ -55,7 +63,7 @@ public class HazardFinder : MonoBehaviour
         if (l_numHazards == 0)
         {
             // All hazards have been dealt with.
-            m_hazardPopup.GetComponent<TextMesh>().text = "";
+            g_hazardPopup.GetComponent<TextMesh>().text = "";
             
             if (m_levelExit)
             {
@@ -72,19 +80,19 @@ public class HazardFinder : MonoBehaviour
             // Update hazard popup using closest hazard.
             if (l_percentageDistance < 33)
             {
-                m_hazardPopup.GetComponent<TextMesh>().text = "!!!";
+                g_hazardPopup.GetComponent<TextMesh>().text = "!!!";
             }
             else if (l_percentageDistance < 66)
             {
-                m_hazardPopup.GetComponent<TextMesh>().text = "!!";
+                g_hazardPopup.GetComponent<TextMesh>().text = "!!";
             }
             else if (l_percentageDistance < 99)
             {
-                m_hazardPopup.GetComponent<TextMesh>().text = "!";
+                g_hazardPopup.GetComponent<TextMesh>().text = "!";
             }
             else
             {
-                m_hazardPopup.GetComponent<TextMesh>().text = "";
+                g_hazardPopup.GetComponent<TextMesh>().text = "";
             }
         }
     }
