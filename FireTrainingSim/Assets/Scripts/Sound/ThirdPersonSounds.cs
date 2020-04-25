@@ -9,6 +9,8 @@ public class ThirdPersonSounds : MonoBehaviour {
 
     [SerializeField] [FMODUnity.EventRef] private string DialogueEventPath;
     public int F_DialogueValue;
+    [SerializeField] [FMODUnity.EventRef] private string NumbersEventPath;
+    public int F_NumbersValue;
 
     [Header("FMOD Settings")]
     [SerializeField] [FMODUnity.EventRef] private string FootstepsEventPath;
@@ -17,12 +19,15 @@ public class ThirdPersonSounds : MonoBehaviour {
     //[SerializeField] private float RayDistance = 1.2f;
     public int DefaultMaterialValue;                           // This will be told by the 'FMODStudioFootstepsEditor' script which Material has been set as the defualt. It will then store the value of that Material for outhis script to use. This cannot be changed in the Editor, but a drop down menu created by the 'FMODStudioFootstepsEditor' script can.
 
-
+    public static FMOD.Studio.EventInstance ThirdPersonSound;
+    public static FMOD.Studio.EventInstance Numbers;
 
     private RaycastHit hit;
     public static int F_MaterialValue;
     public int Yo = 1;
 
+    //0 = Dont need to play a "Number"      1 = Need to play a "Number"     2 = Need to play an other "Dialogue" to finish the senctence
+    private int CheckNumber = 0;
 
 
     //void MaterialCheck() // This method when performed will find out what material our player is currenly on top of and will update the value of 'F_MaterialValue' accordingly, to represent that value.
@@ -46,12 +51,12 @@ public class ThirdPersonSounds : MonoBehaviour {
     //}
 
 
-        //Use to play the initial dialogue
+    //Use to play the initial dialogue
     void Start()
     {
-        FMOD.Studio.EventInstance ThirdPersonSounds = FMODUnity.RuntimeManager.CreateInstance(DialogueEventPath);
-        ThirdPersonSounds.setParameterByName("Dialogue", F_DialogueValue);
-        ThirdPersonSounds.start();
+        ThirdPersonSound = FMODUnity.RuntimeManager.CreateInstance(DialogueEventPath);
+        ThirdPersonSound.setParameterByName("Dialogue", F_DialogueValue);
+        ThirdPersonSound.start();
 
         
         if (F_DialogueValue == 0)
@@ -62,7 +67,60 @@ public class ThirdPersonSounds : MonoBehaviour {
         {
             Debug.Log("BiteDe1");
         }
+
+        //Used to optimise the code, so the Update doesnt have to always run unuseful code
+        if (F_DialogueValue == 350 || F_DialogueValue == 360)
+        {
+            CheckNumber = 1;
+        }
+
     }
+
+    void Update()
+    {
+        if (CheckNumber==1)
+        {
+            FMOD.Studio.PLAYBACK_STATE playbackState;
+            ThirdPersonSound.getPlaybackState(out playbackState);
+            if (playbackState == FMOD.Studio.PLAYBACK_STATE.STOPPED)
+            {
+                ThirdPersonSound.release();
+                ThirdPersonSound.clearHandle();
+                Debug.Log("PlayerIntroFinished");
+                CheckNumber = 0;
+                SpeakedNumber();
+            }
+        }
+        else if (CheckNumber == 2)
+        {
+            FMOD.Studio.PLAYBACK_STATE playbackState;
+            Numbers.getPlaybackState(out playbackState);
+            if (playbackState == FMOD.Studio.PLAYBACK_STATE.STOPPED)
+            {
+                Start();
+                CheckNumber = 0;
+            }
+        }
+    }
+    
+
+    void SpeakedNumber()
+    {
+        Numbers = FMODUnity.RuntimeManager.CreateInstance(NumbersEventPath);
+        Numbers.setParameterByName("Numbers", F_NumbersValue);
+        Numbers.start();
+        F_DialogueValue++;
+        CheckNumber = 2;
+    }
+
+
+
+
+
+
+
+
+
 
 
     private void Footstep()

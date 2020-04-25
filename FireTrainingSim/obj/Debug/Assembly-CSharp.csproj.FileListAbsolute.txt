@@ -95,8 +95,10 @@ E:\Users\devco\Documents\GitHub\des310_FireTrainingSimulator\FireTrainingSim\Tem
 E:\Users\devco\Documents\GitHub\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\Unity.CecilTools.dll
 E:\Users\devco\Documents\GitHub\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\Unity.Cecil.Pdb.dll
 E:\Users\devco\Documents\GitHub\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\Unity.Cecil.Mdb.dll
+E:\Users\devco\Documents\GitHub\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\NavMeshComponentsExamplesEditor.pdb
 E:\Users\devco\Documents\GitHub\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\NavMeshComponentsEditor.pdb
 E:\Users\devco\Documents\GitHub\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\NavMeshComponents.pdb
+E:\Users\devco\Documents\GitHub\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\NavMeshComponentsExamples.pdb
 E:\Users\devco\Documents\GitHub\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\UnityEngine.xml
 E:\Users\devco\Documents\GitHub\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\UnityEditor.xml
 E:\Users\devco\Documents\GitHub\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\UnityEngine.AIModule.xml
