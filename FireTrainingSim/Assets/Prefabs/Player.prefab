@@ -140,7 +140,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4697468492699120}
   - component: {fileID: 137739843100760296}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -510,6 +510,7 @@ GameObject:
   - component: {fileID: 114924424976692492}
   - component: {fileID: 114510384141256832}
   - component: {fileID: 114464677457091972}
+  - component: {fileID: 114813198689149118}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -864,7 +865,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1842986100666810}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -4.04, y: 0.078228, z: 5.93}
+  m_LocalPosition: {x: -4.04, y: 0.04, z: 5.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4267340040867766}
@@ -1165,9 +1166,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6a5cb424171ba240a790a2d23aeb0bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueEventPath: 
+  DialogueEventPath: event:/Dialogue/Dialogue
   F_DialogueValue: 0
-  FootstepsEventPath: 
+  NumbersEventPath: 
+  F_NumbersValue: 0
+  FootstepsEventPath: event:/Footsteps
   Material: 
   MaterialTypes: []
   DefaultMaterialValue: 0
@@ -1194,6 +1197,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d141f1bde0fa03d43abae92b5085882a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114813198689149118
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1842986100666810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListenerNumber: 0
 --- !u!114 &114924424976692492
 MonoBehaviour:
   m_ObjectHideFlags: 1
