@@ -3173,7 +3173,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 4fd956df38da31941980908a1436d60e, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 4fd956df38da31941980908a1436d60e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -3181,11 +3181,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 4fd956df38da31941980908a1436d60e, type: 3}
       propertyPath: m_Layer
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 4fd956df38da31941980908a1436d60e, type: 3}
       propertyPath: m_Layer
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 4fd956df38da31941980908a1436d60e, type: 3}
       propertyPath: m_Materials.Array.data[1]
@@ -3366,7 +3366,7 @@ GameObject:
   - component: {fileID: 288971157}
   - component: {fileID: 288971159}
   - component: {fileID: 288971158}
-  m_Layer: 13
+  m_Layer: 11
   m_Name: Servers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3384,7 +3384,7 @@ Transform:
   m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_Children: []
   m_Father: {fileID: 714673347}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!23 &288971158
 MeshRenderer:
@@ -10702,7 +10702,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1956532127394850, guid: 571eae371dc9fe545a2ee6162bd3651e, type: 2}
       propertyPath: m_Layer
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 571eae371dc9fe545a2ee6162bd3651e, type: 2}
@@ -12142,6 +12142,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1802005884}
+  - {fileID: 1548307237}
   - {fileID: 288971157}
   - {fileID: 618357956}
   - {fileID: 1053306237}
@@ -12858,7 +12859,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1956532127394850, guid: 571eae371dc9fe545a2ee6162bd3651e, type: 2}
       propertyPath: m_Layer
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 571eae371dc9fe545a2ee6162bd3651e, type: 2}
@@ -19471,7 +19472,7 @@ GameObject:
   - component: {fileID: 982245208}
   - component: {fileID: 982245210}
   - component: {fileID: 982245209}
-  m_Layer: 13
+  m_Layer: 11
   m_Name: ExtinguisherEmitter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24879,7 +24880,7 @@ GameObject:
   - component: {fileID: 1053306237}
   - component: {fileID: 1053306239}
   - component: {fileID: 1053306238}
-  m_Layer: 13
+  m_Layer: 11
   m_Name: Servers1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24897,7 +24898,7 @@ Transform:
   m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_Children: []
   m_Father: {fileID: 714673347}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1053306238
 MeshRenderer:
@@ -25405,7 +25406,7 @@ GameObject:
   - component: {fileID: 1072363974}
   - component: {fileID: 1072363973}
   - component: {fileID: 1072363972}
-  m_Layer: 13
+  m_Layer: 11
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26599,7 +26600,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1204622378}
   - component: {fileID: 1204622379}
-  m_Layer: 13
+  m_Layer: 11
   m_Name: ExtinguisherMinigameController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26617,7 +26618,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 714673347}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1204622379
 MonoBehaviour:
@@ -26648,7 +26649,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1206139359}
-  m_Layer: 13
+  m_Layer: 11
   m_Name: Fires
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26671,7 +26672,7 @@ Transform:
   - {fileID: 1931277864}
   - {fileID: 73532529}
   m_Father: {fileID: 714673347}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1212922878
 Prefab:
@@ -26718,7 +26719,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1956532127394850, guid: 571eae371dc9fe545a2ee6162bd3651e, type: 2}
       propertyPath: m_Layer
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 571eae371dc9fe545a2ee6162bd3651e, type: 2}
@@ -30636,6 +30637,71 @@ Transform:
   m_Father: {fileID: 1629514212}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1548307236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1548307237}
+  - component: {fileID: 1548307238}
+  m_Layer: 11
+  m_Name: Point Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 126
+  m_IsActive: 1
+--- !u!4 &1548307237
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1548307236}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 6.5, z: 3}
+  m_LocalScale: {x: 1, y: 1.0000005, z: 1.0000005}
+  m_Children: []
+  m_Father: {fileID: 714673347}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!108 &1548307238
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1548307236}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 0.8666667, g: 0.9764706, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 20
+  m_SpotAngle: 179
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 0
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  m_Lightmapping: 1
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 0
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1548854017 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1956532127394850, guid: 571eae371dc9fe545a2ee6162bd3651e,
@@ -31240,7 +31306,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1956532127394850, guid: 571eae371dc9fe545a2ee6162bd3651e, type: 2}
       propertyPath: m_Layer
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 571eae371dc9fe545a2ee6162bd3651e, type: 2}
@@ -31925,7 +31991,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1956532127394850, guid: 571eae371dc9fe545a2ee6162bd3651e, type: 2}
       propertyPath: m_Layer
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 571eae371dc9fe545a2ee6162bd3651e, type: 2}
@@ -37939,7 +38005,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1802005884}
   - component: {fileID: 1802005885}
-  m_Layer: 13
+  m_Layer: 11
   m_Name: Spot Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39037,7 +39103,7 @@ Transform:
   m_Children:
   - {fileID: 1072363971}
   m_Father: {fileID: 714673347}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!1 &1929960658
 GameObject:
