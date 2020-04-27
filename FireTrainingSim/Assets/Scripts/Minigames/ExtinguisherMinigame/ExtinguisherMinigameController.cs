@@ -7,7 +7,9 @@ public class ExtinguisherMinigameController : MonoBehaviour {
     public GameObject[] m_ListOfFires;
     public GameObject m_FireExtinguisherWorldMatrixTransform;
     public GameObject m_cameraController;
+    public GameObject m_player;
     public GameObject m_worldHazard;
+    public GameObject m_extinguisherPickups;
 
     public float sprayRadius = 5; //temp
 
@@ -59,13 +61,17 @@ public class ExtinguisherMinigameController : MonoBehaviour {
 
         if (beatMinigame && m_cameraController)
         {
-            if (m_worldHazard)
+            if (m_worldHazard && m_extinguisherPickups & m_player)
             {
                 // Disable world hazard.
                 m_worldHazard.transform.Find("Broken").gameObject.SetActive(false);
+                m_extinguisherPickups.transform.Find("Broken").gameObject.SetActive(false);
 
                 // Enable fixed hazard.
                 m_worldHazard.transform.Find("Fixed").gameObject.SetActive(true);
+                m_extinguisherPickups.transform.Find("Fixed").gameObject.SetActive(true);
+
+                m_player.GetComponent<ExtinguisherTrackerComponent>().SetExtinguisherType(ExtinguisherType.NONE);
             }
 
             if (m_cameraController)
