@@ -1209,17 +1209,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_player: {fileID: 1635824817}
-  m_hazardPopup: {fileID: 268454888}
   m_levelExit: {fileID: 708893612}
   m_hazards:
   - {fileID: 1579132850}
   - {fileID: 1419587918}
   m_maxDistance: 10
---- !u!1 &268454888 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1590017822901928, guid: e633839106e0a6242bde21aae5015643,
-    type: 2}
-  m_PrefabInternal: {fileID: 53403990}
 --- !u!1 &282463514
 GameObject:
   m_ObjectHideFlags: 0
@@ -2473,7 +2467,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &576154712
 Transform:
   m_ObjectHideFlags: 0
