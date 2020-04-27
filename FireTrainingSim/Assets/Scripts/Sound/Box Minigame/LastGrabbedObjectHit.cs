@@ -24,6 +24,15 @@ public class LastGrabbedObjectHit : MonoBehaviour {
         g_lastGrabbedObject = null;
     }
 
+
+
+    void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("HitSomething");
+    }
+
+
+
     void Update()
     {
         //Check if there are a throwed object

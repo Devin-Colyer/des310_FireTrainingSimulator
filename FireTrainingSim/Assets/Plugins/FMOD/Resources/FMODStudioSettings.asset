@@ -14,9 +14,9 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\FMOD\FireProject\FireProject.fspro
-  SourceProjectPathUnformatted: D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\FMOD\FireProject\FireProject.fspro
-  SourceBankPathUnformatted: D:\FireTrainingProject\des310_FireTrainingSimulator\art-assets\FMOD\FireProject\Build
+  sourceProjectPath: D:\FireTrainingProject\des310_FireTrainingSimulator\sound-Assets\FMOD\FireProject.fspro
+  SourceProjectPathUnformatted: D:\FireTrainingProject\des310_FireTrainingSimulator\sound-Assets\FMOD\FireProject.fspro
+  SourceBankPathUnformatted: D:\FireTrainingProject\des310_FireTrainingSimulator\sound-Assets\FMOD\Build
   AutomaticEventLoading: 1
   BankLoadType: 0
   AutomaticSampleLoading: 0
@@ -74,7 +74,8 @@ MonoBehaviour:
   - Platform: 20
     Value: 32
   Plugins: []
-  MasterBanks: []
+  MasterBanks:
+  - Master
   Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264
