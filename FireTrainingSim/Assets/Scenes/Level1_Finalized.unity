@@ -386,6 +386,21 @@ Prefab:
       propertyPath: DefaultMaterialValue
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114464677457091972, guid: e633839106e0a6242bde21aae5015643,
+        type: 2}
+      propertyPath: F_DialogueValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114464677457091972, guid: e633839106e0a6242bde21aae5015643,
+        type: 2}
+      propertyPath: DialogueWhoNeedToPlayNextOne.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114464677457091972, guid: e633839106e0a6242bde21aae5015643,
+        type: 2}
+      propertyPath: DialogueWhoNeedToPlayNextOne.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e633839106e0a6242bde21aae5015643, type: 2}
   m_IsPrefabParent: 0

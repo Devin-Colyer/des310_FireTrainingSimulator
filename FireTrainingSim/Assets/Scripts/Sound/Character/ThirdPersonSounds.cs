@@ -26,29 +26,16 @@ public class ThirdPersonSounds : MonoBehaviour {
     public static int F_MaterialValue;
     public int Yo = 1;
 
-    //0 = Dont need to play a "Number"      1 = Need to play a "Number"     2 = Need to play an other "Dialogue" to finish the senctence
+    //DONTPLAY = Dont need to play anything after      PLAYNUMBER = Need to play a "Number"     PLAYDIFFERENT = Need to play an other "Dialogue" to finish the senctence
     private int CheckNumber = 0;
+    enum DialogueStateControl
+    {
+        DONTPLAY,
+        PLAYNUMBER,
+        PLAYDIFFERENT
+    }
 
-
-    //void MaterialCheck() // This method when performed will find out what material our player is currenly on top of and will update the value of 'F_MaterialValue' accordingly, to represent that value.
-    //{
-    //    Debug.Log("1");
-    //    if (Physics.Raycast(transform.position, Vector3.down, out hit, RayDistance))                                 // A raycast is fired down, from the position that the player is curenntly standing at, traveling as far as we decide to set the 'RayDistance' variable to. Infomration about the object it comes into contact with will then be stored inside the 'hit' variable for us to access.
-    //    {
-    //        Debug.Log("2");
-    //        if (hit.collider.gameObject.GetComponent<MaterialSetter>())                                    // Using the 'hit' varibale, we check to see if the raycast has hit a collider attached to a gameobject, that also has the 'FMODStudioMaterialSetter' script attached to it as a component...
-    //        {
-    //            Debug.Log("3");
-    //            F_MaterialValue = hit.collider.gameObject.GetComponent<MaterialSetter>().MaterialValue;    // ...and if it did, we then set our 'F_MaterialValue' varibale to match whatever value the 'MaterialValue' variable (which is inside the 'F_MaterialValue' varibale) is currently set to.
-    //        }
-    //        else                                                                                                     // Else if however, the player is standing on an object that doesn't have a 'FMODStudioMaterialSetter' script component for our raycast to find...
-    //            Debug.Log("4");
-    //        F_MaterialValue = DefaultMaterialValue;                                                              // ...we then set 'F_MaterialValue' to match the value of 'DefulatMaterialValue'. 'DefulatMaterialValue' is given a value by the 'FMODStudioFootstepsEditor' script. This value represents whatever material we have selected as our 'DefulatMaterial' in the Unity Inspector tab.
-    //    }
-    //    else                                                                                                         // Else if however, the raycast can't find a collider attached to the object at all...
-    //        Debug.Log("5");
-    //    F_MaterialValue = DefaultMaterialValue;                                                                  // Then again, we set 'F_MaterialValue' to match the value of 'DefulatMaterialValue'.
-    //}
+    public int[] DialogueWhoNeedToPlayNextOne = new int[10];
 
 
     //Use to play the initial dialogue
@@ -58,7 +45,7 @@ public class ThirdPersonSounds : MonoBehaviour {
         ThirdPersonSound.setParameterByName("Dialogue", F_DialogueValue);
         ThirdPersonSound.start();
 
-        
+
         //if (F_DialogueValue == 0)
         //{
         //    Debug.Log("BiteDe0");
@@ -68,10 +55,32 @@ public class ThirdPersonSounds : MonoBehaviour {
         //    Debug.Log("BiteDe1");
         //}
 
+
+
+
         //Used to optimise the code, so the Update doesnt have to always run unuseful code
-        if (F_DialogueValue == 350 || F_DialogueValue == 360)
+        // The values are the Dialogue FMOD values who need the next one to be played straight after
+
+        //Here is when we need a NUMBER
+        foreach (int itr in DialogueWhoNeedToPlayNextOne)
+        {
+            if (F_DialogueValue == itr)
+            {
+                Debug.Log("Success");
+                //DialogueStateControl;
+            }
+        }
+
+
+        if (F_DialogueValue == 300 || F_DialogueValue == 360)
         {
             CheckNumber = 1;
+        }
+
+        //Here is when we need a Dialogue
+        if (F_DialogueValue == 300 || F_DialogueValue == 360)
+        {
+            CheckNumber = 2;
         }
 
     }
