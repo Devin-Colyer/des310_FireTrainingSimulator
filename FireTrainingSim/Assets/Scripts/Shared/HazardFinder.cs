@@ -10,7 +10,12 @@ public class HazardFinder : MonoBehaviour
     public GameObject m_levelExit;
     public GameObject[] m_hazards;
     [Range(0, 100)] public float m_maxDistance = 10;
-	
+
+    public int DialogueValue;
+    public Dialogue DialogueScript;
+    bool HavePlayedDialogue = false;
+
+
     void Start()
     {
         // Check if player exists.
@@ -81,6 +86,13 @@ public class HazardFinder : MonoBehaviour
             if (l_percentageDistance < 33)
             {
                 g_hazardPopup.GetComponent<TextMesh>().text = "!!!";
+                if (HavePlayedDialogue==false)
+                {
+                    Dialogue.F_DialogueValue = DialogueValue;
+                    DialogueScript.PlayDialogue();
+                    HavePlayedDialogue = true;
+                    //Debug.Log("yesy");
+                }
             }
             else if (l_percentageDistance < 66)
             {

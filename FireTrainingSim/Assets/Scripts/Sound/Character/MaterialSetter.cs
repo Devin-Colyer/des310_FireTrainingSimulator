@@ -15,7 +15,7 @@ public class MaterialSetter : MonoBehaviour
             
             ThirdPersonSounds.F_MaterialValue = DefinerF_MaterialValue;
 
-            Debug.Log("TouchdownPlayer"+ DefinerF_MaterialValue);
+            //Debug.Log("TouchdownPlayer"+ DefinerF_MaterialValue);
 
         }
     }

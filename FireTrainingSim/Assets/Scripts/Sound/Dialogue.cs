@@ -4,9 +4,23 @@ using UnityEngine;
 using UnityEngine.AI;
 public class Dialogue : MonoBehaviour {
 
-    [Header("FMOD Settings")]
     [SerializeField] [FMODUnity.EventRef] private string DialogueEventPath;
-    public int F_DialogueValue;
+    public static int F_DialogueValue=1;
+    public static bool MONBOULE;
+    //0 = Dont need to play a "Number"      1 = Need to play a "Number"     2 = Need to play an other "Dialogue" to finish the senctence
+    //private int CheckNumber = 0;
+    //DONTPLAY = Dont need to play anything after      PLAYNUMBER = Need to play a "Number"     PLAYDIFFERENT = Need to play an other "Dialogue" to finish the senctence
+    //private int CheckNumber = 0;
+    public enum DialogueStateControl
+    {
+        DONTPLAY,
+        PLAYNUMBER,
+        PLAYDIFFERENT
+    }
+    public DialogueStateControl m_dialogueStateControl = DialogueStateControl.DONTPLAY;
+    public int[] DialogueWhoNeedToPlayNunmber = new int[0];
+    public int[] DialogueWhoNeedToPlayNextDialogue = new int[0];
+
     [SerializeField] [FMODUnity.EventRef] private string NumbersEventPath;
     public int F_NumbersValue;
 
@@ -15,15 +29,14 @@ public class Dialogue : MonoBehaviour {
     public static FMOD.Studio.EventInstance Numbers;
 
 
-    //0 = Dont need to play a "Number"      1 = Need to play a "Number"     2 = Need to play an other "Dialogue" to finish the senctence
-    private int CheckNumber = 0;
 
 
 
 
 
 
-    // Use this for initialization
+
+    // Use this if Collision Trigger Dialogue
     void OnTriggerEnter(Collider collision)
     {
         //Debug.Log("Touchdown");
@@ -34,61 +47,134 @@ public class Dialogue : MonoBehaviour {
             ThirdPersonSound.setParameterByName("Dialogue", F_DialogueValue);
             ThirdPersonSound.start();
 
-        
-
             //Used to optimise the code, so the Update doesnt have to always run unuseful code
-            if (F_DialogueValue == 35 || F_DialogueValue == 360)
+            // The values are the Dialogue FMOD values who need the next one to be played straight after
+
+            //Here is when we need a NUMBER
+            foreach (int itr in DialogueWhoNeedToPlayNunmber)
             {
-                CheckNumber = 1;
+                if (F_DialogueValue == itr)
+                {
+                    m_dialogueStateControl = DialogueStateControl.PLAYNUMBER;
+                }
             }
 
-
-            else if (F_DialogueValue != 35 || F_DialogueValue != 360)
+            //Here is when we need a Dialogue
+            foreach (int itr in DialogueWhoNeedToPlayNextDialogue)
             {
-                Destroy(gameObject);
+                if (F_DialogueValue == itr)
+                {
+                    m_dialogueStateControl = DialogueStateControl.PLAYDIFFERENT;
+                }
             }
-            
-
-            
         }
     }
 
-
-    void SubstituteOfOTE()
+    void Start()
     {
+        //Debug.Log("Test");
         ThirdPersonSound = FMODUnity.RuntimeManager.CreateInstance(DialogueEventPath);
         ThirdPersonSound.setParameterByName("Dialogue", F_DialogueValue);
         ThirdPersonSound.start();
 
-        Destroy(gameObject);
+
+
+        //Used to optimise the code, so the Update doesnt have to always run unuseful code
+        // The values are the Dialogue FMOD values who need the next one to be played straight after
+
+        //Here is when we need a NUMBER
+        foreach (int itr in DialogueWhoNeedToPlayNunmber)
+        {
+            if (F_DialogueValue == itr)
+            {
+                m_dialogueStateControl = DialogueStateControl.PLAYNUMBER;
+            }
+        }
+
+        //Here is when we need a Dialogue
+        foreach (int itr in DialogueWhoNeedToPlayNextDialogue)
+        {
+            if (F_DialogueValue == itr)
+            {
+                m_dialogueStateControl = DialogueStateControl.PLAYDIFFERENT;
+            }
+        }
+
+    }
+
+
+    public void PlayDialogue()
+    {
+        Debug.Log("yes"+ F_DialogueValue);
+        ThirdPersonSound = FMODUnity.RuntimeManager.CreateInstance(DialogueEventPath);
+        ThirdPersonSound.setParameterByName("Dialogue", F_DialogueValue);
+        ThirdPersonSound.start();
+
+            //Used to optimise the code, so the Update doesnt have to always run unuseful code
+            // The values are the Dialogue FMOD values who need the next one to be played straight after
+
+            //Here is when we need a NUMBER
+            foreach (int itr in DialogueWhoNeedToPlayNunmber)
+            {
+                if (F_DialogueValue == itr)
+                {
+                    m_dialogueStateControl = DialogueStateControl.PLAYNUMBER;
+                }
+            }
+
+            //Here is when we need a Dialogue
+            foreach (int itr in DialogueWhoNeedToPlayNextDialogue)
+            {
+                if (F_DialogueValue == itr)
+                {
+                    m_dialogueStateControl = DialogueStateControl.PLAYDIFFERENT;
+                }
+            }
     }
 
 
 
     void Update()
     {
-        if (CheckNumber == 1)
+        FMOD.Studio.PLAYBACK_STATE playbackState;
+        ThirdPersonSound.getPlaybackState(out playbackState);
+        Debug.Log(playbackState);
+
+        if (m_dialogueStateControl == DialogueStateControl.PLAYNUMBER)
         {
-            Debug.Log("YO");
-            FMOD.Studio.PLAYBACK_STATE playbackState;
-            ThirdPersonSound.getPlaybackState(out playbackState);
+            //FMOD.Studio.PLAYBACK_STATE playbackState;
+            //ThirdPersonSound.getPlaybackState(out playbackState);
+            Debug.Log(playbackState);
             if (playbackState == FMOD.Studio.PLAYBACK_STATE.STOPPED)
             {
                 ThirdPersonSound.release();
                 ThirdPersonSound.clearHandle();
                 Debug.Log("PlayerIntroFinished");
-                CheckNumber = 0;
+                m_dialogueStateControl = DialogueStateControl.DONTPLAY;
                 SpeakedNumber();
             }
         }
-        else if (CheckNumber == 2)
+        else if (m_dialogueStateControl == DialogueStateControl.PLAYDIFFERENT)
         {
-            FMOD.Studio.PLAYBACK_STATE playbackState;
-            Numbers.getPlaybackState(out playbackState);
+            //FMOD.Studio.PLAYBACK_STATE playbackState;
+            //ThirdPersonSound.getPlaybackState(out playbackState);
             if (playbackState == FMOD.Studio.PLAYBACK_STATE.STOPPED)
             {
-                SubstituteOfOTE();
-                CheckNumber = 0;
+                F_DialogueValue++;
+                Start();
+                foreach (int itr in DialogueWhoNeedToPlayNextDialogue)
+                {
+                    if (F_DialogueValue == itr)
+                    {
+                        m_dialogueStateControl = DialogueStateControl.PLAYDIFFERENT;
+                        //Debug.Log("Yes" + playbackState);
+                    }
+                    else if (F_DialogueValue != itr)
+                    {
+                        m_dialogueStateControl = DialogueStateControl.DONTPLAY;
+                        //Debug.Log("No" + playbackState);
+                    }
+                }
             }
         }
     }
@@ -100,7 +186,7 @@ public class Dialogue : MonoBehaviour {
         Numbers.setParameterByName("Numbers", F_NumbersValue);
         Numbers.start();
         F_DialogueValue++;
-        CheckNumber = 2;
+        m_dialogueStateControl = DialogueStateControl.PLAYNUMBER;
     }
 
 
