@@ -2,21 +2,39 @@
 //using System.Collections.Generic;
 //using UnityEngine;
 
-//public class test : MonoBehaviour {
+//public class test : MonoBehaviour
+//{
 
 //    public int UniqueValue;
 //    public int[] ArrayValues = new int[10];
+//    public enum DialogueStateControl
+//    {
+//        DONTPLAY,
+//        PLAYNUMBER,
+//        PLAYDIFFERENT
+//    }
 
 //    void Start()
 //    {
-//        if (UniqueValue == 1 || UniqueValue == 360)
+//        foreach (int itr in ArrayValues)
 //        {
-            
+//            if (UniqueValue == itr)
+//            {
+//                Debug.Log("Success");
+//                DialogueStateControl _DialogueStateControl = DialogueStateControl.PLAYNUMBER;
+//                if (_DialogueStateControl == DialogueStateControl.PLAYNUMBER)
+//                {
+//                    Debug.Log("Work in local");
+//                }
+//            }
 //        }
-//        if (UniqueValue == ArrayValues)
+
+//    }
+//    void Update()
+//    {
+//        if (_DialogueStateControl == DialogueStateControl.PLAYNUMBER)
 //        {
-            
+//            Debug.Log("Work in public");
 //        }
-        
 //    }
 //}
