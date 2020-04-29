@@ -42,7 +42,7 @@ public class ExtinguisherComponent : MonoBehaviour
                                 if (this.transform.parent.parent.name == "Extinguishers")
                                 {
                                     // Enable world model for all extinguishers.
-                                    foreach (Transform child in this.transform.parent.parent.transform)
+                                    foreach (Transform child in this.transform.parent.transform)
                                     {
                                         child.gameObject.SetActive(true);
                                     }

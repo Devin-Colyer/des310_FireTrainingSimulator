@@ -6,6 +6,9 @@ public class ActivateMinigame : MonoBehaviour
 {
     public GameObject m_cameraController;
     public string m_minigame;
+    public bool m_isFireMinigame = false;
+    [Tooltip("Leave empty if not a fire extinguishing minigame.")]
+    public ExtinguisherType[] m_extinguishersForFire;
 
     private void OnTriggerStay(Collider other)
     {
@@ -32,12 +35,28 @@ public class ActivateMinigame : MonoBehaviour
                     {
                         // Debug output.
                         ///Debug.Log(l_hit.collider.transform.parent.name);
-                        
+
                         // Check if object is hazard.
                         if (l_hit.collider.transform.IsChildOf(this.transform))
                         {
-                            // Change to minigame camera.
-                            m_cameraController.GetComponent<CameraController>().ChangeCamera(m_minigame);
+                            // Check if this is a fire extinguishing minigame
+                            if (m_isFireMinigame)
+                            {
+                                // Check if player has the right extinguisher for the fire
+                                foreach(ExtinguisherType t in m_extinguishersForFire)
+                                {
+                                    if(other.GetComponent<ExtinguisherTrackerComponent>().m_extinguisherCarried == t)
+                                    {
+                                        // Change to minigame camera.
+                                        m_cameraController.GetComponent<CameraController>().ChangeCamera(m_minigame);
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                // Change to minigame camera.
+                                m_cameraController.GetComponent<CameraController>().ChangeCamera(m_minigame);
+                            }
                         }
                     }
                 }

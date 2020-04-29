@@ -2565,7 +2565,7 @@ Transform:
   m_Children:
   - {fileID: 929990276}
   m_Father: {fileID: 1629514212}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &232839332
 GameObject:
@@ -4086,6 +4086,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_cameraController: {fileID: 481837982}
   m_minigame: Extinguisher Minigame (2)
+  m_isFireMinigame: 1
+  m_extinguishersForFire: 020000000300000004000000
 --- !u!114 &337459739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4493,7 +4495,7 @@ Transform:
   - {fileID: 1998969877}
   - {fileID: 180145645}
   m_Father: {fileID: 1629514212}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &381431667
 GameObject:
@@ -10825,7 +10827,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 609556038}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -28.08, y: 20, z: -1.8800001}
+  m_LocalPosition: {x: -16, y: 16, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 978727148}
@@ -12949,7 +12951,7 @@ Transform:
   - {fileID: 1005357773}
   - {fileID: 1282653932}
   m_Father: {fileID: 1629514212}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &734055785
 GameObject:
@@ -13075,7 +13077,7 @@ Transform:
   - {fileID: 1356028938}
   - {fileID: 930544790}
   m_Father: {fileID: 1629514212}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &746344135
 GameObject:
@@ -24866,7 +24868,7 @@ Transform:
   m_LocalScale: {x: 2.73, y: 2.5610008, z: 1}
   m_Children: []
   m_Father: {fileID: 1629514212}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
 --- !u!64 &996594446
 MeshCollider:
@@ -25079,7 +25081,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1007952940}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: 20, z: 10}
+  m_LocalPosition: {x: -2, y: 16, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 794338438}
@@ -30069,6 +30071,34 @@ Prefab:
     - {fileID: 114358211136856692, guid: 571eae371dc9fe545a2ee6162bd3651e, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 571eae371dc9fe545a2ee6162bd3651e, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1382068165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1382068166}
+  m_Layer: 0
+  m_Name: Camera Location
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1382068166
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1382068165}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10, y: 16, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1629514212}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1386150922
 GameObject:
   m_ObjectHideFlags: 0
@@ -30099,7 +30129,7 @@ Transform:
   m_Children:
   - {fileID: 169389304}
   m_Father: {fileID: 1629514212}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1386150924
 MeshRenderer:
@@ -30585,6 +30615,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_cameraController: {fileID: 481837982}
   m_minigame: Extinguisher Minigame (0)
+  m_isFireMinigame: 1
+  m_extinguishersForFire: 0300000004000000
 --- !u!114 &1440272614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31727,7 +31759,7 @@ Transform:
   - {fileID: 629985917}
   - {fileID: 1262150690}
   m_Father: {fileID: 1629514212}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1548307236
 GameObject:
@@ -32267,7 +32299,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1589402837}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20, y: 20, z: 20}
+  m_LocalPosition: {x: -2, y: 16, z: 18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 42826147}
@@ -32502,6 +32534,7 @@ Transform:
   m_LocalPosition: {x: 0.64, y: 0, z: -1.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1382068166}
   - {fileID: 1386150923}
   - {fileID: 996594445}
   - {fileID: 745859145}
@@ -39388,6 +39421,7 @@ GameObject:
   - component: {fileID: 1802795970}
   - component: {fileID: 1802795969}
   - component: {fileID: 1802795968}
+  - component: {fileID: 1802795972}
   m_Layer: 0
   m_Name: DoorFrame
   m_TagString: Untagged
@@ -39475,6 +39509,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1802795966}
   m_Mesh: {fileID: 4300026, guid: f10eace6e50c8dc40906d0fe9b0c36d9, type: 3}
+--- !u!114 &1802795972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1802795966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2553b6c7fee6ca4f9d01b8e888c4260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_offset: {x: -2, y: 0, z: 0}
 --- !u!1001 &1811678801
 Prefab:
   m_ObjectHideFlags: 0
@@ -40281,6 +40327,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_cameraController: {fileID: 481837982}
   m_minigame: Extinguisher Minigame (1)
+  m_isFireMinigame: 1
+  m_extinguishersForFire: 01000000020000000300000005000000
 --- !u!114 &1907358729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41228,6 +41276,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_cameraController: {fileID: 481837982}
   m_minigame: Extinguisher Minigame (3)
+  m_isFireMinigame: 1
+  m_extinguishersForFire: 03000000
 --- !u!114 &1998969879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41940,7 +41990,7 @@ Transform:
   - {fileID: 620173728}
   - {fileID: 1781753961}
   m_Father: {fileID: 1629514212}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2090133908
 GameObject:
