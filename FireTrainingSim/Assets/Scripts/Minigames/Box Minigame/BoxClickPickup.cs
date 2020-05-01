@@ -134,7 +134,7 @@ public class BoxClickPickup : MonoBehaviour
                 // Play Drop Sound
                 Box_Sounds_Obj.GetComponent<BoxSounds>().F_BoxDrop();
                 IsGrabbed = false;
-                Debug.Log("Balance");
+                Debug.Log("Throw");
             }
         }
     }

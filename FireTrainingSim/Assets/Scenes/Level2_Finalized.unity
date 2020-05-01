@@ -3939,6 +3939,7 @@ GameObject:
   - component: {fileID: 317596015}
   - component: {fileID: 317596014}
   - component: {fileID: 317596017}
+  - component: {fileID: 317596018}
   m_Layer: 0
   m_Name: Extinguisher Minigame (3)
   m_TagString: MainCamera
@@ -4031,6 +4032,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ListenerNumber: 0
+--- !u!114 &317596018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 317596012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c9d544822748646a160bf6f3542114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Definer_F_FirePowerValue: 3
+  FireSoundScript: {fileID: 593217332}
 --- !u!4 &321229567 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 227fcf20112d02d41b604999c9512154, type: 3}
@@ -10731,6 +10745,71 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 592853198}
   m_Mesh: {fileID: 4300008, guid: d50fffd1d179c094d9934ba5c13d22ea, type: 3}
+--- !u!1 &593217329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 593217330}
+  - component: {fileID: 593217331}
+  - component: {fileID: 593217332}
+  m_Layer: 5
+  m_Name: FMOD Scripts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &593217330
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 593217329}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1549883960}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &593217331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 593217329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915493cb11f81064382ca04ed4e23a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueEventPath: event:/Dialogue/Dialogue
+  Default_F_DialogueValue: 16
+  m_dialogueStateControl: 0
+  DialogueWhoNeedToPlayNunmber: 
+  DialogueWhoNeedToPlayNextDialogue: 10000000
+  NumbersEventPath: event:/Dialogue/Numbers
+  F_NumbersValue: 0
+--- !u!114 &593217332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 593217329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0c517fb3593b114ab6d965e439ef102, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FireEventPath: event:/Fire
 --- !u!1 &598612758
 GameObject:
   m_ObjectHideFlags: 0
@@ -10813,6 +10892,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 609556039}
+  - component: {fileID: 609556040}
   m_Layer: 0
   m_Name: Camera Location
   m_TagString: Untagged
@@ -10833,6 +10913,19 @@ Transform:
   m_Father: {fileID: 978727148}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &609556040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 609556038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c9d544822748646a160bf6f3542114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Definer_F_FirePowerValue: 2
+  FireSoundScript: {fileID: 593217332}
 --- !u!1 &611341392
 GameObject:
   m_ObjectHideFlags: 0
@@ -19506,6 +19599,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 945119566}
+  - component: {fileID: 945119567}
   m_Layer: 0
   m_Name: Camera Location
   m_TagString: Untagged
@@ -19526,6 +19620,19 @@ Transform:
   m_Father: {fileID: 221568662}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &945119567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 945119565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c9d544822748646a160bf6f3542114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Definer_F_FirePowerValue: 1
+  FireSoundScript: {fileID: 593217332}
 --- !u!1 &945172159
 GameObject:
   m_ObjectHideFlags: 0
@@ -24717,6 +24824,7 @@ GameObject:
   - component: {fileID: 985249801}
   - component: {fileID: 985249800}
   - component: {fileID: 985249803}
+  - component: {fileID: 985249804}
   m_Layer: 0
   m_Name: Extinguisher Minigame (2)
   m_TagString: MainCamera
@@ -24809,6 +24917,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ListenerNumber: 0
+--- !u!114 &985249804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 985249798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c9d544822748646a160bf6f3542114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Definer_F_FirePowerValue: 3
+  FireSoundScript: {fileID: 593217332}
 --- !u!1 &990437202
 GameObject:
   m_ObjectHideFlags: 0
@@ -25067,6 +25188,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1007952941}
+  - component: {fileID: 1007952942}
+  - component: {fileID: 1007952943}
   m_Layer: 0
   m_Name: Camera Location
   m_TagString: Untagged
@@ -25087,6 +25210,34 @@ Transform:
   m_Father: {fileID: 794338438}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1007952942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1007952940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c9d544822748646a160bf6f3542114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Definer_F_FirePowerValue: 2
+  FireSoundScript: {fileID: 593217332}
+--- !u!114 &1007952943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1007952940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 264ae9788b4c6624588c76882aebf9af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueValue: 18
+  DialogueScript: {fileID: 593217331}
+  IfPlayerTakesTooLongScript: {fileID: 0}
+  NeedLevelCompletedToPlay: 0
 --- !u!1001 &1015284586
 Prefab:
   m_ObjectHideFlags: 0
@@ -25271,6 +25422,7 @@ MonoBehaviour:
   - {fileID: 379853422}
   - {fileID: 1582133304}
   m_maxDistance: 10
+  DialogueScript: {fileID: 593217331}
 --- !u!1 &1029194162
 GameObject:
   m_ObjectHideFlags: 0
@@ -26688,6 +26840,7 @@ GameObject:
   - component: {fileID: 1135940979}
   - component: {fileID: 1135940978}
   - component: {fileID: 1135940981}
+  - component: {fileID: 1135940982}
   m_Layer: 0
   m_Name: Extinguisher Minigame (0)
   m_TagString: MainCamera
@@ -26780,6 +26933,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ListenerNumber: 0
+--- !u!114 &1135940982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1135940976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c9d544822748646a160bf6f3542114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Definer_F_FirePowerValue: 3
+  FireSoundScript: {fileID: 593217332}
 --- !u!1 &1136410833 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1956532127394850, guid: 571eae371dc9fe545a2ee6162bd3651e,
@@ -29629,6 +29795,7 @@ GameObject:
   - component: {fileID: 1358354227}
   - component: {fileID: 1358354226}
   - component: {fileID: 1358354229}
+  - component: {fileID: 1358354230}
   m_Layer: 0
   m_Name: Extinguisher Minigame (1)
   m_TagString: MainCamera
@@ -29721,6 +29888,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ListenerNumber: 0
+--- !u!114 &1358354230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1358354224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c9d544822748646a160bf6f3542114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Definer_F_FirePowerValue: 3
+  FireSoundScript: {fileID: 593217332}
 --- !u!1 &1360649973
 GameObject:
   m_ObjectHideFlags: 0
@@ -30079,6 +30259,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1382068166}
+  - component: {fileID: 1382068167}
   m_Layer: 0
   m_Name: Camera Location
   m_TagString: Untagged
@@ -30099,6 +30280,19 @@ Transform:
   m_Father: {fileID: 1629514212}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1382068167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1382068165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c9d544822748646a160bf6f3542114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Definer_F_FirePowerValue: 2
+  FireSoundScript: {fileID: 593217332}
 --- !u!1 &1386150922
 GameObject:
   m_ObjectHideFlags: 0
@@ -30206,7 +30400,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1389050351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31922,6 +32116,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 642824256}
+  - {fileID: 593217330}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -32285,6 +32480,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1589402838}
+  - component: {fileID: 1589402839}
   m_Layer: 0
   m_Name: Camera Location
   m_TagString: Untagged
@@ -32305,6 +32501,19 @@ Transform:
   m_Father: {fileID: 42826147}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1589402839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1589402837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c9d544822748646a160bf6f3542114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Definer_F_FirePowerValue: 2
+  FireSoundScript: {fileID: 593217332}
 --- !u!1 &1600170418
 GameObject:
   m_ObjectHideFlags: 0

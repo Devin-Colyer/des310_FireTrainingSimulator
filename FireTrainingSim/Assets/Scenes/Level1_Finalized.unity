@@ -1259,7 +1259,6 @@ MonoBehaviour:
   - {fileID: 1579132850}
   - {fileID: 1419587918}
   m_maxDistance: 10
-  DialogueValue: 4
   DialogueScript: {fileID: 1625949345}
 --- !u!1 &282463514
 GameObject:
@@ -1586,6 +1585,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 381733904}
+  - component: {fileID: 381733905}
   m_Layer: 2
   m_Name: Camera Location
   m_TagString: Untagged
@@ -1606,6 +1606,21 @@ Transform:
   m_Father: {fileID: 1256044394}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &381733905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 381733903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 264ae9788b4c6624588c76882aebf9af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueValue: 7
+  DialogueScript: {fileID: 1625949345}
+  IfPlayerTakesTooLongScript: {fileID: 1636032822}
+  NeedLevelCompletedToPlay: 1
 --- !u!1 &401521043
 GameObject:
   m_ObjectHideFlags: 0
@@ -5584,6 +5599,8 @@ GameObject:
   - component: {fileID: 1341571862}
   - component: {fileID: 1341571864}
   - component: {fileID: 1341571863}
+  - component: {fileID: 1341571866}
+  - component: {fileID: 1341571865}
   m_Layer: 0
   m_Name: Glow Camera
   m_TagString: Untagged
@@ -5651,6 +5668,35 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1341571865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1341571861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a86902ff07791d847886ec899838c77a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WaitingTimeBeforeHelp: 100
+  DialogueValue: 0
+  DialogueScript: {fileID: 1625949345}
+--- !u!114 &1341571866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1341571861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 264ae9788b4c6624588c76882aebf9af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueValue: 10
+  DialogueScript: {fileID: 1625949345}
+  IfPlayerTakesTooLongScript: {fileID: 0}
+  NeedLevelCompletedToPlay: 0
 --- !u!1 &1344700528
 GameObject:
   m_ObjectHideFlags: 0
@@ -6567,6 +6613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueEventPath: event:/Dialogue/Dialogue
+  Default_F_DialogueValue: 1
   m_dialogueStateControl: 0
   DialogueWhoNeedToPlayNunmber: 
   DialogueWhoNeedToPlayNextDialogue: 0100000002000000
@@ -6781,6 +6828,8 @@ GameObject:
   - component: {fileID: 1636032818}
   - component: {fileID: 1636032820}
   - component: {fileID: 1636032819}
+  - component: {fileID: 1636032821}
+  - component: {fileID: 1636032822}
   m_Layer: 0
   m_Name: Glow Camera
   m_TagString: Untagged
@@ -6848,6 +6897,35 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1636032821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1636032817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 264ae9788b4c6624588c76882aebf9af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueValue: 5
+  DialogueScript: {fileID: 1625949345}
+  IfPlayerTakesTooLongScript: {fileID: 0}
+  NeedLevelCompletedToPlay: 0
+--- !u!114 &1636032822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1636032817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a86902ff07791d847886ec899838c77a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WaitingTimeBeforeHelp: 25
+  DialogueValue: 6
+  DialogueScript: {fileID: 1625949345}
 --- !u!1 &1647259049 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 07313520bbceb474db019b72164f4829, type: 3}
@@ -7402,6 +7480,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1739250588}
+  - component: {fileID: 1739250590}
+  - component: {fileID: 1739250589}
+  - component: {fileID: 1739250591}
   m_Layer: 2
   m_Name: Camera Location
   m_TagString: Untagged
@@ -7422,6 +7503,49 @@ Transform:
   m_Father: {fileID: 24872843}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1739250589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1739250587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8765077de61dd314bbf7653a4745d538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HazardFinderScript: {fileID: 263327733}
+  NewValue: 9
+--- !u!114 &1739250590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1739250587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 264ae9788b4c6624588c76882aebf9af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueValue: 8
+  DialogueScript: {fileID: 1625949345}
+  IfPlayerTakesTooLongScript: {fileID: 0}
+  NeedLevelCompletedToPlay: 0
+--- !u!114 &1739250591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1739250587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 264ae9788b4c6624588c76882aebf9af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueValue: 11
+  DialogueScript: {fileID: 1625949345}
+  IfPlayerTakesTooLongScript: {fileID: 1341571865}
+  NeedLevelCompletedToPlay: 1
 --- !u!1 &1792113825
 GameObject:
   m_ObjectHideFlags: 0

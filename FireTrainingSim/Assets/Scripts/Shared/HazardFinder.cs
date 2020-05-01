@@ -11,9 +11,9 @@ public class HazardFinder : MonoBehaviour
     public GameObject[] m_hazards;
     [Range(0, 100)] public float m_maxDistance = 10;
 
-    public int DialogueValue;
+    public static int HazardFinder_DialogueValue;
     public Dialogue DialogueScript;
-    bool HavePlayedDialogue = false;
+    public static bool HavePlayedDialogue = false;
 
 
     void Start()
@@ -88,10 +88,9 @@ public class HazardFinder : MonoBehaviour
                 g_hazardPopup.GetComponent<TextMesh>().text = "!!!";
                 if (HavePlayedDialogue==false)
                 {
-                    Dialogue.F_DialogueValue = DialogueValue;
+                    Dialogue.F_DialogueValue = HazardFinder_DialogueValue;
                     DialogueScript.PlayDialogue();
                     HavePlayedDialogue = true;
-                    //Debug.Log("yesy");
                 }
             }
             else if (l_percentageDistance < 66)

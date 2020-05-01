@@ -96,7 +96,12 @@
      <Compile Include="Assets\Scripts\Sound\Character\FootStepsMaterialSoundSwitch.cs" />
      <Compile Include="Assets\Scripts\Sound\Character\MaterialSetter.cs" />
      <Compile Include="Assets\Scripts\Sound\Character\ThirdPersonSounds.cs" />
-     <Compile Include="Assets\Scripts\Sound\Dialogue.cs" />
+     <Compile Include="Assets\Scripts\Sound\Dialogue\Dialogue.cs" />
+     <Compile Include="Assets\Scripts\Sound\Dialogue\DialogueActivator.cs" />
+     <Compile Include="Assets\Scripts\Sound\Dialogue\IfPlayerTakesTooLong.cs" />
+     <Compile Include="Assets\Scripts\Sound\Dialogue\UpdateHazardFinderDialogue.cs" />
+     <Compile Include="Assets\Scripts\Sound\Fire\FirePowerSetter.cs" />
+     <Compile Include="Assets\Scripts\Sound\Fire\FireSound.cs" />
      <Compile Include="Assets\Scripts\Sound\Music\MusicController.cs" />
      <Compile Include="Assets\Scripts\Sound\Music\MusicEmitter.cs" />
      <Compile Include="Assets\Scripts\Sound\test.cs" />
