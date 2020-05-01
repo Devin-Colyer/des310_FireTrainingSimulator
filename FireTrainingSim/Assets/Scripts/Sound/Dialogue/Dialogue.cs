@@ -152,7 +152,7 @@ public class Dialogue : MonoBehaviour {
         //FMOD.Studio.PLAYBACK_STATE playbackState;
         //ThirdPersonSound.getPlaybackState(out playbackState);
         //debug.log(playbackstate);
-        Debug.Log(m_dialogueStateControl);
+        //Debug.Log(m_dialogueStateControl);
 
         if (m_dialogueStateControl == DialogueStateControl.PLAYNUMBER)
         {

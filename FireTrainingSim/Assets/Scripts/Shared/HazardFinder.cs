@@ -11,9 +11,16 @@ public class HazardFinder : MonoBehaviour
     public GameObject[] m_hazards;
     [Range(0, 100)] public float m_maxDistance = 10;
 
+    // VoiceOverPart
     public static int HazardFinder_DialogueValue;
     public Dialogue DialogueScript;
     public static bool HavePlayedDialogue = false;
+    public bool NeedToPlayCompletedMinigameDialogue = false;
+    bool HavePlayedCompletedHazardDialogue = false;
+    public bool NeedToPlayCompletedHazardDialogue = false;
+    public int CompletedHazardDialogueValue = 0;
+
+
 
 
     void Start()
@@ -69,7 +76,21 @@ public class HazardFinder : MonoBehaviour
         {
             // All hazards have been dealt with.
             g_hazardPopup.GetComponent<TextMesh>().text = "";
-            
+
+
+            // VoiceOverPart
+            if (NeedToPlayCompletedHazardDialogue)
+            {
+                if (HavePlayedCompletedHazardDialogue == false)
+                {
+                    Dialogue.F_DialogueValue = CompletedHazardDialogueValue;
+                    DialogueScript.PlayDialogue();
+                    HavePlayedCompletedHazardDialogue = true;
+                }
+
+            }
+
+
             if (m_levelExit)
             {
                 // Open level exit.
@@ -86,11 +107,14 @@ public class HazardFinder : MonoBehaviour
             if (l_percentageDistance < 33)
             {
                 g_hazardPopup.GetComponent<TextMesh>().text = "!!!";
-                if (HavePlayedDialogue==false)
+                if (NeedToPlayCompletedMinigameDialogue == true)
                 {
-                    Dialogue.F_DialogueValue = HazardFinder_DialogueValue;
-                    DialogueScript.PlayDialogue();
-                    HavePlayedDialogue = true;
+                    if (HavePlayedDialogue == false)
+                    {
+                        Dialogue.F_DialogueValue = HazardFinder_DialogueValue;
+                        DialogueScript.PlayDialogue();
+                        HavePlayedDialogue = true;
+                    }
                 }
             }
             else if (l_percentageDistance < 66)

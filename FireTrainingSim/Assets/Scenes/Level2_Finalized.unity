@@ -1702,6 +1702,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 4
+  DialogueValue: 31
+  DialogueScript: {fileID: 593217331}
 --- !u!1 &150916425
 GameObject:
   m_ObjectHideFlags: 0
@@ -2451,6 +2453,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 4
+  DialogueValue: 27
+  DialogueScript: {fileID: 593217331}
 --- !u!1 &221398501
 GameObject:
   m_ObjectHideFlags: 0
@@ -3522,6 +3526,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 2
+  DialogueValue: 19
+  DialogueScript: {fileID: 593217331}
 --- !u!136 &288718403
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3765,6 +3771,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 5
+  DialogueValue: 31
+  DialogueScript: {fileID: 593217331}
 --- !u!136 &297644158
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4102,6 +4110,9 @@ MonoBehaviour:
   m_minigame: Extinguisher Minigame (2)
   m_isFireMinigame: 1
   m_extinguishersForFire: 020000000300000004000000
+  DialogueWrongExtinguisherValue: 28
+  DialogueRightExtinguisherValue: 29
+  DialogueScript: {fileID: 593217331}
 --- !u!114 &337459739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10893,6 +10904,7 @@ GameObject:
   m_Component:
   - component: {fileID: 609556039}
   - component: {fileID: 609556040}
+  - component: {fileID: 609556041}
   m_Layer: 0
   m_Name: Camera Location
   m_TagString: Untagged
@@ -10926,6 +10938,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Definer_F_FirePowerValue: 2
   FireSoundScript: {fileID: 593217332}
+--- !u!114 &609556041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 609556038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 264ae9788b4c6624588c76882aebf9af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueValue: 26
+  DialogueScript: {fileID: 593217331}
+  IfPlayerTakesTooLongScript: {fileID: 0}
+  NeedLevelCompletedToPlay: 0
 --- !u!1 &611341392
 GameObject:
   m_ObjectHideFlags: 0
@@ -11466,6 +11493,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 3
+  DialogueValue: 27
+  DialogueScript: {fileID: 593217331}
 --- !u!1 &623912342
 GameObject:
   m_ObjectHideFlags: 0
@@ -13683,6 +13712,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 2
+  DialogueValue: 27
+  DialogueScript: {fileID: 593217331}
 --- !u!1 &837903633
 GameObject:
   m_ObjectHideFlags: 0
@@ -25423,6 +25454,9 @@ MonoBehaviour:
   - {fileID: 1582133304}
   m_maxDistance: 10
   DialogueScript: {fileID: 593217331}
+  NeedToPlayCompletedMinigameDialogue: 0
+  NeedToPlayCompletedHazardDialogue: 1
+  CompletedHazardDialogueValue: 34
 --- !u!1 &1029194162
 GameObject:
   m_ObjectHideFlags: 0
@@ -26348,6 +26382,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 5
+  DialogueValue: 19
+  DialogueScript: {fileID: 593217331}
 --- !u!136 &1084862885
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -27248,6 +27284,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 2
+  DialogueValue: 23
+  DialogueScript: {fileID: 593217331}
 --- !u!136 &1161530378
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -27929,6 +27967,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 1
+  DialogueValue: 23
+  DialogueScript: {fileID: 593217331}
 --- !u!136 &1239020483
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -29135,6 +29175,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 1
+  DialogueValue: 27
+  DialogueScript: {fileID: 593217331}
 --- !u!1 &1336418174
 GameObject:
   m_ObjectHideFlags: 0
@@ -29463,6 +29505,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 4
+  DialogueValue: 23
+  DialogueScript: {fileID: 593217331}
 --- !u!136 &1349100610
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -29619,6 +29663,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 4
+  DialogueValue: 19
+  DialogueScript: {fileID: 593217331}
 --- !u!136 &1352938226
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -30260,6 +30306,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1382068166}
   - component: {fileID: 1382068167}
+  - component: {fileID: 1382068168}
   m_Layer: 0
   m_Name: Camera Location
   m_TagString: Untagged
@@ -30293,6 +30340,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Definer_F_FirePowerValue: 2
   FireSoundScript: {fileID: 593217332}
+--- !u!114 &1382068168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1382068165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 264ae9788b4c6624588c76882aebf9af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueValue: 30
+  DialogueScript: {fileID: 593217331}
+  IfPlayerTakesTooLongScript: {fileID: 0}
+  NeedLevelCompletedToPlay: 0
 --- !u!1 &1386150922
 GameObject:
   m_ObjectHideFlags: 0
@@ -30811,6 +30873,9 @@ MonoBehaviour:
   m_minigame: Extinguisher Minigame (0)
   m_isFireMinigame: 1
   m_extinguishersForFire: 0300000004000000
+  DialogueWrongExtinguisherValue: 20
+  DialogueRightExtinguisherValue: 21
+  DialogueScript: {fileID: 593217331}
 --- !u!114 &1440272614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31441,6 +31506,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 3
+  DialogueValue: 19
+  DialogueScript: {fileID: 593217331}
 --- !u!136 &1479745695
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -31536,6 +31603,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 1
+  DialogueValue: 31
+  DialogueScript: {fileID: 593217331}
 --- !u!1 &1484503266
 GameObject:
   m_ObjectHideFlags: 0
@@ -32194,6 +32263,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 1
+  DialogueValue: 19
+  DialogueScript: {fileID: 593217331}
 --- !u!136 &1555055052
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -32481,6 +32552,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1589402838}
   - component: {fileID: 1589402839}
+  - component: {fileID: 1589402840}
   m_Layer: 0
   m_Name: Camera Location
   m_TagString: Untagged
@@ -32514,6 +32586,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Definer_F_FirePowerValue: 2
   FireSoundScript: {fileID: 593217332}
+--- !u!114 &1589402840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1589402837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 264ae9788b4c6624588c76882aebf9af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueValue: 22
+  DialogueScript: {fileID: 593217331}
+  IfPlayerTakesTooLongScript: {fileID: 0}
+  NeedLevelCompletedToPlay: 0
 --- !u!1 &1600170418
 GameObject:
   m_ObjectHideFlags: 0
@@ -33855,6 +33942,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 2
+  DialogueValue: 31
+  DialogueScript: {fileID: 593217331}
 --- !u!1001 &1713915278
 Prefab:
   m_ObjectHideFlags: 0
@@ -33986,6 +34075,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 5
+  DialogueValue: 23
+  DialogueScript: {fileID: 593217331}
 --- !u!136 &1717611953
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -40052,6 +40143,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 5
+  DialogueValue: 27
+  DialogueScript: {fileID: 593217331}
 --- !u!136 &1834320237
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -40538,6 +40631,9 @@ MonoBehaviour:
   m_minigame: Extinguisher Minigame (1)
   m_isFireMinigame: 1
   m_extinguishersForFire: 01000000020000000300000005000000
+  DialogueWrongExtinguisherValue: 24
+  DialogueRightExtinguisherValue: 25
+  DialogueScript: {fileID: 593217331}
 --- !u!114 &1907358729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41487,6 +41583,9 @@ MonoBehaviour:
   m_minigame: Extinguisher Minigame (3)
   m_isFireMinigame: 1
   m_extinguishersForFire: 03000000
+  DialogueWrongExtinguisherValue: 32
+  DialogueRightExtinguisherValue: 33
+  DialogueScript: {fileID: 593217331}
 --- !u!114 &1998969879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41592,6 +41691,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 3
+  DialogueValue: 23
+  DialogueScript: {fileID: 593217331}
 --- !u!136 &2007195435
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -42901,6 +43002,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 3
+  DialogueValue: 31
+  DialogueScript: {fileID: 593217331}
 --- !u!1 &2128349666
 GameObject:
   m_ObjectHideFlags: 0

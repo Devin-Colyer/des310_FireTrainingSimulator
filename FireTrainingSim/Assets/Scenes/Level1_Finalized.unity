@@ -1260,6 +1260,7 @@ MonoBehaviour:
   - {fileID: 1419587918}
   m_maxDistance: 10
   DialogueScript: {fileID: 1625949345}
+  NeedToPlayDialogue: 1
 --- !u!1 &282463514
 GameObject:
   m_ObjectHideFlags: 0
@@ -1324,6 +1325,9 @@ MonoBehaviour:
   m_minigame: Box Minigame
   m_isFireMinigame: 0
   m_extinguishersForFire: 
+  DialogueWrongExtinguisherValue: 3
+  DialogueRightExtinguisherValue: 2
+  DialogueScript: {fileID: 0}
 --- !u!135 &282463518
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7636,6 +7640,9 @@ MonoBehaviour:
   m_minigame: Socket Minigame
   m_isFireMinigame: 0
   m_extinguishersForFire: 
+  DialogueWrongExtinguisherValue: 3
+  DialogueRightExtinguisherValue: 2
+  DialogueScript: {fileID: 0}
 --- !u!135 &1793882801
 SphereCollider:
   m_ObjectHideFlags: 0

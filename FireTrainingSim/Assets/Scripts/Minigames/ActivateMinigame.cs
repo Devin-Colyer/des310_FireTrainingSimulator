@@ -10,6 +10,12 @@ public class ActivateMinigame : MonoBehaviour
     [Tooltip("Leave empty if not a fire extinguishing minigame.")]
     public ExtinguisherType[] m_extinguishersForFire;
 
+    // VoiceOverPart
+    public int DialogueWrongExtinguisherValue = 3;
+    public int DialogueRightExtinguisherValue = 4;
+    public Dialogue DialogueScript;
+
+
     private void OnTriggerStay(Collider other)
     {
         // Check if collider is the player.
@@ -49,6 +55,21 @@ public class ActivateMinigame : MonoBehaviour
                                     {
                                         // Change to minigame camera.
                                         m_cameraController.GetComponent<CameraController>().ChangeCamera(m_minigame);
+                                        
+                                        // VoiceOverPart
+                                        Dialogue.F_DialogueValue = DialogueRightExtinguisherValue;
+                                        DialogueScript.PlayDialogue();
+                                        Debug.Log(other.GetComponent<ExtinguisherTrackerComponent>().m_extinguisherCarried + "Success");
+                                    }
+                                    else
+                                    {
+                                        if (ExtinguisherTrackerComponent.IsHoldingExtinguisher)
+                                        {
+                                            // VoiceOverPart
+                                            Dialogue.F_DialogueValue = DialogueWrongExtinguisherValue;
+                                            DialogueScript.PlayDialogue();
+                                            Debug.Log(other.GetComponent<ExtinguisherTrackerComponent>().m_extinguisherCarried + "Success");
+                                        }
                                     }
                                 }
                             }

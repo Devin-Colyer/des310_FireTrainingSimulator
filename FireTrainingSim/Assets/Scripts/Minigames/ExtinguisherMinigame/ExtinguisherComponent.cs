@@ -11,6 +11,10 @@ public class ExtinguisherComponent : MonoBehaviour
 {
     public ExtinguisherType m_extinguisherType = ExtinguisherType.NONE;
 
+    // VoiceOverPart
+    public int DialogueValue=1;
+    public Dialogue DialogueScript;
+
     private void OnTriggerStay(Collider other)
     {
         // Check if collider is the player.
@@ -52,6 +56,9 @@ public class ExtinguisherComponent : MonoBehaviour
 
                                     // Update player, use fire extinguisher.
                                     other.GetComponent<ExtinguisherTrackerComponent>().SetExtinguisherType(m_extinguisherType);
+                                    // VoiceOverPart
+                                    Dialogue.F_DialogueValue = DialogueValue;
+                                    DialogueScript.PlayDialogue();
                                 }
                             }
 

@@ -6,6 +6,9 @@ public class ExtinguisherTrackerComponent : MonoBehaviour {
 
     public ExtinguisherType m_extinguisherCarried { get; private set; }
 
+    //For Dialogue Usage
+    public static bool IsHoldingExtinguisher = false;
+
     private void Start()
     {
         m_extinguisherCarried = ExtinguisherType.NONE;
@@ -17,10 +20,18 @@ public class ExtinguisherTrackerComponent : MonoBehaviour {
 		if(m_extinguisherCarried!= ExtinguisherType.NONE && !this.GetComponent<PlayerAnimationController>().m_HoldingExtiguisher)
         {
             this.GetComponent<PlayerAnimationController>().SetHoldingExtinguisher(true);
+            Debug.Log(m_extinguisherCarried);
+
+            //For Dialogue Usage
+            IsHoldingExtinguisher = true;
         }
         else if (m_extinguisherCarried == ExtinguisherType.NONE && this.GetComponent<PlayerAnimationController>().m_HoldingExtiguisher)
         {
             this.GetComponent<PlayerAnimationController>().SetHoldingExtinguisher(false);
+            Debug.Log(m_extinguisherCarried);
+
+            //For Dialogue Usage
+            IsHoldingExtinguisher = false;
         }
     }
 
