@@ -10,10 +10,20 @@ public class ActivateMinigame : MonoBehaviour
     [Tooltip("Leave empty if not a fire extinguishing minigame.")]
     public ExtinguisherType[] m_extinguishersForFire;
 
+
     // VoiceOverPart
     public int DialogueWrongExtinguisherValue = 3;
     public int DialogueRightExtinguisherValue = 4;
     public Dialogue DialogueScript;
+
+
+    private MouseCursor l_mouseCursor;
+
+    void Start()
+    {
+        // Find mouse cursor object.
+        l_mouseCursor = FindObjectOfType<MouseCursor>();
+    }
 
 
     private void OnTriggerStay(Collider other)
@@ -28,30 +38,37 @@ public class ActivateMinigame : MonoBehaviour
                 this.transform.parent.GetComponentInChildren<GlowComponent>().FadeIn();
             }
 
-            if(Input.GetMouseButtonDown(0))
+            // Create new ray in the direct of the mouse.
+            Ray l_ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit l_hit;
+
+            // Cast ray towards mouse position.
+            if (Physics.Raycast(l_ray, out l_hit))
             {
-                // Create new ray in the direct of the mouse.
-                Ray l_ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                RaycastHit l_hit;
-
-                // Cast ray towards mouse position.
-                if (Physics.Raycast(l_ray, out l_hit, 128))
+                if (l_hit.collider)
                 {
-                    if (l_hit.collider)
+                    // Debug output.
+                    Debug.Log(l_hit.collider.name);
+                    
+                    // Check if object is hazard.
+                    if (l_hit.collider.transform.IsChildOf(this.transform))
                     {
-                        // Debug output.
-                        ///Debug.Log(l_hit.collider.transform.parent.name);
+                        // Check if mouse cursor object was found.
+                        if (l_mouseCursor)
+                        {
+                            // Set mouse state to 'clickable'.
+                            l_mouseCursor.SetState(MouseCursor.State.CLICKABLE);
+                        }
 
-                        // Check if object is hazard.
-                        if (l_hit.collider.transform.IsChildOf(this.transform))
+                        if (Input.GetMouseButtonDown(0))
                         {
                             // Check if this is a fire extinguishing minigame
                             if (m_isFireMinigame)
                             {
                                 // Check if player has the right extinguisher for the fire
-                                foreach(ExtinguisherType t in m_extinguishersForFire)
+                                foreach (ExtinguisherType t in m_extinguishersForFire)
                                 {
-                                    if(other.GetComponent<ExtinguisherTrackerComponent>().m_extinguisherCarried == t)
+                                    if (other.GetComponent<ExtinguisherTrackerComponent>().m_extinguisherCarried == t)
                                     {
                                         // Change to minigame camera.
                                         m_cameraController.GetComponent<CameraController>().ChangeCamera(m_minigame);

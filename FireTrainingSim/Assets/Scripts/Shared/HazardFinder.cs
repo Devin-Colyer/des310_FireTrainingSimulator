@@ -5,7 +5,6 @@ using UnityEngine;
 public class HazardFinder : MonoBehaviour
 {
     public GameObject m_player;
-    //public GameObject m_hazardPopup;
     private Transform g_hazardPopup;
     public GameObject m_levelExit;
     public GameObject[] m_hazards;
@@ -93,9 +92,15 @@ public class HazardFinder : MonoBehaviour
 
             if (m_levelExit)
             {
-                // Open level exit.
-                m_levelExit.transform.Find("Open").gameObject.SetActive(true);
-                m_levelExit.transform.Find("Closed").gameObject.SetActive(false);
+                // Check if exit is closed.
+                if (m_levelExit.transform.Find("Closed").gameObject.activeSelf)
+                {
+                    // Play dialogue.
+
+                    // Open level exit.
+                    m_levelExit.transform.Find("Open").gameObject.SetActive(true);
+                    m_levelExit.transform.Find("Closed").gameObject.SetActive(false);
+                }
             }
         }
         else
