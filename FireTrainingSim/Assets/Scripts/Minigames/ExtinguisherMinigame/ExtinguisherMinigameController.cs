@@ -29,10 +29,33 @@ public class ExtinguisherMinigameController : MonoBehaviour {
     {
         m_MinigameCamera = Camera.main;
         m_ParticleSystem = m_FireExtinguisherWorldMatrixTransform.GetComponentInChildren<ParticleSystem>();
+
+        // Find mouse cursor object in game.
+        MouseCursor l_mouseCursor = FindObjectOfType<MouseCursor>();
+
+        // Check if mouse cursor exists.
+        if (l_mouseCursor)
+        {
+            // Change cursor to target for extinguisher minigame.
+            l_mouseCursor.SetDefaultState(MouseCursor.State.TARGET);
+        }
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    void OnDisable()
+    {
+        // Find mouse cursor object in game.
+        MouseCursor l_mouseCursor = FindObjectOfType<MouseCursor>();
+
+        // Check if mouse cursor exists.
+        if (l_mouseCursor)
+        {
+            // Set cursor to pointer before going back to level.
+            l_mouseCursor.SetDefaultState(MouseCursor.State.POINTER);
+        }
+    }
+
+    // Update is called once per frame
+    void Update () {
         m_MousePosition = Input.mousePosition;
 
         // Setup Raycast

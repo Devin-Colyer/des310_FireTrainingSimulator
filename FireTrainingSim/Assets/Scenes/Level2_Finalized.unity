@@ -1254,6 +1254,49 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 87910520}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &95276170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 95276171}
+  - component: {fileID: 95276172}
+  m_Layer: 0
+  m_Name: Mouse Cursor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &95276171
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 95276170}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1549883960}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &95276172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 95276170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01eda9054a9e18d48ba5f35f5c081546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_pointerCursor: {fileID: 2800000, guid: 56996a140d9e86147b1c6f5b21b757c7, type: 3}
+  m_clickableCursor: {fileID: 2800000, guid: 93fb686ce574f104297c0a329a7f1fd0, type: 3}
+  m_targetCursor: {fileID: 2800000, guid: 180fb250529284b478faf4586365f2b6, type: 3}
 --- !u!1 &101890134
 GameObject:
   m_ObjectHideFlags: 0
@@ -30400,7 +30443,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1389050351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32117,6 +32160,7 @@ RectTransform:
   m_Children:
   - {fileID: 642824256}
   - {fileID: 593217330}
+  - {fileID: 95276171}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
