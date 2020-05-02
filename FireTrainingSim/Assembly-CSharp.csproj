@@ -100,6 +100,7 @@
      <Compile Include="Assets\Scripts\Sound\Dialogue\DialogueActivator.cs" />
      <Compile Include="Assets\Scripts\Sound\Dialogue\IfPlayerTakesTooLong.cs" />
      <Compile Include="Assets\Scripts\Sound\Dialogue\UpdateHazardFinderDialogue.cs" />
+     <Compile Include="Assets\Scripts\Sound\ExtinguisherSounds.cs" />
      <Compile Include="Assets\Scripts\Sound\Fire\FirePowerSetter.cs" />
      <Compile Include="Assets\Scripts\Sound\Fire\FireSound.cs" />
      <Compile Include="Assets\Scripts\Sound\Music\MusicController.cs" />

@@ -11,6 +11,12 @@ public class ExtinguisherMinigameController : MonoBehaviour {
     public GameObject m_worldHazard;
     public GameObject m_extinguisherPickups;
 
+    //SoundPart
+    public ExtinguisherSounds ExtinguisherSoundsScript;
+    bool IsPlayingExtinguisherSound = false;
+    bool IsPlayingStopExtinguisherSound = false;
+
+
     public float sprayRadius = 5; //temp
 
     Vector3 m_MousePosition;
@@ -78,6 +84,7 @@ public class ExtinguisherMinigameController : MonoBehaviour {
             }
             else
             {
+                ExtinguisherSoundsScript.StopExtinguisher();
                 beatMinigame = true;
             }
         }
@@ -130,12 +137,30 @@ public class ExtinguisherMinigameController : MonoBehaviour {
                 if(Vector3.Distance(l_fire.transform.position, in_hit.point) <= sprayRadius)
                 {
                     l_fire.GetComponent<FireObjective>().ExtinguishByPercentage(1f);
+
+                    // Play Extinguisher Sound
+                    if (IsPlayingExtinguisherSound == false)
+                    {
+                        Debug.Log("PLAY EXTINGUISHER SOUND");
+                        IsPlayingStopExtinguisherSound = false;
+                        ExtinguisherSoundsScript.FireExtinguisher();
+                        IsPlayingExtinguisherSound = true;
+                    }
                 }
             }
         }
         else if (!Input.GetMouseButton(0))
         {
             m_ParticleSystem.Stop();
+
+            // Play the Stop Extinguisher Sound
+            if (IsPlayingStopExtinguisherSound == false)
+            {
+                Debug.Log("PLAY STOP EXTINGUISHER SOUND");
+                IsPlayingExtinguisherSound = false;
+                ExtinguisherSoundsScript.StopExtinguisher();
+                IsPlayingStopExtinguisherSound = true;
+            }
         }
     }
 }

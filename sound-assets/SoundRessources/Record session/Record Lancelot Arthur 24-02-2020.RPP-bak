@@ -1,11 +1,11 @@
-<REAPER_PROJECT 0.1 "5.984/x64" 1588262876
+<REAPER_PROJECT 0.1 "5.984/x64" 1588419144
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
   AUTOXFADE 1
   ENVATTACH 1
   POOLEDENVATTACH 0
   MIXERUIFLAGS 11 48
-  PEAKGAIN 39.73896467578592
+  PEAKGAIN 4.43797436764245
   FEEDBACK 0
   PANLAW 1
   PROJOFFS 0 0 0
@@ -14,9 +14,9 @@
   TIMEMODE 1 5 -1 30 0 0 -1
   VIDEO_CONFIG 0 0 256
   PANMODE 3
-  CURSOR 0.29096633647726
-  ZOOM 49.49026122520271 0 0
-  VZOOMEX 11
+  CURSOR 0.26762609701771
+  ZOOM 384.86530703761935 0 0
+  VZOOMEX 0
   USE_REC_CFG 0
   RECMODE 1
   SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
@@ -28,13 +28,13 @@
   <APPLYFX_CFG
   >
   RENDER_FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\sound-assets\SoundRessources\SFX"
-  RENDER_PATTERN Sfx_fail_electric_$track
+  RENDER_PATTERN $track
   RENDER_FMT 0 2 44100
   RENDER_1X 0
-  RENDER_RANGE 4 0 0 2 1000
+  RENDER_RANGE 2 0 0 2 1000
   RENDER_RESAMPLE 3 0 1
   RENDER_ADDTOPROJ 0
-  RENDER_STEMS 64
+  RENDER_STEMS 128
   RENDER_DITHER 0
   TIMELOCKMODE 1
   TEMPOENVLOCKMODE 1
@@ -56,8 +56,8 @@
   GLOBAL_AUTO -1
   TEMPO 120 4 4
   PLAYRATE 1 0 0.25 4
-  SELECTION 0 728.98656489088035
-  SELECTION2 0 728.98656489088035
+  SELECTION 0.49887583133398 0
+  SELECTION2 0.49887583133398 0
   MASTERAUTOMODE 0
   MASTERTRACKHEIGHT 0 0
   MASTERPEAKCOL 16576
@@ -65,7 +65,7 @@
   MASTERTRACKVIEW 0 0.6667 0.5 0.5 0 0 0
   MASTERHWOUT 0 0 1 0 0 0 0 -1
   MASTER_NCH 2 2
-  MASTER_VOLUME 1 0 -1 -1 1
+  MASTER_VOLUME 0.07621676029659 0 -1 -1 1
   MASTER_FX 1
   MASTER_SEL 0
   <MASTERFXLIST
@@ -2141,7 +2141,7 @@
     IPHASE 0
     ISBUS 0 0
     BUSCOMP 0 0
-    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    SHOWINMIX 1 0.6667 0.490385 1 0.5 0 0 0
     FREEMODE 0
     SEL 0
     REC 0 0 0 0 0 0 0
@@ -2475,10 +2475,10 @@
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
-    MUTESOLO 0 2 0
+    MUTESOLO 0 0 0
     IPHASE 0
     ISBUS 1 1
-    BUSCOMP 0 0
+    BUSCOMP 1 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
     FREEMODE 0
     SEL 0
@@ -2492,6 +2492,219 @@
     PERF 0
     MIDIOUT -1
     MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 25 60 716 180
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 1 0 0
+      <JS filters/resonantlowpass ""
+        1000.000000 0.800000 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 0 0 0 0
+      FXID {A1B4228D-A794-4676-82CD-68C6602C3146}
+      WAK 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {FC9CE6C0-F90E-408B-94A4-E1C84CD6A9A6}
+      IID 2125
+      NAME "Fire (additive render of multiple sounds).wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4E79C739-315A-4F17-A45D-BFD5DCC0AAB3}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\sound-assets\Imported Sounds\Fire (additive render of multiple sounds).wav"
+      >
+    >
+    <ITEM
+      POSITION 4
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {2A34D48F-8EAB-4EA7-8859-297F74DCB2B6}
+      IID 2126
+      NAME "Fire (additive render of multiple sounds).wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 4
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {AFF0F067-59B9-4A29-8B3C-22E98CF4E63D}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\sound-assets\Imported Sounds\Fire (additive render of multiple sounds).wav"
+      >
+    >
+    <ITEM
+      POSITION 8
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {DA6B3E49-716A-43A2-BB7C-BD6AA1B5EC70}
+      IID 2127
+      NAME "Fire (additive render of multiple sounds).wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 8
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0E4ACCD6-D19C-4F25-B8BD-2ABF58DFD59D}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\sound-assets\Imported Sounds\Fire (additive render of multiple sounds).wav"
+      >
+    >
+    <ITEM
+      POSITION 12
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {06159171-AC44-4F9F-9BA8-816FB8E3961E}
+      IID 2128
+      NAME "Fire (additive render of multiple sounds).wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 12
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7B8D1DB3-E674-4D31-B4E1-74459582479C}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\sound-assets\Imported Sounds\Fire (additive render of multiple sounds).wav"
+      >
+    >
+    <ITEM
+      POSITION 16
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {4F540704-9712-48C1-A98C-E790F687A1C1}
+      IID 2129
+      NAME "Fire (additive render of multiple sounds).wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 16
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BEBDA6F5-518A-4513-87A4-2CFA2B3AAE29}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\sound-assets\Imported Sounds\Fire (additive render of multiple sounds).wav"
+      >
+    >
+    <ITEM
+      POSITION 20
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {3B12CE82-7C57-4611-8A67-6E734A280A49}
+      IID 2130
+      NAME "Fire (additive render of multiple sounds).wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 20
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D92B9D15-44D8-4F46-B9FD-3923FEE0559E}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\sound-assets\Imported Sounds\Fire (additive render of multiple sounds).wav"
+      >
+    >
+    <ITEM
+      POSITION 24
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {B1ABF5A3-FF48-4647-BC97-CAF2A89C3FC1}
+      IID 1
+      NAME 27-Fire-200501_1150.rpp
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5C16B05D-8EA4-4185-BBA3-939A6E86414D}
+      <SOURCE RPP_PROJECT
+        FILE "27-Fire-200501_1150.rpp"
+      >
+    >
+  >
+  <TRACK {F9DCEBB9-54AD-48FA-A6F5-4D9BB06F22BB}
+    NAME "additive render"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {F9DCEBB9-54AD-48FA-A6F5-4D9BB06F22BB}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 27.07585034013605
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {FDA0C84F-6489-42F4-B1F6-1AC9F46FDEB0}
+      IID 2104
+      NAME "Fire (additive render of multiple sounds).wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0B0997DC-E5FC-4B42-BF82-EC5BCBA9337F}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\sound-assets\Imported Sounds\Fire (additive render of multiple sounds).wav"
+      >
+    >
   >
   <TRACK {841E3F23-F4FB-4D58-BF55-B16F4F083B08}
     NAME BuubleWrap
@@ -2499,13 +2712,13 @@
     BEAT -1
     AUTOMODE 0
     VOLPAN 2.05141348927034 0 -1 -1 1
-    MUTESOLO 0 2 0
+    MUTESOLO 0 0 0
     IPHASE 0
     ISBUS 0 0
     BUSCOMP 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
     FREEMODE 0
-    SEL 1
+    SEL 0
     REC 0 0 0 0 0 0 0
     VU 2
     TRACKHEIGHT 0 0 0
@@ -2702,7 +2915,7 @@
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
+      FADEOUT 1.1 0.01 0.997087 1 1 0
       MUTE 0
       SEL 0
       IGUID {40316762-62D6-429E-8584-DA040E784776}
@@ -2717,6 +2930,94 @@
         FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\sound-assets\Imported Sounds\BuubleWrap.wav"
       >
     >
+    <ITEM
+      POSITION 12.74157468444341
+      SNAPOFFS 0
+      LENGTH 4.29459325301552
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.997087 1 1 0
+      FADEOUT 1.1 0.01 2.303722 1 1 0
+      MUTE 0
+      SEL 0
+      IGUID {EC528625-3808-4879-B0A1-0AC323E25106}
+      IID 2098
+      NAME BuubleWrap.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {24E71884-C649-4A81-8B1C-7351158FDD8A}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\sound-assets\Imported Sounds\BuubleWrap.wav"
+      >
+    >
+    <ITEM
+      POSITION 14.73244572888769
+      SNAPOFFS 0
+      LENGTH 3.78265498444414
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 2.303722 1 1 0
+      FADEOUT 1.1 0.01 0.774237 1 1 0
+      MUTE 0
+      SEL 0
+      IGUID {739054D2-A89B-4E99-AF16-7BC78E795CA3}
+      IID 2100
+      NAME BuubleWrap.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7334CEB6-0249-4E6D-BDB5-AC616A215E79}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\sound-assets\Imported Sounds\BuubleWrap.wav"
+      >
+    >
+    <ITEM
+      POSITION 17.7408641268776
+      SNAPOFFS 0
+      LENGTH 2.13307611904745
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.774237 1 1 0
+      FADEOUT 1.1 0.01 0.314537 1 1 0
+      MUTE 0
+      SEL 0
+      IGUID {EF9B59BA-8C65-44A4-924B-9B08F677E67A}
+      IID 2101
+      NAME BuubleWrap.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 7.05337170031689
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {37C97532-493F-4ADB-81FF-5241BE497661}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\sound-assets\Imported Sounds\BuubleWrap.wav"
+      >
+    >
+    <ITEM
+      POSITION 19.55940372986049
+      SNAPOFFS 0
+      LENGTH 10.5532684604084
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.314537 1 1 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {3CC239A0-3FBB-40CA-8D11-6E6A61B1BF95}
+      IID 2102
+      NAME BuubleWrap.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 3.18539367111085
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F3E71348-3F90-4984-ABF5-E2EB2D5A7A00}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\sound-assets\Imported Sounds\BuubleWrap.wav"
+      >
+    >
   >
   <TRACK {8FAECDB8-2F21-4863-B4BA-7F43A6FF8A72}
     NAME Cellophane
@@ -2724,7 +3025,7 @@
     BEAT -1
     AUTOMODE 0
     VOLPAN 0.07983153407086 0 -1 -1 1
-    MUTESOLO 0 2 0
+    MUTESOLO 0 0 0
     IPHASE 0
     ISBUS 0 0
     BUSCOMP 0 0
@@ -2748,7 +3049,7 @@
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
+      FADEOUT 1.1 0.01 2.999075 1 1 0
       MUTE 0
       SEL 0
       IGUID {E579CAE7-BDC7-4D90-8C46-39BEF0B55665}
@@ -2763,13 +3064,57 @@
         FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\sound-assets\Imported Sounds\Cellophane.aiff"
       >
     >
+    <ITEM
+      POSITION 10.3809704460309
+      SNAPOFFS 0
+      LENGTH 13.38004535147387
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 2.999075 1 1 0
+      FADEOUT 1.1 0.01 0.638471 1 1 0
+      MUTE 0
+      SEL 0
+      IGUID {5562F3A9-F9A3-4E42-A463-577FBB8A732C}
+      IID 2097
+      NAME Cellophane.aiff
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D2184B2C-54F0-484C-9115-413653001B0F}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\sound-assets\Imported Sounds\Cellophane.aiff"
+      >
+    >
+    <ITEM
+      POSITION 23.1225451304742
+      SNAPOFFS 0
+      LENGTH 3.9359764729703
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.638471 1 1 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {5C548A47-3947-459D-A870-8EA1F1A4808D}
+      IID 2099
+      NAME Cellophane.aiff
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {CE67CBB2-8DC2-40EB-B85C-43B860B6C59F}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\sound-assets\Imported Sounds\Cellophane.aiff"
+      >
+    >
   >
   <TRACK {C4CA49A6-1399-43F2-961A-C23AEC9EFCEE}
     NAME "Pink Noise Generator"
     PEAKCOL 16576
     BEAT -1
     AUTOMODE 0
-    VOLPAN 0.16956829167787 0 -1 -1 1
+    VOLPAN 0.26709158557142 0 -1 -1 1
     MUTESOLO 0 0 0
     IPHASE 0
     ISBUS 0 0
@@ -2777,12 +3122,12 @@
     SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
     FREEMODE 0
     SEL 0
-    REC 1 5088 1 0 0 0 0
+    REC 0 5088 1 0 0 0 0
     VU 2
     TRACKHEIGHT 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
-    FX 1
+    FX 0
     TRACKID {C4CA49A6-1399-43F2-961A-C23AEC9EFCEE}
     PERF 0
     MIDIOUT -1
@@ -2801,7 +3146,7 @@
       WAK 0
       BYPASS 0 0 0
       <JS filters/resonantlowpass ""
-        619.400000 0.750000 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+        619.400000 0.690000 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
       >
       FLOATPOS 57 92 505 133
       FXID {DF7E4A6B-85DA-462B-8878-C7CD934D3F1A}
@@ -3625,14 +3970,14 @@
     >
   >
   <TRACK {FAEEFDEF-231A-413F-AC1E-A24C8A221ECA}
-    NAME ""
+    NAME FIRE_GAS_HUGE
     PEAKCOL 16576
     BEAT -1
     AUTOMODE 0
-    VOLPAN 1 0 -1 -1 1
+    VOLPAN 0.05351438602413 0 -1 -1 1
     MUTESOLO 0 0 0
     IPHASE 0
-    ISBUS 2 -1
+    ISBUS 2 -2
     BUSCOMP 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
     FREEMODE 0
@@ -3647,34 +3992,60 @@
     PERF 0
     MIDIOUT -1
     MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 136 218 734 521
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 19.41666666666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1.1 0.01 8.779727 1 1 0
+      MUTE 0
+      SEL 0
+      IGUID {7D8C99E7-95BA-4A44-A087-9398F599D559}
+      IID 2096
+      NAME FIRE_GAS_HUGE.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {FEC7924A-8FDC-4665-A001-DAF81B9C2957}
+      <SOURCE WAVE
+        FILE "E:\Travail Abertay\Ressources\SFX\ActionVFX_Fire_SFX\FIRE_GAS_HUGE.wav"
+      >
+    >
+    <ITEM
+      POSITION 10.63693958031659
+      SNAPOFFS 0
+      LENGTH 19.4166666666666
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 8.779727 1 1 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {50E8C3AE-6F75-499A-B193-F7D5A6F30ED0}
+      IID 2103
+      NAME FIRE_GAS_HUGE.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {ED2C397B-F7CA-4A9A-9765-3090AC7A0862}
+      <SOURCE WAVE
+        FILE "E:\Travail Abertay\Ressources\SFX\ActionVFX_Fire_SFX\FIRE_GAS_HUGE.wav"
+      >
+    >
   >
-  <TRACK {CA28908F-C0E6-440B-907C-B21E291ED36A}
+  <TRACK {CA7DC191-C335-4D99-A07A-9FC556C9256B}
     NAME ""
     PEAKCOL 16576
-    BEAT -1
-    AUTOMODE 0
-    VOLPAN 1 0 -1 -1 1
-    MUTESOLO 0 0 0
-    IPHASE 0
-    ISBUS 2 -1
-    BUSCOMP 0 0
-    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
-    FREEMODE 0
-    SEL 0
-    REC 0 0 0 0 0 0 0
-    VU 2
-    TRACKHEIGHT 0 0 0
-    INQ 0 0 0 0.5 100 0 0 100
-    NCHAN 2
-    FX 1
-    TRACKID {CA28908F-C0E6-440B-907C-B21E291ED36A}
-    PERF 0
-    MIDIOUT -1
-    MAINSEND 1 0
-  >
-  <TRACK {D2877986-436E-4E8C-8AFA-7B7E3D7EFA1F}
-    NAME Interactible
-    PEAKCOL 16788571
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
@@ -3691,7 +4062,2455 @@
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
+    TRACKID {CA7DC191-C335-4D99-A07A-9FC556C9256B}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {1634FFA8-B39C-4347-BFF3-981780A0671D}
+    NAME ""
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {1634FFA8-B39C-4347-BFF3-981780A0671D}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {306A9C12-C4A2-47F4-967E-7B8DCF902E3F}
+    NAME ""
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {306A9C12-C4A2-47F4-967E-7B8DCF902E3F}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {D2877986-436E-4E8C-8AFA-7B7E3D7EFA1F}
+    NAME Interactible
+    PEAKCOL 16788571
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 1 1
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
     TRACKID {D2877986-436E-4E8C-8AFA-7B7E3D7EFA1F}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {CA28908F-C0E6-440B-907C-B21E291ED36A}
+    NAME Extinguisher
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1.13347180635429 0 -1 -1 1
+    MUTESOLO 0 2 0
+    IPHASE 0
+    ISBUS 1 1
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {CA28908F-C0E6-440B-907C-B21E291ED36A}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {2908F3E3-9C9F-45EF-817A-B30BC82C1F82}
+    NAME Engage
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 2.97081158165976 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 0
+    TRACKID {2908F3E3-9C9F-45EF-817A-B30BC82C1F82}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 25 60 716 220
+      SHOW 0
+      LASTSEL 2
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS loser/WhiteNoise ""
+        -120.000000 -12.000000 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 0 0 0 0
+      FXID {0B422938-687D-4F8B-8830-D817622D0510}
+      WAK 0
+      BYPASS 1 0 0
+      <JS filters/resonantlowpass ""
+        7712.300000 0.880000 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 0 0 0 0
+      FXID {24DE0550-4BDB-4530-92D5-4BF25CADFBE8}
+      WAK 0
+      BYPASS 0 0 0
+      <JS guitar/wah ""
+        0.000000 1.000000 0.000000 0.024000 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      <JS_PINMAP
+        6AMAABQAAADoAwAAAgAAAAEAAAADAAAAAAAAABQAAADoAwAAAgAAAAEAAAADAAAAAAAAAA==
+      >
+      FLOATPOS 0 0 0 0
+      FXID {1AF0D7E6-9785-4749-968A-89B8525DE437}
+      WAK 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.15443373078998
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.041182 0 1 0 0
+      FADEOUT 1 0.031968 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {8DDD3C1B-D4D1-4262-A5E0-5EBE81B3B210}
+      IID 2133
+      NAME "Engage untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0DF0F50E-B44C-4F94-9F8C-2C806CE94ED5}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {1B9F3070-4182-4BEA-A2D2-6C968BA2A0A0}
+        E 14400 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {A7BC6ACE-6848-474A-A160-E2A09FB0CA46}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 2
+        VELLANE -1 100 0
+      >
+      TAKE SEL
+      NAME "Engage untitled MIDI item render 001.wav"
+      TAKEVOLPAN 0 3.981072 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {CDD6A87E-9CCD-4E03-A0B3-1BB649CE5F55}
+      <SOURCE WAVE
+        FILE "Engage untitled MIDI item render 001.wav"
+      >
+    >
+  >
+  <TRACK {4C9233C0-D0CD-44DF-B0BD-A98D607A6D1C}
+    NAME Throw
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 1 1
+    BUSCOMP 2 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {4C9233C0-D0CD-44DF-B0BD-A98D607A6D1C}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <VOLENV2
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 24 0
+      ARM 1
+      DEFSHAPE 0 -1 -1
+      PT 0 0.53 0 0 1
+      PT 0.49418794 1 0
+      PT 3.00116217 1 0
+    >
+  >
+  <TRACK {60404A9B-9BFE-47D7-AA68-603019598628}
+    NAME snow
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 0.9830251224989 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 1 1
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 1 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 0
+    TRACKID {60404A9B-9BFE-47D7-AA68-603019598628}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 25 60 716 180
+      SHOW 0
+      LASTSEL 1
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS Liteon/pinknoisegen ""
+        0.000000 -6.000000 -6.000000 0.000000 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 0 0 0 0
+      FXID {05B88ED6-7338-4027-8345-231958A1421B}
+      WAK 0
+      BYPASS 1 0 0
+      <JS filters/resonantlowpass ""
+        919.100000 0.800000 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 0 0 0 0
+      FXID {454AC483-3005-419B-8242-F3A9A8116F5B}
+      WAK 0
+    >
+  >
+  <TRACK {D7F7CCE7-4FC5-45DB-BE7D-4CCFC56AE56D}
+    NAME ""
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {D7F7CCE7-4FC5-45DB-BE7D-4CCFC56AE56D}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 3
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {52B7C59A-EDFC-4366-8EDB-03FF5DBB910C}
+      IID 2144
+      NAME "untitled MIDI item render 002.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3852AF7C-B799-4C2A-A4B6-CB905C839378}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 002.wav"
+      >
+    >
+  >
+  <TRACK {59D46F0B-BA3D-43D0-8F21-FE0FAE162B9A}
+    NAME ""
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 2 -1
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {59D46F0B-BA3D-43D0-8F21-FE0FAE162B9A}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 25 60 754 466
+      SHOW 0
+      LASTSEL 1
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS pitch/superpitch ""
+        0.000000 -12.000000 -6.000000 50.000000 30.020000 3.500000 -37.000000 1.000000 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 0 0 0 0
+      FXID {04BD492A-06D5-43CF-B01F-09007096C632}
+      WAK 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.dll 0 "" 1919247729 ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAqAAAAAEAAAAAABAA
+        IQAAAAQAAAAAAAAAAQAAAAcblsC+42NAd/4z3osaAUDh////////PwEIAAAAAQAAABPgqFZ6LXBAL1EkuXl/J0Dh////////PwEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAAAA8CAABhAQAA
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {D4FC33E9-E67F-491E-BD9F-34AD1A2B1E03}
+      WAK 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 3
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {F5251E04-0BC1-480A-A398-D2CBA6DFFFFC}
+      IID 2191
+      NAME "untitled MIDI item render 002.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {09E38683-7568-4682-BF00-734843EA6800}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 002.wav"
+      >
+    >
+  >
+  <TRACK {B8F724F6-4190-491A-BC6D-89E55E143D53}
+    NAME pop
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 0.65117411147315 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 1 1
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {B8F724F6-4190-491A-BC6D-89E55E143D53}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 915 66 721 436
+      SHOW 0
+      LASTSEL 3
+      DOCKED 0
+      BYPASS 1 0 0
+      <JS Liteon/pinknoisegen ""
+        0.000000 -6.000000 -6.000000 0.000000 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 0 0 0 0
+      FXID {EBDA47FF-2392-4D40-9F43-F3E2EBBE8AFC}
+      WAK 0
+      BYPASS 1 0 0
+      <JS filters/resonantlowpass ""
+        4915.100000 0.970000 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 0 0 0 0
+      FXID {C92CF113-82B2-4939-97EF-47B3614A0D29}
+      WAK 0
+      BYPASS 1 0 0
+      <DX "DX: Noise Gate" ""
+        Iw98uW0Z0RG5mwCgyQU5EiAAAAAgAAAAQ4/fpvS60BGuvACgyQU5EhEAAABhAQAA2////wAAAAAAAAAAAA==
+      >
+      FLOATPOS 0 0 0 0
+      FXID {B4337E66-0DEB-4D60-A669-A130F4290EE5}
+      WAK 0
+      BYPASS 0 0 0
+      <VST "VST: ReaComp (Cockos)" reacomp.dll 0 "" 1919247213 ""
+        bWNlcu9e7f4EAAAAAQAAAAAAAAACAAAAAAAAAAQAAAAAAAAACAAAAAAAAAACAAAAAQAAAAAAAAACAAAAAAAAAFQAAAAAAAAAAAAQAA==
+        776t3g3wrd5am5I/KsinPbqvnTlZ2iQ7romQPgAAAAA2Lao8AAAAAAAAAAAAAAAAnNEHMwAAgD8AAAAAzcxMPQAAAAAAAAAAAAAAAAAAgD4AAAAA
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {582BDD7E-FCE4-48AC-97ED-8EB2761DF4A8}
+      WAK 0
+    >
+  >
+  <TRACK {0D6AA471-C367-4312-825E-CF42BAB34A71}
+    NAME ""
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {0D6AA471-C367-4312-825E-CF42BAB34A71}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.11186632410269
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 2
+      IGUID {83F9CD4C-5A06-4C1C-B44C-1138EAD81AD7}
+      IID 2145
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9280A56F-A13B-40F3-BB05-91D0B31EBD11}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {24B11CD7-B265-4FCB-B747-4EEAA159813F}
+        E 424 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {89728D9A-F444-48B1-9EC2-FE12C174E718}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1230
+        VELLANE -1 100 0
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {89CBE97E-15C3-41C2-8366-F2E22BB9083E}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.22089862407573
+      SNAPOFFS 0
+      LENGTH 0.1691870804774
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 6
+      IGUID {A3C9663C-C73C-462C-B703-87BD40E5063B}
+      IID 2147
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.22089862407573 0.44179724815146
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A5DF357E-AB9F-4F2E-A558-674D865CB9F6}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {515F6877-CBAD-4F4D-96AB-6EAB6773FCD2}
+        E 958 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {6ABF03B2-DC57-4E31-924B-3FAA0E06F50A}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1232
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 0.22089862407573
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {105FA3C1-E532-4C8F-9902-693965AB7DDE}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.49911800452617
+      SNAPOFFS 0
+      LENGTH 0.24905441631546
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 7
+      IGUID {D10D6A91-8726-425E-B738-8A717E212BCE}
+      IID 2148
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.49911800452617 0.99823600905234
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6D7114E8-0A99-4AAB-9657-B4827375209D}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {8CA3ED4E-019E-46B9-ADEE-EA2C1392D65E}
+        E 1646 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {36DA0EE4-6785-4A9E-B5AD-DDBEAAE47EE6}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1233
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 0.49911800452617
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {63948D5F-8294-415A-9B90-B7D4FC258994}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.85720472081467
+      SNAPOFFS 0
+      LENGTH 0.09212707386488
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 8
+      IGUID {15AF70C3-9646-4598-BE81-F72644F8B91C}
+      IID 2149
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.85720472081467 1.71440944162934
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B239EF26-F74C-47C7-B9D6-7E2B64AB8D65}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {D536E168-AED1-43E3-B09B-BA01179435C5}
+        E 2032 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {8EAB5FFF-392D-4476-B27C-450819B0338C}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1234
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 0.85720472081467
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {210EC485-91C8-4243-AA23-7E90652D3B58}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 1.05836409465259
+      SNAPOFFS 0
+      LENGTH 0.10736184577377
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 9
+      IGUID {72C681C9-2AA4-47C0-94F9-CFB1D18AE2C0}
+      IID 2150
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 1.05836409465259 2.11672818930517
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {62F7AFBF-77A6-4192-81A7-53289F04E733}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {D895D813-D44D-465C-BCA1-A91D095AFA8E}
+        E 2448 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {3F26D043-3FAA-4277-9B88-212759C3C532}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1235
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 1.05836409465259
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C29BE01E-DEC9-495E-8E28-6519F2B1C1DD}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 1.2747582403994
+      SNAPOFFS 0
+      LENGTH 0.06672313072622
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 10
+      IGUID {CA41F421-37C9-4D22-AD8F-9EC98110992E}
+      IID 2151
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 1.2747582403994 2.5495164807988
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A422B19E-CD98-489D-BF51-6007815FAA3C}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {1E1A3B9B-74DC-4905-987D-75B1C586EA27}
+        E 3447 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {77B00BA4-B397-4825-8DB2-50F336B70DFF}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1236
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 1.2747582403994
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {30A59774-2F8C-469F-8438-1D1C78846EDC}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 1.79541566986294
+      SNAPOFFS 0
+      LENGTH 0.17162434966222
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 11
+      IGUID {CF1FFF0A-1A42-45A0-8F48-6849D37653C0}
+      IID 2152
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 1.79541566986294 3.59083133972588
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {95BB1C91-AB68-403F-8C3E-69D4A1E743CD}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {7FECFFD0-F6BB-4831-B39C-A19C38215FEF}
+        E 3986 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {6AFDD420-22D3-4A06-96CF-ABF6C10C5277}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1237
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 1.79541566986294
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {FC87EA1A-9C13-4E49-8CA8-9ABB95D4C4A5}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.0760723194982
+      SNAPOFFS 0
+      LENGTH 0.12965700018405
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 12
+      IGUID {F40F58CA-9776-40C5-A259-334FF5F34EBC}
+      IID 2153
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.0760723194982 4.15214463899639
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6421A555-9D8C-41CE-8647-41387164AFD5}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {F9DF8872-2040-4F80-82BE-AE93AE73FF6E}
+        E 4444 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {AB655F1C-9782-4928-B465-565EB78F9975}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1238
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 2.0760723194982
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {8BBE15B1-A4F0-45D8-8DBF-AAC31809D905}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.31476161965529
+      SNAPOFFS 0
+      LENGTH 0.15588659360791
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 13
+      IGUID {106522B8-F59A-4019-AB06-43FB791051A8}
+      IID 2154
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.31476161965529 4.62952323931057
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {2CB9A04A-6095-4C42-9CDE-063E1CC7D75C}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {132D3D59-90FA-47DE-9E61-D4DFED57C1DC}
+        E 4953 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {256BB585-00D1-42BF-89BA-DFC38D501308}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1239
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 2.31476161965529
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A363767E-1AC3-42C1-BCA2-F0391A17CCF3}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.57968051323623
+      SNAPOFFS 0
+      LENGTH 0.15326363426552
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 14
+      IGUID {3C3A5527-EDC5-442A-9FD0-F9D9E59823EA}
+      IID 2155
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.57968051323623 5.15936102647246
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DB2AFE3B-D898-40A2-83F9-C4759B0796A5}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {5A6B5A02-0A71-431C-903A-26C5E6B39D0B}
+        E 5457 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {324E162A-469D-4CFA-BB73-A46B7C344EA7}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1240
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 2.57968051323623
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B9341616-E478-462E-9CDB-A263F5F0A681}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.84197644747479
+      SNAPOFFS 0
+      LENGTH 0.04900125255217
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 15
+      IGUID {CA3B70EA-2E88-4C3E-9372-53E56B39C236}
+      IID 2156
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.84197644747479 5.68395289494958
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {AE70D6CF-AD66-4C9B-A6EA-B14E2C76D039}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {F930BA35-6B48-4AEA-BFF4-7C9AEDE45106}
+        E 5760 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {23F8BA9D-78A3-43FE-9B56-99E022C306A0}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1241
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 2.84197644747479
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E26E43C5-B167-4CDE-9FF2-81B4BC056291}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+  >
+  <TRACK {47FA090E-9FB1-4390-9334-FAFFF3C772B1}
+    NAME ""
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {47FA090E-9FB1-4390-9334-FAFFF3C772B1}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 25 60 716 304
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS pitch/superpitch ""
+        38.000000 1.000000 0.000000 50.000000 20.000000 0.000000 -120.000000 1.000000 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 0 0 0 0
+      FXID {03887C00-42B8-4BB6-BC64-890B894BE70B}
+      WAK 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.17162434966222
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 22
+      IGUID {E5530717-D385-45FF-9B2F-267EEAF054AA}
+      IID 2163
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 1.79541566986294 3.59083133972588
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3B90B08E-1628-4F45-A96A-B45ACE4216AF}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {671C929B-0307-4D68-856D-4A6385A02A18}
+        E 3986 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {901D6BBE-2CE3-4FCC-BDAA-78ABFA15F4A2}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1248
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 1.79541566986294
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {716A6592-BAF3-4997-89BB-0B582953FF65}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.28065664963526
+      SNAPOFFS 0
+      LENGTH 0.12965700018405
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 23
+      IGUID {FBF3282C-C94D-4603-B044-0E3B6384C7C6}
+      IID 2164
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.0760723194982 4.1521446389964
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B958D5C7-D701-4582-9FB2-265B74BFFA35}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {D24970A1-61BD-4839-8740-9EE7F7F35CCB}
+        E 4444 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {D09AEDFB-E73B-45FC-99D4-C3847A3258C2}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1249
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 2.0760723194982
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {17F93E40-D556-4E2A-B34D-48FF68838838}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.51934594979235
+      SNAPOFFS 0
+      LENGTH 0.15588659360791
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 24
+      IGUID {BDF2B83C-2429-40C9-95F3-40E7BD488C39}
+      IID 2165
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.31476161965529 4.62952323931057
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {2292CEB9-46F7-472D-98DE-DA8D51C9DC8F}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {FD7403C6-29A9-4142-BCBC-28D01BD1E71E}
+        E 4953 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {89A16F36-6770-4D94-A99B-7B76DE6D7889}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1250
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 2.31476161965529
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {78C9111E-11AD-45A8-8E76-7D22A74611AA}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.7842648433733
+      SNAPOFFS 0
+      LENGTH 0.15326363426552
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 25
+      IGUID {1DA0984B-1C4C-4C0C-B00E-64BDCF7CA96E}
+      IID 2166
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.57968051323623 5.15936102647246
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {09A62635-5AAD-4454-BDA7-2EACC3E19262}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {AFB68932-C7F4-4AD6-9857-1F8DF3B830B6}
+        E 5457 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {A6EEF3F8-750E-46E8-88F3-88D26350F40E}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1251
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 2.57968051323623
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A610936E-9DBA-4CBF-B378-03BAFBDAB1CF}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.97997422913426
+      SNAPOFFS 0
+      LENGTH 0.11186632410269
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1.1 0.01 0.04528 1 1 0
+      MUTE 0
+      SEL 0
+      GROUP 16
+      IGUID {9D82B558-E0B4-4EBD-83AC-EB5774BC8BC1}
+      IID 2157
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A5DC3618-9B10-4FB3-B73E-1244FD5599F4}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {1059472A-EE3A-4A48-8403-77FD9A4D7104}
+        E 424 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {DE7B3C9E-CE13-4962-B9E7-B9BFFB5C4E54}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1242
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6E2679CB-B3DA-47E5-ADFA-7EE6016FA7E3}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 1.04656077761186
+      SNAPOFFS 0
+      LENGTH 0.04900125255217
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.04528 1 1 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 26
+      IGUID {1C1954D7-A391-4B45-B231-F49FA1D95785}
+      IID 2167
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.84197644747479 5.68395289494958
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0AEF1589-2F14-4F53-970C-D2B629F809BA}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {A8664D5A-1D04-4615-88FF-88132E0C014F}
+        E 5760 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {328E6C3F-3EC0-4632-A9FB-AC089B805AC7}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1252
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 2.84197644747479
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DA962E59-A49B-49CE-936F-A5DC8A154B98}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 1.20087285320998
+      SNAPOFFS 0
+      LENGTH 0.1691870804774
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 17
+      IGUID {FE2ABFC2-2631-4738-A241-36AE5A31ADF6}
+      IID 2158
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.22089862407573 0.44179724815145
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {2A4EAC7D-E880-497C-9CEB-7DEF9700F572}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {EE52A6CD-C8A4-4623-9E72-5BB567B4403F}
+        E 958 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {EBADF183-9DB0-46A8-99D7-617F88AAAEAE}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1243
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 0.22089862407573
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D6A450C5-1E71-47BC-B467-D07EA436E728}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 1.47909223366043
+      SNAPOFFS 0
+      LENGTH 0.24905441631546
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 18
+      IGUID {BF952405-F4D8-4528-9F8D-4C30DFD86ACC}
+      IID 2159
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.49911800452617 0.99823600905234
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3BE4EC7E-06EE-44A6-9140-C91506A35F60}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {5F550B7D-BC4C-4273-815B-62B18EE7E095}
+        E 1646 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {34AD0CD3-2A1B-47C3-86B3-EA2004530184}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1244
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 0.49911800452617
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3369E2C4-05A1-4258-9CDE-5772B4E71D24}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 1.83717894994893
+      SNAPOFFS 0
+      LENGTH 0.09212707386488
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 19
+      IGUID {FF524625-5C45-494A-993E-4250C71FBE29}
+      IID 2160
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.85720472081467 1.71440944162934
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {1D9E1E4A-CAB0-4143-982D-1A3BFA0B8C99}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {4154376F-9D76-4C57-A234-567057CB84DA}
+        E 2032 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {1F20ED37-16A6-4B6D-A333-DC88328A2764}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1245
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 0.85720472081467
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {FED68481-D76C-485E-87E4-ED0F92F7F529}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.03833832378684
+      SNAPOFFS 0
+      LENGTH 0.10736184577377
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 20
+      IGUID {8ED0AB16-9C50-4A0F-B7B9-29F58D93A146}
+      IID 2161
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 1.05836409465259 2.11672818930517
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {27943E73-9DD0-4C1E-AF04-DA6F9FCEEABC}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {D836AFCD-3ADD-4F97-9E74-4AD3921014D1}
+        E 2448 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {0F299E45-C1EC-4FCD-A39D-4C4ED2D39F1F}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1246
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 1.05836409465259
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6B377F86-176C-47A7-BD06-35A940E911A2}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.25473246953365
+      SNAPOFFS 0
+      LENGTH 0.06672313072621
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 21
+      IGUID {4000F149-FFB3-4B28-82FB-35F32A66D7AF}
+      IID 2162
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 1.2747582403994 2.5495164807988
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {59E015C1-E32B-4BA0-998E-3446418A36CC}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {EBF57EA8-B765-42F0-A698-3038D73A865C}
+        E 3447 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {9B1AA53C-789D-4F4B-B2CB-472DF38FA762}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1247
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 1.2747582403994
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {924FA948-2E60-4505-A084-924E7D78BD92}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+  >
+  <TRACK {A2D64AD8-C746-489C-80EC-DC3680B941AE}
+    NAME ""
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {A2D64AD8-C746-489C-80EC-DC3680B941AE}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 57 92 716 304
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS pitch/superpitch ""
+        -100.000000 1.000000 0.000000 50.000000 20.000000 0.000000 -120.000000 1.000000 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 0 0 0 0
+      FXID {3E869EDA-EA61-4F9A-B713-244005E67812}
+      WAK 0
+    >
+    <ITEM
+      POSITION 0.11839919360565
+      SNAPOFFS 0
+      LENGTH 0.10736184577377
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 27
+      IGUID {AB78E75E-F1E3-4DA4-93BE-987F50F419C5}
+      IID 2168
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 1.05836409465259 2.11672818930518
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C03C8688-1D75-463E-BF1E-5F08D557505A}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {251A2A1F-3D23-4F69-9277-B01B7DF32E81}
+        E 2448 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {F6ACD4B3-A07D-473C-80F1-A391ABE37532}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1253
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 1.05836409465259
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {172C47C9-8AE5-4956-85BB-55FEA3DDBE1D}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.33479333935246
+      SNAPOFFS 0
+      LENGTH 0.06672313072622
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 28
+      IGUID {FA70568A-10D7-48FD-BA06-6E0FCA7F871B}
+      IID 2169
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 1.2747582403994 2.5495164807988
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {95149048-33DE-44F0-AFD9-FB2554BD660A}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {C1799C24-A9C8-4DA4-8F58-34812E1B2D36}
+        E 3447 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {1F54FD37-F0A5-4DD2-8593-A75FDB351952}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1254
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 1.2747582403994
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {895DF506-4A37-4D5C-BDBE-D91CA6E44FB4}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.855450768816
+      SNAPOFFS 0
+      LENGTH 0.17162434966222
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 29
+      IGUID {045A3385-2AAE-4AD2-9758-84C3966AC578}
+      IID 2170
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 1.79541566986294 3.59083133972588
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {47F914A7-0FF7-47D2-B57B-8712E1142A11}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {6A6CFE82-5BCC-414D-9509-6DD26ECB4678}
+        E 3986 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {FBC8F8E4-0877-4391-AEE2-C9DD79BD1E06}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1255
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 1.79541566986294
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9579A435-50E1-45B2-95FC-E4EF3C5EF353}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 1.13610741845126
+      SNAPOFFS 0
+      LENGTH 0.12965700018405
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 30
+      IGUID {A8B1AD2D-F092-4F17-97F9-E295BDD9311F}
+      IID 2171
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.0760723194982 4.15214463899639
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {69259B7C-2FF2-4B50-8DC7-CF65F0591DB5}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {007A6EE7-9008-42D8-94E7-A1D99EEF9BFF}
+        E 4444 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {A131A593-1970-404A-8747-3BE932FCD6B8}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1256
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 2.0760723194982
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BFFBE0C1-FF70-4FB9-B7F8-10ADE90DC121}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 1.37479671860835
+      SNAPOFFS 0
+      LENGTH 0.15588659360791
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 31
+      IGUID {25B40C36-E117-416F-A153-81C3774C79E6}
+      IID 2172
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.31476161965529 4.62952323931057
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6A2FB69F-0043-4775-9A58-F387CC684619}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {EA944709-8F39-4492-A121-5EAFD8A1695D}
+        E 4953 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {80F6E1E8-D803-403F-956A-BE3A9DFDA1FB}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1257
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 2.31476161965529
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {847BAE6E-0566-4091-AF1E-BE93E071953A}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 1.6397156121893
+      SNAPOFFS 0
+      LENGTH 0.15326363426552
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 32
+      IGUID {4B874ECD-3D38-46E9-BA2C-D144175423BD}
+      IID 2173
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.57968051323623 5.15936102647246
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {478AA8EE-DC33-4BEA-8606-D9756E2A3831}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {CB7F8FB2-1C2D-41B9-8584-1BDFDE0A2DE1}
+        E 5457 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {B0813E34-235C-4073-8ED5-050C803DED65}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1258
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 2.57968051323623
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DFBB80A3-C2D9-48CD-A779-64B48A5BB6FC}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 1.90201154642786
+      SNAPOFFS 0
+      LENGTH 0.04900125255217
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 33
+      IGUID {B1484A88-FF39-491F-8AA9-F9BEF6AA9037}
+      IID 2174
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.84197644747479 5.68395289494958
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {02D87271-9207-48C2-8D37-63BBC957D50B}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {49D2FC78-3E52-4545-85BE-25482B25BD90}
+        E 5760 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {EFB4B18B-885D-4343-BDBA-D447F1A0F6F1}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1259
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 2.84197644747479
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {06BB7436-D429-4F61-9472-3BD4F30F228C}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.02946805451382
+      SNAPOFFS 0
+      LENGTH 0.12965700018405
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 34
+      IGUID {1FF684D3-3EAC-41F4-A855-851CEBAAB4D2}
+      IID 2175
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.0760723194982 4.15214463899639
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {641FDB99-658D-4F6C-BFE2-2FEB4149E016}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {BCDCB5DD-9255-4282-B7A7-9D35A386D6C6}
+        E 4444 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {DCD19DAF-34FB-4A8F-BDBF-9F40DE714D4A}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1260
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 2.0760723194982
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4ED4A4E7-4F76-4EEB-87E3-BDCFA3B12FB6}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.26815735467091
+      SNAPOFFS 0
+      LENGTH 0.15588659360791
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 35
+      IGUID {5545D892-E282-4B4E-86B0-2CF392F2CF6E}
+      IID 2176
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.31476161965529 4.62952323931057
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9E0AF928-6F0A-4D97-BDF9-FAF0D39409D2}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {2D721571-E0AC-4021-BE70-1E450FFE57D0}
+        E 4953 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {D2A3EFE6-7665-428E-9DD4-762C6539C7EC}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1261
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 2.31476161965529
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C4D89755-2439-4DDB-9A70-E10EB4E734D4}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.53307624825186
+      SNAPOFFS 0
+      LENGTH 0.15326363426553
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 36
+      IGUID {18D02FD1-51FA-45F1-9D09-E1C6D440B8BC}
+      IID 2177
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.57968051323623 5.15936102647246
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6B6EB5CE-4D8D-40F9-871B-790C719C6590}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {CD1590E3-5CE3-4D82-B578-615CF9FD3A73}
+        E 5457 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {D1F22854-7B4E-419D-B1BB-83E593B3CEA5}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1262
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 2.57968051323623
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3618F894-0D97-4B37-9F13-1FCA3D2AAC15}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.72878563401282
+      SNAPOFFS 0
+      LENGTH 0.11186632410269
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1.1 0.01 0.04528 1 1 0
+      MUTE 0
+      SEL 0
+      GROUP 37
+      IGUID {5C64BDC0-924D-4C0D-B237-A623E0531789}
+      IID 2178
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4F52DD96-150C-4360-9789-14135C516B19}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {C61C9280-B01E-4D52-9DDC-4D33B5E85546}
+        E 424 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {8B728EF0-A756-4E14-8823-19E04FCB4E8E}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1263
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {82144585-742B-4360-807F-1143CD1524FE}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.79537218249042
+      SNAPOFFS 0
+      LENGTH 0.04900125255217
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.04528 1 1 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 38
+      IGUID {3F845929-798F-4F34-B8B5-8E14F2610089}
+      IID 2179
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.84197644747479 5.68395289494958
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B993326E-6D1A-4F0F-8AE6-929C9352B56F}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {1388E38A-0307-4639-A108-CCC4F8355A4F}
+        E 5760 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {363B3839-050A-4306-AF70-EC4D77C0B119}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1264
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 2.84197644747479
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6AE4969C-1A82-4261-890F-BB2755D00D2E}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.94968425808855
+      SNAPOFFS 0
+      LENGTH 0.0556970128696
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 39
+      IGUID {49D83476-C9B8-4E14-81D8-7EFB07CEAFE0}
+      IID 2180
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.22089862407573 0.44179724815145
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {FE563574-1511-44DC-9D6F-3D0A0D5480EA}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {6161027E-D303-4DAD-A36C-50246A0430BF}
+        E 958 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {023A380B-7D70-4C9B-A32B-DD2D4EA60200}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1265
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 0.22089862407573
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7485BA93-2E72-44DA-8221-60953150C52F}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+  >
+  <TRACK {C543AF4E-2BE7-4433-AD53-7EC71AD025F0}
+    NAME ""
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 2 -2
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {C543AF4E-2BE7-4433-AD53-7EC71AD025F0}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 25 60 716 304
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS pitch/superpitch ""
+        -70.000000 0.000000 0.000000 50.000000 20.000000 0.000000 -120.000000 1.000000 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      >
+      FLOATPOS 0 0 0 0
+      FXID {52844AA1-5CD0-44B4-A6AE-45690A71AC39}
+      WAK 0
+    >
+    <ITEM
+      POSITION 0.03183241945703
+      SNAPOFFS 0
+      LENGTH 0.24905441631546
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 40
+      IGUID {C2B531A2-31EB-4E43-8D4F-0A4BFB7DE8A5}
+      IID 2181
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.49911800452617 0.99823600905234
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A4D0526D-A30F-4968-81A4-8DAEEFF891BC}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {C4B5B8FE-D8A3-4DC9-B688-891C13FDC78C}
+        E 1646 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {6EA1F03F-C5AD-4B57-9C48-576E779D0F78}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1266
+        VELLANE -1 100 0
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 0.49911800452617
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {51D55B30-F33F-4F97-A90A-080E01B37EC7}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.38991913574553
+      SNAPOFFS 0
+      LENGTH 0.09212707386488
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 41
+      IGUID {C9F24CD2-7032-402D-A3E4-4AD24A5942D7}
+      IID 2182
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.85720472081467 1.71440944162934
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {556F4E4F-2808-4AC7-842A-081C50FAB729}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {A073EEFC-0B97-44D9-B5C2-82C0A71FE242}
+        E 2032 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {ECFE93D4-A61E-431E-8B1E-2071C0FF6E62}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1267
+        VELLANE -1 100 0
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 0.85720472081467
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6B74304B-21E9-43CB-BCDB-5A65C79ACD76}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.59107850958344
+      SNAPOFFS 0
+      LENGTH 0.10736184577377
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 42
+      IGUID {46E48255-891C-451C-A520-9E804F32B89C}
+      IID 2183
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 1.05836409465259 2.11672818930518
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {038F1376-B0A4-411C-B2C0-EAC88AF348C7}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {5D42D346-FE1B-4842-86A1-F818D5351512}
+        E 2448 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {0E810EEC-6EF0-4365-ACC5-AA0228CA8329}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1268
+        VELLANE -1 100 0
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 1.05836409465259
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {8D0D77B7-16BC-4FC6-AD0F-75F8B08E0C37}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.80747265533026
+      SNAPOFFS 0
+      LENGTH 0.06672313072622
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 43
+      IGUID {D354798D-911E-4C76-9036-7546504B9DA7}
+      IID 2184
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 1.2747582403994 2.5495164807988
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C7037FB2-A3C2-474B-AC12-54D2C63CC6D7}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {98DED300-8A50-4CAD-B7E0-5E4F68A76144}
+        E 3447 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {A34D460C-34BE-40E4-934F-10E856FD660C}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1269
+        VELLANE -1 100 0
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 1.2747582403994
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F0250302-C7C0-498D-AFAA-B35B45831A7D}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 1.3281300847938
+      SNAPOFFS 0
+      LENGTH 0.17162434966222
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 44
+      IGUID {4F9C6757-1B35-4FB0-AF6C-AC2EB7979FA8}
+      IID 2185
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 1.79541566986294 3.59083133972588
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {1D93F9A0-6F09-468D-9A5C-A7553E4DACF1}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {FCDDC52F-9792-4E82-876D-C60BFC7170E0}
+        E 3986 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {3F33D27C-A20E-4A3A-8A33-EF7924B9F0C9}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1270
+        VELLANE -1 100 0
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 1.79541566986294
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C74FFF4A-5CD2-4356-890F-9FDB05568614}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 1.58037184508409
+      SNAPOFFS 0
+      LENGTH 0.1691870804774
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 45
+      IGUID {46AA897A-70D1-4975-A4B9-7DFB5061BEE1}
+      IID 2186
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.22089862407573 0.44179724815146
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {31DB5A69-042B-4E8B-A4E9-F964ED8D1E32}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {45B8BA0B-71C1-4135-A5CC-54EB564E271A}
+        E 958 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {348F36FF-BF10-4FB6-B558-E8B1C4C1949D}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1271
+        VELLANE -1 100 0
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 0.22089862407573
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {64D9D5DD-DF80-4BFB-B1B4-3C47CF0D561F}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 1.85859122553453
+      SNAPOFFS 0
+      LENGTH 0.24905441631546
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 46
+      IGUID {ADAA5DCA-D807-4064-9208-412FDA0BC873}
+      IID 2187
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.49911800452617 0.99823600905234
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3AD3CB99-6191-4A9E-A31A-E96D53991307}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {F4C89565-7D08-4EDE-84BE-AA6530D8C3B0}
+        E 1646 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {B77981BE-F4EE-4BCF-865A-CD4FFA9A33E7}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1272
+        VELLANE -1 100 0
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 0.49911800452617
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C15FF4A9-942A-47E9-8A5D-D0BB7A05F205}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.21667794182303
+      SNAPOFFS 0
+      LENGTH 0.09212707386488
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 47
+      IGUID {55A23696-0CB6-4043-9ACF-8B4F84B1998F}
+      IID 2188
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.85720472081467 1.71440944162934
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {67B4DCA8-65A5-4465-BD6C-14F8AFEAAC84}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {7B96A927-9F71-4640-8230-57F347AB0BF3}
+        E 2032 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {E35874D4-7D3D-47A8-8C62-E83DB86E4689}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1273
+        VELLANE -1 100 0
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 0.85720472081467
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {CAE55A6C-D3CC-4A05-B862-53F560FC5FB8}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.41783731566095
+      SNAPOFFS 0
+      LENGTH 0.10736184577377
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 48
+      IGUID {8C17692B-4E10-45B9-8FB5-40008F84F66E}
+      IID 2189
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 1.05836409465259 2.11672818930518
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {AF058D0B-BC72-45F9-960A-545775FB4BF2}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {47A7EBCF-EBD1-47E0-BD63-C01532EB7201}
+        E 2448 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {19E2878A-6B37-4C28-8D23-447C63E625EB}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1274
+        VELLANE -1 100 0
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 1.05836409465259
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {41753959-1787-4E4A-B8A1-29798B3C2E96}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.63423146140776
+      SNAPOFFS 0
+      LENGTH 0.26304619799741
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 0
+      GROUP 49
+      IGUID {7BFD458B-8C7B-4953-821A-A164505235AB}
+      IID 2190
+      NAME "untitled MIDI item"
+      VOLPAN 1 0 1 -1
+      SOFFS 1.2747582403994 2.5495164807988
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F4EE441E-778A-4DDD-82C9-B261B04630C6}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        POOLEDEVTS {1321999A-CB59-4F50-826A-B4F88B1A9CD1}
+        E 3447 b0 7b 00
+        CHASE_CC_TAKEOFFS 1
+        GUID {F01133BC-723A-446F-973E-ABA75CD57AC4}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1275
+        VELLANE -1 100 0
+      >
+      TAKE SEL
+      NAME "untitled MIDI item render 003.wav"
+      TAKEVOLPAN 0 1 -1
+      SOFFS 1.2747582403994
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {FF8CA45B-0745-467C-8ACB-03EF90660B17}
+      <SOURCE WAVE
+        FILE "untitled MIDI item render 003.wav"
+      >
+    >
+  >
+  <TRACK {872AEE54-00CC-4BD8-977B-00491DE683DB}
+    NAME Stop
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 2 0
+    IPHASE 0
+    ISBUS 2 -2
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 1
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {872AEE54-00CC-4BD8-977B-00491DE683DB}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <VOLENV2
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 24 0
+      ARM 1
+      DEFSHAPE 0 -1 -1
+      PT 0 1.29 0 0 1
+      PT 0.05976117 1.97994796 0
+      PT 0.49887583 3.98107171 0
+    >
+    <FXCHAIN
+      WNDRECT 25 60 754 466
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.dll 0 "" 1919247729 ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAqAAAAAEAAAAAABAA
+        IQAAAAQAAAAEAAAAAQAAAFlN+m12sa5ABwAAQLP+4T/h////////PwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEIAAAAAQAAAHdrCy3yQdZA/eSCIYpkHUDl////////PwEBAAAAAQAAAAAAAAAAAPA/AAAAAA8CAABhAQAA
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {D68FD11B-464B-4F54-83BB-D8E1ED0904DD}
+      <PARMENV 0 0 1 0.5
+        ACT 1 -1
+        VIS 1 1 1
+        LANEHEIGHT 367 0
+        ARM 1
+        DEFSHAPE 0 -1 -1
+        PT 0 0.52524936 0
+        PT 0.49887583 0.85003568 0 0 1
+      >
+      WAK 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.49627751971245
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0
+      SEL 1
+      IGUID {2494ED64-692C-4AE4-81A6-7D9BB5E79D50}
+      IID 2192
+      NAME Extinguisher.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0.6755610215981
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {015EE315-692A-41F8-8AC5-54F877A50E2C}
+      <SOURCE WAVE
+        FILE "D:\FireTrainingProject\des310_FireTrainingSimulator\sound-assets\SoundRessources\SFX\Extinguisher.wav"
+      >
+    >
+  >
+  <TRACK {45F168EA-A689-46F0-AE17-4201708DF671}
+    NAME ""
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {45F168EA-A689-46F0-AE17-4201708DF671}
     PERF 0
     MIDIOUT -1
     MAINSEND 1 0
@@ -3800,8 +6619,8 @@
       BYPASS 0 0 0
       <VST "VST: ReaEQ (Cockos)" reaeq.dll 0 "" 1919247729 ""
         cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAyQAAAAEAAAAAABAA
-        IQAAAAUAAAAEAAAAAQAAADpxp1FL91RA8f//////7z/x////////PwEIAAAAAQAAAIVwg263lVpAPib8+I4k9D/x////////PwEIAAAAAQAAAH45w6qTkXhAbcTNCyNr
-        6T+M///////vPwEBAAAAAQAAAHyOIqouNL1APib8+I4k9D9nMzMzMzPjPwEIAAAAAQAAABEr+3melqhAAcjbCO/e6z8ANTMzMzPjPwEBAAAAAQAAAAAAAAAAAPA/AAAA
+        IQAAAAUAAAAEAAAAAQAAADlxp1FL91RA4f//////7z/h////////PwEIAAAAAQAAAI9wg263lVpAOSb8+I4k9D/h////////PwEIAAAAAQAAAHk5w6qTkXhAYcTNCyNr
+        6T+X///////vPwEBAAAAAQAAAHGOIqouNL1AOSb8+I4k9D9nMzMzMzPjPwEIAAAAAQAAABcr+3melqhAAcjbCO/e6z8ANTMzMzPjPwEBAAAAAQAAAAAAAAAAAPA/AAAA
         AK4CAABhAQAA
         AAAQAAAA
       >
@@ -5971,8 +8790,8 @@
       BYPASS 0 0 0
       <VST "VST: ReaEQ (Cockos)" reaeq.dll 0 "" 1919247729 ""
         cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAyQAAAAEAAAAAABAA
-        IQAAAAUAAAAEAAAAAQAAAD5xp1FL91RA8f//////7z/x////////PwEIAAAAAQAAAIVwg263lVpAPib8+I4k9D/x////////PwEIAAAAAQAAAH45w6qTkXhAbcTNCyNr
-        6T+M///////vPwEBAAAAAQAAAHyOIqouNL1APib8+I4k9D9nMzMzMzPjPwEIAAAAAQAAABEr+3melqhAAcjbCO/e6z8ANTMzMzPjPwEBAAAAAQAAAAAAAAAAAPA/AAAA
+        IQAAAAUAAAAEAAAAAQAAADlxp1FL91RA4f//////7z/h////////PwEIAAAAAQAAAI9wg263lVpAOSb8+I4k9D/h////////PwEIAAAAAQAAAHk5w6qTkXhAYcTNCyNr
+        6T+X///////vPwEBAAAAAQAAAHGOIqouNL1AOSb8+I4k9D9nMzMzMzPjPwEIAAAAAQAAABcr+3melqhAAcjbCO/e6z8ANTMzMzPjPwEBAAAAAQAAAAAAAAAAAPA/AAAA
         AK4CAABhAQAA
         AAAQAAAA
       >
@@ -8536,8 +11355,8 @@
       BYPASS 0 0 0
       <VST "VST: ReaEQ (Cockos)" reaeq.dll 0 "" 1919247729 ""
         cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAyQAAAAEAAAAAABAA
-        IQAAAAUAAAAEAAAAAQAAADpxp1FL91RA/P//////7z/8////////PwEIAAAAAQAAAIRwg263lVpAOyb8+I4k9D/8////////PwEIAAAAAQAAAIQ5w6qTkXhAfMTNCyNr
-        6T+D///////vPwEBAAAAAQAAAHyOIqouNL1AOib8+I4k9D9kMzMzMzPjPwEIAAAAAQAAAAEr+3melqhADsjbCO/e6z8ANTMzMzPjPwEBAAAAAQAAAAAAAAAAAPA/AAAA
+        IQAAAAUAAAAEAAAAAQAAADlxp1FL91RA4f//////7z/h////////PwEIAAAAAQAAAI9wg263lVpAOSb8+I4k9D/h////////PwEIAAAAAQAAAHk5w6qTkXhAYcTNCyNr
+        6T+X///////vPwEBAAAAAQAAAHGOIqouNL1AOSb8+I4k9D9nMzMzMzPjPwEIAAAAAQAAABcr+3melqhAAcjbCO/e6z8ANTMzMzPjPwEBAAAAAQAAAAAAAAAAAPA/AAAA
         AK4CAABhAQAA
         AAAQAAAA
       >

@@ -3991,6 +3991,7 @@ GameObject:
   - component: {fileID: 317596014}
   - component: {fileID: 317596017}
   - component: {fileID: 317596018}
+  - component: {fileID: 317596019}
   m_Layer: 0
   m_Name: Extinguisher Minigame (3)
   m_TagString: MainCamera
@@ -4066,7 +4067,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
+  m_AllowDynamicResolution: 1
   m_ForceIntoRT: 1
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -4096,6 +4097,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Definer_F_FirePowerValue: 3
   FireSoundScript: {fileID: 593217332}
+--- !u!114 &317596019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 317596012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cf60d37dc9adeb4795559ffe5f14349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExtinguisherEventPath: event:/Extinguisher/Extinguisher
+  ExtinguisherStopEventPath: event:/Extinguisher/Extinguisher Stop
+  ExtinguisherPinOutEventPath: event:/Extinguisher/Extinguisher PinOut
+  ExtinguisherMinigameCamera: {fileID: 317596012}
 --- !u!4 &321229567 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 227fcf20112d02d41b604999c9512154, type: 3}
@@ -24899,6 +24915,7 @@ GameObject:
   - component: {fileID: 985249800}
   - component: {fileID: 985249803}
   - component: {fileID: 985249804}
+  - component: {fileID: 985249805}
   m_Layer: 0
   m_Name: Extinguisher Minigame (2)
   m_TagString: MainCamera
@@ -24974,7 +24991,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
+  m_AllowDynamicResolution: 1
   m_ForceIntoRT: 1
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -25004,6 +25021,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Definer_F_FirePowerValue: 3
   FireSoundScript: {fileID: 593217332}
+--- !u!114 &985249805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 985249798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cf60d37dc9adeb4795559ffe5f14349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExtinguisherEventPath: event:/Extinguisher/Extinguisher
+  ExtinguisherStopEventPath: event:/Extinguisher/Extinguisher Stop
+  ExtinguisherPinOutEventPath: event:/Extinguisher/Extinguisher PinOut
+  ExtinguisherMinigameCamera: {fileID: 985249798}
 --- !u!1 &990437202
 GameObject:
   m_ObjectHideFlags: 0
@@ -25253,6 +25285,7 @@ MonoBehaviour:
   m_player: {fileID: 519786372}
   m_worldHazard: {fileID: 221398501}
   m_extinguisherPickups: {fileID: 491422777}
+  ExtinguisherSoundsScript: {fileID: 1358354231}
   sprayRadius: 1.5
 --- !u!1 &1007952940
 GameObject:
@@ -26920,6 +26953,7 @@ GameObject:
   - component: {fileID: 1135940978}
   - component: {fileID: 1135940981}
   - component: {fileID: 1135940982}
+  - component: {fileID: 1135940983}
   m_Layer: 0
   m_Name: Extinguisher Minigame (0)
   m_TagString: MainCamera
@@ -26995,7 +27029,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
+  m_AllowDynamicResolution: 1
   m_ForceIntoRT: 1
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -27025,6 +27059,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Definer_F_FirePowerValue: 3
   FireSoundScript: {fileID: 593217332}
+--- !u!114 &1135940983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1135940976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cf60d37dc9adeb4795559ffe5f14349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExtinguisherEventPath: event:/Extinguisher/Extinguisher
+  ExtinguisherStopEventPath: event:/Extinguisher/Extinguisher Stop
+  ExtinguisherPinOutEventPath: event:/Extinguisher/Extinguisher PinOut
+  ExtinguisherMinigameCamera: {fileID: 1135940976}
 --- !u!1 &1136410833 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1956532127394850, guid: 571eae371dc9fe545a2ee6162bd3651e,
@@ -27227,6 +27276,7 @@ MonoBehaviour:
   m_player: {fileID: 519786372}
   m_worldHazard: {fileID: 1582133304}
   m_extinguisherPickups: {fileID: 1348813920}
+  ExtinguisherSoundsScript: {fileID: 985249805}
   sprayRadius: 1.5
 --- !u!1 &1159513024
 GameObject:
@@ -27606,6 +27656,7 @@ MonoBehaviour:
   m_player: {fileID: 519786372}
   m_worldHazard: {fileID: 1159513024}
   m_extinguisherPickups: {fileID: 498119270}
+  ExtinguisherSoundsScript: {fileID: 1135940983}
   sprayRadius: 1.5
 --- !u!1 &1206139358
 GameObject:
@@ -29885,6 +29936,7 @@ GameObject:
   - component: {fileID: 1358354226}
   - component: {fileID: 1358354229}
   - component: {fileID: 1358354230}
+  - component: {fileID: 1358354231}
   m_Layer: 0
   m_Name: Extinguisher Minigame (1)
   m_TagString: MainCamera
@@ -29960,7 +30012,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
+  m_AllowDynamicResolution: 1
   m_ForceIntoRT: 1
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -29990,6 +30042,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Definer_F_FirePowerValue: 3
   FireSoundScript: {fileID: 593217332}
+--- !u!114 &1358354231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1358354224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cf60d37dc9adeb4795559ffe5f14349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExtinguisherEventPath: event:/Extinguisher/Extinguisher
+  ExtinguisherStopEventPath: event:/Extinguisher/Extinguisher Stop
+  ExtinguisherPinOutEventPath: event:/Extinguisher/Extinguisher PinOut
+  ExtinguisherMinigameCamera: {fileID: 1358354224}
 --- !u!1 &1360649973
 GameObject:
   m_ObjectHideFlags: 0
@@ -30748,6 +30815,7 @@ MonoBehaviour:
   m_player: {fileID: 519786372}
   m_worldHazard: {fileID: 379853422}
   m_extinguisherPickups: {fileID: 2086443368}
+  ExtinguisherSoundsScript: {fileID: 317596019}
   sprayRadius: 1.5
 --- !u!1 &1430329386
 GameObject:

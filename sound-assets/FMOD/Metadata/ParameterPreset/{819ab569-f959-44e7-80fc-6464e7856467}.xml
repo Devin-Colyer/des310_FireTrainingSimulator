@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{819ab569-f959-44e7-80fc-6464e7856467}">
+		<property name="name">
+			<value>Extinguisher</value>
+		</property>
+		<relationship name="folder">
+			<destination>{496d0f05-0242-4740-becf-deb64451f432}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{96f25603-c149-413e-ae7b-f257d2c966ec}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{96f25603-c149-413e-ae7b-f257d2c966ec}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>FireExtinguisher</value>
+			<value>StopExtinguisher</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
