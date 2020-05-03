@@ -12,7 +12,6 @@ public class ExtinguisherSounds : MonoBehaviour {
     public FMOD.Studio.EventInstance Extinguisher;
     public FMOD.Studio.EventInstance ExtinguisherStop;
     public FMOD.Studio.EventInstance ExtinguisherPinOut;
-    public GameObject ExtinguisherMinigameCamera;
 
     void OnEnable()
     {
@@ -38,6 +37,15 @@ public class ExtinguisherSounds : MonoBehaviour {
         ExtinguisherStop.start();
         Debug.Log("STOP");
     }
+
+
+
+
+
+
+
+
+
 
     //void Update()
     //{

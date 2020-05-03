@@ -15,6 +15,7 @@ public class ExtinguisherMinigameController : MonoBehaviour {
     public ExtinguisherSounds ExtinguisherSoundsScript;
     bool IsPlayingExtinguisherSound = false;
     bool IsPlayingStopExtinguisherSound = false;
+    public static FMOD.Studio.EventInstance Extinguisher;
 
 
     public float sprayRadius = 5; //temp
@@ -139,12 +140,18 @@ public class ExtinguisherMinigameController : MonoBehaviour {
                     l_fire.GetComponent<FireObjective>().ExtinguishByPercentage(1f);
 
                     // Play Extinguisher Sound
-                    if (IsPlayingExtinguisherSound == false)
+                    // FMOD give access to the plyaback state of each of its events, so here we can check when Extinguisher sound if NOT PLAYING
+                    FMOD.Studio.PLAYBACK_STATE playbackState;
+                    Extinguisher.getPlaybackState(out playbackState);
+                    if (playbackState == FMOD.Studio.PLAYBACK_STATE.STOPPED)
                     {
-                        Debug.Log("PLAY EXTINGUISHER SOUND");
-                        IsPlayingStopExtinguisherSound = false;
-                        ExtinguisherSoundsScript.FireExtinguisher();
-                        IsPlayingExtinguisherSound = true;
+                        if (IsPlayingExtinguisherSound == false)
+                        {
+                            Debug.Log("PLAY EXTINGUISHER SOUND");
+                            IsPlayingStopExtinguisherSound = false;
+                            ExtinguisherSoundsScript.FireExtinguisher();
+                            IsPlayingExtinguisherSound = true;
+                        }
                     }
                 }
             }
