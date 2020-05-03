@@ -7,37 +7,38 @@ public class ThirdPersonSounds : MonoBehaviour {
 
     [Header("FMOD Settings")]
 
-    [SerializeField] [FMODUnity.EventRef] private string DialogueEventPath;
+    [SerializeField] [FMODUnity.EventRef] private string m_DialogueEventPath;
 
     //DONTPLAY = Dont need to play anything after      PLAYNUMBER = Need to play a "Number"     PLAYDIFFERENT = Need to play an other "Dialogue" to finish the senctence
     //private int CheckNumber = 0;
-    public DialogueStateControl m_dialogueStateControl = DialogueStateControl.DONTPLAY;
     public enum DialogueStateControl
     {
         DONTPLAY,
         PLAYNUMBER,
         PLAYDIFFERENT
     }
-    public int[] DialogueWhoNeedToPlayNunmber = new int[10];
-    public int[] DialogueWhoNeedToPlayNextDialogue = new int[10];
+    public DialogueStateControl m_dialogueStateControl = DialogueStateControl.DONTPLAY;
 
-    [SerializeField] [FMODUnity.EventRef] private string NumbersEventPath;
-    public int F_NumbersValue;
+    public int[] m_DialogueWhoNeedToPlayNunmber = new int[10];
+    public int[] m_DialogueWhoNeedToPlayNextDialogue = new int[10];
+
+    [SerializeField] [FMODUnity.EventRef] private string m_NumbersEventPath;
+    public int m_FNumbersValue;
 
 
 
     [Header("FMOD Settings")]
-    [SerializeField] [FMODUnity.EventRef] private string FootstepsEventPath;
-    [SerializeField] private string Material;
-    public string[] MaterialTypes;
+    [SerializeField] [FMODUnity.EventRef] private string m_FootstepsEventPath;
+    [SerializeField] private string m_Material;
+    public string[] m_MaterialTypes;
     //[SerializeField] private float RayDistance = 1.2f;
-    public int DefaultMaterialValue;                           // This will be told by the 'FMODStudioFootstepsEditor' script which Material has been set as the defualt. It will then store the value of that Material for outhis script to use. This cannot be changed in the Editor, but a drop down menu created by the 'FMODStudioFootstepsEditor' script can.
+    public int m_DefaultMaterialValue;                           // This will be told by the 'FMODStudioFootstepsEditor' script which Material has been set as the defualt. It will then store the value of that Material for outhis script to use. This cannot be changed in the Editor, but a drop down menu created by the 'FMODStudioFootstepsEditor' script can.
 
-    public static FMOD.Studio.EventInstance ThirdPersonSound;
-    public static FMOD.Studio.EventInstance Numbers;
+    public static FMOD.Studio.EventInstance m_ThirdPersonSound;
+    public static FMOD.Studio.EventInstance m_Numbers;
 
-    private RaycastHit hit;
-    public static int F_MaterialValue;
+    private RaycastHit m_hit;
+    public static int m_FMaterialValue;
 
     //Use to play the initial dialogue
     //void Start()
@@ -132,32 +133,12 @@ public class ThirdPersonSounds : MonoBehaviour {
     private void Footstep()
     {
         //MaterialCheck();
-        FMOD.Studio.EventInstance Footsteps = FMODUnity.RuntimeManager.CreateInstance(FootstepsEventPath);        // If they are, we create an FMOD event instance. We use the event path inside the 'FootstepsEventPath' variable to find the event we want to play.
-        FMODUnity.RuntimeManager.AttachInstanceToGameObject(Footsteps, transform, GetComponent<Rigidbody>());     // Next that event instance is told to play at the location that our player is currently at.
-        Footsteps.setParameterByName("Material", F_MaterialValue);                                                 // Before the event is played, we set the Material Parameter to match the value of the 'F_MaterialValue' variable.
-        Footsteps.start();                                                                                        // We then play a footstep!.
-        /*Footsteps.release();    */                                                                                  // We also set our event instance to release straight after we tell it to play, so that the instance is released once the event had finished playing.
+        FMOD.Studio.EventInstance Footsteps = FMODUnity.RuntimeManager.CreateInstance(m_FootstepsEventPath);        // If they are, we create an FMOD event instance. We use the event path inside the 'FootstepsEventPath' variable to find the event we want to play.
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(Footsteps, transform, GetComponent<Rigidbody>());       // Next that event instance is told to play at the location that our player is currently at.
+        Footsteps.setParameterByName("Material", m_FMaterialValue);                                                 // Before the event is played, we set the Material Parameter to match the value of the 'F_MaterialValue' variable.
+        Footsteps.start();                                                                                          // We then play a footstep!.
+        /*Footsteps.release();    */                                                                                // We also set our event instance to release straight after we tell it to play, so that the instance is released once the event had finished playing.
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     //Old Script
 

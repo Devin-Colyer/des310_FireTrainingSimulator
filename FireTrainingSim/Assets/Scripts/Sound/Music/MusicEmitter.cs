@@ -1,26 +1,24 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class MusicEmitter : MonoBehaviour {
 
     [FMODUnity.EventRef]
-    public string music = "event:/Music/Music";
+    public string m_music = "event:/Music/Music";
 
-   public static FMOD.Studio.EventInstance musicEv;
+   public static FMOD.Studio.EventInstance m_musicEv;
 
-    public float Intro;
-    public float Loop;
-    public float Outro;
+    public float m_Intro;
+    public float m_Loop;
+    public float m_Outro;
 
     void Start ()
     {
-        musicEv = FMODUnity.RuntimeManager.CreateInstance(music);
+        m_musicEv = FMODUnity.RuntimeManager.CreateInstance(m_music);
 
-        musicEv.setParameterByName("Intro", Intro);
-        musicEv.setParameterByName("Loop", Loop);
-        musicEv.setParameterByName("Outro", Outro);
-        musicEv.start();
+        m_musicEv.setParameterByName("Intro", m_Intro);
+        m_musicEv.setParameterByName("Loop", m_Loop);
+        m_musicEv.setParameterByName("Outro", m_Outro);
+        m_musicEv.start();
         
         //FMODUnity.RuntimeManager.PlayOneShot(music);
     }

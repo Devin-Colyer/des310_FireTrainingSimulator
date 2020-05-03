@@ -7,16 +7,16 @@ public class HazardClick : MonoBehaviour
     public GameObject m_worldHazard;
     public GameObject m_cameraController;
 
-    private int g_numHazards;
-    private int g_hazardsSolved;
+    private int m_numHazards;
+    private int m_hazardsSolved;
     
     void Start()
     {
-        g_numHazards = this.transform.childCount;
-        g_hazardsSolved = 0;
+        m_numHazards = this.transform.childCount;
+        m_hazardsSolved = 0;
 
         // Debug output.
-        Debug.Log("Hazards solved: " + g_hazardsSolved + "/" + g_numHazards);
+        Debug.Log("Hazards solved: " + m_hazardsSolved + "/" + m_numHazards);
     }
 
     // Update is called once per frame
@@ -46,13 +46,13 @@ public class HazardClick : MonoBehaviour
                             l_fixed.gameObject.SetActive(true);
 
                             // Increment hazards solved.
-                            g_hazardsSolved++;
+                            m_hazardsSolved++;
 
                             // Debug output.
-                            Debug.Log("Hazards solved: " + g_hazardsSolved + "/" + g_numHazards);
+                            Debug.Log("Hazards solved: " + m_hazardsSolved + "/" + m_numHazards);
 
                             // Check if all hazards have been solved.
-                            if (g_hazardsSolved == g_numHazards)
+                            if (m_hazardsSolved == m_numHazards)
                             {
                                 if (m_worldHazard)
                                 {

@@ -1,39 +1,37 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class DialogueActivator : MonoBehaviour {
 
-    public int DialogueValue;
-    public Dialogue DialogueScript;
-    bool HavePlayedDialogue = false;
+    public int m_DialogueValue;
+    public Dialogue m_DialogueScript;
+    bool m_HavePlayedDialogue = false;
 
     // Avoid the dialogue to be played at first wake of the scene, but allow when minigame is completed
-    public IfPlayerTakesTooLong IfPlayerTakesTooLongScript;
-    public bool NeedLevelCompletedToPlay = false;
+    public IfPlayerTakesTooLong m_IfPlayerTakesTooLongScript;
+    public bool m_NeedLevelCompletedToPlay = false;
 
     void OnEnable () {
-        if (NeedLevelCompletedToPlay == false)
+        if (m_NeedLevelCompletedToPlay == false)
         {
-            if (HavePlayedDialogue == false)
+            if (m_HavePlayedDialogue == false)
             {
-                Dialogue.F_DialogueValue = DialogueValue;
-                DialogueScript.PlayDialogue();
-                HavePlayedDialogue = true;
+                Dialogue.m_FDialogueValue = m_DialogueValue;
+                m_DialogueScript.PlayDialogue();
+                m_HavePlayedDialogue = true;
             }
         }
 
-        else if (NeedLevelCompletedToPlay)
+        else if (m_NeedLevelCompletedToPlay)
         {
-            if (IfPlayerTakesTooLong.IsLevelCompleted)
+            if (IfPlayerTakesTooLong.m_IsLevelCompleted)
             {
-                if (HavePlayedDialogue == false)
+                if (m_HavePlayedDialogue == false)
                 {
-                    Dialogue.F_DialogueValue = DialogueValue;
-                    DialogueScript.PlayDialogue();
-                    HavePlayedDialogue = true;
+                    Dialogue.m_FDialogueValue = m_DialogueValue;
+                    m_DialogueScript.PlayDialogue();
+                    m_HavePlayedDialogue = true;
                 }
-                IfPlayerTakesTooLong.IsLevelCompleted = false;
+                IfPlayerTakesTooLong.m_IsLevelCompleted = false;
             }
         }
 

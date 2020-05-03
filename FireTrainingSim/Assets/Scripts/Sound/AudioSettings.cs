@@ -1,74 +1,71 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AudioSettings : MonoBehaviour {
 
-    FMOD.Studio.Bus Music;
-    FMOD.Studio.Bus GeneralSounds;
-    float MusicVolume = .8f;
-    float GeneralSoundsVolume = .8f;
+    FMOD.Studio.Bus m_Music;
+    FMOD.Studio.Bus m_GeneralSounds;
+    float m_MusicVolume = .8f;
+    float m_GeneralSoundsVolume = .8f;
     //If wana play a sample sound when changing volume
-    FMOD.Studio.EventInstance GeneralSoundsTest;
+    FMOD.Studio.EventInstance m_GeneralSoundsTest;
 
 
     //Used to optimise the code, so the Update doesnt have to always run unuseful code
     //Check if Audio Settings is openn
-    bool AudioSettingsActivated = false;
+    bool m_AudioSettingsActivated = false;
 
 
-    public GameObject MusicLabelSoundOn;
-    public GameObject MusicLabelSoundOff;
-    public GameObject GeneralSoundsLabelSoundOn;
-    public GameObject GeneralSoundsLabelSoundOff;
+    public GameObject m_MusicLabelSoundOn;
+    public GameObject m_MusicLabelSoundOff;
+    public GameObject m_GeneralSoundsLabelSoundOn;
+    public GameObject m_GeneralSoundsLabelSoundOff;
 
     void Awake()
     {
-        Music = FMODUnity.RuntimeManager.GetBus("bus:/Master/Music");
-        GeneralSounds = FMODUnity.RuntimeManager.GetBus("bus:/Master/Other");
+        m_Music = FMODUnity.RuntimeManager.GetBus("bus:/Master/Music");
+        m_GeneralSounds = FMODUnity.RuntimeManager.GetBus("bus:/Master/Other");
     }
 
 
     void Update()
     {
-        if (AudioSettingsActivated)
+        if (m_AudioSettingsActivated)
         {
             Debug.Log("Volume");
 
         }
-        Music.setVolume(MusicVolume);
-        GeneralSounds.setVolume(GeneralSoundsVolume);
+        m_Music.setVolume(m_MusicVolume);
+        m_GeneralSounds.setVolume(m_GeneralSoundsVolume);
     }
 
 
-    public void MusicLevel (float newMusicLevel)
+    public void MusicLevel (float in_newMusicLevel)
     {
-        MusicVolume = newMusicLevel;
-        if (MusicVolume == 0)
+        m_MusicVolume = in_newMusicLevel;
+        if (m_MusicVolume == 0)
         {
-            MusicLabelSoundOn.gameObject.SetActive(false);
-            MusicLabelSoundOff.gameObject.SetActive(true);
+            m_MusicLabelSoundOn.gameObject.SetActive(false);
+            m_MusicLabelSoundOff.gameObject.SetActive(true);
         }
         else
         {
-            MusicLabelSoundOn.gameObject.SetActive(true);
-            MusicLabelSoundOff.gameObject.SetActive(false);
+            m_MusicLabelSoundOn.gameObject.SetActive(true);
+            m_MusicLabelSoundOff.gameObject.SetActive(false);
         }
     }
 
-    public void GeneralSoundsLevel(float newGeneralSoundsLevel)
+    public void GeneralSoundsLevel(float in_newGeneralSoundsLevel)
     {
-        GeneralSoundsVolume = newGeneralSoundsLevel;
-        if (GeneralSoundsVolume == 0)
+        m_GeneralSoundsVolume = in_newGeneralSoundsLevel;
+        if (m_GeneralSoundsVolume == 0)
         {
-            GeneralSoundsLabelSoundOn.gameObject.SetActive(false);
-            GeneralSoundsLabelSoundOff.gameObject.SetActive(true);
+            m_GeneralSoundsLabelSoundOn.gameObject.SetActive(false);
+            m_GeneralSoundsLabelSoundOff.gameObject.SetActive(true);
         }
         else
         {
-            GeneralSoundsLabelSoundOn.gameObject.SetActive(true);
-            GeneralSoundsLabelSoundOff.gameObject.SetActive(false);
+            m_GeneralSoundsLabelSoundOn.gameObject.SetActive(true);
+            m_GeneralSoundsLabelSoundOff.gameObject.SetActive(false);
         }
     }
-
 }

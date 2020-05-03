@@ -1,13 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.AI;
+﻿using UnityEngine;
+
 public class Dialogue : MonoBehaviour {
 
-    [SerializeField] [FMODUnity.EventRef] private string DialogueEventPath;
-    public static int F_DialogueValue=1;
-    public int Default_F_DialogueValue;
-    public static bool MONBOULE;
+    [SerializeField] [FMODUnity.EventRef] private string m_DialogueEventPath;
+    public static int m_FDialogueValue = 1;
+    public int m_DefaultFDialogueValue;
+    public static bool m_Monboule;
+
     //0 = Dont need to play a "Number"      1 = Need to play a "Number"     2 = Need to play an other "Dialogue" to finish the senctence
     //private int CheckNumber = 0;
     //DONTPLAY = Dont need to play anything after      PLAYNUMBER = Need to play a "Number"     PLAYDIFFERENT = Need to play an other "Dialogue" to finish the senctence
@@ -18,24 +17,17 @@ public class Dialogue : MonoBehaviour {
         PLAYNUMBER,
         PLAYDIFFERENT
     }
+
     public DialogueStateControl m_dialogueStateControl = DialogueStateControl.DONTPLAY;
-    public int[] DialogueWhoNeedToPlayNunmber = new int[0];
-    public int[] DialogueWhoNeedToPlayNextDialogue = new int[0];
+    public int[] m_DialogueWhoNeedToPlayNunmber = new int[0];
+    public int[] m_DialogueWhoNeedToPlayNextDialogue = new int[0];
 
-    [SerializeField] [FMODUnity.EventRef] private string NumbersEventPath;
-    public int F_NumbersValue;
-
-
-    public static FMOD.Studio.EventInstance ThirdPersonSound;
-    public static FMOD.Studio.EventInstance Numbers;
+    [SerializeField] [FMODUnity.EventRef] private string m_NumbersEventPath;
+    public int m_FNumbersValue;
 
 
-
-
-
-
-
-
+    public static FMOD.Studio.EventInstance m_ThirdPersonSound;
+    public static FMOD.Studio.EventInstance m_Numbers;
 
     //// Use this if Collision Trigger Dialogue
     //void OnTriggerEnter(Collider collision)
@@ -73,11 +65,11 @@ public class Dialogue : MonoBehaviour {
 
     void Start()
     {
-        Debug.Log("Dialogue played is D" + F_DialogueValue);
-        F_DialogueValue = Default_F_DialogueValue;
-        ThirdPersonSound = FMODUnity.RuntimeManager.CreateInstance(DialogueEventPath);
-        ThirdPersonSound.setParameterByName("Dialogue", F_DialogueValue);
-        ThirdPersonSound.start();
+        Debug.Log("Dialogue played is D" + m_FDialogueValue);
+        m_FDialogueValue = m_DefaultFDialogueValue;
+        m_ThirdPersonSound = FMODUnity.RuntimeManager.CreateInstance(m_DialogueEventPath);
+        m_ThirdPersonSound.setParameterByName("Dialogue", m_FDialogueValue);
+        m_ThirdPersonSound.start();
 
 
 
@@ -85,18 +77,18 @@ public class Dialogue : MonoBehaviour {
         // The values are the Dialogue FMOD values who need the next one to be played straight after
 
         //Here is when we need a NUMBER
-        foreach (int itr in DialogueWhoNeedToPlayNunmber)
+        foreach (int itr in m_DialogueWhoNeedToPlayNunmber)
         {
-            if (F_DialogueValue == itr)
+            if (m_FDialogueValue == itr)
             {
                 m_dialogueStateControl = DialogueStateControl.PLAYNUMBER;
             }
         }
 
         //Here is when we need a Dialogue
-        foreach (int itr in DialogueWhoNeedToPlayNextDialogue)
+        foreach (int itr in m_DialogueWhoNeedToPlayNextDialogue)
         {
-            if (F_DialogueValue == itr)
+            if (m_FDialogueValue == itr)
             {
                 m_dialogueStateControl = DialogueStateControl.PLAYDIFFERENT;
             }
@@ -107,27 +99,27 @@ public class Dialogue : MonoBehaviour {
 
     public void PlayDialogue()
     {
-        Debug.Log("Dialogue played is D" + F_DialogueValue);
-        ThirdPersonSound = FMODUnity.RuntimeManager.CreateInstance(DialogueEventPath);
-        ThirdPersonSound.setParameterByName("Dialogue", F_DialogueValue);
-        ThirdPersonSound.start();
+        Debug.Log("Dialogue played is D" + m_FDialogueValue);
+        m_ThirdPersonSound = FMODUnity.RuntimeManager.CreateInstance(m_DialogueEventPath);
+        m_ThirdPersonSound.setParameterByName("Dialogue", m_FDialogueValue);
+        m_ThirdPersonSound.start();
 
             //Used to optimise the code, so the Update doesnt have to always run unuseful code
             // The values are the Dialogue FMOD values who need the next one to be played straight after
 
             //Here is when we need a NUMBER
-            foreach (int itr in DialogueWhoNeedToPlayNunmber)
+            foreach (int itr in m_DialogueWhoNeedToPlayNunmber)
             {
-                if (F_DialogueValue == itr)
+                if (m_FDialogueValue == itr)
                 {
                     m_dialogueStateControl = DialogueStateControl.PLAYNUMBER;
                 }
             }
 
             //Here is when we need a Dialogue
-            foreach (int itr in DialogueWhoNeedToPlayNextDialogue)
+            foreach (int itr in m_DialogueWhoNeedToPlayNextDialogue)
             {
-                if (F_DialogueValue == itr)
+                if (m_FDialogueValue == itr)
                 {
                 //Debug.Log("tu joueras dialogue");
                     m_dialogueStateControl = DialogueStateControl.PLAYDIFFERENT;
@@ -135,9 +127,9 @@ public class Dialogue : MonoBehaviour {
             }
 
             //Here is when we need Nothing After
-            foreach (int itr in DialogueWhoNeedToPlayNextDialogue)
+            foreach (int itr in m_DialogueWhoNeedToPlayNextDialogue)
             {
-                if (F_DialogueValue != itr)
+                if (m_FDialogueValue != itr)
                 {
                 //Debug.Log("tu joueras pas dialogue");
                     m_dialogueStateControl = DialogueStateControl.DONTPLAY;
@@ -156,13 +148,13 @@ public class Dialogue : MonoBehaviour {
 
         if (m_dialogueStateControl == DialogueStateControl.PLAYNUMBER)
         {
-            FMOD.Studio.PLAYBACK_STATE playbackState;
-            ThirdPersonSound.getPlaybackState(out playbackState);
-            Debug.Log(playbackState);
-            if (playbackState == FMOD.Studio.PLAYBACK_STATE.STOPPED)
+            FMOD.Studio.PLAYBACK_STATE l_playbackState;
+            m_ThirdPersonSound.getPlaybackState(out l_playbackState);
+            Debug.Log(l_playbackState);
+            if (l_playbackState == FMOD.Studio.PLAYBACK_STATE.STOPPED)
             {
-                ThirdPersonSound.release();
-                ThirdPersonSound.clearHandle();
+                m_ThirdPersonSound.release();
+                m_ThirdPersonSound.clearHandle();
                 Debug.Log("PlayerIntroFinished");
                 m_dialogueStateControl = DialogueStateControl.DONTPLAY;
                 SpeakedNumber();
@@ -170,20 +162,20 @@ public class Dialogue : MonoBehaviour {
         }
         else if (m_dialogueStateControl == DialogueStateControl.PLAYDIFFERENT)
         {
-            FMOD.Studio.PLAYBACK_STATE playbackState;
-            ThirdPersonSound.getPlaybackState(out playbackState);
-            if (playbackState == FMOD.Studio.PLAYBACK_STATE.STOPPED)
+            FMOD.Studio.PLAYBACK_STATE l_playbackState;
+            m_ThirdPersonSound.getPlaybackState(out l_playbackState);
+            if (l_playbackState == FMOD.Studio.PLAYBACK_STATE.STOPPED)
             {
-                F_DialogueValue++;
+                m_FDialogueValue++;
                 PlayDialogue();
-                foreach (int itr in DialogueWhoNeedToPlayNextDialogue)
+                foreach (int itr in m_DialogueWhoNeedToPlayNextDialogue)
                 {
-                    if (F_DialogueValue == itr)
+                    if (m_FDialogueValue == itr)
                     {
                         m_dialogueStateControl = DialogueStateControl.PLAYDIFFERENT;
                         //Debug.Log("Yes" + playbackState);
                     }
-                    else if (F_DialogueValue != itr)
+                    else if (m_FDialogueValue != itr)
                     {
                         m_dialogueStateControl = DialogueStateControl.DONTPLAY;
                         //Debug.Log("No" + playbackState);
@@ -196,10 +188,10 @@ public class Dialogue : MonoBehaviour {
 
     void SpeakedNumber()
     {
-        Numbers = FMODUnity.RuntimeManager.CreateInstance(NumbersEventPath);
-        Numbers.setParameterByName("Numbers", F_NumbersValue);
-        Numbers.start();
-        F_DialogueValue++;
+        m_Numbers = FMODUnity.RuntimeManager.CreateInstance(m_NumbersEventPath);
+        m_Numbers.setParameterByName("Numbers", m_FNumbersValue);
+        m_Numbers.start();
+        m_FDialogueValue++;
         m_dialogueStateControl = DialogueStateControl.PLAYNUMBER;
     }
 

@@ -12,9 +12,9 @@ public class ActivateMinigame : MonoBehaviour
 
 
     // VoiceOverPart
-    public int DialogueWrongExtinguisherValue = 3;
-    public int DialogueRightExtinguisherValue = 4;
-    public Dialogue DialogueScript;
+    public int m_DialogueWrongExtinguisherValue = 3;
+    public int m_DialogueRightExtinguisherValue = 4;
+    public Dialogue m_DialogueScript;
 
 
     private MouseCursor l_mouseCursor;
@@ -65,6 +65,7 @@ public class ActivateMinigame : MonoBehaviour
                             // Check if this is a fire extinguishing minigame
                             if (m_isFireMinigame)
                             {
+                                bool l_correctExtinguisher = false;
                                 // Check if player has the right extinguisher for the fire
                                 foreach (ExtinguisherType t in m_extinguishersForFire)
                                 {
@@ -72,22 +73,21 @@ public class ActivateMinigame : MonoBehaviour
                                     {
                                         // Change to minigame camera.
                                         m_cameraController.GetComponent<CameraController>().ChangeCamera(m_minigame);
-                                        
+                                        l_correctExtinguisher = true;
+
                                         // VoiceOverPart
-                                        Dialogue.F_DialogueValue = DialogueRightExtinguisherValue;
-                                        DialogueScript.PlayDialogue();
+                                        Dialogue.m_FDialogueValue = m_DialogueRightExtinguisherValue;
+                                        m_DialogueScript.PlayDialogue();
                                         Debug.Log(other.GetComponent<ExtinguisherTrackerComponent>().m_extinguisherCarried + "Success");
                                     }
-                                    else
-                                    {
-                                        if (ExtinguisherTrackerComponent.IsHoldingExtinguisher)
-                                        {
-                                            // VoiceOverPart
-                                            Dialogue.F_DialogueValue = DialogueWrongExtinguisherValue;
-                                            DialogueScript.PlayDialogue();
-                                            Debug.Log(other.GetComponent<ExtinguisherTrackerComponent>().m_extinguisherCarried + "Success");
-                                        }
-                                    }
+                                }
+
+                                if (!l_correctExtinguisher)
+                                {
+                                    // VoiceOverPart
+                                    Dialogue.m_FDialogueValue = m_DialogueWrongExtinguisherValue;
+                                    m_DialogueScript.PlayDialogue();
+                                    Debug.Log(other.GetComponent<ExtinguisherTrackerComponent>().m_extinguisherCarried + "Fail");
                                 }
                             }
                             else

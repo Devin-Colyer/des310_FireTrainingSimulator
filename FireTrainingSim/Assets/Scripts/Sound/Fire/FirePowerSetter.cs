@@ -5,12 +5,12 @@ using UnityEngine;
 public class FirePowerSetter : MonoBehaviour {
 
 
-    public int Definer_F_FirePowerValue;
-    public FireSound FireSoundScript;
+    public int m_FFirePowerValueDefiner;
+    public FireSound m_FireSoundScript;
 
     void OnEnable()
     {
-        FireSound.F_FirePowerValue = Definer_F_FirePowerValue;
-        FireSoundScript.Fire.setParameterByName("FirePower", Definer_F_FirePowerValue);
+        FireSound.m_FFirePowerValue = m_FFirePowerValueDefiner;
+        m_FireSoundScript.m_Fire.setParameterByName("FirePower", m_FFirePowerValueDefiner);
     }
 }

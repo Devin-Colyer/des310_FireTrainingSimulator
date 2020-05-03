@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class IfPlayerTakesTooLong : MonoBehaviour {
 
-    public int WaitingTimeBeforeHelp;
+    public int m_WaitingTimeBeforeHelp;
 
-    public int DialogueValue;
-    public Dialogue DialogueScript;
-    bool HavePlayedDialogue = false;
-    public static bool IsLevelCompleted = false;
+    public int m_DialogueValue;
+    public Dialogue m_DialogueScript;
+    bool m_HavePlayedDialogue = false;
+    public static bool m_IsLevelCompleted = false;
 
     void OnEnable()
     {
@@ -19,21 +19,21 @@ public class IfPlayerTakesTooLong : MonoBehaviour {
 
     void OnDisable()
     {
-        IsLevelCompleted = true;
+        m_IsLevelCompleted = true;
     }
 
     //Wait for amount of time to give an help dialogue to the player
     IEnumerator waiter()
     {
  
-        yield return new WaitForSeconds(WaitingTimeBeforeHelp);
-        if (IsLevelCompleted == false)
+        yield return new WaitForSeconds(m_WaitingTimeBeforeHelp);
+        if (m_IsLevelCompleted == false)
         {
-            if (HavePlayedDialogue == false)
+            if (m_HavePlayedDialogue == false)
             {
-                Dialogue.F_DialogueValue = DialogueValue;
-                DialogueScript.PlayDialogue();
-                HavePlayedDialogue = true;
+                Dialogue.m_FDialogueValue = m_DialogueValue;
+                m_DialogueScript.PlayDialogue();
+                m_HavePlayedDialogue = true;
             }
         }
     }

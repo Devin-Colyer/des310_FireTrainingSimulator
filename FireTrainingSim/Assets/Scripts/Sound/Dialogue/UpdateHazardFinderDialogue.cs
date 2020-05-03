@@ -6,12 +6,12 @@ public class UpdateHazardFinderDialogue : MonoBehaviour
 {
 
 
-    public HazardFinder HazardFinderScript;
-    public int NewValue;
+    public HazardFinder m_HazardFinderScript;
+    public int m_NewValue;
 
     void Awake () {
-        HazardFinder.HazardFinder_DialogueValue = NewValue;
-        HazardFinder.HavePlayedDialogue = true;
+        HazardFinder.m_HazardFinderDialogueValue = m_NewValue;
+        HazardFinder.m_HavePlayedDialogue = true;
 	}
 
 }

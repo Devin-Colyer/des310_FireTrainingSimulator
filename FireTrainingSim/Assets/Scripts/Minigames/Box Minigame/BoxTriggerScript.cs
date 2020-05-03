@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class BoxTriggerScript : MonoBehaviour
 {
-    private int g_colliderCount;
+    private int m_colliderCount;
 
     // Use this for initialization
     void Start()
     {
-        g_colliderCount = 0;
+        m_colliderCount = 0;
     }
 
     // Called when an object enters the trigger volume.
@@ -20,7 +20,7 @@ public class BoxTriggerScript : MonoBehaviour
             if (other.transform.parent.name == "Door Blockables")
             {
                 // Increment collider count.
-                g_colliderCount++;
+                m_colliderCount++;
 
                 // Debug output.
                 ///Debug.Log("An object is blocking the door.");
@@ -36,9 +36,9 @@ public class BoxTriggerScript : MonoBehaviour
             if (other.transform.parent.name == "Door Blockables")
             {
                 // Decrease collider count.
-                g_colliderCount--;
+                m_colliderCount--;
                 
-                if (g_colliderCount == 0)
+                if (m_colliderCount == 0)
                 {
                     // Find overlay.
                     GameObject l_overlay = GameObject.Find("Overlay");

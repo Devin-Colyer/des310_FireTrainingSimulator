@@ -1167,15 +1167,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6a5cb424171ba240a790a2d23aeb0bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueEventPath: event:/Dialogue/Dialogue
-  F_DialogueValue: 0
-  NumbersEventPath: 
-  F_NumbersValue: 0
-  FootstepsEventPath: event:/Footsteps
-  Material: 
-  MaterialTypes: []
-  DefaultMaterialValue: 0
-  Yo: 1
+  m_DialogueEventPath: event:/Dialogue/Dialogue
+  m_dialogueStateControl: 0
+  m_DialogueWhoNeedToPlayNunmber: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_DialogueWhoNeedToPlayNextDialogue: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_NumbersEventPath: event:/Dialogue/Numbers
+  m_FNumbersValue: 0
+  m_FootstepsEventPath: event:/Footsteps
+  m_Material: 
+  m_MaterialTypes: []
+  m_DefaultMaterialValue: 0
 --- !u!114 &114510384141256832
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -1,39 +1,37 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BoxSounds : MonoBehaviour 
 {
     [Header("FMOD Settings")]
 
-    [SerializeField] [FMODUnity.EventRef] private string BoxPickupEventPath;
-    [SerializeField] [FMODUnity.EventRef] private string BoxDropEventPath;
-    [SerializeField] [FMODUnity.EventRef] private string BoxHitEventPath;
+    [SerializeField] [FMODUnity.EventRef] private string m_BoxPickupEventPath;
+    [SerializeField] [FMODUnity.EventRef] private string m_BoxDropEventPath;
+    [SerializeField] [FMODUnity.EventRef] private string m_BoxHitEventPath;
 
 
-    public static FMOD.Studio.EventInstance BoxPickup;
-    public static FMOD.Studio.EventInstance BoxDrop;
-    public static FMOD.Studio.EventInstance BoxHit;
+    public static FMOD.Studio.EventInstance m_BoxPickup;
+    public static FMOD.Studio.EventInstance m_BoxDrop;
+    public static FMOD.Studio.EventInstance m_BoxHit;
 
-    public void F_BoxPickup()
+    public void FBoxPickup()
     {
-        BoxPickup = FMODUnity.RuntimeManager.CreateInstance(BoxPickupEventPath);
-        BoxPickup.start();
+        m_BoxPickup = FMODUnity.RuntimeManager.CreateInstance(m_BoxPickupEventPath);
+        m_BoxPickup.start();
         //Debug.Log("BoxSound1");
     }
 
 
-    public void F_BoxDrop()
+    public void FBoxDrop()
     {
-        BoxPickup = FMODUnity.RuntimeManager.CreateInstance(BoxDropEventPath);
-        BoxPickup.start();
+        m_BoxPickup = FMODUnity.RuntimeManager.CreateInstance(m_BoxDropEventPath);
+        m_BoxPickup.start();
         //Debug.Log("BoxSound2");
     }
 
-    public void F_BoxHit()
+    public void FBoxHit()
     {
-        BoxPickup = FMODUnity.RuntimeManager.CreateInstance(BoxHitEventPath);
-        BoxPickup.start();
+        m_BoxPickup = FMODUnity.RuntimeManager.CreateInstance(m_BoxHitEventPath);
+        m_BoxPickup.start();
         Debug.Log("BoxSound3");
     }
 

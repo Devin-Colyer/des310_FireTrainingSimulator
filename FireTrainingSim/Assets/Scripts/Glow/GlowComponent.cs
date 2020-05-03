@@ -4,15 +4,15 @@ using System.Collections.Generic;
 public class GlowComponent : MonoBehaviour
 {
     // Global variables.
-    public Color g_glowColor;
-	public float g_lerpFactor = 10;
+    public Color m_glowColor;
+	public float m_lerpFactor = 10;
     ///private BoxClickPickup g_objectGrabber;
-    private List<Material> g_materials = new List<Material>();
-    private Color g_currentColor;
-    private Color g_targetColor;
+    private List<Material> m_materials = new List<Material>();
+    private Color m_currentColor;
+    private Color m_targetColor;
 
-    public Renderer[] g_renderers
-	{
+    public Renderer[] m_renderers
+    {
 		get;
 		private set;
 	}
@@ -24,12 +24,12 @@ public class GlowComponent : MonoBehaviour
         ///g_objectGrabber = GameObject.Find("Object Grabber").GetComponent<BoxClickPickup>();
 
         // Get renderer.
-        g_renderers = GetComponentsInChildren<Renderer>();
+        m_renderers = GetComponentsInChildren<Renderer>();
 
         // Recieve materials from renderer.
-		foreach (Renderer renderer in g_renderers)
-		{	
-			g_materials.AddRange(renderer.materials);
+		foreach (Renderer renderer in m_renderers)
+		{
+            m_materials.AddRange(renderer.materials);
 		}
 	}
 
@@ -54,40 +54,40 @@ public class GlowComponent : MonoBehaviour
 	private void Update()
 	{
         // Check if object is grabbed.
-       /* if (g_objectGrabber.IsGrabbedObject(this.gameObject))
-        {
-            // Disable glow.
-            g_targetColor = Color.black;
-            g_currentColor = g_targetColor;
-            enabled = false;
-        }*/
+        /* if (g_objectGrabber.IsGrabbedObject(this.gameObject))
+         {
+             // Disable glow.
+             g_targetColor = Color.black;
+             g_currentColor = g_targetColor;
+             enabled = false;
+         }*/
 
         // Interpolate glow from current to target.
-		g_currentColor = Color.Lerp(g_currentColor, g_targetColor, Time.deltaTime * g_lerpFactor);
+        m_currentColor = Color.Lerp(m_currentColor, m_targetColor, Time.deltaTime * m_lerpFactor);
 
         // Check if current colour has reached target.
-        if (g_currentColor.Equals(g_targetColor))
+        if (m_currentColor.Equals(m_targetColor))
         {
             // Disable glow.
             enabled = false;
         }
 
-        for (int i = 0; i < g_materials.Count; i++)
+        for (int i = 0; i < m_materials.Count; i++)
 		{
             // Update materials with glow colour.
-			g_materials[i].SetColor("_GlowColor", g_currentColor);
+            m_materials[i].SetColor("_GlowColor", m_currentColor);
 		}
 	}
 
     public void FadeIn()
     {
-        g_targetColor = g_glowColor;
+        m_targetColor = m_glowColor;
         enabled = true;
     }
 
     public void FadeOut()
     {
-        g_targetColor = Color.black;
+        m_targetColor = Color.black;
         enabled = true;
     }
 }

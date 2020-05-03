@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class MusicController : MonoBehaviour
 {
@@ -16,15 +14,10 @@ public class MusicController : MonoBehaviour
         if (collision.gameObject.name == "Player")
         {
 
-            MusicEmitter.musicEv.setParameterByName("Intro", m_intro);
-            MusicEmitter.musicEv.setParameterByName("loop", m_loop);
-            MusicEmitter.musicEv.setParameterByName("outro", m_outro);
+            MusicEmitter.m_musicEv.setParameterByName("Intro", m_intro);
+            MusicEmitter.m_musicEv.setParameterByName("loop", m_loop);
+            MusicEmitter.m_musicEv.setParameterByName("outro", m_outro);
             Debug.Log("bite");
         }
-
-
     }
-
-
-
 }

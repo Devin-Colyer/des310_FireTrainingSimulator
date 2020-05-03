@@ -4,54 +4,54 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    private GameObject g_cameras;
-    private GameObject g_screenFade;
-    private Camera g_currentCamera;
-    private Camera g_newCamera;
+    private GameObject m_cameras;
+    private GameObject m_screenFade;
+    private Camera m_currentCamera;
+    private Camera m_newCamera;
 
     // Use this for initialization
     void Start ()
     {
-        g_cameras = GameObject.Find("Cameras");
-        g_screenFade = GameObject.Find("Screen Fade");
+        m_cameras = GameObject.Find("Cameras");
+        m_screenFade = GameObject.Find("Screen Fade");
 
-        g_newCamera = null;
-        g_currentCamera = Camera.main;
+        m_newCamera = null;
+        m_currentCamera = Camera.main;
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        // Camera change test.
-        if(Input.GetKeyDown("1"))
-        {
-            ChangeCamera("Box Minigame");
-        }
-        else if (Input.GetKeyDown("2"))
-        {
-            ChangeCamera("Socket Minigame");
-        }
-        else if (Input.GetKeyDown("3"))
-        {
-            ChangeCamera("Room Camera");
-        }
+        //// Camera change test.
+        //if(Input.GetKeyDown("1"))
+        //{
+        //    ChangeCamera("Box Minigame");
+        //}
+        //else if (Input.GetKeyDown("2"))
+        //{
+        //    ChangeCamera("Socket Minigame");
+        //}
+        //else if (Input.GetKeyDown("3"))
+        //{
+        //    ChangeCamera("Room Camera");
+        //}
 
         // Check if camera has been changed
-        if (g_newCamera && (g_newCamera != g_currentCamera))
+        if (m_newCamera && (m_newCamera != m_currentCamera))
         {
             // Wait for screen to finish fading out.
-            if (g_screenFade.GetComponent<ScreenFade>().g_fading == false)
+            if (m_screenFade.GetComponent<ScreenFade>().m_fading == false)
             {
                 // Change camera.
                 Camera.main.gameObject.SetActive(false);
-                g_newCamera.gameObject.SetActive(true);
+                m_newCamera.gameObject.SetActive(true);
 
                 // Update current camera, set new camera to null.
-                g_currentCamera = g_newCamera;
-                g_newCamera = null;
+                m_currentCamera = m_newCamera;
+                m_newCamera = null;
 
                 // Begin fading in.
-                g_screenFade.GetComponent<ScreenFade>().FadeIn(0.1f);
+                m_screenFade.GetComponent<ScreenFade>().FadeIn(0.1f);
             }
         }
 	}
@@ -59,28 +59,28 @@ public class CameraController : MonoBehaviour
     public void ChangeCamera(string name)
     {
         // Check if camera group was found.
-        if(g_cameras)
+        if(m_cameras)
         {
             // Check if camera is already changing (new camera already exists).
-            if (!g_newCamera)
+            if (!m_newCamera)
             {
                 // Make sure new camera isn't the same as current camera.
-                if (name != g_currentCamera.name)
+                if (name != m_currentCamera.name)
                 {
                     // Find new camera from camera group.
-                    Transform l_newCamera = g_cameras.transform.Find(name);
+                    Transform l_newCamera = m_cameras.transform.Find(name);
 
                     // Check if new camera was found.
                     if (l_newCamera)
                     {
                         // Get camera component from camera object.
-                        g_newCamera = l_newCamera.GetComponent<Camera>();
+                        m_newCamera = l_newCamera.GetComponent<Camera>();
 
                         // Check if camera object was found.
-                        if (g_newCamera)
+                        if (m_newCamera)
                         {
                             // Camera was changed, begin fading out.
-                            g_screenFade.GetComponent<ScreenFade>().FadeOut(0.1f);
+                            m_screenFade.GetComponent<ScreenFade>().FadeOut(0.1f);
                         }
                     }
                 }

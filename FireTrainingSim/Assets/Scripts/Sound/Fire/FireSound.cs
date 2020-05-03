@@ -1,22 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class FireSound : MonoBehaviour {
 
     [Header("FMOD Settings")]
-    [SerializeField] [FMODUnity.EventRef] private string FireEventPath;
+    [SerializeField] [FMODUnity.EventRef] private string m_FireEventPath;
 
     // Hear fire from: 0= Nowhere 1=OtherRoom 2=Concerned Room 3=Minigame
-    public static int F_FirePowerValue=1;
+    public static int m_FFirePowerValue = 1;
 
-    public FMOD.Studio.EventInstance Fire;
+    public FMOD.Studio.EventInstance m_Fire;
 
     void Start()
     {
-        Fire = FMODUnity.RuntimeManager.CreateInstance(FireEventPath);
-        Fire.setParameterByName("FirePower", F_FirePowerValue);
-        Fire.start();
+        m_Fire = FMODUnity.RuntimeManager.CreateInstance(m_FireEventPath);
+        m_Fire.setParameterByName("FirePower", m_FFirePowerValue);
+        m_Fire.start();
     }
 
     //public void ChangeFirePower()

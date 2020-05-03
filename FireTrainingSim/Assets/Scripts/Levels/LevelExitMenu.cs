@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class LevelExitMenu : MonoBehaviour
 {
-    bool b_isExiting = false;
-    ScreenFade g_screenFade;
+    bool m_isExiting = false;
+    ScreenFade m_screenFade;
 
     // Use this for initialization
     void Start()
@@ -15,7 +15,7 @@ public class LevelExitMenu : MonoBehaviour
 
         if (l_fadeObject)
         {
-            g_screenFade = l_fadeObject.GetComponent<ScreenFade>();
+            m_screenFade = l_fadeObject.GetComponent<ScreenFade>();
         }
 
     }
@@ -24,13 +24,13 @@ public class LevelExitMenu : MonoBehaviour
     void Update ()
     {
         // Check if player is exiting the level.
-        if (b_isExiting)
+        if (m_isExiting)
         {
             // Check if screen fade exists.
-            if (g_screenFade)
+            if (m_screenFade)
             {
                 // Wait for screen to fade out before changing level.
-                if (!g_screenFade.g_fading)
+                if (!m_screenFade.m_fading)
                 {
                     // Screen has finished fading, change scene.
                     SceneManager.LoadScene(0);
@@ -46,13 +46,13 @@ public class LevelExitMenu : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             // Change level to main menu.
-            b_isExiting = true;
+            m_isExiting = true;
 
             // Check if screen fade exists.
-            if (g_screenFade)
+            if (m_screenFade)
             {
                 // Begin fading out.
-                g_screenFade.FadeOut(0.5f);
+                m_screenFade.FadeOut(0.5f);
             }
         }
 	}

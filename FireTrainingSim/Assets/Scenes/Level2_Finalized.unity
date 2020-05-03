@@ -1720,8 +1720,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec0fb3ff2a5454e8863609a58514d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  g_lerpFactor: 20
+  m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
+  m_lerpFactor: 20
 --- !u!114 &145925297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1745,8 +1745,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 4
-  DialogueValue: 31
-  DialogueScript: {fileID: 593217331}
+  m_DialogueValue: 31
+  m_DialogueScript: {fileID: 593217331}
 --- !u!1 &150916425
 GameObject:
   m_ObjectHideFlags: 0
@@ -2055,7 +2055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 497de82cebd35424cbdb54773fc1b871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefinerF_MaterialValue: 0
+  m_FMaterialValueDefiner: 0
 --- !u!1 &180145644
 GameObject:
   m_ObjectHideFlags: 0
@@ -2471,8 +2471,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec0fb3ff2a5454e8863609a58514d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  g_lerpFactor: 20
+  m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
+  m_lerpFactor: 20
 --- !u!114 &210141648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2496,8 +2496,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 4
-  DialogueValue: 27
-  DialogueScript: {fileID: 593217331}
+  m_DialogueValue: 27
+  m_DialogueScript: {fileID: 593217331}
 --- !u!1 &221398501
 GameObject:
   m_ObjectHideFlags: 0
@@ -3544,8 +3544,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec0fb3ff2a5454e8863609a58514d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  g_lerpFactor: 20
+  m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
+  m_lerpFactor: 20
 --- !u!114 &288718401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3569,8 +3569,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 2
-  DialogueValue: 19
-  DialogueScript: {fileID: 593217331}
+  m_DialogueValue: 19
+  m_DialogueScript: {fileID: 593217331}
 --- !u!136 &288718403
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3789,8 +3789,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec0fb3ff2a5454e8863609a58514d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  g_lerpFactor: 20
+  m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
+  m_lerpFactor: 20
 --- !u!114 &297644156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3814,8 +3814,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 5
-  DialogueValue: 31
-  DialogueScript: {fileID: 593217331}
+  m_DialogueValue: 31
+  m_DialogueScript: {fileID: 593217331}
 --- !u!136 &297644158
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4035,7 +4035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4c072b0c78ba8a4ebec1edd40d3eff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Intensity: 2
+  m_Intensity: 2
 --- !u!20 &317596016
 Camera:
   m_ObjectHideFlags: 0
@@ -4095,8 +4095,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c9d544822748646a160bf6f3542114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Definer_F_FirePowerValue: 3
-  FireSoundScript: {fileID: 593217332}
+  m_FFirePowerValueDefiner: 3
+  m_FireSoundScript: {fileID: 593217332}
 --- !u!114 &317596019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4108,10 +4108,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cf60d37dc9adeb4795559ffe5f14349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ExtinguisherEventPath: event:/Extinguisher/Extinguisher
-  ExtinguisherStopEventPath: event:/Extinguisher/Extinguisher Stop
-  ExtinguisherPinOutEventPath: event:/Extinguisher/Extinguisher PinOut
-  ExtinguisherMinigameCamera: {fileID: 317596012}
+  m_ExtinguisherEventPath: event:/Extinguisher/Extinguisher
+  m_ExtinguisherStopEventPath: event:/Extinguisher/Extinguisher Stop
+  m_ExtinguisherPinOutEventPath: event:/Extinguisher/Extinguisher PinOut
 --- !u!4 &321229567 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 227fcf20112d02d41b604999c9512154, type: 3}
@@ -4169,9 +4168,9 @@ MonoBehaviour:
   m_minigame: Extinguisher Minigame (2)
   m_isFireMinigame: 1
   m_extinguishersForFire: 020000000300000004000000
-  DialogueWrongExtinguisherValue: 28
-  DialogueRightExtinguisherValue: 29
-  DialogueScript: {fileID: 593217331}
+  m_DialogueWrongExtinguisherValue: 28
+  m_DialogueRightExtinguisherValue: 29
+  m_DialogueScript: {fileID: 593217331}
 --- !u!114 &337459739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4183,8 +4182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec0fb3ff2a5454e8863609a58514d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  g_lerpFactor: 20
+  m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
+  m_lerpFactor: 20
 --- !u!114 &337459740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4631,7 +4630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4c072b0c78ba8a4ebec1edd40d3eff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Intensity: 2
+  m_Intensity: 2
 --- !u!20 &381431671
 Camera:
   m_ObjectHideFlags: 0
@@ -10373,7 +10372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 497de82cebd35424cbdb54773fc1b871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefinerF_MaterialValue: 2
+  m_FMaterialValueDefiner: 0
 --- !u!1 &554765507
 GameObject:
   m_ObjectHideFlags: 0
@@ -10765,11 +10764,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 592853198}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 5.03, z: -4.01}
+  m_LocalPosition: {x: 0, y: 5.029999, z: -4.01}
   m_LocalScale: {x: 3, y: 12, z: 3}
   m_Children: []
   m_Father: {fileID: 1389050352}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
 --- !u!23 &592853200
 MeshRenderer:
@@ -10861,13 +10860,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915493cb11f81064382ca04ed4e23a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueEventPath: event:/Dialogue/Dialogue
-  Default_F_DialogueValue: 16
+  m_DialogueEventPath: event:/Dialogue/Dialogue
+  m_DefaultFDialogueValue: 16
   m_dialogueStateControl: 0
-  DialogueWhoNeedToPlayNunmber: 
-  DialogueWhoNeedToPlayNextDialogue: 10000000
-  NumbersEventPath: event:/Dialogue/Numbers
-  F_NumbersValue: 0
+  m_DialogueWhoNeedToPlayNunmber: 
+  m_DialogueWhoNeedToPlayNextDialogue: 10000000
+  m_NumbersEventPath: event:/Dialogue/Numbers
+  m_FNumbersValue: 0
 --- !u!114 &593217332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10879,7 +10878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0c517fb3593b114ab6d965e439ef102, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FireEventPath: event:/Fire
+  m_FireEventPath: event:/Fire
 --- !u!1 &598612758
 GameObject:
   m_ObjectHideFlags: 0
@@ -10995,8 +10994,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c9d544822748646a160bf6f3542114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Definer_F_FirePowerValue: 2
-  FireSoundScript: {fileID: 593217332}
+  m_FFirePowerValueDefiner: 2
+  m_FireSoundScript: {fileID: 593217332}
 --- !u!114 &609556041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11008,10 +11007,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 264ae9788b4c6624588c76882aebf9af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueValue: 26
-  DialogueScript: {fileID: 593217331}
-  IfPlayerTakesTooLongScript: {fileID: 0}
-  NeedLevelCompletedToPlay: 0
+  m_DialogueValue: 26
+  m_DialogueScript: {fileID: 593217331}
+  m_IfPlayerTakesTooLongScript: {fileID: 0}
+  m_NeedLevelCompletedToPlay: 0
 --- !u!1 &611341392
 GameObject:
   m_ObjectHideFlags: 0
@@ -11374,7 +11373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 497de82cebd35424cbdb54773fc1b871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefinerF_MaterialValue: 0
+  m_FMaterialValueDefiner: 0
 --- !u!1 &620173727
 GameObject:
   m_ObjectHideFlags: 0
@@ -11527,8 +11526,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec0fb3ff2a5454e8863609a58514d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  g_lerpFactor: 20
+  m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
+  m_lerpFactor: 20
 --- !u!114 &622646696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11552,8 +11551,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 3
-  DialogueValue: 27
-  DialogueScript: {fileID: 593217331}
+  m_DialogueValue: 27
+  m_DialogueScript: {fileID: 593217331}
 --- !u!1 &623912342
 GameObject:
   m_ObjectHideFlags: 0
@@ -11852,8 +11851,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6e227ed8f6abef4c86dc4555ba01060, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_fading: 0
-  g_fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fading: 0
+  m_fadeColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &642824258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13746,8 +13745,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec0fb3ff2a5454e8863609a58514d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  g_lerpFactor: 20
+  m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
+  m_lerpFactor: 20
 --- !u!114 &836213062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13771,8 +13770,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 2
-  DialogueValue: 27
-  DialogueScript: {fileID: 593217331}
+  m_DialogueValue: 27
+  m_DialogueScript: {fileID: 593217331}
 --- !u!1 &837903633
 GameObject:
   m_ObjectHideFlags: 0
@@ -19721,8 +19720,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c9d544822748646a160bf6f3542114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Definer_F_FirePowerValue: 1
-  FireSoundScript: {fileID: 593217332}
+  m_FFirePowerValueDefiner: 1
+  m_FireSoundScript: {fileID: 593217332}
 --- !u!1 &945172159
 GameObject:
   m_ObjectHideFlags: 0
@@ -24959,7 +24958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4c072b0c78ba8a4ebec1edd40d3eff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Intensity: 2
+  m_Intensity: 2
 --- !u!20 &985249802
 Camera:
   m_ObjectHideFlags: 0
@@ -25019,8 +25018,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c9d544822748646a160bf6f3542114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Definer_F_FirePowerValue: 3
-  FireSoundScript: {fileID: 593217332}
+  m_FFirePowerValueDefiner: 3
+  m_FireSoundScript: {fileID: 593217332}
 --- !u!114 &985249805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25032,10 +25031,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cf60d37dc9adeb4795559ffe5f14349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ExtinguisherEventPath: event:/Extinguisher/Extinguisher
-  ExtinguisherStopEventPath: event:/Extinguisher/Extinguisher Stop
-  ExtinguisherPinOutEventPath: event:/Extinguisher/Extinguisher PinOut
-  ExtinguisherMinigameCamera: {fileID: 985249798}
+  m_ExtinguisherEventPath: event:/Extinguisher/Extinguisher
+  m_ExtinguisherStopEventPath: event:/Extinguisher/Extinguisher Stop
+  m_ExtinguisherPinOutEventPath: event:/Extinguisher/Extinguisher PinOut
 --- !u!1 &990437202
 GameObject:
   m_ObjectHideFlags: 0
@@ -25285,8 +25283,8 @@ MonoBehaviour:
   m_player: {fileID: 519786372}
   m_worldHazard: {fileID: 221398501}
   m_extinguisherPickups: {fileID: 491422777}
-  ExtinguisherSoundsScript: {fileID: 1358354231}
-  sprayRadius: 1.5
+  m_ExtinguisherSoundsScript: {fileID: 1358354231}
+  m_sprayRadius: 1.5
 --- !u!1 &1007952940
 GameObject:
   m_ObjectHideFlags: 0
@@ -25328,8 +25326,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c9d544822748646a160bf6f3542114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Definer_F_FirePowerValue: 2
-  FireSoundScript: {fileID: 593217332}
+  m_FFirePowerValueDefiner: 2
+  m_FireSoundScript: {fileID: 593217332}
 --- !u!114 &1007952943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25341,10 +25339,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 264ae9788b4c6624588c76882aebf9af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueValue: 18
-  DialogueScript: {fileID: 593217331}
-  IfPlayerTakesTooLongScript: {fileID: 0}
-  NeedLevelCompletedToPlay: 0
+  m_DialogueValue: 18
+  m_DialogueScript: {fileID: 593217331}
+  m_IfPlayerTakesTooLongScript: {fileID: 0}
+  m_NeedLevelCompletedToPlay: 0
 --- !u!1001 &1015284586
 Prefab:
   m_ObjectHideFlags: 0
@@ -25529,10 +25527,10 @@ MonoBehaviour:
   - {fileID: 379853422}
   - {fileID: 1582133304}
   m_maxDistance: 10
-  DialogueScript: {fileID: 593217331}
-  NeedToPlayCompletedMinigameDialogue: 0
-  NeedToPlayCompletedHazardDialogue: 1
-  CompletedHazardDialogueValue: 34
+  m_DialogueScript: {fileID: 593217331}
+  m_NeedToPlayCompletedMinigameDialogue: 0
+  m_NeedToPlayCompletedHazardDialogue: 1
+  m_CompletedHazardDialogueValue: 34
 --- !u!1 &1029194162
 GameObject:
   m_ObjectHideFlags: 0
@@ -26433,8 +26431,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec0fb3ff2a5454e8863609a58514d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  g_lerpFactor: 20
+  m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
+  m_lerpFactor: 20
 --- !u!114 &1084862883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26458,8 +26456,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 5
-  DialogueValue: 19
-  DialogueScript: {fileID: 593217331}
+  m_DialogueValue: 19
+  m_DialogueScript: {fileID: 593217331}
 --- !u!136 &1084862885
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -26997,7 +26995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4c072b0c78ba8a4ebec1edd40d3eff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Intensity: 2
+  m_Intensity: 2
 --- !u!20 &1135940980
 Camera:
   m_ObjectHideFlags: 0
@@ -27057,8 +27055,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c9d544822748646a160bf6f3542114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Definer_F_FirePowerValue: 3
-  FireSoundScript: {fileID: 593217332}
+  m_FFirePowerValueDefiner: 3
+  m_FireSoundScript: {fileID: 593217332}
 --- !u!114 &1135940983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27070,10 +27068,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cf60d37dc9adeb4795559ffe5f14349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ExtinguisherEventPath: event:/Extinguisher/Extinguisher
-  ExtinguisherStopEventPath: event:/Extinguisher/Extinguisher Stop
-  ExtinguisherPinOutEventPath: event:/Extinguisher/Extinguisher PinOut
-  ExtinguisherMinigameCamera: {fileID: 1135940976}
+  m_ExtinguisherEventPath: event:/Extinguisher/Extinguisher
+  m_ExtinguisherStopEventPath: event:/Extinguisher/Extinguisher Stop
+  m_ExtinguisherPinOutEventPath: event:/Extinguisher/Extinguisher PinOut
 --- !u!1 &1136410833 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1956532127394850, guid: 571eae371dc9fe545a2ee6162bd3651e,
@@ -27276,8 +27273,8 @@ MonoBehaviour:
   m_player: {fileID: 519786372}
   m_worldHazard: {fileID: 1582133304}
   m_extinguisherPickups: {fileID: 1348813920}
-  ExtinguisherSoundsScript: {fileID: 985249805}
-  sprayRadius: 1.5
+  m_ExtinguisherSoundsScript: {fileID: 985249805}
+  m_sprayRadius: 1.5
 --- !u!1 &1159513024
 GameObject:
   m_ObjectHideFlags: 0
@@ -27352,8 +27349,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec0fb3ff2a5454e8863609a58514d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  g_lerpFactor: 20
+  m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
+  m_lerpFactor: 20
 --- !u!114 &1161530376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27377,8 +27374,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 2
-  DialogueValue: 23
-  DialogueScript: {fileID: 593217331}
+  m_DialogueValue: 23
+  m_DialogueScript: {fileID: 593217331}
 --- !u!136 &1161530378
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -27656,8 +27653,8 @@ MonoBehaviour:
   m_player: {fileID: 519786372}
   m_worldHazard: {fileID: 1159513024}
   m_extinguisherPickups: {fileID: 498119270}
-  ExtinguisherSoundsScript: {fileID: 1135940983}
-  sprayRadius: 1.5
+  m_ExtinguisherSoundsScript: {fileID: 1135940983}
+  m_sprayRadius: 1.5
 --- !u!1 &1206139358
 GameObject:
   m_ObjectHideFlags: 0
@@ -28036,8 +28033,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec0fb3ff2a5454e8863609a58514d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  g_lerpFactor: 20
+  m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
+  m_lerpFactor: 20
 --- !u!114 &1239020481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28061,8 +28058,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 1
-  DialogueValue: 23
-  DialogueScript: {fileID: 593217331}
+  m_DialogueValue: 23
+  m_DialogueScript: {fileID: 593217331}
 --- !u!136 &1239020483
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -29244,8 +29241,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec0fb3ff2a5454e8863609a58514d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  g_lerpFactor: 20
+  m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
+  m_lerpFactor: 20
 --- !u!114 &1327779132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29269,8 +29266,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 1
-  DialogueValue: 27
-  DialogueScript: {fileID: 593217331}
+  m_DialogueValue: 27
+  m_DialogueScript: {fileID: 593217331}
 --- !u!1 &1336418174
 GameObject:
   m_ObjectHideFlags: 0
@@ -29574,8 +29571,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec0fb3ff2a5454e8863609a58514d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  g_lerpFactor: 20
+  m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
+  m_lerpFactor: 20
 --- !u!114 &1349100608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29599,8 +29596,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 4
-  DialogueValue: 23
-  DialogueScript: {fileID: 593217331}
+  m_DialogueValue: 23
+  m_DialogueScript: {fileID: 593217331}
 --- !u!136 &1349100610
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -29732,8 +29729,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec0fb3ff2a5454e8863609a58514d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  g_lerpFactor: 20
+  m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
+  m_lerpFactor: 20
 --- !u!114 &1352938224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29757,8 +29754,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 4
-  DialogueValue: 19
-  DialogueScript: {fileID: 593217331}
+  m_DialogueValue: 19
+  m_DialogueScript: {fileID: 593217331}
 --- !u!136 &1352938226
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -29980,7 +29977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4c072b0c78ba8a4ebec1edd40d3eff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Intensity: 2
+  m_Intensity: 2
 --- !u!20 &1358354228
 Camera:
   m_ObjectHideFlags: 0
@@ -30040,8 +30037,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c9d544822748646a160bf6f3542114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Definer_F_FirePowerValue: 3
-  FireSoundScript: {fileID: 593217332}
+  m_FFirePowerValueDefiner: 3
+  m_FireSoundScript: {fileID: 593217332}
 --- !u!114 &1358354231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30053,10 +30050,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cf60d37dc9adeb4795559ffe5f14349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ExtinguisherEventPath: event:/Extinguisher/Extinguisher
-  ExtinguisherStopEventPath: event:/Extinguisher/Extinguisher Stop
-  ExtinguisherPinOutEventPath: event:/Extinguisher/Extinguisher PinOut
-  ExtinguisherMinigameCamera: {fileID: 1358354224}
+  m_ExtinguisherEventPath: event:/Extinguisher/Extinguisher
+  m_ExtinguisherStopEventPath: event:/Extinguisher/Extinguisher Stop
+  m_ExtinguisherPinOutEventPath: event:/Extinguisher/Extinguisher PinOut
 --- !u!1 &1360649973
 GameObject:
   m_ObjectHideFlags: 0
@@ -30448,8 +30444,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c9d544822748646a160bf6f3542114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Definer_F_FirePowerValue: 2
-  FireSoundScript: {fileID: 593217332}
+  m_FFirePowerValueDefiner: 2
+  m_FireSoundScript: {fileID: 593217332}
 --- !u!114 &1382068168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30461,10 +30457,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 264ae9788b4c6624588c76882aebf9af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueValue: 30
-  DialogueScript: {fileID: 593217331}
-  IfPlayerTakesTooLongScript: {fileID: 0}
-  NeedLevelCompletedToPlay: 0
+  m_DialogueValue: 30
+  m_DialogueScript: {fileID: 593217331}
+  m_IfPlayerTakesTooLongScript: {fileID: 0}
+  m_NeedLevelCompletedToPlay: 0
 --- !u!1 &1386150922
 GameObject:
   m_ObjectHideFlags: 0
@@ -30605,8 +30601,8 @@ Transform:
   - {fileID: 758923020}
   - {fileID: 321229567}
   - {fileID: 151771762}
-  - {fileID: 1427871791}
   - {fileID: 592853199}
+  - {fileID: 1427871791}
   m_Father: {fileID: 1484503267}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -30793,7 +30789,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1389050352}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1427871792
 MonoBehaviour:
@@ -30815,8 +30811,8 @@ MonoBehaviour:
   m_player: {fileID: 519786372}
   m_worldHazard: {fileID: 379853422}
   m_extinguisherPickups: {fileID: 2086443368}
-  ExtinguisherSoundsScript: {fileID: 317596019}
-  sprayRadius: 1.5
+  m_ExtinguisherSoundsScript: {fileID: 317596019}
+  m_sprayRadius: 1.5
 --- !u!1 &1430329386
 GameObject:
   m_ObjectHideFlags: 0
@@ -30984,9 +30980,9 @@ MonoBehaviour:
   m_minigame: Extinguisher Minigame (0)
   m_isFireMinigame: 1
   m_extinguishersForFire: 0300000004000000
-  DialogueWrongExtinguisherValue: 20
-  DialogueRightExtinguisherValue: 21
-  DialogueScript: {fileID: 593217331}
+  m_DialogueWrongExtinguisherValue: 20
+  m_DialogueRightExtinguisherValue: 21
+  m_DialogueScript: {fileID: 593217331}
 --- !u!114 &1440272614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30998,8 +30994,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec0fb3ff2a5454e8863609a58514d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  g_lerpFactor: 20
+  m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
+  m_lerpFactor: 20
 --- !u!114 &1440272615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31592,8 +31588,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec0fb3ff2a5454e8863609a58514d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  g_lerpFactor: 20
+  m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
+  m_lerpFactor: 20
 --- !u!114 &1479745693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31617,8 +31613,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 3
-  DialogueValue: 19
-  DialogueScript: {fileID: 593217331}
+  m_DialogueValue: 19
+  m_DialogueScript: {fileID: 593217331}
 --- !u!136 &1479745695
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -31689,8 +31685,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec0fb3ff2a5454e8863609a58514d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  g_lerpFactor: 20
+  m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
+  m_lerpFactor: 20
 --- !u!114 &1481983718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31714,8 +31710,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 1
-  DialogueValue: 31
-  DialogueScript: {fileID: 593217331}
+  m_DialogueValue: 31
+  m_DialogueScript: {fileID: 593217331}
 --- !u!1 &1484503266
 GameObject:
   m_ObjectHideFlags: 0
@@ -32350,8 +32346,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec0fb3ff2a5454e8863609a58514d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  g_lerpFactor: 20
+  m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
+  m_lerpFactor: 20
 --- !u!114 &1555055050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32375,8 +32371,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 1
-  DialogueValue: 19
-  DialogueScript: {fileID: 593217331}
+  m_DialogueValue: 19
+  m_DialogueScript: {fileID: 593217331}
 --- !u!136 &1555055052
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -32521,7 +32517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 497de82cebd35424cbdb54773fc1b871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefinerF_MaterialValue: 1
+  m_FMaterialValueDefiner: 0
 --- !u!1 &1576389287
 GameObject:
   m_ObjectHideFlags: 0
@@ -32696,8 +32692,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c9d544822748646a160bf6f3542114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Definer_F_FirePowerValue: 2
-  FireSoundScript: {fileID: 593217332}
+  m_FFirePowerValueDefiner: 2
+  m_FireSoundScript: {fileID: 593217332}
 --- !u!114 &1589402840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32709,10 +32705,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 264ae9788b4c6624588c76882aebf9af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueValue: 22
-  DialogueScript: {fileID: 593217331}
-  IfPlayerTakesTooLongScript: {fileID: 0}
-  NeedLevelCompletedToPlay: 0
+  m_DialogueValue: 22
+  m_DialogueScript: {fileID: 593217331}
+  m_IfPlayerTakesTooLongScript: {fileID: 0}
+  m_NeedLevelCompletedToPlay: 0
 --- !u!1 &1600170418
 GameObject:
   m_ObjectHideFlags: 0
@@ -34029,8 +34025,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec0fb3ff2a5454e8863609a58514d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  g_lerpFactor: 20
+  m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
+  m_lerpFactor: 20
 --- !u!114 &1711946613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34054,8 +34050,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 2
-  DialogueValue: 31
-  DialogueScript: {fileID: 593217331}
+  m_DialogueValue: 31
+  m_DialogueScript: {fileID: 593217331}
 --- !u!1001 &1713915278
 Prefab:
   m_ObjectHideFlags: 0
@@ -34162,8 +34158,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec0fb3ff2a5454e8863609a58514d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  g_lerpFactor: 20
+  m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
+  m_lerpFactor: 20
 --- !u!114 &1717611951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34187,8 +34183,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 5
-  DialogueValue: 23
-  DialogueScript: {fileID: 593217331}
+  m_DialogueValue: 23
+  m_DialogueScript: {fileID: 593217331}
 --- !u!136 &1717611953
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -39771,7 +39767,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 126
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1802005884
 Transform:
   m_ObjectHideFlags: 0
@@ -39972,11 +39968,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114464677457091972, guid: e633839106e0a6242bde21aae5015643,
-        type: 2}
-      propertyPath: NumbersEventPath
-      value: event:/Dialogue/Numbers
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e633839106e0a6242bde21aae5015643, type: 2}
   m_IsPrefabParent: 0
@@ -40037,7 +40028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 497de82cebd35424cbdb54773fc1b871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefinerF_MaterialValue: 3
+  m_FMaterialValueDefiner: 0
 --- !u!1 &1823273835
 GameObject:
   m_ObjectHideFlags: 0
@@ -40230,8 +40221,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec0fb3ff2a5454e8863609a58514d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  g_lerpFactor: 20
+  m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
+  m_lerpFactor: 20
 --- !u!114 &1834320235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40255,8 +40246,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 5
-  DialogueValue: 27
-  DialogueScript: {fileID: 593217331}
+  m_DialogueValue: 27
+  m_DialogueScript: {fileID: 593217331}
 --- !u!136 &1834320237
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -40743,9 +40734,9 @@ MonoBehaviour:
   m_minigame: Extinguisher Minigame (1)
   m_isFireMinigame: 1
   m_extinguishersForFire: 01000000020000000300000005000000
-  DialogueWrongExtinguisherValue: 24
-  DialogueRightExtinguisherValue: 25
-  DialogueScript: {fileID: 593217331}
+  m_DialogueWrongExtinguisherValue: 24
+  m_DialogueRightExtinguisherValue: 25
+  m_DialogueScript: {fileID: 593217331}
 --- !u!114 &1907358729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40757,8 +40748,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec0fb3ff2a5454e8863609a58514d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  g_lerpFactor: 10
+  m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
+  m_lerpFactor: 20
 --- !u!114 &1907358730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41695,9 +41686,9 @@ MonoBehaviour:
   m_minigame: Extinguisher Minigame (3)
   m_isFireMinigame: 1
   m_extinguishersForFire: 03000000
-  DialogueWrongExtinguisherValue: 32
-  DialogueRightExtinguisherValue: 33
-  DialogueScript: {fileID: 593217331}
+  m_DialogueWrongExtinguisherValue: 32
+  m_DialogueRightExtinguisherValue: 33
+  m_DialogueScript: {fileID: 593217331}
 --- !u!114 &1998969879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41709,8 +41700,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec0fb3ff2a5454e8863609a58514d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  g_lerpFactor: 10
+  m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
+  m_lerpFactor: 20
 --- !u!114 &1998969880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41778,8 +41769,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec0fb3ff2a5454e8863609a58514d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  g_lerpFactor: 20
+  m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
+  m_lerpFactor: 20
 --- !u!114 &2007195433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41803,8 +41794,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 3
-  DialogueValue: 23
-  DialogueScript: {fileID: 593217331}
+  m_DialogueValue: 23
+  m_DialogueScript: {fileID: 593217331}
 --- !u!136 &2007195435
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -43089,8 +43080,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec0fb3ff2a5454e8863609a58514d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  g_lerpFactor: 20
+  m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
+  m_lerpFactor: 20
 --- !u!114 &2120224570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43114,8 +43105,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extinguisherType: 3
-  DialogueValue: 31
-  DialogueScript: {fileID: 593217331}
+  m_DialogueValue: 31
+  m_DialogueScript: {fileID: 593217331}
 --- !u!1 &2128349666
 GameObject:
   m_ObjectHideFlags: 0
