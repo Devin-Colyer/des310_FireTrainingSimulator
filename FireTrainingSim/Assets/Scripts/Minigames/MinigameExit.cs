@@ -12,6 +12,11 @@ public class MinigameExit : MonoBehaviour
 		if(Input.GetKeyDown(KeyCode.Escape))
         {
             m_cameraController.GetComponent<CameraController>().ChangeCamera("Room Camera");
+            //Music
+            MusicEmitter.m_musicEv.setParameterByName("Intro", 1);
+            MusicEmitter.m_musicEv.setParameterByName("loop", 0);
+            MusicEmitter.m_musicEv.setParameterByName("outro", 0);
+            Debug.Log("MusicSwitch");
         }
 	}
 }

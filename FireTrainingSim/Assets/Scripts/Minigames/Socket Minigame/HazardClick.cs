@@ -61,6 +61,11 @@ public class HazardClick : MonoBehaviour
 
                                     // Enable fixed hazard.
                                     m_worldHazard.transform.Find("Fixed").gameObject.SetActive(true);
+                                    //Music
+                                    MusicEmitter.m_musicEv.setParameterByName("Intro", 1);
+                                    MusicEmitter.m_musicEv.setParameterByName("loop", 0);
+                                    MusicEmitter.m_musicEv.setParameterByName("outro", 0);
+                                    Debug.Log("MusicSwitch");
                                 }
 
                                 if (m_cameraController)

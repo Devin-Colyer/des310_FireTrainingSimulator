@@ -1721,7 +1721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  m_lerpFactor: 20
+  m_timeToFade: 0.4
 --- !u!114 &145925297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2472,7 +2472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  m_lerpFactor: 20
+  m_timeToFade: 0.4
 --- !u!114 &210141648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3545,7 +3545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  m_lerpFactor: 20
+  m_timeToFade: 0.4
 --- !u!114 &288718401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3790,7 +3790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  m_lerpFactor: 20
+  m_timeToFade: 0.4
 --- !u!114 &297644156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4183,7 +4183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  m_lerpFactor: 20
+  m_timeToFade: 0.4
 --- !u!114 &337459740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10824,6 +10824,7 @@ GameObject:
   - component: {fileID: 593217330}
   - component: {fileID: 593217331}
   - component: {fileID: 593217332}
+  - component: {fileID: 593217333}
   m_Layer: 5
   m_Name: FMOD Scripts
   m_TagString: Untagged
@@ -10879,6 +10880,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_FireEventPath: event:/Fire
+--- !u!114 &593217333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 593217329}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba226ecbbf44c964e8d9729580b76431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_music: event:/Music
+  m_Intro: 0
+  m_Loop: 0
+  m_Outro: 0
 --- !u!1 &598612758
 GameObject:
   m_ObjectHideFlags: 0
@@ -11527,7 +11543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  m_lerpFactor: 20
+  m_timeToFade: 0.4
 --- !u!114 &622646696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13746,7 +13762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  m_lerpFactor: 20
+  m_timeToFade: 0.4
 --- !u!114 &836213062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26432,7 +26448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  m_lerpFactor: 20
+  m_timeToFade: 0.4
 --- !u!114 &1084862883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27350,7 +27366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  m_lerpFactor: 20
+  m_timeToFade: 0.4
 --- !u!114 &1161530376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28034,7 +28050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  m_lerpFactor: 20
+  m_timeToFade: 0.4
 --- !u!114 &1239020481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29242,7 +29258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  m_lerpFactor: 20
+  m_timeToFade: 0.4
 --- !u!114 &1327779132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29572,7 +29588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  m_lerpFactor: 20
+  m_timeToFade: 0.4
 --- !u!114 &1349100608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29730,7 +29746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  m_lerpFactor: 20
+  m_timeToFade: 0.4
 --- !u!114 &1352938224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30995,7 +31011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  m_lerpFactor: 20
+  m_timeToFade: 0.4
 --- !u!114 &1440272615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31589,7 +31605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  m_lerpFactor: 20
+  m_timeToFade: 0.4
 --- !u!114 &1479745693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31686,7 +31702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  m_lerpFactor: 20
+  m_timeToFade: 0.4
 --- !u!114 &1481983718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32347,7 +32363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  m_lerpFactor: 20
+  m_timeToFade: 0.4
 --- !u!114 &1555055050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34026,7 +34042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  m_lerpFactor: 20
+  m_timeToFade: 0.4
 --- !u!114 &1711946613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34159,7 +34175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  m_lerpFactor: 20
+  m_timeToFade: 0.4
 --- !u!114 &1717611951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39861,6 +39877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d360206cbe45dc048a5fab2998deff9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_MusicEmitterScript: {fileID: 0}
 --- !u!65 &1802795969
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40222,7 +40239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  m_lerpFactor: 20
+  m_timeToFade: 0.4
 --- !u!114 &1834320235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40749,7 +40766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  m_lerpFactor: 20
+  m_timeToFade: 0.4
 --- !u!114 &1907358730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41701,7 +41718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  m_lerpFactor: 20
+  m_timeToFade: 0.4
 --- !u!114 &1998969880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41770,7 +41787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  m_lerpFactor: 20
+  m_timeToFade: 0.4
 --- !u!114 &2007195433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43081,7 +43098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_glowColor: {r: 1, g: 0.49803922, b: 0, a: 0}
-  m_lerpFactor: 20
+  m_timeToFade: 0.4
 --- !u!114 &2120224570
 MonoBehaviour:
   m_ObjectHideFlags: 0

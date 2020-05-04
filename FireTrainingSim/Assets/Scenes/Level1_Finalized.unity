@@ -1751,6 +1751,7 @@ GameObject:
   - component: {fileID: 410889281}
   - component: {fileID: 410889280}
   - component: {fileID: 410889283}
+  - component: {fileID: 410889284}
   m_Layer: 0
   m_Name: Box Minigame
   m_TagString: MainCamera
@@ -1844,6 +1845,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ListenerNumber: 0
+--- !u!114 &410889284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 410889278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b20b4d2e17ce14685e5392a5c9385a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_intro: 0
+  m_loop: 1
+  m_outro: 0
 --- !u!1 &419148278 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: df989a39978227e43b8d73fd2f03887a, type: 3}
@@ -3026,6 +3041,7 @@ GameObject:
   - component: {fileID: 676899975}
   - component: {fileID: 676899974}
   - component: {fileID: 676899973}
+  - component: {fileID: 676899971}
   m_Layer: 0
   m_Name: Room Camera
   m_TagString: MainCamera
@@ -3047,6 +3063,20 @@ Transform:
   m_Father: {fileID: 1555993910}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 30, y: 135, z: 0}
+--- !u!114 &676899971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 676899969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b20b4d2e17ce14685e5392a5c9385a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_intro: 1
+  m_loop: 0
+  m_outro: 0
 --- !u!124 &676899973
 Behaviour:
   m_ObjectHideFlags: 0
@@ -3286,6 +3316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d360206cbe45dc048a5fab2998deff9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_MusicEmitterScript: {fileID: 1625949346}
 --- !u!65 &711495106
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6552,6 +6583,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1625949344}
   - component: {fileID: 1625949345}
+  - component: {fileID: 1625949346}
   m_Layer: 5
   m_Name: FMOD Scripts
   m_TagString: Untagged
@@ -6595,6 +6627,21 @@ MonoBehaviour:
   m_DialogueWhoNeedToPlayNextDialogue: 0100000002000000
   m_NumbersEventPath: event:/Dialogue/Numbers
   m_FNumbersValue: 0
+--- !u!114 &1625949346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1625949343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba226ecbbf44c964e8d9729580b76431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_music: event:/Music
+  m_Intro: 1
+  m_Loop: 0
+  m_Outro: 0
 --- !u!1 &1628633839
 GameObject:
   m_ObjectHideFlags: 0

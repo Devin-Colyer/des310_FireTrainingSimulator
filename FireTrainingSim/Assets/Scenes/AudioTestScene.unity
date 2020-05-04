@@ -658,15 +658,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6a5cb424171ba240a790a2d23aeb0bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueEventPath: event:/Dialogue/Dialogue
-  F_DialogueValue: 1
-  NumbersEventPath: event:/Dialogue/Numbers
-  F_NumbersValue: 3
-  FootstepsEventPath: event:/Footsteps
-  Material: 
-  MaterialTypes: []
-  DefaultMaterialValue: 0
-  Yo: 1
+  m_DialogueEventPath: event:/Dialogue/Dialogue
+  m_dialogueStateControl: 0
+  m_DialogueWhoNeedToPlayNunmber: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_DialogueWhoNeedToPlayNextDialogue: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_NumbersEventPath: event:/Dialogue/Numbers
+  m_FNumbersValue: 0
+  m_FootstepsEventPath: event:/Footsteps
+  m_Material: 
+  m_MaterialTypes: []
+  m_DefaultMaterialValue: 0
 --- !u!114 &191327271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -950,10 +951,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915493cb11f81064382ca04ed4e23a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueEventPath: event:/Dialogue/Dialogue
-  F_DialogueValue: 35
-  NumbersEventPath: event:/Dialogue/Numbers
-  F_NumbersValue: 2
+  m_DialogueEventPath: event:/Dialogue/Dialogue
+  m_DefaultFDialogueValue: 0
+  m_dialogueStateControl: 0
+  m_DialogueWhoNeedToPlayNunmber: 
+  m_DialogueWhoNeedToPlayNextDialogue: 
+  m_NumbersEventPath: event:/Dialogue/Numbers
+  m_FNumbersValue: 0
 --- !u!1 &269977583
 GameObject:
   m_ObjectHideFlags: 0
@@ -1259,7 +1263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 497de82cebd35424cbdb54773fc1b871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefinerF_MaterialValue: 0
+  m_FMaterialValueDefiner: 0
 --- !u!65 &357884205
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1917,17 +1921,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: event:/BoxDrop
+  Event: event:/Music
   PlayEvent: 3
   StopEvent: 0
   CollisionTag: Player
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
-  Params: []
+  Params:
+  - Name: Outro
+    Value: 1
   OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &1009281345
 GameObject:
   m_ObjectHideFlags: 0
@@ -2028,10 +2034,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba226ecbbf44c964e8d9729580b76431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music: event:/Music
-  Intro: 1
-  Loop: 0
-  Outro: 0
+  m_music: event:/Music
+  m_Intro: 0
+  m_Loop: 0
+  m_Outro: 0
 --- !u!1 &1090190010
 GameObject:
   m_ObjectHideFlags: 0
@@ -2063,7 +2069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 497de82cebd35424cbdb54773fc1b871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefinerF_MaterialValue: 1
+  m_FMaterialValueDefiner: 0
 --- !u!65 &1090190012
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2867,6 +2873,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_cameraController: {fileID: 0}
   m_minigame: 
+  m_isFireMinigame: 0
+  m_extinguishersForFire: 
+  m_DialogueWrongExtinguisherValue: 3
+  m_DialogueRightExtinguisherValue: 4
+  m_DialogueScript: {fileID: 0}
 --- !u!1 &1496703970
 GameObject:
   m_ObjectHideFlags: 0
@@ -2926,7 +2937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 497de82cebd35424cbdb54773fc1b871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefinerF_MaterialValue: 2
+  m_FMaterialValueDefiner: 0
 --- !u!65 &1572418459
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3339,7 +3350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 497de82cebd35424cbdb54773fc1b871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefinerF_MaterialValue: 1
+  m_FMaterialValueDefiner: 0
 --- !u!65 &1671748023
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4371,7 +4382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 497de82cebd35424cbdb54773fc1b871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefinerF_MaterialValue: 3
+  m_FMaterialValueDefiner: 0
 --- !u!65 &2083758318
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4494,10 +4505,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915493cb11f81064382ca04ed4e23a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueEventPath: event:/Dialogue/Dialogue
-  F_DialogueValue: 10
-  NumbersEventPath: event:/Dialogue/Numbers
-  F_NumbersValue: 0
+  m_DialogueEventPath: event:/Dialogue/Dialogue
+  m_DefaultFDialogueValue: 0
+  m_dialogueStateControl: 0
+  m_DialogueWhoNeedToPlayNunmber: 
+  m_DialogueWhoNeedToPlayNextDialogue: 
+  m_NumbersEventPath: event:/Dialogue/Numbers
+  m_FNumbersValue: 0
 --- !u!65 &2090309855
 BoxCollider:
   m_ObjectHideFlags: 0

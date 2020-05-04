@@ -23,6 +23,12 @@ public class MusicEmitter : MonoBehaviour {
         //FMODUnity.RuntimeManager.PlayOneShot(music);
     }
 
+    public void StopMusic()
+    {
+        m_musicEv.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        Debug.Log("stopZik");
+    }
+
     //public void GameStartedMusic()
     //{
     //    musicEv.setPar("Intro", 1f);

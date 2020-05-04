@@ -21,6 +21,7 @@ public class HazardFinder : MonoBehaviour
 
 
 
+
     void Start()
     {
         // Check if player exists.
@@ -116,6 +117,7 @@ public class HazardFinder : MonoBehaviour
                         Dialogue.m_FDialogueValue = m_HazardFinderDialogueValue;
                         m_DialogueScript.PlayDialogue();
                         m_HavePlayedDialogue = true;
+
                     }
                 }
             }

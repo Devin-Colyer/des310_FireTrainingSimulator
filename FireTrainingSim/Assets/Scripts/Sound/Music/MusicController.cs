@@ -8,16 +8,16 @@ public class MusicController : MonoBehaviour
     public float m_outro;
 
     //If player enter in new music area, music will transition to the seted value (1 by default)
-    void OnTriggerEnter (Collider collision)
+    public void SwitchMusic ()
     {
 
-        if (collision.gameObject.name == "Player")
-        {
+        MusicEmitter.m_musicEv.setParameterByName("Intro", m_intro);
+        MusicEmitter.m_musicEv.setParameterByName("loop", m_loop);
+        MusicEmitter.m_musicEv.setParameterByName("outro", m_outro);
+        Debug.Log("MusicSwitch");
 
-            MusicEmitter.m_musicEv.setParameterByName("Intro", m_intro);
-            MusicEmitter.m_musicEv.setParameterByName("loop", m_loop);
-            MusicEmitter.m_musicEv.setParameterByName("outro", m_outro);
-            Debug.Log("bite");
-        }
+        //if (collision.gameObject.name == "Player")
+        //{
+        //}
     }
 }

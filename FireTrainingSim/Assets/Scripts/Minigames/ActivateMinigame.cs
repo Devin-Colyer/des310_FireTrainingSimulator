@@ -17,6 +17,7 @@ public class ActivateMinigame : MonoBehaviour
     public Dialogue m_DialogueScript;
 
 
+
     private MouseCursor l_mouseCursor;
 
     void Start()
@@ -79,6 +80,11 @@ public class ActivateMinigame : MonoBehaviour
                                         Dialogue.m_FDialogueValue = m_DialogueRightExtinguisherValue;
                                         m_DialogueScript.PlayDialogue();
                                         Debug.Log(other.GetComponent<ExtinguisherTrackerComponent>().m_extinguisherCarried + "Success");
+                                        //Music
+                                        MusicEmitter.m_musicEv.setParameterByName("Intro", 0);
+                                        MusicEmitter.m_musicEv.setParameterByName("loop", 1);
+                                        MusicEmitter.m_musicEv.setParameterByName("outro", 0);
+                                        Debug.Log("MusicSwitch");
                                     }
                                 }
 
@@ -94,6 +100,11 @@ public class ActivateMinigame : MonoBehaviour
                             {
                                 // Change to minigame camera.
                                 m_cameraController.GetComponent<CameraController>().ChangeCamera(m_minigame);
+                                //Music
+                                MusicEmitter.m_musicEv.setParameterByName("Intro", 0);
+                                MusicEmitter.m_musicEv.setParameterByName("loop", 1);
+                                MusicEmitter.m_musicEv.setParameterByName("outro", 0);
+                                Debug.Log("MusicSwitch");
                             }
                         }
                     }
