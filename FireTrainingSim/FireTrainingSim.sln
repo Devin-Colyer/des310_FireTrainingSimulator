@@ -1,17 +1,17 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireTrainingSim", "Assembly-CSharp-firstpass.csproj", "{1247C282-23C8-8803-958D-0D27D9A3007F}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{1247C282-23C8-8803-958D-0D27D9A3007F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireTrainingSim", "NavMeshComponents.csproj", "{43B691D4-1480-B1CF-6FA6-B8FE270F053D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavMeshComponents", "NavMeshComponents.csproj", "{43B691D4-1480-B1CF-6FA6-B8FE270F053D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireTrainingSim", "Assembly-CSharp.csproj", "{3EA00F02-903A-1563-A0DD-0A29814FF1DB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{3EA00F02-903A-1563-A0DD-0A29814FF1DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireTrainingSim", "Assembly-CSharp-Editor-firstpass.csproj", "{232AED47-508C-2B2D-4032-04EB5CD6A117}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{232AED47-508C-2B2D-4032-04EB5CD6A117}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireTrainingSim", "NavMeshComponentsEditor.csproj", "{3CB7D434-7B42-208C-A7FB-BBAC4A881006}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavMeshComponentsEditor", "NavMeshComponentsEditor.csproj", "{3CB7D434-7B42-208C-A7FB-BBAC4A881006}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireTrainingSim", "Assembly-CSharp-Editor.csproj", "{E63ADBCE-6D18-8088-551C-AB85CBDF1A38}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{E63ADBCE-6D18-8088-551C-AB85CBDF1A38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,8 +46,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal

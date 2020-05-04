@@ -37,7 +37,7 @@ public class LevelExitTrigger : MonoBehaviour
                 if (!m_screenFade.m_fading)
                 {
                     // Screen has finished fading, change scene.
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                    SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
                     m_MusicEmitterScript.StopMusic();
                 }
             }

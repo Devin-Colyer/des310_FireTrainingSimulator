@@ -1,8 +1,11 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/arthu/Desktop/New folder/New folder.exe
+E:/Users/devco/Desktop/Game Builds/TestBuildForChristos_04-05-20_x86/TestBuildForChristos_04-05-20_x86.exe
 SceneListBegin?
-Assets/Scenes/Level1_Finalized 1.unity
+Assets/Scenes/MainMenu_Final.unity
+Assets/Scenes/Level1_Finalized.unity
+Assets/Scenes/Level2_Finalized.unity
+Assets/Scenes/Section3Test.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 cf455f7a806648c6ed4c7d3e3f8a0e03 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -197,7 +200,7 @@ cee9349600a84cf72512d04336fb3595 Assembly-CSharp.dll:.test
 84d72a902040b6c04d0ecf153d3b3c6e Assembly-CSharp.dll:.DisappearingRoomController
 3f1a709922ee8c18d2a7a8064ccaddd6 Assembly-CSharp.dll:.MaterialSetter
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.LevelExitTrigger
+521994766e2b431ad32a454a31ea41ac Assembly-CSharp.dll:.LevelExitTrigger
 1fedf6e2e4743f6ff3000fdbca820d44 Assembly-CSharp.dll:.PointAndClickTrigger
 8cc632c1d9d880ccebcfd32cc9d963fd Assembly-CSharp-firstpass.dll:FMODUnity.StudioParameterTrigger
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BoxTriggerScript
