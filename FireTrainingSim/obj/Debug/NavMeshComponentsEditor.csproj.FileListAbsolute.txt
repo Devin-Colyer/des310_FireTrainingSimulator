@@ -989,3 +989,4 @@ E:\Users\devco\Documents\DES310 Backup\FireTrainingSim\obj\Debug\NavMeshComponen
 E:\Users\devco\Documents\DES310 Backup\FireTrainingSim\obj\Debug\NavMeshComponentsEditor.csproj.CopyComplete
 E:\Users\devco\Documents\DES310 Backup\FireTrainingSim\obj\Debug\NavMeshComponentsEditor.dll
 E:\Users\devco\Documents\DES310 Backup\FireTrainingSim\obj\Debug\NavMeshComponentsEditor.pdb
+D:\Program Files (x86)\Github\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\UnityEngine.WebGLModule.dll

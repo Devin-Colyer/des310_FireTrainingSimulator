@@ -3,25 +3,36 @@ using System.Collections.Generic;
 
 public class GlowComponent : MonoBehaviour
 {
-    // Global variables.
-    public Color m_glowColor;
-	public float m_lerpFactor = 10;
-    ///private BoxClickPickup g_objectGrabber;
-    private List<Material> m_materials = new List<Material>();
-    private Color m_currentColor;
-    private Color m_targetColor;
-
-    public Renderer[] m_renderers
+    enum FadeState
     {
-		get;
-		private set;
-	}
+        FADE_IN, FADE_OUT
+    }
+    
+    public Color m_glowColor;
+    private List<Material> g_materials = new List<Material>();
+
+    private Color g_currentColor;
+    private Color g_startColor;
+    private Color g_targetColor;
+
+    public bool b_isFading { get; private set; }
+    private FadeState g_fadeState = FadeState.FADE_OUT;
+
+    public float m_timeToFade = 0.4f;
+    float g_currentFadeTime;
+
+    public Renderer[] m_renderers { get; private set; }
 
     // Use this for initialization
     void Start()
 	{
-        // Get object grabber.
-        ///g_objectGrabber = GameObject.Find("Object Grabber").GetComponent<BoxClickPickup>();
+        // Initialise current frame time.
+        g_currentFadeTime = m_timeToFade;
+
+        // Initialise glow color.
+        g_currentColor = Color.black;
+        g_startColor = m_glowColor;
+        g_targetColor = g_currentColor;
 
         // Get renderer.
         m_renderers = GetComponentsInChildren<Renderer>();
@@ -29,65 +40,68 @@ public class GlowComponent : MonoBehaviour
         // Recieve materials from renderer.
 		foreach (Renderer renderer in m_renderers)
 		{
-            m_materials.AddRange(renderer.materials);
+            g_materials.AddRange(renderer.materials);
 		}
 	}
-
-    /*private void OnMouseOver()
-    {
-        // Make sure object isn't grabbed.
-        if (!g_objectGrabber.IsGrabbedObject(this.gameObject))
-        {
-            // Enable glow.
-            g_targetColor = g_glowColor;
-            enabled = true;
-        }
-    }
-
-    private void OnMouseExit()
-	{
-        // Disable glow.
-		g_targetColor = Color.black;
-		enabled = true;
-	}*/
     
 	private void Update()
 	{
-        // Check if object is grabbed.
-        /* if (g_objectGrabber.IsGrabbedObject(this.gameObject))
-         {
-             // Disable glow.
-             g_targetColor = Color.black;
-             g_currentColor = g_targetColor;
-             enabled = false;
-         }*/
-
-        // Interpolate glow from current to target.
-        m_currentColor = Color.Lerp(m_currentColor, m_targetColor, Time.deltaTime * m_lerpFactor);
-
-        // Check if current colour has reached target.
-        if (m_currentColor.Equals(m_targetColor))
+        // Check if glow is fading.
+        if (b_isFading)
         {
-            // Disable glow.
-            enabled = false;
+            // Increment fade time.
+            g_currentFadeTime += Time.deltaTime;
+
+            // Calculate lerp factor.
+            float l_lerpFactor = (g_currentFadeTime / m_timeToFade);
+
+            // Lerp from current color to target.
+            g_currentColor = Color.Lerp(g_startColor, g_targetColor, l_lerpFactor);
         }
 
-        for (int i = 0; i < m_materials.Count; i++)
+        // Check if current colour has reached target.
+        if (g_currentColor.Equals(g_targetColor))
+        {
+            // Disable glow.
+            b_isFading = false;
+        }
+
+        for (int i = 0; i < g_materials.Count; i++)
 		{
             // Update materials with glow colour.
-            m_materials[i].SetColor("_GlowColor", m_currentColor);
+            g_materials[i].SetColor("_GlowColor", g_currentColor);
 		}
 	}
 
     public void FadeIn()
     {
-        m_targetColor = m_glowColor;
-        enabled = true;
+        // Check if glow is already fading in.
+        if (g_fadeState != FadeState.FADE_IN)
+        {
+            // Begin fade.
+            b_isFading = true;
+            g_fadeState = FadeState.FADE_IN;
+
+            // Fade from current position.
+            g_startColor = Color.black;
+            g_targetColor = m_glowColor;
+            g_currentFadeTime = m_timeToFade - g_currentFadeTime;
+        }
     }
 
     public void FadeOut()
     {
-        m_targetColor = Color.black;
-        enabled = true;
+        // Check if glow is already fading out.
+        if (g_fadeState != FadeState.FADE_OUT)
+        {
+            // Begin fade.
+            b_isFading = true;
+            g_fadeState = FadeState.FADE_OUT;
+
+            // Fade from current position.
+            g_startColor = m_glowColor;
+            g_targetColor = Color.black;
+            g_currentFadeTime = m_timeToFade - g_currentFadeTime;
+        }
     }
 }

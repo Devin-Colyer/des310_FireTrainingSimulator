@@ -437,10 +437,8 @@ D:\Program Files (x86)\Github\des310_FireTrainingSimulator\FireTrainingSim\Temp\
 D:\Program Files (x86)\Github\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\Unity.CecilTools.dll
 D:\Program Files (x86)\Github\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\Unity.Cecil.Pdb.dll
 D:\Program Files (x86)\Github\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\Unity.Cecil.Mdb.dll
-D:\Program Files (x86)\Github\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\NavMeshComponentsExamplesEditor.pdb
 D:\Program Files (x86)\Github\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\NavMeshComponentsEditor.pdb
 D:\Program Files (x86)\Github\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\NavMeshComponents.pdb
-D:\Program Files (x86)\Github\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\NavMeshComponentsExamples.pdb
 D:\Program Files (x86)\Github\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\UnityEngine.xml
 D:\Program Files (x86)\Github\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\UnityEditor.xml
 D:\Program Files (x86)\Github\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\UnityEngine.AIModule.xml
@@ -855,3 +853,5 @@ E:\Users\devco\Documents\DES310 Backup\FireTrainingSim\obj\Debug\Assembly-CSharp
 E:\Users\devco\Documents\DES310 Backup\FireTrainingSim\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 E:\Users\devco\Documents\DES310 Backup\FireTrainingSim\obj\Debug\Assembly-CSharp.dll
 E:\Users\devco\Documents\DES310 Backup\FireTrainingSim\obj\Debug\Assembly-CSharp.pdb
+D:\Program Files (x86)\Github\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\UnityEngine.WebGLModule.dll
+D:\Program Files (x86)\Github\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb

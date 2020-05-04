@@ -32,20 +32,19 @@ public class ExtinguisherComponent : MonoBehaviour
                     // Check if collider exists.
                     if (l_hit.collider)
                     {
-                        // Check if mouse has clicked on this extinguisher.
-                        //if (l_hit.collider.transform.parent == this.transform)
-                        if (l_hit.collider.gameObject == this.gameObject)
+                        // Check if collider was a child of this extinguisher.
+                        if (l_hit.collider.transform.IsChildOf(this.transform))
                         {
                             // Debug output.
                             Debug.Log(m_extinguisherType);
 
-                            // Check if object has a parent that has a parent.
+                            // Check if extinguisher object has a parent that has a parent.
                             if (this.transform.parent.parent)
                             {
-                                // Check if parent is called 'Extinguishers'.
+                                // Check if the parent is called 'Extinguishers'.
                                 if (this.transform.parent.parent.name == "Extinguishers")
                                 {
-                                    // Enable world model for all extinguishers.
+                                    // Enable world model for all extinguishers under parent object.
                                     foreach (Transform child in this.transform.parent.transform)
                                     {
                                         child.gameObject.SetActive(true);
@@ -56,28 +55,15 @@ public class ExtinguisherComponent : MonoBehaviour
 
                                     // Update player, use fire extinguisher.
                                     other.GetComponent<ExtinguisherTrackerComponent>().SetExtinguisherType(m_extinguisherType);
+
                                     // VoiceOverPart
                                     Dialogue.m_FDialogueValue = m_DialogueValue;
-                                    m_DialogueScript.PlayDialogue();
+                                    if (m_DialogueScript)
+                                    {
+                                        m_DialogueScript.PlayDialogue();
+                                    }
                                 }
                             }
-
-                            //// Update minigame, change extinguisher.
-                            //switch (m_extinguisherType)
-                            //{
-                            //    case ExtinguisherType.WATER:
-                            //        break;
-                            //    case ExtinguisherType.FOAM:
-                            //        break;
-                            //    case ExtinguisherType.DRY_POWDER:
-                            //        break;
-                            //    case ExtinguisherType.CO2:
-                            //        break;
-                            //    case ExtinguisherType.WET_CHEMICAL:
-                            //        break;
-                            //    default:
-                            //        break;
-                            //}
                         }
                     }
                 }

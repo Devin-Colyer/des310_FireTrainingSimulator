@@ -16,6 +16,8 @@ public class ScreenFade : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
+        Debug.Log("Start");
+
         // Initialise global variables.
         m_timeToFade = 1.0f;
         m_currentFadeTime = 1.0f;
@@ -63,6 +65,8 @@ public class ScreenFade : MonoBehaviour
 
     public void FadeIn(float time)
     {
+        Debug.Log("Fade in.");
+
         // Begin fading.
         m_timeToFade = time;
         m_currentFadeTime = 0.0f;
@@ -76,6 +80,8 @@ public class ScreenFade : MonoBehaviour
 
     public void FadeOut(float time)
     {
+        Debug.Log("Fade out.");
+
         // Begin fading.
         m_timeToFade = time;
         m_currentFadeTime = 0.0f;

@@ -84,7 +84,10 @@ public class ExtinguisherMinigameController : MonoBehaviour {
             }
             else
             {
-                m_ExtinguisherSoundsScript.StopExtinguisher();
+                if (m_ExtinguisherSoundsScript)
+                {
+                    m_ExtinguisherSoundsScript.StopExtinguisher();
+                }
                 beatMinigame = true;
             }
         }
@@ -142,7 +145,10 @@ public class ExtinguisherMinigameController : MonoBehaviour {
                 {
                     Debug.Log("PLAY EXTINGUISHER SOUND");
                     m_IsPlayingStopExtinguisherSound = false;
-                    m_ExtinguisherSoundsScript.FireExtinguisher();
+                    if (m_ExtinguisherSoundsScript)
+                    {
+                        m_ExtinguisherSoundsScript.FireExtinguisher();
+                    }
                     m_IsPlayingExtinguisherSound = true;
                 }
             }
@@ -164,7 +170,10 @@ public class ExtinguisherMinigameController : MonoBehaviour {
             {
                 Debug.Log("PLAY STOP EXTINGUISHER SOUND");
                 m_IsPlayingExtinguisherSound = false;
-                m_ExtinguisherSoundsScript.StopExtinguisher();
+                if (m_ExtinguisherSoundsScript)
+                {
+                    m_ExtinguisherSoundsScript.StopExtinguisher();
+                }
                 m_IsPlayingStopExtinguisherSound = true;
             }
         }
