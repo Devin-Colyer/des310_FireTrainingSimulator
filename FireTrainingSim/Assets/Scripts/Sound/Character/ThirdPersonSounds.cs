@@ -7,152 +7,138 @@ public class ThirdPersonSounds : MonoBehaviour {
 
     [Header("FMOD Settings")]
 
-    [SerializeField] [FMODUnity.EventRef] private string DialogueEventPath;
-    public int F_DialogueValue;
-    [SerializeField] [FMODUnity.EventRef] private string NumbersEventPath;
-    public int F_NumbersValue;
+    [SerializeField] [FMODUnity.EventRef] private string m_DialogueEventPath;
+
+    //DONTPLAY = Dont need to play anything after      PLAYNUMBER = Need to play a "Number"     PLAYDIFFERENT = Need to play an other "Dialogue" to finish the senctence
+    //private int CheckNumber = 0;
+    public enum DialogueStateControl
+    {
+        DONTPLAY,
+        PLAYNUMBER,
+        PLAYDIFFERENT
+    }
+    public DialogueStateControl m_dialogueStateControl = DialogueStateControl.DONTPLAY;
+
+    public int[] m_DialogueWhoNeedToPlayNunmber = new int[10];
+    public int[] m_DialogueWhoNeedToPlayNextDialogue = new int[10];
+
+    [SerializeField] [FMODUnity.EventRef] private string m_NumbersEventPath;
+    public int m_FNumbersValue;
+
+
 
     [Header("FMOD Settings")]
-    [SerializeField] [FMODUnity.EventRef] private string FootstepsEventPath;
-    [SerializeField] private string Material;
-    public string[] MaterialTypes;
+    [SerializeField] [FMODUnity.EventRef] private string m_FootstepsEventPath;
+    [SerializeField] private string m_Material;
+    public string[] m_MaterialTypes;
     //[SerializeField] private float RayDistance = 1.2f;
-    public int DefaultMaterialValue;                           // This will be told by the 'FMODStudioFootstepsEditor' script which Material has been set as the defualt. It will then store the value of that Material for outhis script to use. This cannot be changed in the Editor, but a drop down menu created by the 'FMODStudioFootstepsEditor' script can.
+    public int m_DefaultMaterialValue;                           // This will be told by the 'FMODStudioFootstepsEditor' script which Material has been set as the defualt. It will then store the value of that Material for outhis script to use. This cannot be changed in the Editor, but a drop down menu created by the 'FMODStudioFootstepsEditor' script can.
 
-    public static FMOD.Studio.EventInstance ThirdPersonSound;
-    public static FMOD.Studio.EventInstance Numbers;
+    public static FMOD.Studio.EventInstance m_ThirdPersonSound;
+    public static FMOD.Studio.EventInstance m_Numbers;
 
-    private RaycastHit hit;
-    public static int F_MaterialValue;
-    public int Yo = 1;
+    private RaycastHit m_hit;
+    public static int m_FMaterialValue;
 
-    //0 = Dont need to play a "Number"      1 = Need to play a "Number"     2 = Need to play an other "Dialogue" to finish the senctence
-    private int CheckNumber = 0;
-
-
-    //void MaterialCheck() // This method when performed will find out what material our player is currenly on top of and will update the value of 'F_MaterialValue' accordingly, to represent that value.
+    //Use to play the initial dialogue
+    //void Start()
     //{
-    //    Debug.Log("1");
-    //    if (Physics.Raycast(transform.position, Vector3.down, out hit, RayDistance))                                 // A raycast is fired down, from the position that the player is curenntly standing at, traveling as far as we decide to set the 'RayDistance' variable to. Infomration about the object it comes into contact with will then be stored inside the 'hit' variable for us to access.
+    //    ThirdPersonSound = FMODUnity.RuntimeManager.CreateInstance(DialogueEventPath);
+    //    ThirdPersonSound.setParameterByName("Dialogue", F_DialogueValue);
+    //    ThirdPersonSound.start();
+
+
+
+    //    //Used to optimise the code, so the Update doesnt have to always run unuseful code
+    //    // The values are the Dialogue FMOD values who need the next one to be played straight after
+
+    //    //Here is when we need a NUMBER
+    //    foreach (int itr in DialogueWhoNeedToPlayNunmber)
     //    {
-    //        Debug.Log("2");
-    //        if (hit.collider.gameObject.GetComponent<MaterialSetter>())                                    // Using the 'hit' varibale, we check to see if the raycast has hit a collider attached to a gameobject, that also has the 'FMODStudioMaterialSetter' script attached to it as a component...
+    //        if (F_DialogueValue == itr)
     //        {
-    //            Debug.Log("3");
-    //            F_MaterialValue = hit.collider.gameObject.GetComponent<MaterialSetter>().MaterialValue;    // ...and if it did, we then set our 'F_MaterialValue' varibale to match whatever value the 'MaterialValue' variable (which is inside the 'F_MaterialValue' varibale) is currently set to.
+    //            m_dialogueStateControl = DialogueStateControl.PLAYNUMBER;
     //        }
-    //        else                                                                                                     // Else if however, the player is standing on an object that doesn't have a 'FMODStudioMaterialSetter' script component for our raycast to find...
-    //            Debug.Log("4");
-    //        F_MaterialValue = DefaultMaterialValue;                                                              // ...we then set 'F_MaterialValue' to match the value of 'DefulatMaterialValue'. 'DefulatMaterialValue' is given a value by the 'FMODStudioFootstepsEditor' script. This value represents whatever material we have selected as our 'DefulatMaterial' in the Unity Inspector tab.
     //    }
-    //    else                                                                                                         // Else if however, the raycast can't find a collider attached to the object at all...
-    //        Debug.Log("5");
-    //    F_MaterialValue = DefaultMaterialValue;                                                                  // Then again, we set 'F_MaterialValue' to match the value of 'DefulatMaterialValue'.
+
+    //    //Here is when we need a Dialogue
+    //    foreach (int itr in DialogueWhoNeedToPlayNextDialogue)
+    //    {
+    //        if (F_DialogueValue == itr)
+    //        {
+    //            m_dialogueStateControl = DialogueStateControl.PLAYDIFFERENT;
+    //        }
+    //    }
+
     //}
 
 
-    //Use to play the initial dialogue
-    void Start()
-    {
-        ThirdPersonSound = FMODUnity.RuntimeManager.CreateInstance(DialogueEventPath);
-        ThirdPersonSound.setParameterByName("Dialogue", F_DialogueValue);
-        ThirdPersonSound.start();
 
-        
-        //if (F_DialogueValue == 0)
-        //{
-        //    Debug.Log("BiteDe0");
-        //}
-        //else if (F_DialogueValue == 1)
-        //{
-        //    Debug.Log("BiteDe1");
-        //}
+    //void Update()
+    //{
 
-        //Used to optimise the code, so the Update doesnt have to always run unuseful code
-        if (F_DialogueValue == 350 || F_DialogueValue == 360)
-        {
-            CheckNumber = 1;
-        }
-
-    }
-
-    void Update()
-    {
-        if (CheckNumber==1)
-        {
-            FMOD.Studio.PLAYBACK_STATE playbackState;
-            ThirdPersonSound.getPlaybackState(out playbackState);
-            if (playbackState == FMOD.Studio.PLAYBACK_STATE.STOPPED)
-            {
-                ThirdPersonSound.release();
-                ThirdPersonSound.clearHandle();
-                Debug.Log("PlayerIntroFinished");
-                CheckNumber = 0;
-                SpeakedNumber();
-            }
-        }
-        else if (CheckNumber == 2)
-        {
-            FMOD.Studio.PLAYBACK_STATE playbackState;
-            Numbers.getPlaybackState(out playbackState);
-            if (playbackState == FMOD.Studio.PLAYBACK_STATE.STOPPED)
-            {
-                Start();
-                CheckNumber = 0;
-            }
-        }
-    }
-    
-
-    void SpeakedNumber()
-    {
-        Numbers = FMODUnity.RuntimeManager.CreateInstance(NumbersEventPath);
-        Numbers.setParameterByName("Numbers", F_NumbersValue);
-        Numbers.start();
-        F_DialogueValue++;
-        CheckNumber = 2;
-    }
+    //    if (m_dialogueStateControl == DialogueStateControl.PLAYNUMBER)
+    //    {
+    //        FMOD.Studio.PLAYBACK_STATE playbackState;
+    //        ThirdPersonSound.getPlaybackState(out playbackState);
+    //        Debug.Log(playbackState);
+    //        if (playbackState == FMOD.Studio.PLAYBACK_STATE.STOPPED)
+    //        {
+    //            ThirdPersonSound.release();
+    //            ThirdPersonSound.clearHandle();
+    //            Debug.Log("PlayerIntroFinished");
+    //            m_dialogueStateControl = DialogueStateControl.DONTPLAY;
+    //            SpeakedNumber();
+    //        }
+    //    }
+    //    else if (m_dialogueStateControl == DialogueStateControl.PLAYDIFFERENT)
+    //    {
+    //        FMOD.Studio.PLAYBACK_STATE playbackState;
+    //        ThirdPersonSound.getPlaybackState(out playbackState);
+    //        //Debug.Log(playbackState);
+    //        if (playbackState == FMOD.Studio.PLAYBACK_STATE.STOPPED)
+    //        {
+    //            F_DialogueValue++;
+    //            Start();
+    //            foreach (int itr in DialogueWhoNeedToPlayNextDialogue)
+    //            {
+    //                if (F_DialogueValue == itr)
+    //                {
+    //                    m_dialogueStateControl = DialogueStateControl.PLAYDIFFERENT;
+    //                    //Debug.Log("Yes" + playbackState);
+    //                }
+    //                else if (F_DialogueValue != itr)
+    //                {
+    //                    m_dialogueStateControl = DialogueStateControl.DONTPLAY;
+    //                    //Debug.Log("No" + playbackState);
+    //                }
+    //            }
+    //        }
+    //    }
+    //}
 
 
 
-
-
-
-
-
+    //void SpeakedNumber()
+    //{
+    //    Numbers = FMODUnity.RuntimeManager.CreateInstance(NumbersEventPath);
+    //    Numbers.setParameterByName("Numbers", F_NumbersValue);
+    //    Numbers.start();
+    //    F_DialogueValue++;
+    //    m_dialogueStateControl = DialogueStateControl.PLAYNUMBER;
+    //}
 
 
 
     private void Footstep()
     {
         //MaterialCheck();
-        FMOD.Studio.EventInstance Footsteps = FMODUnity.RuntimeManager.CreateInstance(FootstepsEventPath);        // If they are, we create an FMOD event instance. We use the event path inside the 'FootstepsEventPath' variable to find the event we want to play.
-        FMODUnity.RuntimeManager.AttachInstanceToGameObject(Footsteps, transform, GetComponent<Rigidbody>());     // Next that event instance is told to play at the location that our player is currently at.
-        Footsteps.setParameterByName("Material", F_MaterialValue);                                                 // Before the event is played, we set the Material Parameter to match the value of the 'F_MaterialValue' variable.
-        Footsteps.start();                                                                                        // We then play a footstep!.
-        /*Footsteps.release();    */                                                                                  // We also set our event instance to release straight after we tell it to play, so that the instance is released once the event had finished playing.
-    //Debug.Log("step"+"yo"+Yo+F_MaterialValue);
-    //    if (ThirdPersonSounds.F_MaterialValue == 1)
-    //    {
-    //        Debug.Log("BiteDeMetal");
-    //    }
-    //    else if (ThirdPersonSounds.F_MaterialValue == 3)
-    //    {
-    //        Debug.Log("BiteDeTapis");
-    //    }
-    //    else if (ThirdPersonSounds.F_MaterialValue == 0)
-    //    {
-    //        Debug.Log("BiteDeBitume");
-    //    }
-    //    else if (ThirdPersonSounds.F_MaterialValue == 2)
-    //    {
-    //        Debug.Log("BiteDeVinyl");
-    //    }
+        FMOD.Studio.EventInstance Footsteps = FMODUnity.RuntimeManager.CreateInstance(m_FootstepsEventPath);        // If they are, we create an FMOD event instance. We use the event path inside the 'FootstepsEventPath' variable to find the event we want to play.
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(Footsteps, transform, GetComponent<Rigidbody>());       // Next that event instance is told to play at the location that our player is currently at.
+        Footsteps.setParameterByName("Material", m_FMaterialValue);                                                 // Before the event is played, we set the Material Parameter to match the value of the 'F_MaterialValue' variable.
+        Footsteps.start();                                                                                          // We then play a footstep!.
+        /*Footsteps.release();    */                                                                                // We also set our event instance to release straight after we tell it to play, so that the instance is released once the event had finished playing.
     }
-
-
-
-
 
     //Old Script
 

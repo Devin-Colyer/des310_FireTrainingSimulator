@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class TriggerGlow : MonoBehaviour
 {
+    private void OnEnable()
+    {
+        this.transform.GetComponentInChildren<GlowComponent>().FadeOut();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         // Check if collider is the player.

@@ -1,52 +1,35 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.AI;
+﻿using UnityEngine;
 
 public class BoxClickPickupSound : MonoBehaviour
 {
     [Header("FMOD Settings")]
 
-    [SerializeField] [FMODUnity.EventRef] private string BoxPickupEventPath;
-    [SerializeField] [FMODUnity.EventRef] private string BoxDropEventPath;
-    [SerializeField] [FMODUnity.EventRef] private string BoxHitEventPath;
+    [SerializeField] [FMODUnity.EventRef] private string m_BoxPickupEventPath;
+    [SerializeField] [FMODUnity.EventRef] private string m_BoxDropEventPath;
+    [SerializeField] [FMODUnity.EventRef] private string m_BoxHitEventPath;
     
 
-    public static FMOD.Studio.EventInstance BoxPickup;
-    public static FMOD.Studio.EventInstance BoxDrop;
-    public static FMOD.Studio.EventInstance BoxHit;
-    
+    public static FMOD.Studio.EventInstance m_BoxPickup;
+    public static FMOD.Studio.EventInstance m_BoxDrop;
+    public static FMOD.Studio.EventInstance m_BoxHit;
 
+    GameObject m_grabbedObject;
+    Vector3 m_grabOffset;
 
-
-
-
-
-    GameObject g_grabbedObject;
-    Vector3 g_grabOffset;
-
-    private bool isReleased = false;
-   
-
-  
+    private bool m_isReleased = false;  
 
     // Use this for initialization
     void Start()
     {
-        g_grabbedObject = null;
-        g_grabOffset = Vector3.zero;
+        m_grabbedObject = null;
+        m_grabOffset = Vector3.zero;
         GetComponent<BoxClickPickupSound>().Update();
     }
 
-
-
-
-
-
     // Returns true if input object is currently grabbed.
-    public bool IsGrabbedObject(GameObject gameObject)
+    public bool IsGrabbedObject(GameObject in_gameObject)
     {
-        if (gameObject == g_grabbedObject)
+        if (in_gameObject == m_grabbedObject)
         {
             return true;
         }
@@ -81,23 +64,23 @@ public class BoxClickPickupSound : MonoBehaviour
                     if (l_hit.transform.tag == "MoveableObject")
                     {
                         // Store grabbed object.
-                        g_grabbedObject = GameObject.Find(l_hit.collider.name);
+                        m_grabbedObject = GameObject.Find(l_hit.collider.name);
 
                         // Disable gravity and lock rotation.
-                        g_grabbedObject.GetComponent<Rigidbody>().useGravity = false;
-                        g_grabbedObject.GetComponent<Rigidbody>().freezeRotation = true;
+                        m_grabbedObject.GetComponent<Rigidbody>().useGravity = false;
+                        m_grabbedObject.GetComponent<Rigidbody>().freezeRotation = true;
 
                         // Calculate offset between grab position and object position.
-                        float l_distanceFromCamera = Camera.main.WorldToScreenPoint(g_grabbedObject.transform.position).z;
+                        float l_distanceFromCamera = Camera.main.WorldToScreenPoint(m_grabbedObject.transform.position).z;
                         Vector3 l_mouseWorldPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, l_distanceFromCamera));
-                        g_grabOffset = l_mouseWorldPosition - g_grabbedObject.transform.position;
+                        m_grabOffset = l_mouseWorldPosition - m_grabbedObject.transform.position;
 
                         // Debug, output object name.
-                        Debug.Log("Object Hit: " + g_grabbedObject.name);
+                        Debug.Log("Object Hit: " + m_grabbedObject.name);
 
                         // Play Pickup sound
-                        BoxPickup = FMODUnity.RuntimeManager.CreateInstance(BoxPickupEventPath);
-                        BoxPickup.start();
+                        m_BoxPickup = FMODUnity.RuntimeManager.CreateInstance(m_BoxPickupEventPath);
+                        m_BoxPickup.start();
                         Debug.Log("CAPART");
                     }
                 }
@@ -109,19 +92,19 @@ public class BoxClickPickupSound : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             // Check if object has been grabbed.
-            if (g_grabbedObject)
+            if (m_grabbedObject)
             {
-                float l_distanceFromCamera = Camera.main.WorldToScreenPoint(g_grabbedObject.transform.position).z;
+                float l_distanceFromCamera = Camera.main.WorldToScreenPoint(m_grabbedObject.transform.position).z;
                 Vector3 l_mouseWorldPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, l_distanceFromCamera));
 
                 Vector3 l_direction;
                 float l_distance;
                 float l_maxDistance = 2.0f;
 
-                isReleased = true;
+                m_isReleased = true;
 
                 // Calculate distance and direction.
-                l_direction = l_mouseWorldPosition - g_grabbedObject.transform.position - g_grabOffset;
+                l_direction = l_mouseWorldPosition - m_grabbedObject.transform.position - m_grabOffset;
                 l_distance = l_direction.magnitude;
                 l_direction.Normalize();
 
@@ -131,7 +114,7 @@ public class BoxClickPickupSound : MonoBehaviour
                     // Release grabbed object.
                     DropGrabbedObject();
                     DropSound();
-                    isReleased = false;
+                    m_isReleased = false;
                 }
                 else
                 {
@@ -145,7 +128,7 @@ public class BoxClickPickupSound : MonoBehaviour
                     }
 
                     // Move object towards mouse.
-                    g_grabbedObject.GetComponent<Rigidbody>().velocity = l_direction * l_speed;
+                    m_grabbedObject.GetComponent<Rigidbody>().velocity = l_direction * l_speed;
                 }
             }
         }
@@ -154,21 +137,21 @@ public class BoxClickPickupSound : MonoBehaviour
             // Release grabbed object.
             DropGrabbedObject();
             DropSound();
-            isReleased = false;
+            m_isReleased = false;
         }
     }
 
     void DropGrabbedObject()
     {
         // Check if object has been grabbed.
-        if (g_grabbedObject)
+        if (m_grabbedObject)
         {
             // Re-enable gravity and unlock rotation.
-            g_grabbedObject.GetComponent<Rigidbody>().useGravity = true;
-            g_grabbedObject.GetComponent<Rigidbody>().freezeRotation = false;
+            m_grabbedObject.GetComponent<Rigidbody>().useGravity = true;
+            m_grabbedObject.GetComponent<Rigidbody>().freezeRotation = false;
 
             // Release grabbed object.
-            g_grabbedObject = null;
+            m_grabbedObject = null;
         }
     }
 
@@ -186,9 +169,9 @@ public class BoxClickPickupSound : MonoBehaviour
     // Play Drop sound
     void DropSound()
     {
-        if (isReleased)
+        if (m_isReleased)
         {
-            BoxDrop.start();
+            m_BoxDrop.start();
             Debug.Log("YA");
         }
         else
@@ -196,7 +179,4 @@ public class BoxClickPickupSound : MonoBehaviour
             Debug.Log("NEIN");
         }
     }
-
-
-
 }

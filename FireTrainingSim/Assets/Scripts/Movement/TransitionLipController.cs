@@ -1,7 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
+[Obsolete("Delete me.")]
 public class TransitionLipController : MonoBehaviour {
 
     // Public Objects so the script is customizable

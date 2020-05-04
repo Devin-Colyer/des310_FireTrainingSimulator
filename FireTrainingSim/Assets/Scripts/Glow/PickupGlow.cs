@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PickupGlow : MonoBehaviour
 {
-    BoxClickPickup g_objectGrabber;
+    BoxClickPickup m_objectGrabber;
 
     // Use this for initialization
     void Start()
@@ -12,17 +12,17 @@ public class PickupGlow : MonoBehaviour
         // Check if object grabber exists.
         if (GameObject.Find("Object Grabber"))
         {
-            g_objectGrabber = GameObject.Find("Object Grabber").GetComponent<BoxClickPickup>();
+            m_objectGrabber = GameObject.Find("Object Grabber").GetComponent<BoxClickPickup>();
         }
     }
 
     // Called each frame mouse is over object.
     private void OnMouseOver()
     {
-        if (g_objectGrabber)
+        if (m_objectGrabber)
         {
             // Check if objecty is currently grabbed
-            if (g_objectGrabber.IsGrabbedObject(this.gameObject))
+            if (m_objectGrabber.IsGrabbedObject(this.gameObject))
             {
                 // Object is grabbed, fade out glow.
                 this.GetComponent<GlowComponent>().FadeOut();

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EncodableAsset" id="{ff9cd2f8-8b7f-4d8d-b139-f349e1fc4533}">
+		<property name="assetPath">
+			<value>Interaclible/Extinguisher/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{4c4061f7-9951-41b8-a620-678f53106e55}</destination>
+		</relationship>
+	</object>
+</objects>

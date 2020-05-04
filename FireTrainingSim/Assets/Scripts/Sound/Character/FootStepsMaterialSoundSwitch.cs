@@ -1,7 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
+[Obsolete("Delete this script")]
 public class FootStepsMaterialSoundSwitch : MonoBehaviour {
 
 

@@ -1,35 +1,35 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.UI;
+﻿using UnityEngine.UI;
 using UnityEngine;
 
 public class ScreenFade : MonoBehaviour
 {
-    // Global variables.
-    GameObject g_screenFade;
-    public bool g_fading;
-    float g_timeToFade;
-    float g_currentFadeTime;
-    public Color g_fadeColor;
-    float g_currentAlpha;
-    float g_targetAlpha;
-    float g_startAlpha;
+    // Member variables.
+    GameObject m_screenFade;
+    public bool m_fading;
+    float m_timeToFade;
+    float m_currentFadeTime;
+    public Color m_fadeColor;
+    float m_currentAlpha;
+    float m_targetAlpha;
+    float m_startAlpha;
 
     // Use this for initialization
     void Start ()
     {
+        Debug.Log("Start");
+
         // Initialise global variables.
-        g_timeToFade = 1.0f;
-        g_currentFadeTime = 1.0f;
-        g_currentAlpha = 0.0f;
-        g_targetAlpha = 0.0f;
-        g_startAlpha = 0.0f;
-        g_fading = false;
+        m_timeToFade = 1.0f;
+        m_currentFadeTime = 1.0f;
+        m_currentAlpha = 0.0f;
+        m_targetAlpha = 0.0f;
+        m_startAlpha = 0.0f;
+        m_fading = false;
 
         // Retrieve fade image from UI.
-        g_screenFade = GameObject.Find("Screen Fade");
-        g_screenFade.GetComponent<RectTransform>().sizeDelta = new Vector2(Screen.width, Screen.height);
-        g_screenFade.GetComponent<Image>().color = new Color(g_fadeColor.r, g_fadeColor.g, g_fadeColor.b, 0.0f);
+        m_screenFade = GameObject.Find("Screen Fade");
+        m_screenFade.GetComponent<RectTransform>().sizeDelta = new Vector2(Screen.width, Screen.height);
+        m_screenFade.GetComponent<Image>().color = new Color(m_fadeColor.r, m_fadeColor.g, m_fadeColor.b, 0.0f);
 
         // Fade in on game start.
         FadeIn(0.5f);
@@ -39,53 +39,57 @@ public class ScreenFade : MonoBehaviour
 	void Update ()
     {
         // Check if currently fading.
-        if (g_fading)
+        if (m_fading)
         {
             // Increment fade time.
-            g_currentFadeTime += Time.deltaTime;
+            m_currentFadeTime += Time.deltaTime;
 
             // Calculate lerp factor.
-            float l_lerpFactor = (g_currentFadeTime / g_timeToFade);
+            float l_lerpFactor = (m_currentFadeTime / m_timeToFade);
 
             // Lerp from current alpha to target.
-            g_currentAlpha = Mathf.Lerp(g_startAlpha, g_targetAlpha, l_lerpFactor);
+            m_currentAlpha = Mathf.Lerp(m_startAlpha, m_targetAlpha, l_lerpFactor);
         }
 
         // Check if current alpha has reached target.
-        if (Mathf.Approximately(g_currentAlpha, g_targetAlpha))
+        if (Mathf.Approximately(m_currentAlpha, m_targetAlpha))
         {
             // Stop fading.
-            g_fading = false;
+            m_fading = false;
         }
 
         // Update fade effect with current alpha.
-        g_screenFade.GetComponent<Image>().color = new Color(g_fadeColor.r, g_fadeColor.g, g_fadeColor.b, g_currentAlpha);
+        m_screenFade.GetComponent<Image>().color = new Color(m_fadeColor.r, m_fadeColor.g, m_fadeColor.b, m_currentAlpha);
 
     }
 
     public void FadeIn(float time)
     {
+        Debug.Log("Fade in.");
+
         // Begin fading.
-        g_timeToFade = time;
-        g_currentFadeTime = 0.0f;
-        g_fading = true;
+        m_timeToFade = time;
+        m_currentFadeTime = 0.0f;
+        m_fading = true;
 
         // Set current and target alpha.
-        g_startAlpha = g_fadeColor.a;
-        g_currentAlpha = g_startAlpha;
-        g_targetAlpha = 0.0f;
+        m_startAlpha = m_fadeColor.a;
+        m_currentAlpha = m_startAlpha;
+        m_targetAlpha = 0.0f;
     }
 
     public void FadeOut(float time)
     {
+        Debug.Log("Fade out.");
+
         // Begin fading.
-        g_timeToFade = time;
-        g_currentFadeTime = 0.0f;
-        g_fading = true;
+        m_timeToFade = time;
+        m_currentFadeTime = 0.0f;
+        m_fading = true;
 
         // Set current and target alpha.
-        g_startAlpha = 0.0f;
-        g_currentAlpha = g_startAlpha;
-        g_targetAlpha = g_fadeColor.a;
+        m_startAlpha = 0.0f;
+        m_currentAlpha = m_startAlpha;
+        m_targetAlpha = m_fadeColor.a;
     }
 }

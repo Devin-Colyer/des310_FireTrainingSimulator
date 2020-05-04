@@ -9,7 +9,7 @@ public class MainMenuController : MonoBehaviour {
     public void PlayButtonPressed()
     {
         // Move onto the next scene
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     // When play button is pressed call this function

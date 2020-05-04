@@ -1,8 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 using UnityEngine.AI;
 
+[Obsolete("Ask Arthur if I need deleted.")]
 public class AudioTestScenePointAndClickPlayerController : MonoBehaviour
 {
 

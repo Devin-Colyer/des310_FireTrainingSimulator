@@ -5,8 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class LevelExitTrigger : MonoBehaviour
 {
-    bool b_isExiting;
-    ScreenFade g_screenFade;
+    bool m_isExiting;
+    ScreenFade m_screenFade;
+
+    // Sound Part
+    public MusicEmitter m_MusicEmitterScript;
+
 
 	// Use this for initialization
 	void Start ()
@@ -15,7 +19,7 @@ public class LevelExitTrigger : MonoBehaviour
         
         if (l_fadeObject)
         {
-            g_screenFade = l_fadeObject.GetComponent<ScreenFade>();
+            m_screenFade = l_fadeObject.GetComponent<ScreenFade>();
         }
 
     }
@@ -24,16 +28,17 @@ public class LevelExitTrigger : MonoBehaviour
 	void Update ()
     {
         // Check if player is exiting the level.
-		if (b_isExiting)
+		if (m_isExiting)
         {
             // Check if screen fade exists.
-            if (g_screenFade)
+            if (m_screenFade)
             {
                 // Wait for screen to fade out before changing level.
-                if (!g_screenFade.g_fading)
+                if (!m_screenFade.m_fading)
                 {
                     // Screen has finished fading, change scene.
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                    SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+                    m_MusicEmitterScript.StopMusic();
                 }
             }
             else
@@ -50,13 +55,13 @@ public class LevelExitTrigger : MonoBehaviour
         if (collider.tag == "Player")
         {
             // Begin exiting level.
-            b_isExiting = true;
+            m_isExiting = true;
 
             // Check if screen fade exists.
-            if (g_screenFade)
+            if (m_screenFade)
             {
                 // Begin fading out.
-                g_screenFade.FadeOut(0.5f);
+                m_screenFade.FadeOut(0.5f);
             }
         }
     }

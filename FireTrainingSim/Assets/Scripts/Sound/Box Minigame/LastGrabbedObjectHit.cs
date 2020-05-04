@@ -1,16 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class LastGrabbedObjectHit : MonoBehaviour {
 
-    public float lastGrabbedObjectVelocity;
+    public float m_lastGrabbedObjectVelocity;
 
-    GameObject g_lastGrabbedObject;
+    GameObject m_lastGrabbedObject;
 
-    float kineticEnergy;
-    public float objectMass;
-    public float velocity;
+    float m_kineticEnergy;
+    public float m_objectMass;
+    public float m_velocity;
 
 
     //To delete, it's just to have something to put on If object hit something
@@ -21,13 +19,13 @@ public class LastGrabbedObjectHit : MonoBehaviour {
 
     void Start()
     {
-        g_lastGrabbedObject = null;
+        m_lastGrabbedObject = null;
     }
 
     void Update()
     {
         //Check if there are a throwed object
-        if (gameObject==g_lastGrabbedObject)
+        if (gameObject== m_lastGrabbedObject)
         {
 
 
@@ -35,10 +33,10 @@ public class LastGrabbedObjectHit : MonoBehaviour {
             if (test)
             {
                 //calucate it's KineticEnergy to mesure the power of it's impact
-                Rigidbody rb = g_lastGrabbedObject.GetComponent<Rigidbody>();
+                Rigidbody rb = m_lastGrabbedObject.GetComponent<Rigidbody>();
                 Vector3 v3Velocity = rb.velocity;
-                kineticEnergy = .5f * objectMass * velocity * velocity;
-                Debug.Log(kineticEnergy);
+                m_kineticEnergy = .5f * m_objectMass * m_velocity * m_velocity;
+                Debug.Log(m_kineticEnergy);
 
             }
             

@@ -1,23 +1,34 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Diagnostics;
 
 public class HazardFinder : MonoBehaviour
 {
     public GameObject m_player;
-    //public GameObject m_hazardPopup;
-    private Transform g_hazardPopup;
+    private Transform m_hazardPopup;
     public GameObject m_levelExit;
     public GameObject[] m_hazards;
     [Range(0, 100)] public float m_maxDistance = 10;
-	
+
+    // VoiceOverPart
+    public static int m_HazardFinderDialogueValue;
+    public Dialogue m_DialogueScript;
+    public static bool m_HavePlayedDialogue = false;
+    public bool m_NeedToPlayCompletedMinigameDialogue = false;
+    bool m_HavePlayedCompletedHazardDialogue = false;
+    public bool m_NeedToPlayCompletedHazardDialogue = false;
+    public int m_CompletedHazardDialogueValue = 0;
+
+
+
+
+
     void Start()
     {
         // Check if player exists.
         if (m_player)
         {
             // Find hazard popup in player.
-            g_hazardPopup = m_player.transform.Find("Hazard Popup");
+            m_hazardPopup = m_player.transform.Find("Hazard Popup");
         }
     }
 
@@ -27,7 +38,7 @@ public class HazardFinder : MonoBehaviour
         if (m_hazards.Length <= 0)
         {
             // Safety check, makes sure there are hazards in the scene.
-            g_hazardPopup.GetComponent<TextMesh>().text = "";
+            m_hazardPopup.GetComponent<TextMesh>().text = "";
             return;
         }
 
@@ -44,6 +55,7 @@ public class HazardFinder : MonoBehaviour
             {
                 // Increment number of hazards.
                 l_numHazards++;
+                Debugger.Break();
 
                 // Calculate distance to player.
                 float l_distance = Vector3.Distance(hazard.transform.position, m_player.transform.position);
@@ -63,13 +75,30 @@ public class HazardFinder : MonoBehaviour
         if (l_numHazards == 0)
         {
             // All hazards have been dealt with.
-            g_hazardPopup.GetComponent<TextMesh>().text = "";
-            
+            m_hazardPopup.GetComponent<TextMesh>().text = "";
+
             if (m_levelExit)
             {
-                // Open level exit.
-                m_levelExit.transform.Find("Open").gameObject.SetActive(true);
-                m_levelExit.transform.Find("Closed").gameObject.SetActive(false);
+                // Check if exit is closed.
+                if (m_levelExit.transform.Find("Closed").gameObject.activeSelf)
+                {
+                    // Play dialogue.
+
+                    // Open level exit.
+                    m_levelExit.transform.Find("Open").gameObject.SetActive(true);
+                    m_levelExit.transform.Find("Closed").gameObject.SetActive(false);
+                }
+            }
+
+            // VoiceOverPart
+            if (m_NeedToPlayCompletedHazardDialogue)
+            {
+                if (m_HavePlayedCompletedHazardDialogue == false)
+                {
+                    Dialogue.m_FDialogueValue = m_CompletedHazardDialogueValue;
+                    m_DialogueScript.PlayDialogue();
+                    m_HavePlayedCompletedHazardDialogue = true;
+                }
             }
         }
         else
@@ -80,19 +109,29 @@ public class HazardFinder : MonoBehaviour
             // Update hazard popup using closest hazard.
             if (l_percentageDistance < 33)
             {
-                g_hazardPopup.GetComponent<TextMesh>().text = "!!!";
+                m_hazardPopup.GetComponent<TextMesh>().text = "!!!";
+                if (m_NeedToPlayCompletedMinigameDialogue == true)
+                {
+                    if (m_HavePlayedDialogue == false)
+                    {
+                        Dialogue.m_FDialogueValue = m_HazardFinderDialogueValue;
+                        m_DialogueScript.PlayDialogue();
+                        m_HavePlayedDialogue = true;
+
+                    }
+                }
             }
             else if (l_percentageDistance < 66)
             {
-                g_hazardPopup.GetComponent<TextMesh>().text = "!!";
+                m_hazardPopup.GetComponent<TextMesh>().text = "!!";
             }
             else if (l_percentageDistance < 99)
             {
-                g_hazardPopup.GetComponent<TextMesh>().text = "!";
+                m_hazardPopup.GetComponent<TextMesh>().text = "!";
             }
             else
             {
-                g_hazardPopup.GetComponent<TextMesh>().text = "";
+                m_hazardPopup.GetComponent<TextMesh>().text = "";
             }
         }
     }

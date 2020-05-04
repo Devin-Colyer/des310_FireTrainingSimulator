@@ -1,7 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
+[Obsolete("I'm for testing.")]
 public class SpaceToWin : MonoBehaviour {
 
     public Camera m_RoomCamera;
