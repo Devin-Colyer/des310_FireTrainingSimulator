@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class RoomAreaTrigger : MonoBehaviour
 {
+    void update()
+    {
+
+    }
+
     void OnTriggerStay(Collider collider)
     {
         if (collider.tag == "Player")
