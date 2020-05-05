@@ -1,80 +1,224 @@
 fileFormatVersion: 2
 guid: c816dc23da93cc94c8b14bc2224bcf32
 ModelImporter:
-  serializedVersion: 22
-  fileIDToRecycleName:
-    100000: HubFloorAndWall
-    100002: itm_FireDoor1:Mesh_Door
-    100004: KitchenDoor
-    100006: Level3_Hub
-    100008: //RootNode
-    100010: LoadingDockDoor
-    100012: Mesh_Door
-    100014: Mesh_Door 1
-    100016: Mesh_Door 2
-    100018: Mesh_Frame
-    100020: Mesh_Frame 1
-    100022: OfficeDoor
-    100024: ServerDoor
-    100026: Sofa
-    100028: VendingMachine
-    400000: HubFloorAndWall
-    400002: itm_FireDoor1:Mesh_Door
-    400004: KitchenDoor
-    400006: //RootNode
-    400008: Level3_Hub
-    400010: LoadingDockDoor
-    400012: Mesh_Door
-    400014: Mesh_Door 1
-    400016: Mesh_Door 2
-    400018: Mesh_Frame
-    400020: Mesh_Frame 1
-    400022: OfficeDoor
-    400024: ServerDoor
-    400026: Sofa
-    400028: VendingMachine
-    2100000: LambertBlue
-    2100002: LambertTan
-    2100004: LambertWhite
-    2100006: LambertBrown
-    2100008: LambertDarkBrown
-    2100010: LambertDarkBlue
-    2100012: VendingMachine2
-    2100014: VendingMachine1
-    2300000: HubFloorAndWall
-    2300002: itm_FireDoor1:Mesh_Door
-    2300004: Mesh_Door
-    2300006: Mesh_Door 1
-    2300008: Mesh_Door 2
-    2300010: Mesh_Frame
-    2300012: Mesh_Frame 1
-    2300014: OfficeDoor
-    2300016: ServerDoor
-    2300018: Sofa
-    2300020: VendingMachine
-    3300000: HubFloorAndWall
-    3300002: itm_FireDoor1:Mesh_Door
-    3300004: Mesh_Door
-    3300006: Mesh_Door 1
-    3300008: Mesh_Door 2
-    3300010: Mesh_Frame
-    3300012: Mesh_Frame 1
-    3300014: OfficeDoor
-    3300016: ServerDoor
-    3300018: Sofa
-    3300020: VendingMachine
-    4300000: HubFloorAndWall
-    4300002: Sofa
-    4300004: Mesh_Frame
-    4300006: Mesh_Door
-    4300008: Mesh_Frame
-    4300010: Mesh_Door
-    4300012: VendingMachine
-    4300014: OfficeDoor
-    4300016: itm_FireDoor1:Mesh_Door
-    4300018: ServerDoor
-    4300020: Mesh_Door
-    2186277476908879412: ImportLogs
+  serializedVersion: 26
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: HubFloorAndWall
+  - first:
+      1: 100002
+    second: itm_FireDoor1:Mesh_Door
+  - first:
+      1: 100004
+    second: KitchenDoor
+  - first:
+      1: 100006
+    second: Level3_Hub
+  - first:
+      1: 100008
+    second: //RootNode
+  - first:
+      1: 100010
+    second: LoadingDockDoor
+  - first:
+      1: 100012
+    second: Mesh_Door
+  - first:
+      1: 100014
+    second: Mesh_Door 1
+  - first:
+      1: 100016
+    second: Mesh_Door 2
+  - first:
+      1: 100018
+    second: Mesh_Frame
+  - first:
+      1: 100020
+    second: Mesh_Frame 1
+  - first:
+      1: 100022
+    second: OfficeDoor
+  - first:
+      1: 100024
+    second: ServerDoor
+  - first:
+      1: 100026
+    second: Sofa
+  - first:
+      1: 100028
+    second: VendingMachine
+  - first:
+      4: 400000
+    second: HubFloorAndWall
+  - first:
+      4: 400002
+    second: itm_FireDoor1:Mesh_Door
+  - first:
+      4: 400004
+    second: KitchenDoor
+  - first:
+      4: 400006
+    second: //RootNode
+  - first:
+      4: 400008
+    second: Level3_Hub
+  - first:
+      4: 400010
+    second: LoadingDockDoor
+  - first:
+      4: 400012
+    second: Mesh_Door
+  - first:
+      4: 400014
+    second: Mesh_Door 1
+  - first:
+      4: 400016
+    second: Mesh_Door 2
+  - first:
+      4: 400018
+    second: Mesh_Frame
+  - first:
+      4: 400020
+    second: Mesh_Frame 1
+  - first:
+      4: 400022
+    second: OfficeDoor
+  - first:
+      4: 400024
+    second: ServerDoor
+  - first:
+      4: 400026
+    second: Sofa
+  - first:
+      4: 400028
+    second: VendingMachine
+  - first:
+      21: 2100000
+    second: LambertBlue
+  - first:
+      21: 2100002
+    second: LambertTan
+  - first:
+      21: 2100004
+    second: LambertWhite
+  - first:
+      21: 2100006
+    second: LambertBrown
+  - first:
+      21: 2100008
+    second: LambertDarkBrown
+  - first:
+      21: 2100010
+    second: LambertDarkBlue
+  - first:
+      21: 2100012
+    second: VendingMachine2
+  - first:
+      21: 2100014
+    second: VendingMachine1
+  - first:
+      23: 2300000
+    second: HubFloorAndWall
+  - first:
+      23: 2300002
+    second: itm_FireDoor1:Mesh_Door
+  - first:
+      23: 2300004
+    second: Mesh_Door
+  - first:
+      23: 2300006
+    second: Mesh_Door 1
+  - first:
+      23: 2300008
+    second: Mesh_Door 2
+  - first:
+      23: 2300010
+    second: Mesh_Frame
+  - first:
+      23: 2300012
+    second: Mesh_Frame 1
+  - first:
+      23: 2300014
+    second: OfficeDoor
+  - first:
+      23: 2300016
+    second: ServerDoor
+  - first:
+      23: 2300018
+    second: Sofa
+  - first:
+      23: 2300020
+    second: VendingMachine
+  - first:
+      33: 3300000
+    second: HubFloorAndWall
+  - first:
+      33: 3300002
+    second: itm_FireDoor1:Mesh_Door
+  - first:
+      33: 3300004
+    second: Mesh_Door
+  - first:
+      33: 3300006
+    second: Mesh_Door 1
+  - first:
+      33: 3300008
+    second: Mesh_Door 2
+  - first:
+      33: 3300010
+    second: Mesh_Frame
+  - first:
+      33: 3300012
+    second: Mesh_Frame 1
+  - first:
+      33: 3300014
+    second: OfficeDoor
+  - first:
+      33: 3300016
+    second: ServerDoor
+  - first:
+      33: 3300018
+    second: Sofa
+  - first:
+      33: 3300020
+    second: VendingMachine
+  - first:
+      43: 4300000
+    second: HubFloorAndWall
+  - first:
+      43: 4300002
+    second: Sofa
+  - first:
+      43: 4300004
+    second: Mesh_Frame
+  - first:
+      43: 4300006
+    second: Mesh_Door
+  - first:
+      43: 4300008
+    second: Mesh_Frame
+  - first:
+      43: 4300010
+    second: Mesh_Door
+  - first:
+      43: 4300012
+    second: VendingMachine
+  - first:
+      43: 4300014
+    second: OfficeDoor
+  - first:
+      43: 4300016
+    second: itm_FireDoor1:Mesh_Door
+  - first:
+      43: 4300018
+    second: ServerDoor
+  - first:
+      43: 4300020
+    second: Mesh_Door
+  - first:
+      41386430: 2186277476908879412
+    second: ImportLogs
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -149,6 +293,8 @@ ModelImporter:
     globalScale: 64
     meshCompression: 3
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 0
@@ -156,10 +302,13 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
@@ -171,10 +320,14 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -184,8 +337,8 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 64
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
