@@ -1912,6 +1912,7 @@ GameObject:
   - component: {fileID: 145925299}
   - component: {fileID: 145925297}
   - component: {fileID: 145925296}
+  - component: {fileID: 145925298}
   m_Layer: 0
   m_Name: CO2Extinguisher
   m_TagString: Untagged
@@ -1975,6 +1976,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c155dd6c5725b2468c2514282be74ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &145925298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145925293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2553b6c7fee6ca4f9d01b8e888c4260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_offset: {x: 0, y: 0, z: 0}
 --- !u!114 &145925299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2723,6 +2737,7 @@ GameObject:
   - component: {fileID: 210141649}
   - component: {fileID: 210141648}
   - component: {fileID: 210141647}
+  - component: {fileID: 210141650}
   m_Layer: 0
   m_Name: CO2Extinguisher
   m_TagString: Untagged
@@ -2801,6 +2816,19 @@ MonoBehaviour:
   m_extinguisherType: 4
   m_DialogueValue: 27
   m_DialogueScript: {fileID: 593217331}
+--- !u!114 &210141650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210141644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2553b6c7fee6ca4f9d01b8e888c4260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_offset: {x: 0, y: 0, z: 0}
 --- !u!1 &221398501
 GameObject:
   m_ObjectHideFlags: 0
@@ -3942,6 +3970,7 @@ GameObject:
   - component: {fileID: 288718402}
   - component: {fileID: 288718401}
   - component: {fileID: 288718400}
+  - component: {fileID: 288718404}
   m_Layer: 0
   m_Name: FoamExtinguisher
   m_TagString: Untagged
@@ -4020,6 +4049,19 @@ CapsuleCollider:
   m_Height: 2.19
   m_Direction: 1
   m_Center: {x: 0, y: 0.66, z: 0}
+--- !u!114 &288718404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288718398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2553b6c7fee6ca4f9d01b8e888c4260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_offset: {x: 0, y: 0, z: 0}
 --- !u!1 &288971156
 GameObject:
   m_ObjectHideFlags: 0
@@ -4209,6 +4251,7 @@ GameObject:
   - component: {fileID: 297644157}
   - component: {fileID: 297644156}
   - component: {fileID: 297644155}
+  - component: {fileID: 297644159}
   m_Layer: 0
   m_Name: WetChemicalExtinguisher
   m_TagString: Untagged
@@ -4287,6 +4330,19 @@ CapsuleCollider:
   m_Height: 2.19
   m_Direction: 1
   m_Center: {x: 0, y: 0.66, z: 0}
+--- !u!114 &297644159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297644153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2553b6c7fee6ca4f9d01b8e888c4260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_offset: {x: 0, y: 0, z: 0}
 --- !u!1 &307111239
 GameObject:
   m_ObjectHideFlags: 0
@@ -10823,14 +10879,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 227fcf20112d02d41b604999c9512154, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 227fcf20112d02d41b604999c9512154, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 227fcf20112d02d41b604999c9512154, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5
@@ -10874,6 +10922,14 @@ PrefabInstance:
     - target: {fileID: 400002, guid: 227fcf20112d02d41b604999c9512154, type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 227fcf20112d02d41b604999c9512154, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 227fcf20112d02d41b604999c9512154, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 227fcf20112d02d41b604999c9512154, type: 3}
@@ -12376,6 +12432,7 @@ GameObject:
   - component: {fileID: 622646697}
   - component: {fileID: 622646696}
   - component: {fileID: 622646695}
+  - component: {fileID: 622646698}
   m_Layer: 0
   m_Name: DryPowderExtinguisher
   m_TagString: Untagged
@@ -12454,6 +12511,19 @@ MonoBehaviour:
   m_extinguisherType: 3
   m_DialogueValue: 27
   m_DialogueScript: {fileID: 593217331}
+--- !u!114 &622646698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622646692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2553b6c7fee6ca4f9d01b8e888c4260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_offset: {x: 0, y: 0, z: 0}
 --- !u!1 &623912342
 GameObject:
   m_ObjectHideFlags: 0
@@ -14822,6 +14892,7 @@ GameObject:
   - component: {fileID: 836213063}
   - component: {fileID: 836213062}
   - component: {fileID: 836213061}
+  - component: {fileID: 836213064}
   m_Layer: 0
   m_Name: FoamExtinguisher
   m_TagString: Untagged
@@ -14900,6 +14971,19 @@ MonoBehaviour:
   m_extinguisherType: 2
   m_DialogueValue: 27
   m_DialogueScript: {fileID: 593217331}
+--- !u!114 &836213064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836213058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2553b6c7fee6ca4f9d01b8e888c4260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_offset: {x: 0, y: 0, z: 0}
 --- !u!1 &837903633
 GameObject:
   m_ObjectHideFlags: 0
@@ -28106,6 +28190,7 @@ GameObject:
   - component: {fileID: 1084862884}
   - component: {fileID: 1084862883}
   - component: {fileID: 1084862882}
+  - component: {fileID: 1084862886}
   m_Layer: 0
   m_Name: WetChemicalExtinguisher
   m_TagString: Untagged
@@ -28184,6 +28269,19 @@ CapsuleCollider:
   m_Height: 2.19
   m_Direction: 1
   m_Center: {x: 0, y: 0.66, z: 0}
+--- !u!114 &1084862886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084862880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2553b6c7fee6ca4f9d01b8e888c4260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_offset: {x: 0, y: 0, z: 0}
 --- !u!1001 &1098331550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29103,6 +29201,7 @@ GameObject:
   - component: {fileID: 1161530377}
   - component: {fileID: 1161530376}
   - component: {fileID: 1161530375}
+  - component: {fileID: 1161530379}
   m_Layer: 0
   m_Name: FoamExtinguisher
   m_TagString: Untagged
@@ -29181,6 +29280,19 @@ CapsuleCollider:
   m_Height: 2.19
   m_Direction: 1
   m_Center: {x: 0, y: 0.66, z: 0}
+--- !u!114 &1161530379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161530373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2553b6c7fee6ca4f9d01b8e888c4260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1168371489
 GameObject:
   m_ObjectHideFlags: 0
@@ -29848,6 +29960,7 @@ GameObject:
   - component: {fileID: 1239020482}
   - component: {fileID: 1239020481}
   - component: {fileID: 1239020480}
+  - component: {fileID: 1239020484}
   m_Layer: 0
   m_Name: WaterExtinguisher
   m_TagString: Untagged
@@ -29926,6 +30039,19 @@ CapsuleCollider:
   m_Height: 2.19
   m_Direction: 1
   m_Center: {x: 0, y: 0.66, z: 0}
+--- !u!114 &1239020484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239020478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2553b6c7fee6ca4f9d01b8e888c4260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1244842995
 GameObject:
   m_ObjectHideFlags: 0
@@ -31154,6 +31280,7 @@ GameObject:
   - component: {fileID: 1327779133}
   - component: {fileID: 1327779132}
   - component: {fileID: 1327779131}
+  - component: {fileID: 1327779134}
   m_Layer: 0
   m_Name: WaterExtinguisher
   m_TagString: Untagged
@@ -31232,6 +31359,19 @@ MonoBehaviour:
   m_extinguisherType: 1
   m_DialogueValue: 27
   m_DialogueScript: {fileID: 593217331}
+--- !u!114 &1327779134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327779128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2553b6c7fee6ca4f9d01b8e888c4260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1336418174
 GameObject:
   m_ObjectHideFlags: 0
@@ -31520,6 +31660,7 @@ GameObject:
   - component: {fileID: 1349100609}
   - component: {fileID: 1349100608}
   - component: {fileID: 1349100607}
+  - component: {fileID: 1349100611}
   m_Layer: 0
   m_Name: CO2Extinguisher
   m_TagString: Untagged
@@ -31598,6 +31739,19 @@ CapsuleCollider:
   m_Height: 2.19
   m_Direction: 1
   m_Center: {x: 0, y: 0.66, z: 0}
+--- !u!114 &1349100611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349100605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2553b6c7fee6ca4f9d01b8e888c4260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1351549730
 GameObject:
   m_ObjectHideFlags: 0
@@ -31694,6 +31848,7 @@ GameObject:
   - component: {fileID: 1352938225}
   - component: {fileID: 1352938224}
   - component: {fileID: 1352938223}
+  - component: {fileID: 1352938227}
   m_Layer: 0
   m_Name: CO2Extinguisher
   m_TagString: Untagged
@@ -31772,6 +31927,19 @@ CapsuleCollider:
   m_Height: 2.19
   m_Direction: 1
   m_Center: {x: 0, y: 0.66, z: 0}
+--- !u!114 &1352938227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352938221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2553b6c7fee6ca4f9d01b8e888c4260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1355002700
 GameObject:
   m_ObjectHideFlags: 0
@@ -32734,8 +32902,8 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bf3c26a2a1d45e0408e8e6b828fdf6a6, type: 2}
-  - {fileID: 2100000, guid: bf3c26a2a1d45e0408e8e6b828fdf6a6, type: 2}
+  - {fileID: 2100000, guid: dda5930551618df45afabdd62f450641, type: 2}
+  - {fileID: 2100000, guid: dda5930551618df45afabdd62f450641, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -33707,6 +33875,7 @@ GameObject:
   - component: {fileID: 1479745694}
   - component: {fileID: 1479745693}
   - component: {fileID: 1479745692}
+  - component: {fileID: 1479745696}
   m_Layer: 0
   m_Name: DryPowderExtinguisher
   m_TagString: Untagged
@@ -33785,6 +33954,19 @@ CapsuleCollider:
   m_Height: 2.19
   m_Direction: 1
   m_Center: {x: 0, y: 0.66, z: 0}
+--- !u!114 &1479745696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479745690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2553b6c7fee6ca4f9d01b8e888c4260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1481983714
 GameObject:
   m_ObjectHideFlags: 0
@@ -33799,6 +33981,7 @@ GameObject:
   - component: {fileID: 1481983719}
   - component: {fileID: 1481983718}
   - component: {fileID: 1481983717}
+  - component: {fileID: 1481983720}
   m_Layer: 0
   m_Name: WaterExtinguisher
   m_TagString: Untagged
@@ -33877,6 +34060,19 @@ MonoBehaviour:
   m_extinguisherType: 1
   m_DialogueValue: 31
   m_DialogueScript: {fileID: 593217331}
+--- !u!114 &1481983720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481983714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2553b6c7fee6ca4f9d01b8e888c4260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1484503266
 GameObject:
   m_ObjectHideFlags: 0
@@ -34541,6 +34737,7 @@ GameObject:
   - component: {fileID: 1555055051}
   - component: {fileID: 1555055050}
   - component: {fileID: 1555055049}
+  - component: {fileID: 1555055053}
   m_Layer: 0
   m_Name: WaterExtinguisher
   m_TagString: Untagged
@@ -34619,6 +34816,19 @@ CapsuleCollider:
   m_Height: 2.19
   m_Direction: 1
   m_Center: {x: 0, y: 0.66, z: 0}
+--- !u!114 &1555055053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555055047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2553b6c7fee6ca4f9d01b8e888c4260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1562318104
 GameObject:
   m_ObjectHideFlags: 0
@@ -36363,6 +36573,7 @@ GameObject:
   - component: {fileID: 1711946614}
   - component: {fileID: 1711946613}
   - component: {fileID: 1711946612}
+  - component: {fileID: 1711946615}
   m_Layer: 0
   m_Name: FoamExtinguisher
   m_TagString: Untagged
@@ -36441,6 +36652,19 @@ MonoBehaviour:
   m_extinguisherType: 2
   m_DialogueValue: 31
   m_DialogueScript: {fileID: 593217331}
+--- !u!114 &1711946615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711946609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2553b6c7fee6ca4f9d01b8e888c4260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_offset: {x: 0, y: 0, z: 0}
 --- !u!1001 &1713915278
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36516,6 +36740,7 @@ GameObject:
   - component: {fileID: 1717611952}
   - component: {fileID: 1717611951}
   - component: {fileID: 1717611950}
+  - component: {fileID: 1717611954}
   m_Layer: 0
   m_Name: WetChemicalExtinguisher
   m_TagString: Untagged
@@ -36594,6 +36819,19 @@ CapsuleCollider:
   m_Height: 2.19
   m_Direction: 1
   m_Center: {x: 0, y: 0.66, z: 0}
+--- !u!114 &1717611954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717611948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2553b6c7fee6ca4f9d01b8e888c4260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1720543935
 GameObject:
   m_ObjectHideFlags: 0
@@ -42892,6 +43130,7 @@ GameObject:
   - component: {fileID: 1834320236}
   - component: {fileID: 1834320235}
   - component: {fileID: 1834320234}
+  - component: {fileID: 1834320238}
   m_Layer: 0
   m_Name: WetChemicalExtinguisher
   m_TagString: Untagged
@@ -42970,6 +43209,19 @@ CapsuleCollider:
   m_Height: 2.19
   m_Direction: 1
   m_Center: {x: 0, y: 0.66, z: 0}
+--- !u!114 &1834320238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834320232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2553b6c7fee6ca4f9d01b8e888c4260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1860760432 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 4fd956df38da31941980908a1436d60e,
@@ -44571,6 +44823,7 @@ GameObject:
   - component: {fileID: 2007195434}
   - component: {fileID: 2007195433}
   - component: {fileID: 2007195432}
+  - component: {fileID: 2007195436}
   m_Layer: 0
   m_Name: DryPowderExtinguisher
   m_TagString: Untagged
@@ -44649,6 +44902,19 @@ CapsuleCollider:
   m_Height: 2.19
   m_Direction: 1
   m_Center: {x: 0, y: 0.66, z: 0}
+--- !u!114 &2007195436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007195430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2553b6c7fee6ca4f9d01b8e888c4260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_offset: {x: 0, y: 0, z: 0}
 --- !u!1 &2044853021
 GameObject:
   m_ObjectHideFlags: 0
@@ -45970,6 +46236,7 @@ GameObject:
   - component: {fileID: 2120224571}
   - component: {fileID: 2120224570}
   - component: {fileID: 2120224569}
+  - component: {fileID: 2120224572}
   m_Layer: 0
   m_Name: DryPowderExtinguisher
   m_TagString: Untagged
@@ -46048,6 +46315,19 @@ MonoBehaviour:
   m_extinguisherType: 3
   m_DialogueValue: 31
   m_DialogueScript: {fileID: 593217331}
+--- !u!114 &2120224572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120224566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2553b6c7fee6ca4f9d01b8e888c4260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_offset: {x: 0, y: 0, z: 0}
 --- !u!1 &2128349666
 GameObject:
   m_ObjectHideFlags: 0
