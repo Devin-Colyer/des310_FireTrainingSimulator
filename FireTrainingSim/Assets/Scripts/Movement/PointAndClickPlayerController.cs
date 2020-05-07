@@ -26,10 +26,10 @@ public class PointAndClickPlayerController : MonoBehaviour
                 // Check if collider exists.
                 if (l_Hit.collider)
                 {
-                    PointAndClickTrigger l_clickTrigger;
+                    PointAndClickTrigger l_clickTrigger = l_Hit.collider.GetComponent<PointAndClickTrigger>();
 
                     // Check if collider is a click trigger.
-                    if (l_clickTrigger = l_Hit.collider.GetComponent<PointAndClickTrigger>())
+                    if (l_clickTrigger)
                     {
                         // Move to trigger destination.
                         m_Agent.destination = l_clickTrigger.GetDestination();

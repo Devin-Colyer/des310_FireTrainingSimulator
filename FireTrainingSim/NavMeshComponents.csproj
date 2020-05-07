@@ -67,13 +67,13 @@
     <Compile Include="Assets\Plugins\NavMeshComponents\Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
     <Compile Include="Assets\Plugins\NavMeshComponents\Assets\NavMeshComponents\Scripts\NavMeshSurface.cs" />
     <Reference Include="UnityEditor.UI">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>E:/Program Files/Unity/2019.2.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -277,19 +277,19 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>E:/Program Files/Unity/2019.2.0f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

@@ -87,6 +87,7 @@ public class HazardFinder : MonoBehaviour
                     // Open level exit.
                     m_levelExit.transform.Find("Open").gameObject.SetActive(true);
                     m_levelExit.transform.Find("Closed").gameObject.SetActive(false);
+                    FindObjectOfType<UnityEngine.AI.NavMeshSurface>().BuildNavMesh();
                 }
             }
 

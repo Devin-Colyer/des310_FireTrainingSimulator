@@ -1,62 +1,170 @@
 fileFormatVersion: 2
 guid: 4263aababc85c5a478bfe67fcfb6f7e7
 ModelImporter:
-  serializedVersion: 22
-  fileIDToRecycleName:
-    100000: itm_ExtensionCable_DMG
-    100002: itm_ExtensionCable_FIX
-    100004: itm_FrayedCable_DMG
-    100006: itm_FrayedCable_FIX
-    100008: itm_Paperstack
-    100010: itm_WallSocket_DMG
-    100012: itm_WallSocket_FIX
-    100014: //RootNode
-    100016: prp_environment
-    400000: itm_ExtensionCable_DMG
-    400002: itm_ExtensionCable_FIX
-    400004: itm_FrayedCable_DMG
-    400006: itm_FrayedCable_FIX
-    400008: itm_Paperstack
-    400010: itm_WallSocket_DMG
-    400012: itm_WallSocket_FIX
-    400014: //RootNode
-    400016: prp_environment
-    2100000: lambert1
-    2100002: mat_plugtop
-    2100004: mat_plugpins
-    2100006: mat_socketblack
-    2100008: Default_Material
-    2100010: mat_plugred
-    2100012: mat_floor
-    2100014: mat_wall
-    2100016: mat_desk2
-    2100018: mat_desk1
-    2100020: mat_whiteness
-    2100022: mat_cablefray
-    2300000: itm_ExtensionCable_DMG
-    2300002: itm_ExtensionCable_FIX
-    2300004: itm_FrayedCable_DMG
-    2300006: itm_FrayedCable_FIX
-    2300008: itm_Paperstack
-    2300010: itm_WallSocket_DMG
-    2300012: itm_WallSocket_FIX
-    2300014: prp_environment
-    3300000: itm_ExtensionCable_DMG
-    3300002: itm_ExtensionCable_FIX
-    3300004: itm_FrayedCable_DMG
-    3300006: itm_FrayedCable_FIX
-    3300008: itm_Paperstack
-    3300010: itm_WallSocket_DMG
-    3300012: itm_WallSocket_FIX
-    3300014: prp_environment
-    4300000: prp_environment
-    4300002: itm_WallSocket_DMG
-    4300004: itm_WallSocket_FIX
-    4300006: itm_ExtensionCable_DMG
-    4300008: itm_ExtensionCable_FIX
-    4300010: itm_FrayedCable_DMG
-    4300012: itm_FrayedCable_FIX
-    4300014: itm_Paperstack
+  serializedVersion: 26
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: itm_ExtensionCable_DMG
+  - first:
+      1: 100002
+    second: itm_ExtensionCable_FIX
+  - first:
+      1: 100004
+    second: itm_FrayedCable_DMG
+  - first:
+      1: 100006
+    second: itm_FrayedCable_FIX
+  - first:
+      1: 100008
+    second: itm_Paperstack
+  - first:
+      1: 100010
+    second: itm_WallSocket_DMG
+  - first:
+      1: 100012
+    second: itm_WallSocket_FIX
+  - first:
+      1: 100014
+    second: //RootNode
+  - first:
+      1: 100016
+    second: prp_environment
+  - first:
+      4: 400000
+    second: itm_ExtensionCable_DMG
+  - first:
+      4: 400002
+    second: itm_ExtensionCable_FIX
+  - first:
+      4: 400004
+    second: itm_FrayedCable_DMG
+  - first:
+      4: 400006
+    second: itm_FrayedCable_FIX
+  - first:
+      4: 400008
+    second: itm_Paperstack
+  - first:
+      4: 400010
+    second: itm_WallSocket_DMG
+  - first:
+      4: 400012
+    second: itm_WallSocket_FIX
+  - first:
+      4: 400014
+    second: //RootNode
+  - first:
+      4: 400016
+    second: prp_environment
+  - first:
+      21: 2100000
+    second: lambert1
+  - first:
+      21: 2100002
+    second: mat_plugtop
+  - first:
+      21: 2100004
+    second: mat_plugpins
+  - first:
+      21: 2100006
+    second: mat_socketblack
+  - first:
+      21: 2100008
+    second: Default_Material
+  - first:
+      21: 2100010
+    second: mat_plugred
+  - first:
+      21: 2100012
+    second: mat_floor
+  - first:
+      21: 2100014
+    second: mat_wall
+  - first:
+      21: 2100016
+    second: mat_desk2
+  - first:
+      21: 2100018
+    second: mat_desk1
+  - first:
+      21: 2100020
+    second: mat_whiteness
+  - first:
+      21: 2100022
+    second: mat_cablefray
+  - first:
+      23: 2300000
+    second: itm_ExtensionCable_DMG
+  - first:
+      23: 2300002
+    second: itm_ExtensionCable_FIX
+  - first:
+      23: 2300004
+    second: itm_FrayedCable_DMG
+  - first:
+      23: 2300006
+    second: itm_FrayedCable_FIX
+  - first:
+      23: 2300008
+    second: itm_Paperstack
+  - first:
+      23: 2300010
+    second: itm_WallSocket_DMG
+  - first:
+      23: 2300012
+    second: itm_WallSocket_FIX
+  - first:
+      23: 2300014
+    second: prp_environment
+  - first:
+      33: 3300000
+    second: itm_ExtensionCable_DMG
+  - first:
+      33: 3300002
+    second: itm_ExtensionCable_FIX
+  - first:
+      33: 3300004
+    second: itm_FrayedCable_DMG
+  - first:
+      33: 3300006
+    second: itm_FrayedCable_FIX
+  - first:
+      33: 3300008
+    second: itm_Paperstack
+  - first:
+      33: 3300010
+    second: itm_WallSocket_DMG
+  - first:
+      33: 3300012
+    second: itm_WallSocket_FIX
+  - first:
+      33: 3300014
+    second: prp_environment
+  - first:
+      43: 4300000
+    second: prp_environment
+  - first:
+      43: 4300002
+    second: itm_WallSocket_DMG
+  - first:
+      43: 4300004
+    second: itm_WallSocket_FIX
+  - first:
+      43: 4300006
+    second: itm_ExtensionCable_DMG
+  - first:
+      43: 4300008
+    second: itm_ExtensionCable_FIX
+  - first:
+      43: 4300010
+    second: itm_FrayedCable_DMG
+  - first:
+      43: 4300012
+    second: itm_FrayedCable_FIX
+  - first:
+      43: 4300014
+    second: itm_Paperstack
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -141,6 +249,8 @@ ModelImporter:
     globalScale: 1
     meshCompression: 3
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 0
@@ -148,10 +258,13 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
@@ -163,10 +276,14 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 0
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -176,8 +293,8 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1

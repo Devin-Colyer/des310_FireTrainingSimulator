@@ -83,61 +83,61 @@
     <Compile Include="Assets\Plugins\FMOD\src\Runtime\wrapper\fmod_errors.cs" />
     <Compile Include="Assets\Plugins\FMOD\src\Runtime\wrapper\fmod_studio.cs" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Editor">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-weaver.Editor">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.multiplayer-hlapi.Runtime">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.multiplayer-hlapi.Runtime">
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>E:/Program Files/Unity/2019.2.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -317,13 +317,13 @@
       <HintPath>E:/Program Files/Unity/2019.2.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>E:/Users/devco/Documents/DES310 Backup/FireTrainingSim/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>E:/Users/devco/Documents/GitHub/des310_FireTrainingSimulator/FireTrainingSim/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>E:/Program Files/Unity/2019.2.0f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
