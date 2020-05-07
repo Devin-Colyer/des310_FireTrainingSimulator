@@ -16,8 +16,6 @@ public class ScreenFade : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-        Debug.Log("Start");
-
         // Initialise global variables.
         m_timeToFade = 1.0f;
         m_currentFadeTime = 1.0f;
@@ -61,12 +59,16 @@ public class ScreenFade : MonoBehaviour
         // Update fade effect with current alpha.
         m_screenFade.GetComponent<Image>().color = new Color(m_fadeColor.r, m_fadeColor.g, m_fadeColor.b, m_currentAlpha);
 
+        // Check if screen size has changed, update screen fade.
+        if (this.GetComponent<RectTransform>().sizeDelta.x != Screen.width || this.GetComponent<RectTransform>().sizeDelta.y != Screen.height)
+        {
+            this.GetComponent<RectTransform>().sizeDelta = new Vector2(Screen.width, Screen.height);
+        }
+
     }
 
     public void FadeIn(float time)
     {
-        Debug.Log("Fade in.");
-
         // Begin fading.
         m_timeToFade = time;
         m_currentFadeTime = 0.0f;
