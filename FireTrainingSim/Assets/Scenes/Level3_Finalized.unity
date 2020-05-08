@@ -481,6 +481,7 @@ MonoBehaviour:
   m_worldHazard: {fileID: 1788955750}
   m_extinguisherPickups: {fileID: 1667649989}
   m_ExtinguisherSoundsScript: {fileID: 0}
+  m_FirePowerSetter: {fileID: 0}
   m_sprayRadius: 1.5
 --- !u!1 &27437699
 GameObject:
@@ -1502,6 +1503,7 @@ MonoBehaviour:
   m_worldHazard: {fileID: 1459938852}
   m_extinguisherPickups: {fileID: 571276256}
   m_ExtinguisherSoundsScript: {fileID: 0}
+  m_FirePowerSetter: {fileID: 0}
   m_sprayRadius: 1.5
 --- !u!1 &114169748
 GameObject:
@@ -10453,9 +10455,9 @@ MonoBehaviour:
   m_minigame: Extinguisher Minigame (1)
   m_isFireMinigame: 1
   m_extinguishersForFire: 020000000300000004000000
-  m_DialogueWrongExtinguisherValue: 3
-  m_DialogueRightExtinguisherValue: 4
-  m_DialogueScript: {fileID: 0}
+  m_DialogueWrongExtinguisherValue: 0
+  m_DialogueRightExtinguisherValue: 0
+  m_DialogueScript: {fileID: 1012978588}
 --- !u!114 &492353152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12858,6 +12860,7 @@ GameObject:
   m_Component:
   - component: {fileID: 775146902}
   - component: {fileID: 775146901}
+  - component: {fileID: 775146903}
   m_Layer: 0
   m_Name: Extinguisher Minigame (3)
   m_TagString: Untagged
@@ -12902,6 +12905,21 @@ Transform:
   m_Father: {fileID: 1947542059}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &775146903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775146900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cf60d37dc9adeb4795559ffe5f14349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExtinguisherEventPath: event:/Extinguisher/Extinguisher
+  m_ExtinguisherStopEventPath: event:/Extinguisher/Extinguisher Stop
+  m_ExtinguisherPinOutEventPath: event:/Extinguisher/Extinguisher PinOut
 --- !u!1 &778567960
 GameObject:
   m_ObjectHideFlags: 0
@@ -13416,9 +13434,9 @@ MonoBehaviour:
   m_minigame: Socket Minigame
   m_isFireMinigame: 0
   m_extinguishersForFire: 
-  m_DialogueWrongExtinguisherValue: 3
-  m_DialogueRightExtinguisherValue: 2
-  m_DialogueScript: {fileID: 0}
+  m_DialogueWrongExtinguisherValue: 0
+  m_DialogueRightExtinguisherValue: 0
+  m_DialogueScript: {fileID: 1012978588}
 --- !u!114 &802116856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13761,6 +13779,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsKinematic
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114464677457091972, guid: e633839106e0a6242bde21aae5015643,
+        type: 3}
+      propertyPath: m_DialogueWhoNeedToPlayNextDialogue.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114464677457091972, guid: e633839106e0a6242bde21aae5015643,
+        type: 3}
+      propertyPath: m_DialogueWhoNeedToPlayNextDialogue.Array.data[0]
+      value: 35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e633839106e0a6242bde21aae5015643, type: 3}
@@ -14373,6 +14401,7 @@ MonoBehaviour:
   m_worldHazard: {fileID: 306378957}
   m_extinguisherPickups: {fileID: 2132894857}
   m_ExtinguisherSoundsScript: {fileID: 0}
+  m_FirePowerSetter: {fileID: 0}
   m_sprayRadius: 1.5
 --- !u!1 &917410744
 GameObject:
@@ -15352,9 +15381,9 @@ MonoBehaviour:
   m_minigame: Extinguisher Minigame (3)
   m_isFireMinigame: 1
   m_extinguishersForFire: 01000000010000000300000005000000
-  m_DialogueWrongExtinguisherValue: 3
-  m_DialogueRightExtinguisherValue: 4
-  m_DialogueScript: {fileID: 0}
+  m_DialogueWrongExtinguisherValue: 0
+  m_DialogueRightExtinguisherValue: 0
+  m_DialogueScript: {fileID: 1012978588}
 --- !u!114 &978739895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15816,10 +15845,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_DialogueEventPath: event:/Dialogue/Dialogue
-  m_DefaultFDialogueValue: 16
+  m_DefaultFDialogueValue: 35
   m_dialogueStateControl: 0
   m_DialogueWhoNeedToPlayNunmber: 
-  m_DialogueWhoNeedToPlayNextDialogue: 10000000
+  m_DialogueWhoNeedToPlayNextDialogue: 23000000
   m_NumbersEventPath: event:/Dialogue/Numbers
   m_FNumbersValue: 0
 --- !u!1 &1020915436
@@ -16137,6 +16166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1042742577}
   - component: {fileID: 1042742578}
+  - component: {fileID: 1042742579}
   m_Layer: 0
   m_Name: Extinguisher Minigame (0)
   m_TagString: Untagged
@@ -16183,6 +16213,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_cameraController: {fileID: 1290681046}
+--- !u!114 &1042742579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042742576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cf60d37dc9adeb4795559ffe5f14349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExtinguisherEventPath: event:/Extinguisher/Extinguisher
+  m_ExtinguisherStopEventPath: event:/Extinguisher/Extinguisher Stop
+  m_ExtinguisherPinOutEventPath: event:/Extinguisher/Extinguisher PinOut
 --- !u!1 &1043568959
 GameObject:
   m_ObjectHideFlags: 0
@@ -16223,6 +16268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1045947881}
   - component: {fileID: 1045947882}
+  - component: {fileID: 1045947883}
   m_Layer: 0
   m_Name: Extinguisher Minigame (1)
   m_TagString: Untagged
@@ -16265,6 +16311,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_cameraController: {fileID: 1290681046}
+--- !u!114 &1045947883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045947880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cf60d37dc9adeb4795559ffe5f14349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExtinguisherEventPath: event:/Extinguisher/Extinguisher
+  m_ExtinguisherStopEventPath: event:/Extinguisher/Extinguisher Stop
+  m_ExtinguisherPinOutEventPath: event:/Extinguisher/Extinguisher PinOut
 --- !u!1 &1064749852
 GameObject:
   m_ObjectHideFlags: 0
@@ -16381,6 +16442,7 @@ MonoBehaviour:
   m_worldHazard: {fileID: 721833309}
   m_extinguisherPickups: {fileID: 1754951747}
   m_ExtinguisherSoundsScript: {fileID: 0}
+  m_FirePowerSetter: {fileID: 0}
   m_sprayRadius: 1.5
 --- !u!1001 &1074691601
 PrefabInstance:
@@ -18603,9 +18665,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3633e27db14a184b92c5d7646da23e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_BoxPickupEventPath: 
-  m_BoxDropEventPath: 
-  m_BoxHitEventPath: 
+  m_BoxPickupEventPath: event:/Box/BoxPickup
+  m_BoxDropEventPath: event:/Box/BoxDrop
+  m_BoxHitEventPath: event:/Box/BoxHit
 --- !u!1001 &1238631610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18742,9 +18804,9 @@ MonoBehaviour:
   m_minigame: Extinguisher Minigame (2)
   m_isFireMinigame: 1
   m_extinguishersForFire: 03000000
-  m_DialogueWrongExtinguisherValue: 3
-  m_DialogueRightExtinguisherValue: 4
-  m_DialogueScript: {fileID: 0}
+  m_DialogueWrongExtinguisherValue: 0
+  m_DialogueRightExtinguisherValue: 0
+  m_DialogueScript: {fileID: 1012978588}
 --- !u!114 &1248368962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20758,9 +20820,9 @@ MonoBehaviour:
   m_minigame: Box Minigame
   m_isFireMinigame: 0
   m_extinguishersForFire: 
-  m_DialogueWrongExtinguisherValue: 3
-  m_DialogueRightExtinguisherValue: 4
-  m_DialogueScript: {fileID: 0}
+  m_DialogueWrongExtinguisherValue: 0
+  m_DialogueRightExtinguisherValue: 0
+  m_DialogueScript: {fileID: 1012978588}
 --- !u!114 &1415243848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33958,7 +34020,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d360206cbe45dc048a5fab2998deff9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MusicEmitterScript: {fileID: 0}
+  m_MusicEmitterScript: {fileID: 1012978586}
 --- !u!65 &1747564705
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34329,6 +34391,8 @@ MonoBehaviour:
   - {fileID: 141303689}
   - {fileID: 1788955750}
   m_maxDistance: 10
+  m_FirePowerSetter: {fileID: 0}
+  m_NeedToChangeFireSoundSettings: 0
   m_DialogueScript: {fileID: 0}
   m_NeedToPlayCompletedMinigameDialogue: 0
   m_NeedToPlayCompletedHazardDialogue: 0
@@ -34677,9 +34741,9 @@ MonoBehaviour:
   m_minigame: Extinguisher Minigame (0)
   m_isFireMinigame: 1
   m_extinguishersForFire: 03000000
-  m_DialogueWrongExtinguisherValue: 3
-  m_DialogueRightExtinguisherValue: 4
-  m_DialogueScript: {fileID: 0}
+  m_DialogueWrongExtinguisherValue: 0
+  m_DialogueRightExtinguisherValue: 0
+  m_DialogueScript: {fileID: 1012978588}
 --- !u!114 &1797625762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41906,6 +41970,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2022365838}
   - component: {fileID: 2022365839}
+  - component: {fileID: 2022365840}
   m_Layer: 0
   m_Name: Extinguisher Minigame (2)
   m_TagString: Untagged
@@ -41958,6 +42023,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_cameraController: {fileID: 1290681046}
+--- !u!114 &2022365840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022365837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cf60d37dc9adeb4795559ffe5f14349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExtinguisherEventPath: event:/Extinguisher/Extinguisher
+  m_ExtinguisherStopEventPath: event:/Extinguisher/Extinguisher Stop
+  m_ExtinguisherPinOutEventPath: event:/Extinguisher/Extinguisher PinOut
 --- !u!1 &2030092842
 GameObject:
   m_ObjectHideFlags: 0

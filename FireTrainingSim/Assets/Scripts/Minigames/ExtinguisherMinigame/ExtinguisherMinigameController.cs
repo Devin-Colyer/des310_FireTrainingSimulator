@@ -13,6 +13,7 @@ public class ExtinguisherMinigameController : MonoBehaviour {
 
     //SoundPart
     public ExtinguisherSounds m_ExtinguisherSoundsScript;
+    public FirePowerSetter m_FirePowerSetter;
     bool m_IsPlayingExtinguisherSound = false;
     bool m_IsPlayingStopExtinguisherSound = false;
     public static FMOD.Studio.EventInstance m_ExtinguisherEventInstance;
@@ -88,6 +89,7 @@ public class ExtinguisherMinigameController : MonoBehaviour {
                 {
                     m_ExtinguisherSoundsScript.StopExtinguisher();
                 }
+                m_FirePowerSetter.m_FFirePowerValueDefiner = 0;
                 beatMinigame = true;
             }
         }

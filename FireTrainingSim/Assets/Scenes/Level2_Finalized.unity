@@ -26989,6 +26989,7 @@ MonoBehaviour:
   m_worldHazard: {fileID: 221398501}
   m_extinguisherPickups: {fileID: 491422777}
   m_ExtinguisherSoundsScript: {fileID: 1358354231}
+  m_FirePowerSetter: {fileID: 1589402839}
   m_sprayRadius: 1.5
 --- !u!1 &1007952940
 GameObject:
@@ -27246,6 +27247,8 @@ MonoBehaviour:
   - {fileID: 379853422}
   - {fileID: 1582133304}
   m_maxDistance: 10
+  m_FirePowerSetter: {fileID: 945119567}
+  m_NeedToChangeFireSoundSettings: 0
   m_DialogueScript: {fileID: 593217331}
   m_NeedToPlayCompletedMinigameDialogue: 0
   m_NeedToPlayCompletedHazardDialogue: 1
@@ -29154,6 +29157,7 @@ MonoBehaviour:
   m_worldHazard: {fileID: 1582133304}
   m_extinguisherPickups: {fileID: 1348813920}
   m_ExtinguisherSoundsScript: {fileID: 985249805}
+  m_FirePowerSetter: {fileID: 609556040}
   m_sprayRadius: 1.5
 --- !u!1 &1159513024
 GameObject:
@@ -29583,6 +29587,7 @@ MonoBehaviour:
   m_worldHazard: {fileID: 1159513024}
   m_extinguisherPickups: {fileID: 498119270}
   m_ExtinguisherSoundsScript: {fileID: 1135940983}
+  m_FirePowerSetter: {fileID: 1007952942}
   m_sprayRadius: 1.5
 --- !u!1 &1206139358
 GameObject:
@@ -33068,6 +33073,7 @@ MonoBehaviour:
   m_worldHazard: {fileID: 379853422}
   m_extinguisherPickups: {fileID: 2086443368}
   m_ExtinguisherSoundsScript: {fileID: 317596019}
+  m_FirePowerSetter: {fileID: 1382068167}
   m_sprayRadius: 1.5
 --- !u!1 &1430329386
 GameObject:
@@ -42769,7 +42775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d360206cbe45dc048a5fab2998deff9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MusicEmitterScript: {fileID: 0}
+  m_MusicEmitterScript: {fileID: 593217333}
 --- !u!65 &1802795969
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42887,6 +42893,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CollisionDetection
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114464677457091972, guid: e633839106e0a6242bde21aae5015643,
+        type: 3}
+      propertyPath: m_DialogueWhoNeedToPlayNextDialogue.Array.size
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e633839106e0a6242bde21aae5015643, type: 3}

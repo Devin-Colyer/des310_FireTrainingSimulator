@@ -9,6 +9,9 @@ public class HazardFinder : MonoBehaviour
     public GameObject[] m_hazards;
     [Range(0, 100)] public float m_maxDistance = 10;
 
+    //SoundPart
+    public FirePowerSetter m_FirePowerSetter;
+    public bool m_NeedToChangeFireSoundSettings = false;
     // VoiceOverPart
     public static int m_HazardFinderDialogueValue;
     public Dialogue m_DialogueScript;
@@ -17,6 +20,7 @@ public class HazardFinder : MonoBehaviour
     bool m_HavePlayedCompletedHazardDialogue = false;
     public bool m_NeedToPlayCompletedHazardDialogue = false;
     public int m_CompletedHazardDialogueValue = 0;
+   
 
 
 
@@ -99,6 +103,11 @@ public class HazardFinder : MonoBehaviour
                     Dialogue.m_FDialogueValue = m_CompletedHazardDialogueValue;
                     m_DialogueScript.PlayDialogue();
                     m_HavePlayedCompletedHazardDialogue = true;
+                    if (m_NeedToChangeFireSoundSettings)
+                    {
+                        m_FirePowerSetter.m_FFirePowerValueDefiner = 0;
+                    }
+
                 }
             }
         }
