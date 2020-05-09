@@ -7,11 +7,13 @@ public class FireSound : MonoBehaviour {
 
     // Hear fire from: 0= Nowhere 1=OtherRoom 2=Concerned Room 3=Minigame
     public static int m_FFirePowerValue = 1;
+    public int m_FFirePowerValueDefiner;
 
     public FMOD.Studio.EventInstance m_Fire;
 
     void Start()
     {
+        m_FFirePowerValue = m_FFirePowerValueDefiner;
         m_Fire = FMODUnity.RuntimeManager.CreateInstance(m_FireEventPath);
         m_Fire.setParameterByName("FirePower", m_FFirePowerValue);
         m_Fire.start();

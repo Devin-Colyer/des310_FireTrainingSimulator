@@ -110,6 +110,7 @@
     <Compile Include="Assets\Scripts\Sound\Dialogue\DialogueActivator.cs" />
     <Compile Include="Assets\Scripts\Sound\Dialogue\IfPlayerTakesTooLong.cs" />
     <Compile Include="Assets\Scripts\Sound\Dialogue\UpdateHazardFinderDialogue.cs" />
+    <Compile Include="Assets\Scripts\Sound\ElectricSounds.cs" />
     <Compile Include="Assets\Scripts\Sound\ExtinguisherSounds.cs" />
     <Compile Include="Assets\Scripts\Sound\Fire\FirePowerSetter.cs" />
     <Compile Include="Assets\Scripts\Sound\Fire\FireSound.cs" />
@@ -128,6 +129,9 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/FireTrainingProject/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.multiplayer-hlapi.Editor">
+      <HintPath>D:/FireTrainingProject/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>D:/FireTrainingProject/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -143,23 +147,14 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>D:/FireTrainingProject/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/FireTrainingProject/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/FireTrainingProject/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>D:/FireTrainingProject/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.multiplayer-hlapi.Editor">
-      <HintPath>D:/FireTrainingProject/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="com.unity.multiplayer-weaver.Editor">
       <HintPath>D:/FireTrainingProject/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
       <HintPath>D:/FireTrainingProject/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>D:/FireTrainingProject/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
       <HintPath>D:/FireTrainingProject/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
@@ -173,11 +168,17 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>D:/FireTrainingProject/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>D:/FireTrainingProject/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>D:/FireTrainingProject/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
       <HintPath>D:/FireTrainingProject/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>D:/FireTrainingProject/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
       <HintPath>D:/FireTrainingProject/des310_FireTrainingSimulator/FireTrainingSim/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>

@@ -3,9 +3,10 @@
 public class Dialogue : MonoBehaviour {
 
     [SerializeField] [FMODUnity.EventRef] private string m_DialogueEventPath;
-    public static int m_FDialogueValue = 1;
+    public static int m_FDialogueValue = 0;
     public int m_DefaultFDialogueValue;
     public static bool m_Monboule;
+    bool m_HavePlayedNumber = false;
 
     //0 = Dont need to play a "Number"      1 = Need to play a "Number"     2 = Need to play an other "Dialogue" to finish the senctence
     //private int CheckNumber = 0;
@@ -65,11 +66,11 @@ public class Dialogue : MonoBehaviour {
 
     void Start()
     {
-        Debug.Log("Dialogue played is D" + m_FDialogueValue);
         m_FDialogueValue = m_DefaultFDialogueValue;
         m_ThirdPersonSound = FMODUnity.RuntimeManager.CreateInstance(m_DialogueEventPath);
         m_ThirdPersonSound.setParameterByName("Dialogue", m_FDialogueValue);
         m_ThirdPersonSound.start();
+        Debug.Log("Dialogue played is D" + m_FDialogueValue);
 
 
 
@@ -93,7 +94,6 @@ public class Dialogue : MonoBehaviour {
                 m_dialogueStateControl = DialogueStateControl.PLAYDIFFERENT;
             }
         }
-
     }
 
 
@@ -150,15 +150,22 @@ public class Dialogue : MonoBehaviour {
         {
             FMOD.Studio.PLAYBACK_STATE l_playbackState;
             m_ThirdPersonSound.getPlaybackState(out l_playbackState);
-            Debug.Log(l_playbackState);
             if (l_playbackState == FMOD.Studio.PLAYBACK_STATE.STOPPED)
             {
-                m_ThirdPersonSound.release();
-                m_ThirdPersonSound.clearHandle();
-                Debug.Log("PlayerIntroFinished");
-                m_dialogueStateControl = DialogueStateControl.DONTPLAY;
-                SpeakedNumber();
+                FMOD.Studio.PLAYBACK_STATE l_playbackStateNumber;
+                m_Numbers.getPlaybackState(out l_playbackStateNumber);
+                if (l_playbackStateNumber == FMOD.Studio.PLAYBACK_STATE.STOPPED & m_HavePlayedNumber==false)
+                {
+                    SpeakNumber();
+                    Debug.Log(l_playbackStateNumber);
+                    m_HavePlayedNumber = true;
+                }
+                else if (l_playbackStateNumber == FMOD.Studio.PLAYBACK_STATE.STOPPED & m_HavePlayedNumber)
+                {
+                    m_dialogueStateControl = DialogueStateControl.PLAYDIFFERENT;
+                }
             }
+
         }
         else if (m_dialogueStateControl == DialogueStateControl.PLAYDIFFERENT)
         {
@@ -168,17 +175,23 @@ public class Dialogue : MonoBehaviour {
             {
                 m_FDialogueValue++;
                 PlayDialogue();
+                //Here is when we need a Dialogue
                 foreach (int itr in m_DialogueWhoNeedToPlayNextDialogue)
                 {
                     if (m_FDialogueValue == itr)
                     {
-                        m_dialogueStateControl = DialogueStateControl.PLAYDIFFERENT;
-                        //Debug.Log("Yes" + playbackState);
+                        //Debug.Log("tu joueras dialogue");
+                        m_dialogueStateControl = DialogueStateControl.PLAYDIFFERENT;                    
                     }
-                    else if (m_FDialogueValue != itr)
+                }
+
+                //Here is when we need Nothing After
+                foreach (int itr in m_DialogueWhoNeedToPlayNextDialogue)
+                {
+                    if (m_FDialogueValue != itr)
                     {
+                        //Debug.Log("tu joueras pas dialogue");
                         m_dialogueStateControl = DialogueStateControl.DONTPLAY;
-                        //Debug.Log("No" + playbackState);
                     }
                 }
             }
@@ -186,13 +199,12 @@ public class Dialogue : MonoBehaviour {
     }
 
 
-    void SpeakedNumber()
+    void SpeakNumber()
     {
         m_Numbers = FMODUnity.RuntimeManager.CreateInstance(m_NumbersEventPath);
         m_Numbers.setParameterByName("Numbers", m_FNumbersValue);
         m_Numbers.start();
-        m_FDialogueValue++;
-        m_dialogueStateControl = DialogueStateControl.PLAYNUMBER;
+        Debug.Log("Dialogue played is D" + m_FDialogueValue);
     }
 
 

@@ -12,6 +12,9 @@ public class HazardFinder : MonoBehaviour
     //SoundPart
     public FirePowerSetter m_FirePowerSetter;
     public bool m_NeedToChangeFireSoundSettings = false;
+    //public ElectricSounds m_ElectricSounds;
+    //public bool m_IsElectricRelated = false;
+
     // VoiceOverPart
     public static int m_HazardFinderDialogueValue;
     public Dialogue m_DialogueScript;
@@ -115,6 +118,7 @@ public class HazardFinder : MonoBehaviour
         {
             // Calculate percentage distance from hazard.
             float l_percentageDistance = (l_minDistance / m_maxDistance) * 100.0f;
+            UnityEngine.Debug.Log(l_percentageDistance);
 
             // Update hazard popup using closest hazard.
             if (l_percentageDistance < 33)
@@ -127,6 +131,7 @@ public class HazardFinder : MonoBehaviour
                         Dialogue.m_FDialogueValue = m_HazardFinderDialogueValue;
                         m_DialogueScript.PlayDialogue();
                         m_HavePlayedDialogue = true;
+                       
 
                     }
                 }

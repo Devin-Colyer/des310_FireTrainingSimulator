@@ -90,6 +90,7 @@ public class ExtinguisherMinigameController : MonoBehaviour {
                     m_ExtinguisherSoundsScript.StopExtinguisher();
                 }
                 m_FirePowerSetter.m_FFirePowerValueDefiner = 0;
+                Debug.Log("no fire here");
                 beatMinigame = true;
             }
         }
