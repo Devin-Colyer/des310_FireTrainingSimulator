@@ -23,6 +23,11 @@ public class HazardFinder : MonoBehaviour
     bool m_HavePlayedCompletedHazardDialogue = false;
     public bool m_NeedToPlayCompletedHazardDialogue = false;
     public int m_CompletedHazardDialogueValue = 0;
+
+    //!!!!!!!!!!!
+    //Really important to manually enter the same value on m_hazardLeftCounter as we put on m_hazards! If not, wrong dialogue will be played 
+    //!!!!!!!!!!!
+    public int m_hazardLeftCounter;
    
 
 
@@ -37,6 +42,8 @@ public class HazardFinder : MonoBehaviour
             // Find hazard popup in player.
             m_hazardPopup = m_player.transform.Find("Hazard Popup");
         }
+
+
     }
 
 	// Update is called once per frame
@@ -79,6 +86,22 @@ public class HazardFinder : MonoBehaviour
         // Debug output.
         ///Debug.Log(l_numHazards + "/" + m_hazards.Length);
 
+
+        //Dialogue tell how many Hazard left when completing one
+
+        //UnityEngine.Debug.Log(l_numHazards + m_hazardLeftCounter);
+        //m_hazardLeftCounter = l_numHazards;
+        //UnityEngine.Debug.Log("yes"+l_numHazards + m_hazardLeftCounter);
+        //if (m_hazardLeftCounter != l_numHazards)
+        //{
+        //    UnityEngine.Debug.Log( l_numHazards + "WORK" + m_hazardLeftCounter);
+        //    m_hazardLeftCounter = l_numHazards;
+        //    Dialogue.m_FDialogueValue = m_CompletedHazardDialogueValue;
+        //    Dialogue.m_FNumbersValue = m_hazardLeftCounter;
+        //    m_DialogueScript.PlayDialogue();
+        //}
+
+
         if (l_numHazards == 0)
         {
             // All hazards have been dealt with.
@@ -118,7 +141,7 @@ public class HazardFinder : MonoBehaviour
         {
             // Calculate percentage distance from hazard.
             float l_percentageDistance = (l_minDistance / m_maxDistance) * 100.0f;
-            UnityEngine.Debug.Log(l_percentageDistance);
+            //UnityEngine.Debug.Log(l_percentageDistance);
 
             // Update hazard popup using closest hazard.
             if (l_percentageDistance < 33)

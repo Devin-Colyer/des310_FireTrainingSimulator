@@ -11754,7 +11754,7 @@ MonoBehaviour:
   m_DialogueWhoNeedToPlayNunmber: 
   m_DialogueWhoNeedToPlayNextDialogue: 10000000
   m_NumbersEventPath: event:/Dialogue/Numbers
-  m_FNumbersValue: 0
+  m_NumbersValue: 0
 --- !u!114 &593217332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27299,6 +27299,7 @@ MonoBehaviour:
   m_NeedToPlayCompletedMinigameDialogue: 0
   m_NeedToPlayCompletedHazardDialogue: 1
   m_CompletedHazardDialogueValue: 34
+  m_hazardLeftCounter: 0
 --- !u!1 &1029194162
 GameObject:
   m_ObjectHideFlags: 0

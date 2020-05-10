@@ -10,6 +10,7 @@ public class ElectricSounds : MonoBehaviour
     public static float m_DistanceFromElectric = 1;
     public float m_DistanceFromElectricDefiner;
 
+
     public FMOD.Studio.EventInstance m_Electric;
 
     //Play the electric sound, set as a loop in FMOD
@@ -25,8 +26,8 @@ public class ElectricSounds : MonoBehaviour
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(m_Electric, GetComponent<Transform>(), GetComponent<Rigidbody>());
         FMOD.Studio.PLAYBACK_STATE l_playbackState;
         m_Electric.getPlaybackState(out l_playbackState);
-        Debug.Log(l_playbackState);
-        PlaySound();
+        //Debug.Log(l_playbackState);
+        //PlaySound();
     }
 
     void PlaySound()
