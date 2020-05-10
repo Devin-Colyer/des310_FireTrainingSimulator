@@ -544,6 +544,9 @@
 		<property name="start">
 			<value>38</value>
 		</property>
+		<property name="startOffset">
+			<value>70.5</value>
+		</property>
 		<property name="color">
 			<value>Cyan</value>
 		</property>
