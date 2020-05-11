@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7681c93eb5b92ac4599b2fa8d2e59e6f
+guid: e291f0f2adfc1794482aa34cdfc7540c
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable:
@@ -46,7 +46,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -69,9 +69,9 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
-    useSRGBMaterialColor: 0
+    useSRGBMaterialColor: 1
     sortHierarchyByName: 1
-    importVisibility: 0
+    importVisibility: 1
     importBlendShapes: 1
     importCameras: 0
     importLights: 0
@@ -233,7 +233,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: polySurface412
       parentName: lazy_base(Clone)
-      position: {x: -0, y: 0.035834737, z: 0}
+      position: {x: -0, y: 0.035834745, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: grp_CTRL_Master
@@ -248,7 +248,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: grp_CTRL_LeftLeg
       parentName: CTRL_Master
-      position: {x: -0.0047210623, y: 0.025801877, z: 0}
+      position: {x: -0.0047210627, y: 0.025801884, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 0.5414097, y: 0.5414097, z: 0.5414097}
     - name: CTRL_LeftLeg
@@ -258,7 +258,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: group1
       parentName: CTRL_LeftLeg
-      position: {x: 2.220446e-18, y: -0.02287211, z: 0}
+      position: {x: 2.2204464e-18, y: -0.022872115, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 0.73345816, y: 0.73345816, z: 0.73345816}
     - name: CTRL_LeftKnee
@@ -268,7 +268,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: grp_CTRL_RightLeg
       parentName: CTRL_Master
-      position: {x: 0.00472, y: 0.025801877, z: 0}
+      position: {x: 0.00472, y: 0.025801884, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 0.5414097, y: 0.5414097, z: 0.5414097}
     - name: CTRL_RightLeg
@@ -278,7 +278,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: group1 1
       parentName: CTRL_RightLeg
-      position: {x: 2.220446e-18, y: -0.02287211, z: 0}
+      position: {x: 2.2204464e-18, y: -0.022872115, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 0.73345816, y: 0.73345816, z: 0.73345816}
     - name: CTRL_RightKnee
@@ -288,7 +288,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: grp_CTRL_Chest
       parentName: CTRL_Master
-      position: {x: -0.00013049589, y: 0.044407323, z: 0.0029774588}
+      position: {x: -0.0001304959, y: 0.04440733, z: 0.0029774595}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 0.85044575, y: 0.85044575, z: 0.85044575}
     - name: CTRL_Chest
@@ -298,7 +298,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: grp_CTRL_Head
       parentName: CTRL_Chest
-      position: {x: -0, y: 0.012762878, z: 0}
+      position: {x: -0, y: 0.01276288, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1.175854, y: 1.175854, z: 1.175854}
     - name: CTRL_Head
@@ -308,7 +308,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: group5
       parentName: CTRL_Chest
-      position: {x: 0.007113759, y: 0.008678754, z: 0}
+      position: {x: 0.00711376, y: 0.008678755, z: 0}
       rotation: {x: 0.7071068, y: 0.7071068, z: 4.3297806e-17, w: 4.3297806e-17}
       scale: {x: 1.175854, y: 1.175854, z: -1.175854}
     - name: CTRL_RightShoulder
@@ -318,7 +318,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: group3 1
       parentName: CTRL_RightShoulder
-      position: {x: -0, y: 0.0057888734, z: 0}
+      position: {x: -0, y: 0.005788874, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: CTRL_RightElbow
@@ -328,7 +328,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: group4 1
       parentName: CTRL_RightElbow
-      position: {x: -0.0004109621, y: 0.0078041647, z: 0}
+      position: {x: -0.00041096218, y: 0.0078041665, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: CTRL_RightHand
@@ -338,7 +338,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: group2
       parentName: CTRL_Chest
-      position: {x: -0.0068068686, y: 0.008678754, z: 0}
+      position: {x: -0.00680687, y: 0.008678755, z: 0}
       rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
       scale: {x: 1.175854, y: 1.175854, z: 1.175854}
     - name: CTRL_LeftShoulder
@@ -348,7 +348,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: group3
       parentName: CTRL_LeftShoulder
-      position: {x: -0, y: 0.0057888734, z: 0}
+      position: {x: -0, y: 0.005788874, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: CTRL_LeftElbow
@@ -358,7 +358,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: group4
       parentName: CTRL_LeftElbow
-      position: {x: -0.0004109621, y: 0.0078041647, z: 0}
+      position: {x: -0.00041096218, y: 0.0078041665, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: CTRL_LeftHand
@@ -368,32 +368,32 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: jnt_Core
       parentName: lazy_base(Clone)
-      position: {x: -0, y: 0.031092914, z: 0}
+      position: {x: -0, y: 0.031092927, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: jnt_Right_Thigh
       parentName: jnt_Core
-      position: {x: 0.0047210595, y: -0.0052910154, z: 0}
+      position: {x: 0.0047210604, y: -0.0052910163, z: 0}
       rotation: {x: 1, y: -0, z: 0, w: -6.123234e-17}
       scale: {x: 1, y: 1, z: 1}
     - name: jnt_Right_Knee
       parentName: jnt_Right_Thigh
-      position: {x: -0, y: 0.012383199, z: -1.5165044e-18}
+      position: {x: -0, y: 0.012383201, z: -1.5165046e-18}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: jntEND 2
       parentName: jnt_Right_Knee
-      position: {x: -0, y: 0.01341512, z: -1.6428784e-18}
+      position: {x: -0, y: 0.013415125, z: -1.6428789e-18}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: jnt_Left_Thigh
       parentName: jnt_Core
-      position: {x: -0.0047210623, y: -0.0052910373, z: 0}
+      position: {x: -0.0047210627, y: -0.005291038, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: jnt_Left_Knee
       parentName: jnt_Left_Thigh
-      position: {x: 1.6653345e-18, y: -0.0123831825, z: 0}
+      position: {x: 1.6653348e-18, y: -0.012383183, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: jntEND 1
@@ -403,57 +403,57 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: jnt_Chest
       parentName: jnt_Core
-      position: {x: -0.00013049589, y: 0.013314405, z: 0.0029774588}
+      position: {x: -0.0001304959, y: 0.013314409, z: 0.0029774595}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: jnt_Right_Shoulder
       parentName: jnt_Chest
-      position: {x: 0.006049866, y: 0.007380777, z: 0.0000000011876773}
+      position: {x: 0.006049868, y: 0.007380779, z: 0.0000000011876775}
       rotation: {x: 1, y: -0, z: 0, w: -6.123234e-17}
       scale: {x: 1, y: 1, z: 1}
     - name: jnt_Right_Elbow
       parentName: jnt_Right_Shoulder
-      position: {x: 0.005788829, y: 0, z: 5.551115e-19}
+      position: {x: 0.00578883, y: 0, z: 5.551116e-19}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: jnt_Right_Wrist
       parentName: jnt_Right_Elbow
-      position: {x: 0.0078042, y: 0.0004109, z: 0}
+      position: {x: 0.007804201, y: 0.0004109, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: jntEND 4
       parentName: jnt_Right_Wrist
-      position: {x: 0.006792499, y: 0.00035769996, z: 0}
+      position: {x: 0.006792499, y: 0.00035770005, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: jnt_Left_Shoulder
       parentName: jnt_Chest
-      position: {x: -0.0057888725, y: 0.007380812, z: 0}
+      position: {x: -0.005788874, y: 0.007380813, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: jnt_Left_Elbow
       parentName: jnt_Left_Shoulder
-      position: {x: -0.0057888725, y: 8.881784e-18, z: 0}
+      position: {x: -0.005788874, y: 8.881786e-18, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: jnt_Left_Wrist
       parentName: jnt_Left_Elbow
-      position: {x: -0.0078041647, y: -0.00041096428, z: 0}
+      position: {x: -0.0078041665, y: -0.0004109645, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: jntEND 3
       parentName: jnt_Left_Wrist
-      position: {x: -0.006792513, y: -0.0003576911, z: 0}
+      position: {x: -0.0067925155, y: -0.0003576912, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: jnt_Head
       parentName: jnt_Chest
-      position: {x: 3.469447e-20, y: 0.010854135, z: 0}
+      position: {x: 3.4694475e-20, y: 0.010854137, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: jntEND
       parentName: jnt_Head
-      position: {x: -3.469447e-20, y: 0.012156632, z: 0}
+      position: {x: -3.4694475e-20, y: 0.0121566355, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
