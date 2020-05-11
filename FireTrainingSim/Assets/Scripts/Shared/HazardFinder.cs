@@ -23,12 +23,14 @@ public class HazardFinder : MonoBehaviour
     bool m_HavePlayedCompletedHazardDialogue = false;
     public bool m_NeedToPlayCompletedHazardDialogue = false;
     public int m_CompletedHazardDialogueValue = 0;
+    // Type the number corresponding to the dialogue who say how many hazards left
+    public int m_FinalCountdown;
 
     //!!!!!!!!!!!
     //Really important to manually enter the same value on m_hazardLeftCounter as we put on m_hazards! If not, wrong dialogue will be played 
     //!!!!!!!!!!!
     public int m_hazardLeftCounter;
-   
+
 
 
 
@@ -42,7 +44,7 @@ public class HazardFinder : MonoBehaviour
             // Find hazard popup in player.
             m_hazardPopup = m_player.transform.Find("Hazard Popup");
         }
-
+        m_FinalCountdown--;
 
     }
 
@@ -89,17 +91,16 @@ public class HazardFinder : MonoBehaviour
 
         //Dialogue tell how many Hazard left when completing one
 
-        //UnityEngine.Debug.Log(l_numHazards + m_hazardLeftCounter);
+        UnityEngine.Debug.Log(l_numHazards + "No" + m_hazardLeftCounter);
         //m_hazardLeftCounter = l_numHazards;
-        //UnityEngine.Debug.Log("yes"+l_numHazards + m_hazardLeftCounter);
-        //if (m_hazardLeftCounter != l_numHazards)
-        //{
-        //    UnityEngine.Debug.Log( l_numHazards + "WORK" + m_hazardLeftCounter);
-        //    m_hazardLeftCounter = l_numHazards;
-        //    Dialogue.m_FDialogueValue = m_CompletedHazardDialogueValue;
-        //    Dialogue.m_FNumbersValue = m_hazardLeftCounter;
-        //    m_DialogueScript.PlayDialogue();
-        //}
+        UnityEngine.Debug.Log( l_numHazards + "yes" + m_hazardLeftCounter);
+        if (m_hazardLeftCounter != l_numHazards&& l_numHazards!=0)
+        {
+            m_hazardLeftCounter = l_numHazards;
+            m_FinalCountdown++;
+            Dialogue.m_FDialogueValue = m_FinalCountdown;
+            m_DialogueScript.PlayDialogue();
+        }
 
 
         if (l_numHazards == 0)
@@ -154,8 +155,6 @@ public class HazardFinder : MonoBehaviour
                         Dialogue.m_FDialogueValue = m_HazardFinderDialogueValue;
                         m_DialogueScript.PlayDialogue();
                         m_HavePlayedDialogue = true;
-                       
-
                     }
                 }
             }

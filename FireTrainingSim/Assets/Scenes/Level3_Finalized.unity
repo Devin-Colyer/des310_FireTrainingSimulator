@@ -15810,7 +15810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73219931d382f1146a8bc7c7e59a57f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_BoxSoundsObj: {fileID: 0}
+  m_BoxSoundsObj: {fileID: 1233574221}
 --- !u!1 &1012978584
 GameObject:
   m_ObjectHideFlags: 0
@@ -15897,7 +15897,7 @@ MonoBehaviour:
   m_DialogueWhoNeedToPlayNunmber: 23000000
   m_DialogueWhoNeedToPlayNextDialogue: 01000000
   m_NumbersEventPath: event:/Dialogue/Numbers
-  m_NumbersValue: 5
+  m_NumbersValue: 6
 --- !u!1 &1020915436
 GameObject:
   m_ObjectHideFlags: 0
@@ -34532,8 +34532,9 @@ MonoBehaviour:
   m_NeedToChangeFireSoundSettings: 0
   m_DialogueScript: {fileID: 1012978588}
   m_NeedToPlayCompletedMinigameDialogue: 0
-  m_NeedToPlayCompletedHazardDialogue: 0
-  m_CompletedHazardDialogueValue: 38
+  m_NeedToPlayCompletedHazardDialogue: 1
+  m_CompletedHazardDialogueValue: 40
+  m_FinalCountdown: 41
   m_hazardLeftCounter: 6
 --- !u!1 &1764906115
 GameObject:
