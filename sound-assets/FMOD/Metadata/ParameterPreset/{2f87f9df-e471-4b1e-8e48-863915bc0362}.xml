@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{2f87f9df-e471-4b1e-8e48-863915bc0362}">
+		<property name="name">
+			<value>Fire Intensity</value>
+		</property>
+		<relationship name="folder">
+			<destination>{496d0f05-0242-4740-becf-deb64451f432}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{dfbdfcee-e94a-4745-a4ae-35753b5f5e24}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{dfbdfcee-e94a-4745-a4ae-35753b5f5e24}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>5</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>OtherRoom</value>
+			<value>ConcernedRoom</value>
+			<value>Minigame</value>
+			<value>NoFireLeft</value>
+			<value>StillFireElsewhere</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

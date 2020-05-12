@@ -9,6 +9,12 @@ public class HazardFinder : MonoBehaviour
     public GameObject[] m_hazards;
     [Range(0, 100)] public float m_maxDistance = 10;
 
+    //SoundPart
+    public FirePowerSetter m_FirePowerSetter;
+    public bool m_NeedToChangeFireSoundSettings = false;
+    //public ElectricSounds m_ElectricSounds;
+    //public bool m_IsElectricRelated = false;
+
     // VoiceOverPart
     public static int m_HazardFinderDialogueValue;
     public Dialogue m_DialogueScript;
@@ -17,6 +23,16 @@ public class HazardFinder : MonoBehaviour
     bool m_HavePlayedCompletedHazardDialogue = false;
     public bool m_NeedToPlayCompletedHazardDialogue = false;
     public int m_CompletedHazardDialogueValue = 0;
+    // Type the number corresponding to the dialogue who say how many hazards left
+    public int m_FinalCountdown;
+    public bool m_IsLevel3 = false;
+
+
+    //!!!!!!!!!!!
+    //Really important to manually enter the same value on m_hazardLeftCounter as we put on m_hazards! If not, wrong dialogue will be played 
+    //!!!!!!!!!!!
+    public int m_hazardLeftCounter;
+
 
 
 
@@ -30,6 +46,8 @@ public class HazardFinder : MonoBehaviour
             // Find hazard popup in player.
             m_hazardPopup = m_player.transform.Find("Hazard Popup");
         }
+        m_FinalCountdown--;
+
     }
 
 	// Update is called once per frame
@@ -72,10 +90,23 @@ public class HazardFinder : MonoBehaviour
         // Debug output.
         ///Debug.Log(l_numHazards + "/" + m_hazards.Length);
 
+
+        //Dialogue tell how many Hazard left when completing one
+
+        if (m_hazardLeftCounter != l_numHazards&& l_numHazards!=0&& m_IsLevel3)
+        {
+            m_hazardLeftCounter = l_numHazards;
+            m_FinalCountdown++;
+            Dialogue.m_FDialogueValue = m_FinalCountdown;
+            m_DialogueScript.PlayDialogue();
+        }
+
+
         if (l_numHazards == 0)
         {
             // All hazards have been dealt with.
             m_hazardPopup.GetComponent<TextMesh>().text = "";
+            MusicEmitterLevel2.m_FireIntensityDefiner = 2;
 
             if (m_levelExit)
             {
@@ -99,6 +130,11 @@ public class HazardFinder : MonoBehaviour
                     Dialogue.m_FDialogueValue = m_CompletedHazardDialogueValue;
                     m_DialogueScript.PlayDialogue();
                     m_HavePlayedCompletedHazardDialogue = true;
+                    if (m_NeedToChangeFireSoundSettings)
+                    {
+                        m_FirePowerSetter.m_FFirePowerValueDefiner = 0;
+                    }
+
                 }
             }
         }
@@ -106,6 +142,7 @@ public class HazardFinder : MonoBehaviour
         {
             // Calculate percentage distance from hazard.
             float l_percentageDistance = (l_minDistance / m_maxDistance) * 100.0f;
+            //UnityEngine.Debug.Log(l_percentageDistance);
 
             // Update hazard popup using closest hazard.
             if (l_percentageDistance < 33)
@@ -118,7 +155,6 @@ public class HazardFinder : MonoBehaviour
                         Dialogue.m_FDialogueValue = m_HazardFinderDialogueValue;
                         m_DialogueScript.PlayDialogue();
                         m_HavePlayedDialogue = true;
-
                     }
                 }
             }

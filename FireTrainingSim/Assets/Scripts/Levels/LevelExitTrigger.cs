@@ -10,6 +10,7 @@ public class LevelExitTrigger : MonoBehaviour
 
     // Sound Part
     public MusicEmitter m_MusicEmitterScript;
+    public bool m_NeedStopMusic = true;
 
 
 	// Use this for initialization
@@ -38,7 +39,10 @@ public class LevelExitTrigger : MonoBehaviour
                 {
                     // Screen has finished fading, change scene.
                     SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
-                    m_MusicEmitterScript.StopMusic();
+                    if (m_NeedStopMusic)
+                    {
+                        m_MusicEmitterScript.StopMusic();
+                    }
                 }
             }
             else
