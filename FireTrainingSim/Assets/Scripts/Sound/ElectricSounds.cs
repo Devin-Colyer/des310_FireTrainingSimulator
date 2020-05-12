@@ -27,7 +27,7 @@ public class ElectricSounds : MonoBehaviour
         FMOD.Studio.PLAYBACK_STATE l_playbackState;
         m_Electric.getPlaybackState(out l_playbackState);
         //Debug.Log(l_playbackState);
-        //PlaySound();
+        PlaySound();
     }
 
     void PlaySound()

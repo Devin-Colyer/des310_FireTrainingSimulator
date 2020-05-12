@@ -12267,15 +12267,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 593217329}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba226ecbbf44c964e8d9729580b76431, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d433f009c2f00347bd0848278f60634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_music: event:/Music
-  m_Intro: 0
-  m_Loop: 0
-  m_Outro: 0
+  m_HubCamera: {fileID: 945119565}
+  m_MinigameRoomCamera:
+  - {fileID: 1589402837}
+  - {fileID: 1007952940}
+  - {fileID: 1382068165}
+  - {fileID: 609556038}
+  m_MinigameCamera:
+  - {fileID: 1135940976}
+  - {fileID: 1358354224}
+  - {fileID: 985249798}
+  - {fileID: 317596012}
+  m_DialogueEventPath: event:/Dialogue/Dialogue
+  m_music: event:/Music Level 2
+  m_FireIntensity: 0
 --- !u!1 &598612758
 GameObject:
   m_ObjectHideFlags: 0
@@ -28115,6 +28125,7 @@ MonoBehaviour:
   m_NeedToPlayCompletedHazardDialogue: 1
   m_CompletedHazardDialogueValue: 34
   m_FinalCountdown: 0
+  m_IsLevel3: 0
   m_hazardLeftCounter: 0
 --- !u!1 &1029194162
 GameObject:
@@ -44080,7 +44091,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d360206cbe45dc048a5fab2998deff9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MusicEmitterScript: {fileID: 593217333}
+  m_MusicEmitterScript: {fileID: 0}
+  m_NeedStopMusic: 0
 --- !u!65 &1802795969
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -58,7 +58,7 @@ public class Dialogue : MonoBehaviour {
         {
             if (m_FDialogueValue == itr)
             {
-                //Debug.Log("tu joueras dialogue");
+                Debug.Log("tu joueras dialogue");
                 m_dialogueStateControl = DialogueStateControl.PLAYDIFFERENT;
             }
         }
@@ -94,6 +94,7 @@ public class Dialogue : MonoBehaviour {
                 {
                 //Debug.Log("tu joueras dialogue");
                     m_dialogueStateControl = DialogueStateControl.PLAYDIFFERENT;
+                Debug.Log("tu joueras dialogue1");
                 }
             }
 
@@ -112,10 +113,7 @@ public class Dialogue : MonoBehaviour {
 
     void Update()
     {
-        //FMOD.Studio.PLAYBACK_STATE playbackState;
-        //ThirdPersonSound.getPlaybackState(out playbackState);
-        //debug.log(playbackstate);
-        //Debug.Log(m_dialogueStateControl);
+        Debug.Log(m_dialogueStateControl);
 
         if (m_dialogueStateControl == DialogueStateControl.PLAYNUMBER)
         {
@@ -140,6 +138,9 @@ public class Dialogue : MonoBehaviour {
             }
 
         }
+        
+        
+
         else if (m_dialogueStateControl == DialogueStateControl.PLAYDIFFERENT)
         {
             FMOD.Studio.PLAYBACK_STATE l_playbackState;
@@ -148,23 +149,26 @@ public class Dialogue : MonoBehaviour {
             {
                 m_FDialogueValue++;
                 PlayDialogue();
-                //Here is when we need a Dialogue
-                foreach (int itr in m_DialogueWhoNeedToPlayNextDialogue)
-                {
-                    if (m_FDialogueValue == itr)
-                    {
-                        //Debug.Log("tu joueras dialogue");
-                        m_dialogueStateControl = DialogueStateControl.PLAYDIFFERENT;                    
-                    }
-                }
 
                 //Here is when we need Nothing After
                 foreach (int itr in m_DialogueWhoNeedToPlayNextDialogue)
                 {
                     if (m_FDialogueValue != itr)
                     {
-                        //Debug.Log("tu joueras pas dialogue");
+                        Debug.Log("tu joueras pas dialogue");
                         m_dialogueStateControl = DialogueStateControl.DONTPLAY;
+                    }
+                }
+
+
+                //Here is when we need a Dialogue
+                foreach (int itr in m_DialogueWhoNeedToPlayNextDialogue)
+                {
+                    if (m_FDialogueValue == itr)
+                    {
+                        //Debug.Log("tu joueras dialogue");
+                        m_dialogueStateControl = DialogueStateControl.PLAYDIFFERENT;
+                        Debug.Log("tu joueras dialogue2");
                     }
                 }
             }

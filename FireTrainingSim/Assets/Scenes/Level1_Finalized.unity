@@ -1449,6 +1449,7 @@ MonoBehaviour:
   m_NeedToPlayCompletedHazardDialogue: 0
   m_CompletedHazardDialogueValue: 0
   m_FinalCountdown: 0
+  m_IsLevel3: 0
   m_hazardLeftCounter: 0
 --- !u!1 &282463514
 GameObject:
@@ -3870,6 +3871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MusicEmitterScript: {fileID: 1625949346}
+  m_NeedStopMusic: 1
 --- !u!65 &711495106
 BoxCollider:
   m_ObjectHideFlags: 0

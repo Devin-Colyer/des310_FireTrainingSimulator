@@ -16323,7 +16323,6 @@ GameObject:
   - component: {fileID: 1012978585}
   - component: {fileID: 1012978588}
   - component: {fileID: 1012978587}
-  - component: {fileID: 1012978586}
   m_Layer: 5
   m_Name: FMOD Scripts
   m_TagString: Untagged
@@ -16350,22 +16349,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1012978586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1012978584}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba226ecbbf44c964e8d9729580b76431, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_music: event:/Music
-  m_Intro: 0
-  m_Loop: 0
-  m_Outro: 0
 --- !u!114 &1012978587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35530,7 +35513,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d360206cbe45dc048a5fab2998deff9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MusicEmitterScript: {fileID: 1012978586}
+  m_MusicEmitterScript: {fileID: 0}
+  m_NeedStopMusic: 0
 --- !u!65 &1747564705
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35908,6 +35892,7 @@ MonoBehaviour:
   m_NeedToPlayCompletedHazardDialogue: 1
   m_CompletedHazardDialogueValue: 40
   m_FinalCountdown: 41
+  m_IsLevel3: 1
   m_hazardLeftCounter: 6
 --- !u!1 &1764906115
 GameObject:

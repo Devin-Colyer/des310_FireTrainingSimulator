@@ -25,6 +25,8 @@ public class HazardFinder : MonoBehaviour
     public int m_CompletedHazardDialogueValue = 0;
     // Type the number corresponding to the dialogue who say how many hazards left
     public int m_FinalCountdown;
+    public bool m_IsLevel3 = false;
+
 
     //!!!!!!!!!!!
     //Really important to manually enter the same value on m_hazardLeftCounter as we put on m_hazards! If not, wrong dialogue will be played 
@@ -91,10 +93,7 @@ public class HazardFinder : MonoBehaviour
 
         //Dialogue tell how many Hazard left when completing one
 
-        UnityEngine.Debug.Log(l_numHazards + "No" + m_hazardLeftCounter);
-        //m_hazardLeftCounter = l_numHazards;
-        UnityEngine.Debug.Log( l_numHazards + "yes" + m_hazardLeftCounter);
-        if (m_hazardLeftCounter != l_numHazards&& l_numHazards!=0)
+        if (m_hazardLeftCounter != l_numHazards&& l_numHazards!=0&& m_IsLevel3)
         {
             m_hazardLeftCounter = l_numHazards;
             m_FinalCountdown++;
@@ -107,6 +106,7 @@ public class HazardFinder : MonoBehaviour
         {
             // All hazards have been dealt with.
             m_hazardPopup.GetComponent<TextMesh>().text = "";
+            MusicEmitterLevel2.m_FireIntensityDefiner = 2;
 
             if (m_levelExit)
             {

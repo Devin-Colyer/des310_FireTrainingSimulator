@@ -13,6 +13,7 @@ public class MusicEmitter : MonoBehaviour {
 
     void Start ()
     {
+        m_musicEv.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         m_musicEv = FMODUnity.RuntimeManager.CreateInstance(m_music);
 
         m_musicEv.setParameterByName("Intro", m_Intro);

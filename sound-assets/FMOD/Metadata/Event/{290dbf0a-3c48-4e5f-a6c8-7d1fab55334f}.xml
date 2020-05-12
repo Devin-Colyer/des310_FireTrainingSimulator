@@ -70,7 +70,6 @@
 		<relationship name="modules">
 			<destination>{f4c95f7b-775e-48ff-a5df-9f79ededcd26}</destination>
 			<destination>{21059975-5e9c-445c-9eaf-48a7cd57d699}</destination>
-			<destination>{28a4e829-6a92-4703-9d0a-acb3b896169e}</destination>
 			<destination>{44b96770-1f8a-483b-b413-2424404f34fa}</destination>
 			<destination>{de191ffc-b626-4a21-bcd2-2df52e43edb0}</destination>
 			<destination>{0075c73b-244a-47de-a41b-949e3947518f}</destination>
@@ -109,6 +108,7 @@
 			<destination>{ca318408-3b93-4b1a-9e08-a9ffd2cb941f}</destination>
 			<destination>{2b251ad1-eb1e-42df-ad8b-0f15cd5c7304}</destination>
 			<destination>{fcd284b7-348d-4059-b49a-51d811338406}</destination>
+			<destination>{28a4e829-6a92-4703-9d0a-acb3b896169e}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{0ee8b8ac-b407-4cf9-967f-789104a08cbd}</destination>
@@ -224,17 +224,6 @@
 		</property>
 		<relationship name="audioFile">
 			<destination>{fcb0fcce-b946-4ea6-ad2e-5aae3fd3cb63}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{28a4e829-6a92-4703-9d0a-acb3b896169e}">
-		<property name="start">
-			<value>3</value>
-		</property>
-		<property name="color">
-			<value>Cyan</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{ef8365a7-020a-451f-8b24-d558efffd1c0}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{44b96770-1f8a-483b-b413-2424404f34fa}">
@@ -638,6 +627,17 @@
 		</property>
 		<relationship name="audioFile">
 			<destination>{77b1a965-6c1b-4113-97d9-8a8452e20ad2}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{28a4e829-6a92-4703-9d0a-acb3b896169e}">
+		<property name="start">
+			<value>3</value>
+		</property>
+		<property name="color">
+			<value>Cyan</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{ef8365a7-020a-451f-8b24-d558efffd1c0}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{0ee8b8ac-b407-4cf9-967f-789104a08cbd}">

@@ -15,9 +15,9 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: D:\Program Files (x86)\Github\des310_FireTrainingSimulator\sound-assets\FMOD\FireProject.fspro
-  SourceProjectPathUnformatted: D:\Program Files (x86)\Github\des310_FireTrainingSimulator\sound-assets\FMOD\FireProject.fspro
-  SourceBankPathUnformatted: D:\Program Files (x86)\Github\des310_FireTrainingSimulator\sound-assets\FMOD\Build
+  sourceProjectPath: D:\FireTrainingProject\des310_FireTrainingSimulator\sound-assets\FMOD\FireProject.fspro
+  SourceProjectPathUnformatted: D:\FireTrainingProject\des310_FireTrainingSimulator\sound-assets\FMOD\FireProject.fspro
+  SourceBankPathUnformatted: D:\FireTrainingProject\des310_FireTrainingSimulator\sound-assets\FMOD\Build
   AutomaticEventLoading: 1
   BankLoadType: 0
   AutomaticSampleLoading: 0
