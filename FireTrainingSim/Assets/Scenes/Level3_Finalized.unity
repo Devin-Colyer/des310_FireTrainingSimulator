@@ -35963,7 +35963,7 @@ MonoBehaviour:
   - {fileID: 721833309}
   - {fileID: 141303689}
   - {fileID: 1788955750}
-  m_maxDistance: 10
+  m_maxDistance: 0
   m_FirePowerSetter: {fileID: 0}
   m_NeedToChangeFireSoundSettings: 0
   m_DialogueScript: {fileID: 1012978588}
