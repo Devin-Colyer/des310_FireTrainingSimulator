@@ -10,30 +10,44 @@ public enum ExtinguisherType
 public class ExtinguisherComponent : MonoBehaviour
 {
     public ExtinguisherType m_extinguisherType = ExtinguisherType.NONE;
+    private MouseCursor l_mouseCursor;
 
     // VoiceOverPart
     public int m_DialogueValue = 1;
     public Dialogue m_DialogueScript;
+
+    void Start()
+    {
+        // Find mouse cursor object.
+        l_mouseCursor = FindObjectOfType<MouseCursor>();
+    }
 
     private void OnTriggerStay(Collider other)
     {
         // Check if collider is the player.
         if (other.tag == "Player")
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                // Create new ray in the direct of the mouse.
-                Ray l_ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                RaycastHit l_hit;
+            // Create new ray in the direct of the mouse.
+            Ray l_ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit l_hit;
 
-                // Cast ray towards mouse position.
-                if (Physics.Raycast(l_ray, out l_hit))
+            // Cast ray towards mouse position.
+            if (Physics.Raycast(l_ray, out l_hit))
+            {
+                // Check if collider exists.
+                if (l_hit.collider)
                 {
-                    // Check if collider exists.
-                    if (l_hit.collider)
+                    // Check if collider was a child of this extinguisher.
+                    if (l_hit.collider.transform.IsChildOf(this.transform))
                     {
-                        // Check if collider was a child of this extinguisher.
-                        if (l_hit.collider.transform.IsChildOf(this.transform))
+                        // Check if mouse cursor object was found.
+                        if (l_mouseCursor)
+                        {
+                            // Set mouse state to 'clickable'.
+                            l_mouseCursor.SetState(MouseCursor.State.CLICKABLE);
+                        }
+
+                        if (Input.GetMouseButtonDown(0))
                         {
                             // Debug output.
                             Debug.Log(m_extinguisherType);
