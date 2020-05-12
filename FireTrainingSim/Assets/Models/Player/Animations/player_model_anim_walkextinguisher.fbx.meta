@@ -1,82 +1,230 @@
 fileFormatVersion: 2
 guid: 36b1340dbd562484aa89d46af61c4a2b
 ModelImporter:
-  serializedVersion: 22
-  fileIDToRecycleName:
-    100000: Core_Joints
-    100002: ctrl_body
-    100004: ctrl_head
-    100006: ctrl_hips
-    100008: ctrl_l_elbow
-    100010: ctrl_l_knee
-    100012: ctrl_l_leg
-    100014: ctrl_l_Shoulder
-    100016: ctrl_main
-    100018: ctrl_r_elbow
-    100020: ctrl_r_knee
-    100022: ctrl_r_leg
-    100024: ctrl_r_shoulder
-    100026: jnt_core
-    100028: jnt_head
-    100030: jnt_headend
-    100032: jnt_hips
-    100034: jnt_l_elbow
-    100036: jnt_l_foot
-    100038: jnt_l_hand
-    100040: jnt_l_leg
-    100042: jnt_l_shoulder
-    100044: jnt_l_thigh
-    100046: jnt_neck
-    100048: jnt_r_elbow
-    100050: jnt_r_foot
-    100052: jnt_r_hand
-    100054: jnt_r_leg
-    100056: jnt_r_shoulder
-    100058: jnt_r_thigh
-    100060: jnt_waist
-    100062: Mesh
-    100064: //RootNode
-    100066: grp_PlayerCharacter
-    400000: Core_Joints
-    400002: ctrl_body
-    400004: ctrl_head
-    400006: ctrl_hips
-    400008: ctrl_l_elbow
-    400010: ctrl_l_knee
-    400012: ctrl_l_leg
-    400014: ctrl_l_Shoulder
-    400016: ctrl_main
-    400018: ctrl_r_elbow
-    400020: ctrl_r_knee
-    400022: ctrl_r_leg
-    400024: ctrl_r_shoulder
-    400026: jnt_core
-    400028: jnt_head
-    400030: jnt_headend
-    400032: jnt_hips
-    400034: jnt_l_elbow
-    400036: jnt_l_foot
-    400038: jnt_l_hand
-    400040: jnt_l_leg
-    400042: jnt_l_shoulder
-    400044: jnt_l_thigh
-    400046: jnt_neck
-    400048: jnt_r_elbow
-    400050: jnt_r_foot
-    400052: jnt_r_hand
-    400054: jnt_r_leg
-    400056: jnt_r_shoulder
-    400058: jnt_r_thigh
-    400060: jnt_waist
-    400062: Mesh
-    400064: //RootNode
-    400066: grp_PlayerCharacter
-    2100000: lambert1
-    4300000: Mesh
-    7400000: Take 001
-    9500000: //RootNode
-    13700000: Mesh
-    2186277476908879412: ImportLogs
+  serializedVersion: 26
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Core_Joints
+  - first:
+      1: 100002
+    second: ctrl_body
+  - first:
+      1: 100004
+    second: ctrl_head
+  - first:
+      1: 100006
+    second: ctrl_hips
+  - first:
+      1: 100008
+    second: ctrl_l_elbow
+  - first:
+      1: 100010
+    second: ctrl_l_knee
+  - first:
+      1: 100012
+    second: ctrl_l_leg
+  - first:
+      1: 100014
+    second: ctrl_l_Shoulder
+  - first:
+      1: 100016
+    second: ctrl_main
+  - first:
+      1: 100018
+    second: ctrl_r_elbow
+  - first:
+      1: 100020
+    second: ctrl_r_knee
+  - first:
+      1: 100022
+    second: ctrl_r_leg
+  - first:
+      1: 100024
+    second: ctrl_r_shoulder
+  - first:
+      1: 100026
+    second: jnt_core
+  - first:
+      1: 100028
+    second: jnt_head
+  - first:
+      1: 100030
+    second: jnt_headend
+  - first:
+      1: 100032
+    second: jnt_hips
+  - first:
+      1: 100034
+    second: jnt_l_elbow
+  - first:
+      1: 100036
+    second: jnt_l_foot
+  - first:
+      1: 100038
+    second: jnt_l_hand
+  - first:
+      1: 100040
+    second: jnt_l_leg
+  - first:
+      1: 100042
+    second: jnt_l_shoulder
+  - first:
+      1: 100044
+    second: jnt_l_thigh
+  - first:
+      1: 100046
+    second: jnt_neck
+  - first:
+      1: 100048
+    second: jnt_r_elbow
+  - first:
+      1: 100050
+    second: jnt_r_foot
+  - first:
+      1: 100052
+    second: jnt_r_hand
+  - first:
+      1: 100054
+    second: jnt_r_leg
+  - first:
+      1: 100056
+    second: jnt_r_shoulder
+  - first:
+      1: 100058
+    second: jnt_r_thigh
+  - first:
+      1: 100060
+    second: jnt_waist
+  - first:
+      1: 100062
+    second: Mesh
+  - first:
+      1: 100064
+    second: //RootNode
+  - first:
+      1: 100066
+    second: grp_PlayerCharacter
+  - first:
+      4: 400000
+    second: Core_Joints
+  - first:
+      4: 400002
+    second: ctrl_body
+  - first:
+      4: 400004
+    second: ctrl_head
+  - first:
+      4: 400006
+    second: ctrl_hips
+  - first:
+      4: 400008
+    second: ctrl_l_elbow
+  - first:
+      4: 400010
+    second: ctrl_l_knee
+  - first:
+      4: 400012
+    second: ctrl_l_leg
+  - first:
+      4: 400014
+    second: ctrl_l_Shoulder
+  - first:
+      4: 400016
+    second: ctrl_main
+  - first:
+      4: 400018
+    second: ctrl_r_elbow
+  - first:
+      4: 400020
+    second: ctrl_r_knee
+  - first:
+      4: 400022
+    second: ctrl_r_leg
+  - first:
+      4: 400024
+    second: ctrl_r_shoulder
+  - first:
+      4: 400026
+    second: jnt_core
+  - first:
+      4: 400028
+    second: jnt_head
+  - first:
+      4: 400030
+    second: jnt_headend
+  - first:
+      4: 400032
+    second: jnt_hips
+  - first:
+      4: 400034
+    second: jnt_l_elbow
+  - first:
+      4: 400036
+    second: jnt_l_foot
+  - first:
+      4: 400038
+    second: jnt_l_hand
+  - first:
+      4: 400040
+    second: jnt_l_leg
+  - first:
+      4: 400042
+    second: jnt_l_shoulder
+  - first:
+      4: 400044
+    second: jnt_l_thigh
+  - first:
+      4: 400046
+    second: jnt_neck
+  - first:
+      4: 400048
+    second: jnt_r_elbow
+  - first:
+      4: 400050
+    second: jnt_r_foot
+  - first:
+      4: 400052
+    second: jnt_r_hand
+  - first:
+      4: 400054
+    second: jnt_r_leg
+  - first:
+      4: 400056
+    second: jnt_r_shoulder
+  - first:
+      4: 400058
+    second: jnt_r_thigh
+  - first:
+      4: 400060
+    second: jnt_waist
+  - first:
+      4: 400062
+    second: Mesh
+  - first:
+      4: 400064
+    second: //RootNode
+  - first:
+      4: 400066
+    second: grp_PlayerCharacter
+  - first:
+      21: 2100000
+    second: lambert1
+  - first:
+      43: 4300000
+    second: Mesh
+  - first:
+      74: 7400000
+    second: Take 001
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Mesh
+  - first:
+      41386430: 2186277476908879412
+    second: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 0
@@ -111,6 +259,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Take 001
       takeName: Take 001
+      internalID: 7400000
       firstFrame: 1
       lastFrame: 17
       wrapMode: 0
@@ -156,6 +305,8 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 0
     importBlendShapes: 0
     importCameras: 0
@@ -163,10 +314,13 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 0
     keepQuads: 0
     weldVertices: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: 1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
@@ -178,10 +332,14 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
   copyAvatar: 1
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human:
     - boneName: jnt_core
       humanName: Hips
@@ -271,6 +429,14 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
+    - boneName: jnt_l_hand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
     - boneName: jnt_r_hand
       humanName: RightHand
       limit:
@@ -295,22 +461,14 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: jnt_l_hand
-      humanName: LeftHand
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
     skeleton:
-    - name: player_model_base(Clone)
+    - name: player_model_finalized(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: grp_PlayerCharacter
-      parentName: player_model_base(Clone)
+      parentName: player_model_finalized(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -327,36 +485,36 @@ ModelImporter:
     - name: jnt_hips
       parentName: jnt_core
       position: {x: -0, y: -0.002652197, z: 0}
-      rotation: {x: -0.7071068, y: 0.7071068, z: -8.659561e-17, w: -8.7157646e-33}
-      scale: {x: 1, y: 1, z: 1}
-    - name: jnt_l_thigh
-      parentName: jnt_hips
-      position: {x: 0.001300435, y: 0.0042669186, z: 0}
-      rotation: {x: 0, y: 6.123234e-17, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: jnt_l_leg
-      parentName: jnt_l_thigh
-      position: {x: 0.0064786314, y: 0.00032859534, z: 0}
-      rotation: {x: 0, y: 6.123234e-17, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: jnt_l_foot
-      parentName: jnt_l_leg
-      position: {x: 0.009659296, y: -5.5511148e-18, z: -1.1829227e-18}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      rotation: {x: -0.7071068, y: 0.7071068, z: 1.5700926e-16, w: -2.4360488e-16}
       scale: {x: 1, y: 1, z: 1}
     - name: jnt_r_thigh
       parentName: jnt_hips
       position: {x: 0.0013004474, y: -0.00426692, z: -3.0468022e-19}
-      rotation: {x: -1.2246469e-16, y: 0, z: -0, w: 1}
+      rotation: {x: -1.2246469e-16, y: 1.2246469e-16, z: 1.4997598e-32, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: jnt_r_leg
       parentName: jnt_r_thigh
       position: {x: 0.00647862, y: -0.00032859002, z: -8.346632e-19}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      rotation: {x: 6.123234e-17, y: -6.123234e-17, z: 6.123234e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: jnt_r_foot
       parentName: jnt_r_leg
       position: {x: 0.009659296, y: 1.498801e-17, z: -1.1829226e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: jnt_l_thigh
+      parentName: jnt_hips
+      position: {x: 0.001300435, y: 0.0042669186, z: 0}
+      rotation: {x: -2.4492937e-16, y: 6.123234e-17, z: 2.4492937e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: jnt_l_leg
+      parentName: jnt_l_thigh
+      position: {x: 0.0064786314, y: 0.00032859534, z: 0}
+      rotation: {x: -1.2246469e-16, y: 6.123234e-17, z: 1.2246469e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: jnt_l_foot
+      parentName: jnt_l_leg
+      position: {x: 0.009659296, y: -5.5511148e-18, z: -1.1829227e-18}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: jnt_waist
@@ -364,10 +522,25 @@ ModelImporter:
       position: {x: -0, y: 0.000620606, z: 0}
       rotation: {x: -8.659561e-17, y: 8.659561e-17, z: -0.7071068, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
+    - name: jnt_r_shoulder
+      parentName: jnt_waist
+      position: {x: -0.0070815496, y: 0.0055615297, z: 0}
+      rotation: {x: -1.5369762e-17, y: -1.5432078e-18, z: -0.052719973, w: 0.9986094}
+      scale: {x: 1, y: 1, z: 1}
+    - name: jnt_r_elbow
+      parentName: jnt_r_shoulder
+      position: {x: -0.0014402127, y: 0.007567879, z: 8.5068495e-19}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: jnt_r_hand
+      parentName: jnt_r_elbow
+      position: {x: -0.0018390537, y: 0.00966372, z: 2.404086e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: jnt_l_shoulder
       parentName: jnt_waist
       position: {x: -0.0070815333, y: -0.005561531, z: 0}
-      rotation: {x: 0, y: -0, z: -0.046997096, w: 0.99889505}
+      rotation: {x: -8.715968e-18, y: 4.10083e-19, z: -0.04127201, w: 0.999148}
       scale: {x: 1, y: 1, z: 1}
     - name: jnt_l_elbow
       parentName: jnt_l_shoulder
@@ -392,21 +565,6 @@ ModelImporter:
     - name: jnt_headend
       parentName: jnt_head
       position: {x: -0.019076359, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: jnt_r_shoulder
-      parentName: jnt_waist
-      position: {x: -0.0070815496, y: 0.0055615297, z: 0}
-      rotation: {x: 0, y: -0, z: -0.046997096, w: 0.99889505}
-      scale: {x: 1, y: 1, z: 1}
-    - name: jnt_r_elbow
-      parentName: jnt_r_shoulder
-      position: {x: -0.0014402127, y: 0.007567879, z: 8.5068495e-19}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: jnt_r_hand
-      parentName: jnt_r_elbow
-      position: {x: -0.0018390537, y: 0.00966372, z: 2.404086e-18}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ctrl_main
@@ -471,11 +629,11 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Mesh
       parentName: grp_PlayerCharacter
-      position: {x: -0, y: -0.0441, z: -0.1473}
+      position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: left
-      parentName: player_model_base(Clone)
+      parentName: player_model_finalized(Clone)
       position: {x: 10.000999, y: 0.009922536, z: -0.0006731869}
       rotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
@@ -486,12 +644,12 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 5e35cccf4b374f3408b03dc8c4183aae,
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: ff78d1d60145266488eb13f79527a364,
     type: 3}
   animationType: 3
   humanoidOversampling: 1

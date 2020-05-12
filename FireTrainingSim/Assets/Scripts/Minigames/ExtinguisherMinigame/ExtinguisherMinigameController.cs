@@ -85,11 +85,6 @@ public class ExtinguisherMinigameController : MonoBehaviour {
             }
             else
             {
-                if (m_ExtinguisherSoundsScript)
-                {
-                    m_ExtinguisherSoundsScript.StopExtinguisher();
-                }
-                m_FirePowerSetter.m_FFirePowerValueDefiner = 0;
                 beatMinigame = true;
             }
         }
@@ -107,6 +102,12 @@ public class ExtinguisherMinigameController : MonoBehaviour {
                 m_extinguisherPickups.transform.Find("Fixed").gameObject.SetActive(true);
 
                 m_player.GetComponent<ExtinguisherTrackerComponent>().SetExtinguisherType(ExtinguisherType.NONE);
+
+                if (m_ExtinguisherSoundsScript)
+                {
+                    m_ExtinguisherSoundsScript.StopExtinguisher();
+                }
+                m_FirePowerSetter.m_FFirePowerValueDefiner = 0;
 
                 // Change Music State
                 MusicEmitterLevel2.m_FireIntensityDefiner = 1;

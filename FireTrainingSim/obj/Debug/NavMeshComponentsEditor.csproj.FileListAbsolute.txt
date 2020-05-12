@@ -1075,3 +1075,4 @@ E:\Users\devco\Documents\GitHub\des310_FireTrainingSimulator\FireTrainingSim\Tem
 E:\Users\devco\Documents\GitHub\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\UnityEngine.VFXModule.xml
 E:\Users\devco\Documents\GitHub\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\nunit.framework.pdb
 E:\Users\devco\Documents\GitHub\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\nunit.framework.xml
+E:\Users\devco\Documents\GitHub\des310_FireTrainingSimulator\FireTrainingSim\Temp\bin\Debug\UnityEngine.WebGLModule.dll
